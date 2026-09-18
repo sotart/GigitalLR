@@ -1,0 +1,588 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 01 - mysub",
+      "server": "13.37.31.153",
+      "server_port": 22223,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 02 - mysub",
+      "server": "13.37.239.112",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 03 - mysub",
+      "server": "52.47.106.27",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 04 - mysub",
+      "server": "13.39.230.204",
+      "server_port": 22224,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 05 - mysub",
+      "server": "51.44.12.130",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 06 - mysub",
+      "server": "13.36.169.164",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 07 - mysub",
+      "server": "13.37.31.153",
+      "server_port": 22224,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 08 - mysub",
+      "server": "62.210.7.139",
+      "server_port": 60111,
+      "password": "github.com/Alvin9999-newpac/fanqiang",
+      "tls": {
+        "enabled": true,
+        "server_name": "62.210.7.139",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 09 - mysub",
+      "server": "173.212.201.85",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.docker.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 10 - mysub",
+      "server": "185.18.250.252",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 11 - mysub",
+      "server": "13.36.171.63",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 12 - mysub",
+      "server": "62.210.147.2",
+      "server_port": 43115,
+      "password": "github.com/Alvin9999-newpac/fanqiang",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 13 - mysub",
+      "server": "152.228.162.19",
+      "server_port": 80,
+      "uuid": "5ce84688-f535-46ad-a512-37b17becf6ea",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "akamaized.net"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 14 - mysub",
+      "server": "15.237.252.23",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 15 - mysub",
+      "server": "15.237.180.114",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 16 - mysub",
+      "server": "nasnet-162191099-direct.mbghalibaf.com",
+      "server_port": 443,
+      "uuid": "nasnet",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 17 - mysub",
+      "server": "62.210.91.10",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 18 - mysub",
+      "server": "54.37.136.194",
+      "server_port": 2053,
+      "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A",
+          "short_id": "50ba05992b05c1c3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 19 - mysub",
+      "server": "62.210.91.2",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 20 - mysub",
+      "server": "51.77.217.70",
+      "server_port": 2053,
+      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
+          "short_id": "bfe58beb41f1d09f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 21 - mysub",
+      "server": "143.246.209.46",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 22 - mysub",
+      "server": "35.181.166.40",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "35.181.166.40",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 23 - mysub",
+      "server": "62.210.124.146",
+      "server_port": 22000,
+      "password": "dongtaiwang.com",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 24 - mysub",
+      "server": "51.255.13.232",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "BqnqToih0PbU"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 25 - mysub",
+      "server": "151.247.197.253",
+      "server_port": 36723,
+      "password": "Krab9Hyst2_Rk7pQ2xL",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 26 - mysub",
+      "server": "195.58.140.146",
+      "server_port": 443,
+      "uuid": "d7790b85-9659-4558-a405-e0ab57d32984",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d1-fr.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lRuJPDrUb0b32-47hl4BgDoQutqmkuW31N4qVxbDgmI",
+          "short_id": "dc927a04e8572c61"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 27 - mysub",
+      "server": "31.59.121.156",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/go/library/channel?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 28 - mysub",
+      "server": "45.87.41.18",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇷 法国 (France) 29 - mysub",
+      "server": "v35.hdacd.com",
+      "server_port": 30835,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 30 - mysub",
+      "server": "185.220.100.168",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 31 - mysub",
+      "server": "5.78.92.27",
+      "server_port": 8443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 32 - mysub",
+      "server": "3x.lbruh.xyz",
+      "server_port": 29300,
+      "password": "iy0lxplkci7qzk73",
+      "tls": {
+        "enabled": true,
+        "server_name": "3x.lbruh.xyz",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "jogbnkm2l0c5v0cw"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 33 - mysub",
+      "server": "145.223.68.58",
+      "server_port": 443,
+      "uuid": "edb50d20-2d3e-4c1e-8a75-a17168a89aa5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg",
+          "short_id": "a44ff7d2e80213c2"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 34 - mysub",
+      "server": "88.99.189.60",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 35 - mysub",
+      "server": "81.95.4.189",
+      "server_port": 443,
+      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
+      "tls": {
+        "enabled": true,
+        "server_name": "bab-6.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vws/",
+        "headers": {
+          "Host": "bab-6.site"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇫🇷 法国 (France) 01 - mysub",
+        "🇫🇷 法国 (France) 02 - mysub",
+        "🇫🇷 法国 (France) 03 - mysub",
+        "🇫🇷 法国 (France) 04 - mysub",
+        "🇫🇷 法国 (France) 05 - mysub",
+        "🇫🇷 法国 (France) 06 - mysub",
+        "🇫🇷 法国 (France) 07 - mysub",
+        "🇫🇷 法国 (France) 08 - mysub",
+        "🇫🇷 法国 (France) 09 - mysub",
+        "🇫🇷 法国 (France) 10 - mysub",
+        "🇫🇷 法国 (France) 11 - mysub",
+        "🇫🇷 法国 (France) 12 - mysub",
+        "🇫🇷 法国 (France) 13 - mysub",
+        "🇫🇷 法国 (France) 14 - mysub",
+        "🇫🇷 法国 (France) 15 - mysub",
+        "🇫🇷 法国 (France) 16 - mysub",
+        "🇫🇷 法国 (France) 17 - mysub",
+        "🇫🇷 法国 (France) 18 - mysub",
+        "🇫🇷 法国 (France) 19 - mysub",
+        "🇫🇷 法国 (France) 20 - mysub",
+        "🇫🇷 法国 (France) 21 - mysub",
+        "🇫🇷 法国 (France) 22 - mysub",
+        "🇫🇷 法国 (France) 23 - mysub",
+        "🇫🇷 法国 (France) 24 - mysub",
+        "🇫🇷 法国 (France) 25 - mysub",
+        "🇫🇷 法国 (France) 26 - mysub",
+        "🇫🇷 法国 (France) 27 - mysub",
+        "🇫🇷 法国 (France) 28 - mysub",
+        "🇫🇷 法国 (France) 29 - mysub",
+        "🇫🇷 法国 (France) 30 - mysub",
+        "🇫🇷 法国 (France) 31 - mysub",
+        "🇫🇷 法国 (France) 32 - mysub",
+        "🇫🇷 法国 (France) 33 - mysub",
+        "🇫🇷 法国 (France) 34 - mysub",
+        "🇫🇷 法国 (France) 35 - mysub"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇫🇷 法国 (France) 01 - mysub",
+        "🇫🇷 法国 (France) 02 - mysub",
+        "🇫🇷 法国 (France) 03 - mysub",
+        "🇫🇷 法国 (France) 04 - mysub",
+        "🇫🇷 法国 (France) 05 - mysub",
+        "🇫🇷 法国 (France) 06 - mysub",
+        "🇫🇷 法国 (France) 07 - mysub",
+        "🇫🇷 法国 (France) 08 - mysub",
+        "🇫🇷 法国 (France) 09 - mysub",
+        "🇫🇷 法国 (France) 10 - mysub",
+        "🇫🇷 法国 (France) 11 - mysub",
+        "🇫🇷 法国 (France) 12 - mysub",
+        "🇫🇷 法国 (France) 13 - mysub",
+        "🇫🇷 法国 (France) 14 - mysub",
+        "🇫🇷 法国 (France) 15 - mysub",
+        "🇫🇷 法国 (France) 16 - mysub",
+        "🇫🇷 法国 (France) 17 - mysub",
+        "🇫🇷 法国 (France) 18 - mysub",
+        "🇫🇷 法国 (France) 19 - mysub",
+        "🇫🇷 法国 (France) 20 - mysub",
+        "🇫🇷 法国 (France) 21 - mysub",
+        "🇫🇷 法国 (France) 22 - mysub",
+        "🇫🇷 法国 (France) 23 - mysub",
+        "🇫🇷 法国 (France) 24 - mysub",
+        "🇫🇷 法国 (France) 25 - mysub",
+        "🇫🇷 法国 (France) 26 - mysub",
+        "🇫🇷 法国 (France) 27 - mysub",
+        "🇫🇷 法国 (France) 28 - mysub",
+        "🇫🇷 法国 (France) 29 - mysub",
+        "🇫🇷 法国 (France) 30 - mysub",
+        "🇫🇷 法国 (France) 31 - mysub",
+        "🇫🇷 法国 (France) 32 - mysub",
+        "🇫🇷 法国 (France) 33 - mysub",
+        "🇫🇷 法国 (France) 34 - mysub",
+        "🇫🇷 法国 (France) 35 - mysub"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

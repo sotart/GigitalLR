@@ -1,0 +1,93 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇱🇹 立陶宛 (Lithuania) 01 - mysub
+  server: 195.238.126.20
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - mysub
+  server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - mysub
+  server: 195.238.126.20
+  port: 9078
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: JCJpbRbQZNw9XFZG
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - mysub
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - mysub
+  server: lt-vno-3.blook.network
+  port: 443
+  udp: true
+  type: vless
+  uuid: e230740a-aa30-461a-8bf3-9c8cab6332f7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XZEwCogwNYSmUTxAvanoSdYCslQJAJcKBewa6-_pWS4
+    short-id: 89c919a1
+  servername: lt-vno-3.blook.network
+  client-fingerprint: firefox
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - mysub
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - mysub
+  server: lt.aether-runet.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  servername: lt.aether-runet.top
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇱🇹 立陶宛 (Lithuania) 01 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 02 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 03 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 04 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 05 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 06 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 07 - mysub
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇱🇹 立陶宛 (Lithuania) 01 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 02 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 03 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 04 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 05 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 06 - mysub
+  - 🇱🇹 立陶宛 (Lithuania) 07 - mysub
+rules:
+- MATCH,PROXIES
