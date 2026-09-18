@@ -50,10 +50,11 @@ jobs:
         run: |
           set -euo pipefail
           VER="${SINGBOX_VERSION#v}"
-          URL="https://github.com/SagerNet/sing-box/releases/download/${SINGBOX_VERSION}/sing-box-${VER}-linux-amd64.tar.gz"
+          NAME="sing-box-${VER}-linux-amd64.tar.gz"
+          URL="https://github.com/SagerNet/sing-box/releases/download/${SINGBOX_VERSION}/${NAME}"
           mkdir -p runtime
-          curl -fsSL --retry 3 --retry-delay 3 "$URL" -o /tmp/sb.tar.gz
-          ACTUAL="$(sha256sum /tmp/sb.tar.gz | cut -d' ' -f1)"
+          curl -fsSL --retry 3 --retry-delay 3 "$URL" -o "/tmp/${NAME}"
+          ACTUAL="$(sha256sum "/tmp/${NAME}" | cut -d' ' -f1)"
           echo "内核 SHA256: ${ACTUAL}"
           BASELINE="scripts/kernel.sha256"
           if [ -f "$BASELINE" ]; then
@@ -67,10 +68,22 @@ jobs:
             echo "$ACTUAL" > "$BASELINE"
             echo "::warning::未找到基线，已写入 scripts/kernel.sha256。请人工核对后提交该文件，后续运行才有保护。"
           fi
-          tar -xzf /tmp/sb.tar.gz -C /tmp
-          find /tmp -type f -name sing-box -not -name '*.tar.gz' -exec mv {} runtime/sing-box \;
+          # 解到专属空目录再查找。不要对 /tmp 整体 find：/tmp 下有 systemd-private-*
+          # 和 snap-private-tmp 等当前用户不可读的目录，find 会以退出码 1 结束，
+          # 被 set -e 当成致命错误。
+          rm -rf /tmp/sbx
+          mkdir -p /tmp/sbx
+          tar -xzf "/tmp/${NAME}" -C /tmp/sbx
+          BIN="$(find /tmp/sbx -type f -name sing-box -print -quit)"
+          if [ -z "$BIN" ]; then
+            echo "::error::压缩包内未找到 sing-box 可执行文件"
+            find /tmp/sbx -maxdepth 3 -print | head -20
+            exit 1
+          fi
+          mv "$BIN" runtime/sing-box
           chmod +x runtime/sing-box
-          runtime/sing-box version | head -1
+          runtime/sing-box version > /tmp/sbver.txt 2>&1
+          head -1 /tmp/sbver.txt
 
       # 脚本按 <仓库根>/runtime/sing-box 自行定位内核，不需要传环境变量
       - name: Run prober and classifier
