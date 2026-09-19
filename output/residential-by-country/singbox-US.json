@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 01 [家宽级] 9.2MB/s 1286ms",
+      "tag": "🇺🇸 01 [家宽级] 1.8MB/s 744ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -20,50 +20,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 02 [家宽级] 4.1MB/s 981ms",
-      "server": "162.159.39.218",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 03 [家宽级] 0.1MB/s 688ms",
-      "server": "162.159.43.187",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 9.2MB/s 1286ms",
-        "🇺🇸 02 [家宽级] 4.1MB/s 981ms",
-        "🇺🇸 03 [家宽级] 0.1MB/s 688ms"
+        "🇺🇸 01 [家宽级] 1.8MB/s 744ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 9.2MB/s 1286ms",
-        "🇺🇸 02 [家宽级] 4.1MB/s 981ms",
-        "🇺🇸 03 [家宽级] 0.1MB/s 688ms"
+        "🇺🇸 01 [家宽级] 1.8MB/s 744ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

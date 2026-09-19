@@ -4,8 +4,8 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 65.5MB/s 6134ms
-  server: v10.zgtfqs.click
+- name: 🇭🇰 01 [家宽级] 61.7MB/s 6043ms
+  server: v10.hdacd.com
   port: 30807
   udp: true
   type: vmess
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 65.5MB/s 6134ms
+  - 🇭🇰 01 [家宽级] 61.7MB/s 6043ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 65.5MB/s 6134ms
+  - 🇭🇰 01 [家宽级] 61.7MB/s 6043ms
 rules:
 - MATCH,PROXIES
