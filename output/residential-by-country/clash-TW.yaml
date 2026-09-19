@@ -4,21 +4,28 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 0.9MB/s 977ms
-  server: 36.224.185.173
+- name: 🇹🇼 01 [家宽级] 1.3MB/s 1284ms
+  server: r3mrcg00129437x.cybervena.com
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 02 [家宽级] 0.6MB/s 2098ms
+- name: 🇹🇼 02 [家宽级] 1.3MB/s 1161ms
+  server: 36.224.185.173
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+- name: 🇹🇼 03 [家宽级] 1.0MB/s 1218ms
   server: 36.224.185.143
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 03 [家宽级] 0.4MB/s 1753ms
+- name: 🇹🇼 04 [家宽级] 0.6MB/s 1537ms
   server: 118.167.246.43
   port: 24215
   udp: true
@@ -34,16 +41,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 0.9MB/s 977ms
-  - 🇹🇼 02 [家宽级] 0.6MB/s 2098ms
-  - 🇹🇼 03 [家宽级] 0.4MB/s 1753ms
+  - 🇹🇼 01 [家宽级] 1.3MB/s 1284ms
+  - 🇹🇼 02 [家宽级] 1.3MB/s 1161ms
+  - 🇹🇼 03 [家宽级] 1.0MB/s 1218ms
+  - 🇹🇼 04 [家宽级] 0.6MB/s 1537ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 0.9MB/s 977ms
-  - 🇹🇼 02 [家宽级] 0.6MB/s 2098ms
-  - 🇹🇼 03 [家宽级] 0.4MB/s 1753ms
+  - 🇹🇼 01 [家宽级] 1.3MB/s 1284ms
+  - 🇹🇼 02 [家宽级] 1.3MB/s 1161ms
+  - 🇹🇼 03 [家宽级] 1.0MB/s 1218ms
+  - 🇹🇼 04 [家宽级] 0.6MB/s 1537ms
 rules:
 - MATCH,PROXIES

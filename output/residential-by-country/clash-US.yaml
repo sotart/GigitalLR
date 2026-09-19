@@ -4,29 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 7.7MB/s 416ms
-  server: 162.159.39.218
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 02 [家宽级] 10.9MB/s 445ms
-  server: 104.18.47.113
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 03 [家宽级] 8.1MB/s 707ms
+- name: 🇺🇸 01 [家宽级] 9.2MB/s 1286ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -36,21 +14,43 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇺🇸 02 [家宽级] 4.1MB/s 981ms
+  server: 162.159.39.218
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 03 [家宽级] 0.1MB/s 688ms
+  server: 162.159.43.187
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 7.7MB/s 416ms
-  - 🇺🇸 02 [家宽级] 10.9MB/s 445ms
-  - 🇺🇸 03 [家宽级] 8.1MB/s 707ms
+  - 🇺🇸 01 [家宽级] 9.2MB/s 1286ms
+  - 🇺🇸 02 [家宽级] 4.1MB/s 981ms
+  - 🇺🇸 03 [家宽级] 0.1MB/s 688ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 7.7MB/s 416ms
-  - 🇺🇸 02 [家宽级] 10.9MB/s 445ms
-  - 🇺🇸 03 [家宽级] 8.1MB/s 707ms
+  - 🇺🇸 01 [家宽级] 9.2MB/s 1286ms
+  - 🇺🇸 02 [家宽级] 4.1MB/s 981ms
+  - 🇺🇸 03 [家宽级] 0.1MB/s 688ms
 rules:
 - MATCH,PROXIES

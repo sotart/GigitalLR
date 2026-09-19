@@ -5,15 +5,23 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇹🇼 01 [家宽级] 0.9MB/s 977ms",
-      "server": "36.224.185.173",
+      "tag": "🇹🇼 01 [家宽级] 1.3MB/s 1284ms",
+      "server": "r3mrcg00129437x.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇼 02 [家宽级] 0.6MB/s 2098ms",
+      "tag": "🇹🇼 02 [家宽级] 1.3MB/s 1161ms",
+      "server": "36.224.185.173",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 03 [家宽级] 1.0MB/s 1218ms",
       "server": "36.224.185.143",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
@@ -21,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 03 [家宽级] 0.4MB/s 1753ms",
+      "tag": "🇹🇼 04 [家宽级] 0.6MB/s 1537ms",
       "server": "118.167.246.43",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -44,18 +52,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 0.9MB/s 977ms",
-        "🇹🇼 02 [家宽级] 0.6MB/s 2098ms",
-        "🇹🇼 03 [家宽级] 0.4MB/s 1753ms"
+        "🇹🇼 01 [家宽级] 1.3MB/s 1284ms",
+        "🇹🇼 02 [家宽级] 1.3MB/s 1161ms",
+        "🇹🇼 03 [家宽级] 1.0MB/s 1218ms",
+        "🇹🇼 04 [家宽级] 0.6MB/s 1537ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 0.9MB/s 977ms",
-        "🇹🇼 02 [家宽级] 0.6MB/s 2098ms",
-        "🇹🇼 03 [家宽级] 0.4MB/s 1753ms"
+        "🇹🇼 01 [家宽级] 1.3MB/s 1284ms",
+        "🇹🇼 02 [家宽级] 1.3MB/s 1161ms",
+        "🇹🇼 03 [家宽级] 1.0MB/s 1218ms",
+        "🇹🇼 04 [家宽级] 0.6MB/s 1537ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
