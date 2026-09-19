@@ -6,15 +6,12 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - mysub",
-      "server": "v2ray.simspeedup.com",
+      "server": "103.86.49.57",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "transport": {
         "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "ais.speedtest.net"
-        }
+        "path": "/ws"
       }
     },
     {
@@ -28,7 +25,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -38,9 +35,21 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇭 泰国 (Thailand) 03 - mysub",
-      "server": "104.18.26.90",
+      "server": "118.193.57.167",
+      "server_port": 49667,
+      "uuid": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/d46bf492"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - mysub",
+      "server": "104.16.10.2",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
@@ -63,7 +72,8 @@
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - mysub",
         "🇹🇭 泰国 (Thailand) 02 - mysub",
-        "🇹🇭 泰国 (Thailand) 03 - mysub"
+        "🇹🇭 泰国 (Thailand) 03 - mysub",
+        "🇹🇭 泰国 (Thailand) 04 - mysub"
       ]
     },
     {
@@ -72,7 +82,8 @@
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - mysub",
         "🇹🇭 泰国 (Thailand) 02 - mysub",
-        "🇹🇭 泰国 (Thailand) 03 - mysub"
+        "🇹🇭 泰国 (Thailand) 03 - mysub",
+        "🇹🇭 泰国 (Thailand) 04 - mysub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

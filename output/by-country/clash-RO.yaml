@@ -13,41 +13,38 @@ proxies:
   sni: hopp-germany-new.ddnsguru.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - mysub
-  server: 85.204.107.185
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - mysub
+  server: 85.204.107.175
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - mysub
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - mysub
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: 185.156.44.99
+  sni: google.com
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - mysub
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - mysub
-  server: 46.28.67.55
+  server: 162.249.125.133
   port: 443
   udp: true
-  type: vless
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 06 - mysub
   server: 146.70.124.85
   port: 443
@@ -62,6 +59,19 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 07 - mysub
+  server: 45.43.166.56
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4CD55C5_trial
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sEzXu5KZcPPaT5ZKj8gBIOa4ana3Jq75-iZSMQPW9BY
+    short-id: 8c3f17a4d92be560
+  servername: travel.yandex.ru
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - mysub
   server: 193.163.203.253
   port: 443
   udp: true
@@ -74,16 +84,19 @@ proxies:
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - mysub
-  server: 162.249.125.133
+- name: 🇷🇴 罗马尼亚 (Romania) 09 - mysub
+  server: 46.28.67.55
   port: 443
   udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,6 +110,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 06 - mysub
   - 🇷🇴 罗马尼亚 (Romania) 07 - mysub
   - 🇷🇴 罗马尼亚 (Romania) 08 - mysub
+  - 🇷🇴 罗马尼亚 (Romania) 09 - mysub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,5 +124,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 06 - mysub
   - 🇷🇴 罗马尼亚 (Romania) 07 - mysub
   - 🇷🇴 罗马尼亚 (Romania) 08 - mysub
+  - 🇷🇴 罗马尼亚 (Romania) 09 - mysub
 rules:
 - MATCH,PROXIES

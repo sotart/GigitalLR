@@ -5,25 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - mysub
-  server: 13.37.31.153
-  port: 22223
+  server: 104.21.70.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5934b979-e128-4c90-a600-744b97bffc8c
+  tls: true
+  servername: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vl/Fi3kP8cNjBoo8UPv?ed=2560fp=unsafe
+    headers:
+      Host: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
+- name: 🇫🇷 法国 (France) 02 - mysub
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 5934b979-e128-4c90-a600-744b97bffc8c
+  network: ws
+  ws-opts:
+    path: /vl/Fi3kP8cNjBoo8UPv
+    headers:
+      Host: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
+- name: 🇫🇷 法国 (France) 03 - mysub
+  server: 13.39.230.204
+  port: 22222
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 02 - mysub
-  server: 13.37.239.112
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 (France) 03 - mysub
-  server: 52.47.106.27
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇫🇷 法国 (France) 04 - mysub
   server: 13.39.230.204
   port: 22224
@@ -31,104 +42,47 @@ proxies:
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇫🇷 法国 (France) 05 - mysub
-  server: 51.44.12.130
+  server: 13.37.239.112
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇫🇷 法国 (France) 06 - mysub
-  server: 13.36.169.164
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 (France) 07 - mysub
   server: 13.37.31.153
-  port: 22224
+  port: 22223
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 08 - mysub
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 09 - mysub
-  server: 173.212.201.85
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.docker.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 10 - mysub
-  server: 185.18.250.252
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 11 - mysub
-  server: 13.36.171.63
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 (France) 12 - mysub
-  server: 62.210.147.2
-  port: 43115
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 13 - mysub
-  server: 152.228.162.19
-  port: 80
-  udp: true
-  type: vless
-  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: akamaized.net
-- name: 🇫🇷 法国 (France) 14 - mysub
+- name: 🇫🇷 法国 (France) 07 - mysub
   server: 15.237.252.23
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇫🇷 法国 (France) 15 - mysub
-  server: 15.237.180.114
+- name: 🇫🇷 法国 (France) 08 - mysub
+  server: 51.44.12.130
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇫🇷 法国 (France) 16 - mysub
-  server: nasnet-162191099-direct.mbghalibaf.com
-  port: 443
+- name: 🇫🇷 法国 (France) 09 - mysub
+  server: 13.37.31.153
+  port: 22224
   udp: true
   type: vless
-  uuid: nasnet
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 17 - mysub
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 10 - mysub
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 11 - mysub
   server: 62.210.91.10
   port: 23576
   udp: true
@@ -138,21 +92,26 @@ proxies:
   tls: true
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 18 - mysub
-  server: 54.37.136.194
-  port: 2053
+- name: 🇫🇷 法国 (France) 12 - mysub
+  server: 62.210.124.146
+  port: 22000
   udp: true
-  type: vless
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  tls: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 19 - mysub
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 13 - mysub
+  server: 62.210.147.2
+  port: 43115
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 14 - mysub
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -162,21 +121,10 @@ proxies:
   tls: true
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 20 - mysub
-  server: 51.77.217.70
-  port: 2053
-  udp: true
-  type: vless
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  tls: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 21 - mysub
+- name: 🇫🇷 法国 (France) 15 - mysub
   server: 143.246.209.46
   port: 8081
   udp: true
@@ -185,38 +133,19 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇫🇷 法国 (France) 22 - mysub
-  server: 35.181.166.40
+- name: 🇫🇷 法国 (France) 16 - mysub
+  server: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 35.181.166.40
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 23 - mysub
-  server: 62.210.124.146
-  port: 22000
-  udp: true
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 24 - mysub
-  server: 51.255.13.232
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: 🇫🇷 法国 (France) 25 - mysub
-  server: 151.247.197.253
-  port: 36723
-  udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 26 - mysub
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
+  tls: true
+  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/5a26a30b00dcfp=unsafe
+- name: 🇫🇷 法国 (France) 17 - mysub
   server: 195.58.140.146
   port: 443
   udp: true
@@ -229,22 +158,85 @@ proxies:
     short-id: dc927a04e8572c61
   servername: d1-fr.cloud-cdn.xyz
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 27 - mysub
-  server: 31.59.121.156
+- name: 🇫🇷 法国 (France) 18 - mysub
+  server: 51.77.217.70
   port: 2053
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 19 - mysub
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
   network: ws
   ws-opts:
-    path: /go/library/channel?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇫🇷 法国 (France) 28 - mysub
+    path: /vless/
+- name: 🇫🇷 法国 (France) 20 - mysub
+  server: 151.247.197.253
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 21 - mysub
+  server: 162.159.244.91
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 22 - mysub
+  server: 51.255.13.232
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+- name: 🇫🇷 法国 (France) 23 - mysub
+  server: nasnet-162191099-direct.mbghalibaf.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: nasnet
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 24 - mysub
+  server: 54.37.136.194
+  port: 2053
+  udp: true
+  type: vless
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  tls: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 25 - mysub
+  server: 173.212.201.85
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.docker.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 26 - mysub
   server: 45.87.41.18
   port: 443
   udp: true
@@ -255,15 +247,29 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 29 - mysub
-  server: v35.hdacd.com
-  port: 30835
+- name: 🇫🇷 法国 (France) 27 - mysub
+  server: 82.117.245.125
+  port: 2053
   udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇫🇷 法国 (France) 30 - mysub
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 28 - mysub
+  server: 185.255.179.166
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 29 - mysub
   server: 185.220.100.168
   port: 443
   udp: true
@@ -274,9 +280,17 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🇫🇷 法国 (France) 30 - mysub
+  server: vpn-fr-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-002.fastervpn.world
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 31 - mysub
-  server: 5.78.92.27
-  port: 8443
+  server: 185.225.68.232
+  port: 443
   udp: true
   type: trojan
   password: humanity
@@ -296,6 +310,41 @@ proxies:
   obfs: salamander
   obfs-password: jogbnkm2l0c5v0cw
 - name: 🇫🇷 法国 (France) 33 - mysub
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-4d64f1370eeb
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4d64f1370eeb/loc-0
+    headers:
+      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+- name: 🇫🇷 法国 (France) 34 - mysub
+  server: fr.node.katahost.org
+  port: 2000
+  udp: true
+  type: vless
+  uuid: cc3dfc2d-dead-41be-97bf-410a40891f38
+  tls: true
+  servername: zalupa.gayvibe.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇷 法国 (France) 35 - mysub
+  server: 104.20.37.53
+  port: 80
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/b52a90ada6ab
+    headers:
+      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+- name: 🇫🇷 法国 (France) 36 - mysub
   server: 145.223.68.58
   port: 443
   udp: true
@@ -307,19 +356,23 @@ proxies:
     public-key: qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg
     short-id: a44ff7d2e80213c2
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇫🇷 法国 (France) 34 - mysub
-  server: 88.99.189.60
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 37 - mysub
+  server: 80.93.202.147
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-b52a90ada6ab
+  tls: true
+  servername: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 35 - mysub
+    path: /stream/TrexBridge/b52a90ada6ab
+    headers:
+      Host: trex-panel-ew6n46.zeus-e0oqfp.workers.dev
+- name: 🇫🇷 法国 (France) 38 - mysub
   server: 81.95.4.189
   port: 443
   udp: true
@@ -328,7 +381,7 @@ proxies:
   tls: true
   servername: bab-6.site
   skip-cert-verify: false
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vws/
@@ -374,6 +427,9 @@ proxy-groups:
   - 🇫🇷 法国 (France) 33 - mysub
   - 🇫🇷 法国 (France) 34 - mysub
   - 🇫🇷 法国 (France) 35 - mysub
+  - 🇫🇷 法国 (France) 36 - mysub
+  - 🇫🇷 法国 (France) 37 - mysub
+  - 🇫🇷 法国 (France) 38 - mysub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -414,5 +470,8 @@ proxy-groups:
   - 🇫🇷 法国 (France) 33 - mysub
   - 🇫🇷 法国 (France) 34 - mysub
   - 🇫🇷 法国 (France) 35 - mysub
+  - 🇫🇷 法国 (France) 36 - mysub
+  - 🇫🇷 法国 (France) 37 - mysub
+  - 🇫🇷 法国 (France) 38 - mysub
 rules:
 - MATCH,PROXIES

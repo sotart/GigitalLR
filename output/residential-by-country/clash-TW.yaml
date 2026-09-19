@@ -10,8 +10,26 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mysub
+  server: 36.224.185.143
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub
+  server: 118.167.246.43
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: ios
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
   udp: true
@@ -34,6 +52,8 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mysub
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mysub
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +61,7 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - mysub
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mysub
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - mysub
-  server: v2ray.simspeedup.com
+  server: 103.86.49.57
   port: 80
   udp: true
   type: vless
@@ -13,8 +13,6 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-    headers:
-      Host: ais.speedtest.net
 - name: 🇹🇭 泰国 (Thailand) 02 - mysub
   server: 34.15.162.1
   port: 443
@@ -26,9 +24,20 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇭 泰国 (Thailand) 03 - mysub
-  server: 104.18.26.90
+  server: 118.193.57.167
+  port: 49667
+  udp: true
+  type: vmess
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /d46bf492
+- name: 🇹🇭 泰国 (Thailand) 04 - mysub
+  server: 104.16.10.2
   port: 443
   udp: true
   type: vless
@@ -49,6 +58,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - mysub
   - 🇹🇭 泰国 (Thailand) 02 - mysub
   - 🇹🇭 泰国 (Thailand) 03 - mysub
+  - 🇹🇭 泰国 (Thailand) 04 - mysub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,5 +67,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - mysub
   - 🇹🇭 泰国 (Thailand) 02 - mysub
   - 🇹🇭 泰国 (Thailand) 03 - mysub
+  - 🇹🇭 泰国 (Thailand) 04 - mysub
 rules:
 - MATCH,PROXIES

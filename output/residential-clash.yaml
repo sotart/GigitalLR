@@ -5,24 +5,57 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - mysub
-  server: 172.64.32.108
-  port: 2052
+  server: 172.64.158.146
+  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mysub
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - mysub
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: 6c7c10f8-2387-4756-ab4b-64c9c6981f0e
+  tls: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub
   server: 36.224.185.173
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub
+  server: 36.224.185.143
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mysub
+  server: 118.167.246.43
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: ios
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mysub
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
   udp: true
@@ -44,15 +77,21 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - mysub
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mysub
+  - 🇯🇵 日本 (Japan) 02 (家宽) - mysub
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mysub
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mysub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - mysub
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - mysub
+  - 🇯🇵 日本 (Japan) 02 (家宽) - mysub
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mysub
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mysub
 rules:
 - MATCH,PROXIES
