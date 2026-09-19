@@ -2757,3 +2757,7 @@ def main():
         s = strict[0]
         print(f"S 级首位: {s['speed_bps'] / 1e6:.1f}MB/s {s['latency_ms']}ms "
               f"风控{s['fraud_score']} {s['country']}")
+
+
+if __name__ == "__main__":
+    main()
