@@ -1,4 +1,4 @@
-# 免费节点订阅池 · 定时更新工作流
+# 节点池 · 定时刷新
 #
 # 说明：
 #   1. 所有 action 固定到 commit SHA（不用 v4/v5 这类可变 tag）
@@ -8,7 +8,7 @@
 #      因此采用「首次记录基线 + 后续比对」的策略）
 #   5. 失败时把 output/ 打包上传，便于对照日志排查
 
-name: Update Subscriptions
+name: Update Node Pool
 
 on:
   schedule:
@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: freesub-update
+  group: node-pool-update
   cancel-in-progress: false
 
 permissions:
@@ -28,7 +28,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
 
     steps:
       # v4.2.2
@@ -106,7 +106,11 @@ jobs:
           set -euo pipefail
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A output/ README.md
+          git add -A output/
+          # README.md 可能不存在（README_MODE = "none" 时会主动删掉它）。
+          # 注意不能写成 `git add -A output/ README.md`：当 README.md 既不存在
+          # 又未被跟踪时，git 会以 exit 128 报 pathspec 不匹配，整步失败。
+          git add README.md 2>/dev/null || true
           # 首轮生成的内核哈希基线也要提交，否则每轮都被当作「首次」，校验永远不生效
           git add scripts/kernel.sha256 2>/dev/null || true
           if git diff --staged --quiet; then
@@ -124,9 +128,11 @@ jobs:
           p() { curl -s -o /dev/null "https://purge.jsdelivr.net/gh/${REPO}@main/$1" || true; }
           p README.md
           for f in v2ray.txt clash.yaml singbox.json \
-                   residential.txt residential-clash.yaml residential-singbox.json; do
+                   residential.txt residential-clash.yaml residential-singbox.json \
+                   quality-s.txt quality-s-clash.yaml quality-s-singbox.json \
+                   quality-a.txt quality-a-clash.yaml quality-a-singbox.json; do
             p "output/$f"
           done
-          find output/residential-by-country output/by-country -type f 2>/dev/null \
+          find output/residential-by-country -type f 2>/dev/null \
             | while read -r f; do p "$f"; sleep 0.2; done
           echo "CDN purge 完成"
