@@ -5,9 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 01 [家宽级] 19.4MB/s 584ms",
-      "server": "162.159.0.53",
-      "server_port": 2082,
+      "tag": "🇺🇸 01 [家宽级] 7.7MB/s 416ms",
+      "server": "162.159.39.218",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 02 [家宽级] 10.9MB/s 445ms",
+      "server": "104.18.47.113",
+      "server_port": 2086,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -19,7 +33,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 02 [家宽级] 7.4MB/s 636ms",
+      "tag": "🇺🇸 03 [家宽级] 8.1MB/s 707ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -34,45 +48,22 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 03 [家宽级] 3.7MB/s 559ms",
-      "server": "104.24.30.89",
-      "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
-      "tls": {
-        "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 19.4MB/s 584ms",
-        "🇺🇸 02 [家宽级] 7.4MB/s 636ms",
-        "🇺🇸 03 [家宽级] 3.7MB/s 559ms"
+        "🇺🇸 01 [家宽级] 7.7MB/s 416ms",
+        "🇺🇸 02 [家宽级] 10.9MB/s 445ms",
+        "🇺🇸 03 [家宽级] 8.1MB/s 707ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 19.4MB/s 584ms",
-        "🇺🇸 02 [家宽级] 7.4MB/s 636ms",
-        "🇺🇸 03 [家宽级] 3.7MB/s 559ms"
+        "🇺🇸 01 [家宽级] 7.7MB/s 416ms",
+        "🇺🇸 02 [家宽级] 10.9MB/s 445ms",
+        "🇺🇸 03 [家宽级] 8.1MB/s 707ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

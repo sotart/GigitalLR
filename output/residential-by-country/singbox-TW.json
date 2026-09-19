@@ -4,9 +4,25 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 01 [家宽级] 0.9MB/s 977ms",
+      "server": "36.224.185.173",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 02 [家宽级] 0.6MB/s 2098ms",
+      "server": "36.224.185.143",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 1.5MB/s 1643ms",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 03 [家宽级] 0.4MB/s 1753ms",
+      "server": "118.167.246.43",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -14,7 +30,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -24,38 +40,22 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 02 [家宽级] 1.4MB/s 1027ms",
-      "server": "36.224.185.173",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 03 [家宽级] 1.4MB/s 1240ms",
-      "server": "r3mrcg001286ek2.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 1.5MB/s 1643ms",
-        "🇹🇼 02 [家宽级] 1.4MB/s 1027ms",
-        "🇹🇼 03 [家宽级] 1.4MB/s 1240ms"
+        "🇹🇼 01 [家宽级] 0.9MB/s 977ms",
+        "🇹🇼 02 [家宽级] 0.6MB/s 2098ms",
+        "🇹🇼 03 [家宽级] 0.4MB/s 1753ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 1.5MB/s 1643ms",
-        "🇹🇼 02 [家宽级] 1.4MB/s 1027ms",
-        "🇹🇼 03 [家宽级] 1.4MB/s 1240ms"
+        "🇹🇼 01 [家宽级] 0.9MB/s 977ms",
+        "🇹🇼 02 [家宽级] 0.6MB/s 2098ms",
+        "🇹🇼 03 [家宽级] 0.4MB/s 1753ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
