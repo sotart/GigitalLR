@@ -5,10 +5,75 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - mysub",
-      "server": "129.153.71.28",
-      "server_port": 28863,
-      "uuid": "6c7c10f8-2387-4756-ab4b-64c9c6981f0e",
+      "tag": "🇯🇵 01 [家宽级] 2.0MB/s 1450ms",
+      "server": "89.22.224.146",
+      "server_port": 43788,
+      "uuid": "49a6eeaf-7dbf-4aa5-ba21-b36cd47e724e",
+      "tls": {
+        "enabled": true,
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 02 [家宽级] 1.2MB/s 1614ms",
+      "server": "92.113.124.204",
+      "server_port": 18443,
+      "uuid": "89c1a02f-cef2-4d73-af87-21f894aa3cd5",
+      "tls": {
+        "enabled": true,
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristifp=chrome",
+        "headers": {
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 03 [家宽级] 0.5MB/s 1529ms",
+      "server": "203.137.165.164",
+      "server_port": 57554,
+      "uuid": "8e6709d7-5e17-4f9c-87db-afa184f513cf",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 04 [家宽级] 0.2MB/s 2266ms",
+      "server": "45.77.241.190",
+      "server_port": 8441,
+      "uuid": "7e622534-4a90-40ba-bb30-5cb5403be121",
       "tls": {
         "enabled": true,
         "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
@@ -31,14 +96,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - mysub"
+        "🇯🇵 01 [家宽级] 2.0MB/s 1450ms",
+        "🇯🇵 02 [家宽级] 1.2MB/s 1614ms",
+        "🇯🇵 03 [家宽级] 0.5MB/s 1529ms",
+        "🇯🇵 04 [家宽级] 0.2MB/s 2266ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - mysub"
+        "🇯🇵 01 [家宽级] 2.0MB/s 1450ms",
+        "🇯🇵 02 [家宽级] 1.2MB/s 1614ms",
+        "🇯🇵 03 [家宽级] 0.5MB/s 1529ms",
+        "🇯🇵 04 [家宽级] 0.2MB/s 2266ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

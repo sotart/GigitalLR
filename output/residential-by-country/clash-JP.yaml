@@ -4,12 +4,56 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - mysub
-  server: 129.153.71.28
-  port: 28863
+- name: 🇯🇵 01 [家宽级] 2.0MB/s 1450ms
+  server: 89.22.224.146
+  port: 43788
   udp: true
   type: vless
-  uuid: 6c7c10f8-2387-4756-ab4b-64c9c6981f0e
+  uuid: 49a6eeaf-7dbf-4aa5-ba21-b36cd47e724e
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇯🇵 02 [家宽级] 1.2MB/s 1614ms
+  server: 92.113.124.204
+  port: 18443
+  udp: true
+  type: vless
+  uuid: 89c1a02f-cef2-4d73-af87-21f894aa3cd5
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 03 [家宽级] 0.5MB/s 1529ms
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 8e6709d7-5e17-4f9c-87db-afa184f513cf
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇯🇵 04 [家宽级] 0.2MB/s 2266ms
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 7e622534-4a90-40ba-bb30-5cb5403be121
   tls: true
   servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
   skip-cert-verify: false
@@ -24,12 +68,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - mysub
+  - 🇯🇵 01 [家宽级] 2.0MB/s 1450ms
+  - 🇯🇵 02 [家宽级] 1.2MB/s 1614ms
+  - 🇯🇵 03 [家宽级] 0.5MB/s 1529ms
+  - 🇯🇵 04 [家宽级] 0.2MB/s 2266ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - mysub
+  - 🇯🇵 01 [家宽级] 2.0MB/s 1450ms
+  - 🇯🇵 02 [家宽级] 1.2MB/s 1614ms
+  - 🇯🇵 03 [家宽级] 0.5MB/s 1529ms
+  - 🇯🇵 04 [家宽级] 0.2MB/s 2266ms
 rules:
 - MATCH,PROXIES

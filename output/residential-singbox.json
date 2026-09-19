@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - mysub",
-      "server": "172.64.158.146",
-      "server_port": 8880,
+      "tag": "🇺🇸 01 [家宽级] 19.4MB/s 584ms",
+      "server": "162.159.0.53",
+      "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -18,11 +18,168 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇺🇸 02 [家宽级] 7.4MB/s 636ms",
+      "server": "155.117.19.17",
+      "server_port": 443,
+      "password": "5fa748137b6d822308eea4611f474ad5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 (家宽) - mysub",
-      "server": "129.153.71.28",
-      "server_port": 28863,
-      "uuid": "6c7c10f8-2387-4756-ab4b-64c9c6981f0e",
+      "tag": "🇺🇸 03 [家宽级] 3.7MB/s 559ms",
+      "server": "104.24.30.89",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rayan-007.nastaran.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 04 [家宽级] 2.6MB/s 7075ms",
+      "server": "v10.zgtfqs.click",
+      "server_port": 30807,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 05 [家宽级] 2.0MB/s 1450ms",
+      "server": "89.22.224.146",
+      "server_port": 43788,
+      "uuid": "49a6eeaf-7dbf-4aa5-ba21-b36cd47e724e",
+      "tls": {
+        "enabled": true,
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 06 [家宽级] 1.5MB/s 1643ms",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 07 [家宽级] 1.4MB/s 1027ms",
+      "server": "36.224.185.173",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 08 [家宽级] 1.4MB/s 1240ms",
+      "server": "r3mrcg001286ek2.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 09 [家宽级] 1.2MB/s 1614ms",
+      "server": "92.113.124.204",
+      "server_port": 18443,
+      "uuid": "89c1a02f-cef2-4d73-af87-21f894aa3cd5",
+      "tls": {
+        "enabled": true,
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristifp=chrome",
+        "headers": {
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 10 [家宽级] 0.8MB/s 1310ms",
+      "server": "49.254.204.134",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 11 [家宽级] 0.5MB/s 1529ms",
+      "server": "203.137.165.164",
+      "server_port": 57554,
+      "uuid": "8e6709d7-5e17-4f9c-87db-afa184f513cf",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 12 [家宽级] 0.2MB/s 2266ms",
+      "server": "45.77.241.190",
+      "server_port": 8441,
+      "uuid": "7e622534-4a90-40ba-bb30-5cb5403be121",
       "tls": {
         "enabled": true,
         "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
@@ -41,84 +198,40 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub",
-      "server": "36.224.185.173",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub",
-      "server": "36.224.185.143",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mysub",
-      "server": "118.167.246.43",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mysub",
-      "server": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - mysub",
-        "🇯🇵 日本 (Japan) 02 (家宽) - mysub",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mysub",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mysub"
+        "🇺🇸 01 [家宽级] 19.4MB/s 584ms",
+        "🇺🇸 02 [家宽级] 7.4MB/s 636ms",
+        "🇺🇸 03 [家宽级] 3.7MB/s 559ms",
+        "🇭🇰 04 [家宽级] 2.6MB/s 7075ms",
+        "🇯🇵 05 [家宽级] 2.0MB/s 1450ms",
+        "🇹🇼 06 [家宽级] 1.5MB/s 1643ms",
+        "🇹🇼 07 [家宽级] 1.4MB/s 1027ms",
+        "🇹🇼 08 [家宽级] 1.4MB/s 1240ms",
+        "🇯🇵 09 [家宽级] 1.2MB/s 1614ms",
+        "🇰🇷 10 [家宽级] 0.8MB/s 1310ms",
+        "🇯🇵 11 [家宽级] 0.5MB/s 1529ms",
+        "🇯🇵 12 [家宽级] 0.2MB/s 2266ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - mysub",
-        "🇯🇵 日本 (Japan) 02 (家宽) - mysub",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mysub",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mysub"
+        "🇺🇸 01 [家宽级] 19.4MB/s 584ms",
+        "🇺🇸 02 [家宽级] 7.4MB/s 636ms",
+        "🇺🇸 03 [家宽级] 3.7MB/s 559ms",
+        "🇭🇰 04 [家宽级] 2.6MB/s 7075ms",
+        "🇯🇵 05 [家宽级] 2.0MB/s 1450ms",
+        "🇹🇼 06 [家宽级] 1.5MB/s 1643ms",
+        "🇹🇼 07 [家宽级] 1.4MB/s 1027ms",
+        "🇹🇼 08 [家宽级] 1.4MB/s 1240ms",
+        "🇯🇵 09 [家宽级] 1.2MB/s 1614ms",
+        "🇰🇷 10 [家宽级] 0.8MB/s 1310ms",
+        "🇯🇵 11 [家宽级] 0.5MB/s 1529ms",
+        "🇯🇵 12 [家宽级] 0.2MB/s 2266ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

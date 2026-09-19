@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - mysub",
-      "server": "172.64.158.146",
-      "server_port": 8880,
+      "tag": "🇺🇸 01 [家宽级] 19.4MB/s 584ms",
+      "server": "162.159.0.53",
+      "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -18,18 +18,61 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇺🇸 02 [家宽级] 7.4MB/s 636ms",
+      "server": "155.117.19.17",
+      "server_port": 443,
+      "password": "5fa748137b6d822308eea4611f474ad5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 03 [家宽级] 3.7MB/s 559ms",
+      "server": "104.24.30.89",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rayan-007.nastaran.dpdns.org"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - mysub"
+        "🇺🇸 01 [家宽级] 19.4MB/s 584ms",
+        "🇺🇸 02 [家宽级] 7.4MB/s 636ms",
+        "🇺🇸 03 [家宽级] 3.7MB/s 559ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - mysub"
+        "🇺🇸 01 [家宽级] 19.4MB/s 584ms",
+        "🇺🇸 02 [家宽级] 7.4MB/s 636ms",
+        "🇺🇸 03 [家宽级] 3.7MB/s 559ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

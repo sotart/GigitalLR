@@ -4,9 +4,9 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - mysub
-  server: 172.64.158.146
-  port: 8880
+- name: 🇺🇸 01 [家宽级] 19.4MB/s 584ms
+  server: 162.159.0.53
+  port: 2082
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -15,12 +15,121 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 02 (家宽) - mysub
-  server: 129.153.71.28
-  port: 28863
+- name: 🇺🇸 02 [家宽级] 7.4MB/s 636ms
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇺🇸 03 [家宽级] 3.7MB/s 559ms
+  server: 104.24.30.89
+  port: 443
   udp: true
   type: vless
-  uuid: 6c7c10f8-2387-4756-ab4b-64c9c6981f0e
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇭🇰 04 [家宽级] 2.6MB/s 7075ms
+  server: v10.zgtfqs.click
+  port: 30807
+  udp: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: 🇯🇵 05 [家宽级] 2.0MB/s 1450ms
+  server: 89.22.224.146
+  port: 43788
+  udp: true
+  type: vless
+  uuid: 49a6eeaf-7dbf-4aa5-ba21-b36cd47e724e
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇹🇼 06 [家宽级] 1.5MB/s 1643ms
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇹🇼 07 [家宽级] 1.4MB/s 1027ms
+  server: 36.224.185.173
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+- name: 🇹🇼 08 [家宽级] 1.4MB/s 1240ms
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇯🇵 09 [家宽级] 1.2MB/s 1614ms
+  server: 92.113.124.204
+  port: 18443
+  udp: true
+  type: vless
+  uuid: 89c1a02f-cef2-4d73-af87-21f894aa3cd5
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇰🇷 10 [家宽级] 0.8MB/s 1310ms
+  server: 49.254.204.134
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇯🇵 11 [家宽级] 0.5MB/s 1529ms
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 8e6709d7-5e17-4f9c-87db-afa184f513cf
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇯🇵 12 [家宽级] 0.2MB/s 2266ms
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 7e622534-4a90-40ba-bb30-5cb5403be121
   tls: true
   servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
   skip-cert-verify: false
@@ -30,68 +139,39 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub
-  server: 36.224.185.173
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub
-  server: 36.224.185.143
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mysub
-  server: 118.167.246.43
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mysub
-  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - mysub
-  - 🇯🇵 日本 (Japan) 02 (家宽) - mysub
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mysub
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mysub
+  - 🇺🇸 01 [家宽级] 19.4MB/s 584ms
+  - 🇺🇸 02 [家宽级] 7.4MB/s 636ms
+  - 🇺🇸 03 [家宽级] 3.7MB/s 559ms
+  - 🇭🇰 04 [家宽级] 2.6MB/s 7075ms
+  - 🇯🇵 05 [家宽级] 2.0MB/s 1450ms
+  - 🇹🇼 06 [家宽级] 1.5MB/s 1643ms
+  - 🇹🇼 07 [家宽级] 1.4MB/s 1027ms
+  - 🇹🇼 08 [家宽级] 1.4MB/s 1240ms
+  - 🇯🇵 09 [家宽级] 1.2MB/s 1614ms
+  - 🇰🇷 10 [家宽级] 0.8MB/s 1310ms
+  - 🇯🇵 11 [家宽级] 0.5MB/s 1529ms
+  - 🇯🇵 12 [家宽级] 0.2MB/s 2266ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - mysub
-  - 🇯🇵 日本 (Japan) 02 (家宽) - mysub
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - mysub
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - mysub
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - mysub
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - mysub
+  - 🇺🇸 01 [家宽级] 19.4MB/s 584ms
+  - 🇺🇸 02 [家宽级] 7.4MB/s 636ms
+  - 🇺🇸 03 [家宽级] 3.7MB/s 559ms
+  - 🇭🇰 04 [家宽级] 2.6MB/s 7075ms
+  - 🇯🇵 05 [家宽级] 2.0MB/s 1450ms
+  - 🇹🇼 06 [家宽级] 1.5MB/s 1643ms
+  - 🇹🇼 07 [家宽级] 1.4MB/s 1027ms
+  - 🇹🇼 08 [家宽级] 1.4MB/s 1240ms
+  - 🇯🇵 09 [家宽级] 1.2MB/s 1614ms
+  - 🇰🇷 10 [家宽级] 0.8MB/s 1310ms
+  - 🇯🇵 11 [家宽级] 0.5MB/s 1529ms
+  - 🇯🇵 12 [家宽级] 0.2MB/s 2266ms
 rules:
 - MATCH,PROXIES
