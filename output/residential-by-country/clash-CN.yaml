@@ -4,25 +4,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 35.5MB/s 9515ms
-  server: v10.hdacd.com
-  port: 30807
+- name: 🇨🇳 01 [家宽级] 0.1MB/s 1499ms
+  server: 112.132.215.108
+  port: 50002
   udp: true
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
   cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 35.5MB/s 9515ms
+  - 🇨🇳 01 [家宽级] 0.1MB/s 1499ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 35.5MB/s 9515ms
+  - 🇨🇳 01 [家宽级] 0.1MB/s 1499ms
 rules:
 - MATCH,PROXIES

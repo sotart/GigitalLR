@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 61.7MB/s 6043ms",
+      "tag": "🇭🇰 01 [家宽级] 35.5MB/s 9515ms",
       "server": "v10.hdacd.com",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -13,16 +13,8 @@
       "alter_id": 2
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 02 [家宽级] 2.0MB/s 1005ms",
-      "server": "r3mrcg00129437x.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇺🇸 03 [家宽级] 1.8MB/s 744ms",
+      "tag": "🇺🇸 02 [家宽级] 5.4MB/s 849ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -37,8 +29,166 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇬🇧 03 [家宽级] 4.6MB/s 766ms",
+      "server": "162.159.152.4",
+      "server_port": 443,
+      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.mAxImA.DpDnS.OrG",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rAyAn-007.mAxImA.DpDnS.OrG"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 04 [家宽级] 3.2MB/s 1749ms",
+      "server": "129.153.71.28",
+      "server_port": 28863,
+      "uuid": "12ad647b-fa22-4bad-b27f-f54cb92f962b",
+      "tls": {
+        "enabled": true,
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 05 [家宽级] 2.2MB/s 1434ms",
+      "server": "95.181.162.170",
+      "server_port": 444,
+      "uuid": "751b51bc-af59-4b04-93c0-3fed4965297e",
+      "tls": {
+        "enabled": true,
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 06 [家宽级] 2.2MB/s 835ms",
+      "server": "162.159.228.255",
+      "server_port": 443,
+      "uuid": "b135a1e0-ebdb-4d46-b3fa-bd1e78580244",
+      "tls": {
+        "enabled": true,
+        "server_name": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 07 [家宽级] 1.9MB/s 1342ms",
+      "server": "147.45.42.73",
+      "server_port": 20443,
+      "uuid": "fcbb9617-7b3c-4b21-8a91-a57350a75222",
+      "tls": {
+        "enabled": true,
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 08 [家宽级] 1.9MB/s 1495ms",
+      "server": "129.151.64.169",
+      "server_port": 31867,
+      "uuid": "031581a4-401e-4562-92a0-d22c2fddc7b1",
+      "tls": {
+        "enabled": true,
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 09 [家宽级] 1.8MB/s 1362ms",
+      "server": "118.167.246.43",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 10 [家宽级] 1.7MB/s 1063ms",
+      "server": "36.224.185.173",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+    },
+    {
       "type": "vmess",
-      "tag": "🇹🇼 04 [家宽级] 1.1MB/s 3642ms",
+      "tag": "🇹🇼 11 [家宽级] 1.6MB/s 2320ms",
       "server": "dee2309db4944c248b6d4672c6641e25.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -57,8 +207,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 12 [家宽级] 1.3MB/s 1661ms",
+      "server": "49.254.204.134",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
       "type": "vmess",
-      "tag": "🇹🇼 05 [家宽级] 0.8MB/s 6683ms",
+      "tag": "🇹🇼 13 [家宽级] 0.8MB/s 6883ms",
       "server": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -69,30 +227,60 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn"
+        }
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇳 14 [家宽级] 0.1MB/s 1499ms",
+      "server": "112.132.215.108",
+      "server_port": 50002,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 61.7MB/s 6043ms",
-        "🇹🇼 02 [家宽级] 2.0MB/s 1005ms",
-        "🇺🇸 03 [家宽级] 1.8MB/s 744ms",
-        "🇹🇼 04 [家宽级] 1.1MB/s 3642ms",
-        "🇹🇼 05 [家宽级] 0.8MB/s 6683ms"
+        "🇭🇰 01 [家宽级] 35.5MB/s 9515ms",
+        "🇺🇸 02 [家宽级] 5.4MB/s 849ms",
+        "🇬🇧 03 [家宽级] 4.6MB/s 766ms",
+        "🇯🇵 04 [家宽级] 3.2MB/s 1749ms",
+        "🇯🇵 05 [家宽级] 2.2MB/s 1434ms",
+        "🇯🇵 06 [家宽级] 2.2MB/s 835ms",
+        "🇯🇵 07 [家宽级] 1.9MB/s 1342ms",
+        "🇯🇵 08 [家宽级] 1.9MB/s 1495ms",
+        "🇹🇼 09 [家宽级] 1.8MB/s 1362ms",
+        "🇹🇼 10 [家宽级] 1.7MB/s 1063ms",
+        "🇹🇼 11 [家宽级] 1.6MB/s 2320ms",
+        "🇰🇷 12 [家宽级] 1.3MB/s 1661ms",
+        "🇹🇼 13 [家宽级] 0.8MB/s 6883ms",
+        "🇨🇳 14 [家宽级] 0.1MB/s 1499ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 61.7MB/s 6043ms",
-        "🇹🇼 02 [家宽级] 2.0MB/s 1005ms",
-        "🇺🇸 03 [家宽级] 1.8MB/s 744ms",
-        "🇹🇼 04 [家宽级] 1.1MB/s 3642ms",
-        "🇹🇼 05 [家宽级] 0.8MB/s 6683ms"
+        "🇭🇰 01 [家宽级] 35.5MB/s 9515ms",
+        "🇺🇸 02 [家宽级] 5.4MB/s 849ms",
+        "🇬🇧 03 [家宽级] 4.6MB/s 766ms",
+        "🇯🇵 04 [家宽级] 3.2MB/s 1749ms",
+        "🇯🇵 05 [家宽级] 2.2MB/s 1434ms",
+        "🇯🇵 06 [家宽级] 2.2MB/s 835ms",
+        "🇯🇵 07 [家宽级] 1.9MB/s 1342ms",
+        "🇯🇵 08 [家宽级] 1.9MB/s 1495ms",
+        "🇹🇼 09 [家宽级] 1.8MB/s 1362ms",
+        "🇹🇼 10 [家宽级] 1.7MB/s 1063ms",
+        "🇹🇼 11 [家宽级] 1.6MB/s 2320ms",
+        "🇰🇷 12 [家宽级] 1.3MB/s 1661ms",
+        "🇹🇼 13 [家宽级] 0.8MB/s 6883ms",
+        "🇨🇳 14 [家宽级] 0.1MB/s 1499ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
