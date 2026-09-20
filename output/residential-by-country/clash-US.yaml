@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 5.4MB/s 849ms
+- name: 🇺🇸 01 [家宽级] 16.0MB/s 480ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -14,17 +14,34 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇺🇸 02 [家宽级] 12.4MB/s 944ms
+  server: mybb.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rayan-007.nastaran.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 5.4MB/s 849ms
+  - 🇺🇸 01 [家宽级] 16.0MB/s 480ms
+  - 🇺🇸 02 [家宽级] 12.4MB/s 944ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 5.4MB/s 849ms
+  - 🇺🇸 01 [家宽级] 16.0MB/s 480ms
+  - 🇺🇸 02 [家宽级] 12.4MB/s 944ms
 rules:
 - MATCH,PROXIES

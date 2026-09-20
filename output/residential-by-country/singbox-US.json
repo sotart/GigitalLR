@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 01 [家宽级] 5.4MB/s 849ms",
+      "tag": "🇺🇸 01 [家宽级] 16.0MB/s 480ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -20,18 +20,43 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 02 [家宽级] 12.4MB/s 944ms",
+      "server": "mybb.com",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rayan-007.nastaran.dpdns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "rayan-007.nastaran.dpdns.org"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 5.4MB/s 849ms"
+        "🇺🇸 01 [家宽级] 16.0MB/s 480ms",
+        "🇺🇸 02 [家宽级] 12.4MB/s 944ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 5.4MB/s 849ms"
+        "🇺🇸 01 [家宽级] 16.0MB/s 480ms",
+        "🇺🇸 02 [家宽级] 12.4MB/s 944ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

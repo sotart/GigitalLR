@@ -5,13 +5,12 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 01 [S级] 14.6MB/s 332ms",
-      "server": "162.159.24.131",
-      "server_port": 8880,
+      "tag": "🇺🇸 01 [S级] 8.3MB/s 287ms",
+      "server": "162.159.43.187",
+      "server_port": 8080,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tlssecurity=tls",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
@@ -19,24 +18,36 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 02 [S级] 4.2MB/s 367ms",
-      "server": "172.67.164.152",
-      "server_port": 443,
-      "uuid": "36a857e4-f3d4-43aa-8b90-d7da849da989",
+      "tag": "🇺🇸 02 [S级] 47.1MB/s 320ms",
+      "server": "198.200.42.129",
+      "server_port": 52977,
+      "uuid": "2f6f1856-5466-4078-b1f0-d3f977211ada",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "002.inc-electrocell-001-002.workers.dev",
-        "insecure": false,
+        "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "X-DQShHbh23E3SeJjZzC-WStkChJU0lxgktpGalzjw4",
+          "short_id": "0fb9c965"
         }
-      },
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 03 [S级] 5.8MB/s 393ms",
+      "server": "104.18.39.218",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "002.inc-electrocell-001-002.workers.dev"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
@@ -45,16 +56,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [S级] 14.6MB/s 332ms",
-        "🇩🇪 02 [S级] 4.2MB/s 367ms"
+        "🇺🇸 01 [S级] 8.3MB/s 287ms",
+        "🇺🇸 02 [S级] 47.1MB/s 320ms",
+        "🇺🇸 03 [S级] 5.8MB/s 393ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [S级] 14.6MB/s 332ms",
-        "🇩🇪 02 [S级] 4.2MB/s 367ms"
+        "🇺🇸 01 [S级] 8.3MB/s 287ms",
+        "🇺🇸 02 [S级] 47.1MB/s 320ms",
+        "🇺🇸 03 [S级] 5.8MB/s 393ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
