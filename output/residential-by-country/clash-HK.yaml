@@ -4,25 +4,55 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 51.4MB/s 5895ms
-  server: v10.hdacd.com
+- name: 🇭🇰 01 [家宽级] 54.8MB/s 9914ms
+  server: v10.zgtfqs.click
   port: 30807
   udp: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
+- name: 🇭🇰 02 [家宽级] 1.6MB/s 1512ms
+  server: wzxydnnzmsycrqwxnh.jiedddym.com
+  port: 38819
+  udp: true
+  type: vless
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7s-ve59v99UPmZT4MOth5PloFy3ytSU4uuh6Oa7lPkU
+    short-id: 85eced9b6394
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 03 [家宽级] 1.5MB/s 1802ms
+  server: bbaqqnbgwoxxnmxdnlmchg.jiedddym.com
+  port: 55323
+  udp: true
+  type: vless
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8cgMAdLKLmCfDMPqPjjmF-Bc6uMLUvLZq2CFEQTFoCc
+    short-id: e691f6e47b9db28a
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 51.4MB/s 5895ms
+  - 🇭🇰 01 [家宽级] 54.8MB/s 9914ms
+  - 🇭🇰 02 [家宽级] 1.6MB/s 1512ms
+  - 🇭🇰 03 [家宽级] 1.5MB/s 1802ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 51.4MB/s 5895ms
+  - 🇭🇰 01 [家宽级] 54.8MB/s 9914ms
+  - 🇭🇰 02 [家宽级] 1.6MB/s 1512ms
+  - 🇭🇰 03 [家宽级] 1.5MB/s 1802ms
 rules:
 - MATCH,PROXIES

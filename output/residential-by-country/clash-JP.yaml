@@ -4,31 +4,31 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 01 [家宽级] 1.0MB/s 2364ms
-  server: 203.137.165.164
-  port: 57554
+- name: 🇯🇵 01 [家宽级] 3.8MB/s 1354ms
+  server: 128.241.25.3
+  port: 30021
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: e18901aa-2836-44ce-a1d7-af6b174ccae7
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristifp=chrome
     headers:
-      Host: cdn8848.776676.xyz
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 01 [家宽级] 1.0MB/s 2364ms
+  - 🇯🇵 01 [家宽级] 3.8MB/s 1354ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 01 [家宽级] 1.0MB/s 2364ms
+  - 🇯🇵 01 [家宽级] 3.8MB/s 1354ms
 rules:
 - MATCH,PROXIES

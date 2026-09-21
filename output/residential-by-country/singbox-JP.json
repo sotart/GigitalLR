@@ -5,20 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 01 [家宽级] 1.0MB/s 2364ms",
-      "server": "203.137.165.164",
-      "server_port": 57554,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tag": "🇯🇵 01 [家宽级] 3.8MB/s 1354ms",
+      "server": "128.241.25.3",
+      "server_port": 30021,
+      "uuid": "e18901aa-2836-44ce-a1d7-af6b174ccae7",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
+        "server_name": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/@Marisa_kristifp=chrome",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
         }
       }
     },
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 01 [家宽级] 1.0MB/s 2364ms"
+        "🇯🇵 01 [家宽级] 3.8MB/s 1354ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 01 [家宽级] 1.0MB/s 2364ms"
+        "🇯🇵 01 [家宽级] 3.8MB/s 1354ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
