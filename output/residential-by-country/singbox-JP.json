@@ -5,20 +5,62 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 01 [家宽级] 3.8MB/s 1354ms",
+      "tag": "🇯🇵 01 [家宽级] 4.5MB/s 988ms",
       "server": "128.241.25.3",
       "server_port": 30021,
-      "uuid": "e18901aa-2836-44ce-a1d7-af6b174ccae7",
+      "uuid": "27334ef0-a362-4b1b-8773-849c8a944ae1",
       "tls": {
         "enabled": true,
-        "server_name": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev",
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 02 [家宽级] 2.0MB/s 1088ms",
+      "server": "185.125.103.62",
+      "server_port": 8082,
+      "uuid": "2f146d09-a953-4bc2-bbef-503a1c0e6b70",
+      "tls": {
+        "enabled": true,
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristifp=chrome",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 03 [家宽级] 1.3MB/s 1604ms",
+      "server": "138.2.59.96",
+      "server_port": 10129,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -27,14 +69,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 01 [家宽级] 3.8MB/s 1354ms"
+        "🇯🇵 01 [家宽级] 4.5MB/s 988ms",
+        "🇯🇵 02 [家宽级] 2.0MB/s 1088ms",
+        "🇯🇵 03 [家宽级] 1.3MB/s 1604ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 01 [家宽级] 3.8MB/s 1354ms"
+        "🇯🇵 01 [家宽级] 4.5MB/s 988ms",
+        "🇯🇵 02 [家宽级] 2.0MB/s 1088ms",
+        "🇯🇵 03 [家宽级] 1.3MB/s 1604ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

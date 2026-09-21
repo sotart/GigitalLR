@@ -4,7 +4,51 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 6.6MB/s 638ms
+- name: 🇺🇸 01 [家宽级] 6.5MB/s 108ms
+  server: 188.114.97.6
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇺🇸 02 [家宽级] 8.3MB/s 338ms
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇺🇸 03 [家宽级] 15.6MB/s 443ms
+  server: 162.159.0.53
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 04 [家宽级] 20.4MB/s 479ms
+  server: 104.18.39.218
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 05 [家宽级] 5.2MB/s 682ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -14,17 +58,42 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇺🇸 06 [家宽级] 7.2MB/s 908ms
+  server: 172.67.223.101
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
+  tls: true
+  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+  skip-cert-verify: true
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 6.6MB/s 638ms
+  - 🇺🇸 01 [家宽级] 6.5MB/s 108ms
+  - 🇺🇸 02 [家宽级] 8.3MB/s 338ms
+  - 🇺🇸 03 [家宽级] 15.6MB/s 443ms
+  - 🇺🇸 04 [家宽级] 20.4MB/s 479ms
+  - 🇺🇸 05 [家宽级] 5.2MB/s 682ms
+  - 🇺🇸 06 [家宽级] 7.2MB/s 908ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 6.6MB/s 638ms
+  - 🇺🇸 01 [家宽级] 6.5MB/s 108ms
+  - 🇺🇸 02 [家宽级] 8.3MB/s 338ms
+  - 🇺🇸 03 [家宽级] 15.6MB/s 443ms
+  - 🇺🇸 04 [家宽级] 20.4MB/s 479ms
+  - 🇺🇸 05 [家宽级] 5.2MB/s 682ms
+  - 🇺🇸 06 [家宽级] 7.2MB/s 908ms
 rules:
 - MATCH,PROXIES

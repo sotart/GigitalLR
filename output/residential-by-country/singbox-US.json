@@ -4,8 +4,63 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 01 [家宽级] 6.5MB/s 108ms",
+      "server": "188.114.97.6",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 02 [家宽级] 8.3MB/s 338ms",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 03 [家宽级] 15.6MB/s 443ms",
+      "server": "162.159.0.53",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 04 [家宽级] 20.4MB/s 479ms",
+      "server": "104.18.39.218",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇺🇸 01 [家宽级] 6.6MB/s 638ms",
+      "tag": "🇺🇸 05 [家宽级] 5.2MB/s 682ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -20,18 +75,51 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 06 [家宽级] 7.2MB/s 908ms",
+      "server": "172.67.223.101",
+      "server_port": 2087,
+      "uuid": "5a0028f9-c656-cec9-4b61-54678477a408",
+      "tls": {
+        "enabled": true,
+        "server_name": "green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 6.6MB/s 638ms"
+        "🇺🇸 01 [家宽级] 6.5MB/s 108ms",
+        "🇺🇸 02 [家宽级] 8.3MB/s 338ms",
+        "🇺🇸 03 [家宽级] 15.6MB/s 443ms",
+        "🇺🇸 04 [家宽级] 20.4MB/s 479ms",
+        "🇺🇸 05 [家宽级] 5.2MB/s 682ms",
+        "🇺🇸 06 [家宽级] 7.2MB/s 908ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 6.6MB/s 638ms"
+        "🇺🇸 01 [家宽级] 6.5MB/s 108ms",
+        "🇺🇸 02 [家宽级] 8.3MB/s 338ms",
+        "🇺🇸 03 [家宽级] 15.6MB/s 443ms",
+        "🇺🇸 04 [家宽级] 20.4MB/s 479ms",
+        "🇺🇸 05 [家宽级] 5.2MB/s 682ms",
+        "🇺🇸 06 [家宽级] 7.2MB/s 908ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
