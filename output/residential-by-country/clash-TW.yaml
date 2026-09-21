@@ -4,15 +4,8 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 1.7MB/s 1042ms
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 02 [家宽级] 1.1MB/s 2147ms
-  server: 118.167.246.43
+- name: 🇹🇼 01 [家宽级] 1.5MB/s 1393ms
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -22,23 +15,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇹🇼 03 [家宽级] 0.6MB/s 5028ms
-  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-- name: 🇹🇼 04 [家宽级] 0.4MB/s 3921ms
+- name: 🇹🇼 02 [家宽级] 0.5MB/s 6205ms
   server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
   udp: true
@@ -57,18 +34,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 1.7MB/s 1042ms
-  - 🇹🇼 02 [家宽级] 1.1MB/s 2147ms
-  - 🇹🇼 03 [家宽级] 0.6MB/s 5028ms
-  - 🇹🇼 04 [家宽级] 0.4MB/s 3921ms
+  - 🇹🇼 01 [家宽级] 1.5MB/s 1393ms
+  - 🇹🇼 02 [家宽级] 0.5MB/s 6205ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 1.7MB/s 1042ms
-  - 🇹🇼 02 [家宽级] 1.1MB/s 2147ms
-  - 🇹🇼 03 [家宽级] 0.6MB/s 5028ms
-  - 🇹🇼 04 [家宽级] 0.4MB/s 3921ms
+  - 🇹🇼 01 [家宽级] 1.5MB/s 1393ms
+  - 🇹🇼 02 [家宽级] 0.5MB/s 6205ms
 rules:
 - MATCH,PROXIES
