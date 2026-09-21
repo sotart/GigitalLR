@@ -4,105 +4,32 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 6.5MB/s 108ms
-  server: 188.114.97.6
-  port: 80
+- name: 🇹🇼 01 [家宽级] 1.7MB/s 1042ms
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇰🇷 02 [家宽级] 1.7MB/s 1023ms
+  server: 49.254.204.134
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇹🇼 03 [家宽级] 1.1MB/s 2147ms
+  server: 118.167.246.43
+  port: 24215
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 02 [家宽级] 8.3MB/s 338ms
-  server: 104.21.70.21
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 03 [家宽级] 15.6MB/s 443ms
-  server: 162.159.0.53
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 04 [家宽级] 20.4MB/s 479ms
-  server: 104.18.39.218
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 05 [家宽级] 5.2MB/s 682ms
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇺🇸 06 [家宽级] 7.2MB/s 908ms
-  server: 172.67.223.101
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   tls: true
-  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
-  skip-cert-verify: true
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
-- name: 🇯🇵 07 [家宽级] 4.5MB/s 988ms
-  server: 128.241.25.3
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 27334ef0-a362-4b1b-8773-849c8a944ae1
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 08 [家宽级] 2.0MB/s 1088ms
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 2f146d09-a953-4bc2-bbef-503a1c0e6b70
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇹🇼 09 [家宽级] 1.7MB/s 2422ms
+- name: 🇹🇼 04 [家宽级] 0.6MB/s 5028ms
   server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
   port: 443
   udp: true
@@ -118,8 +45,8 @@ proxies:
     path: /
     headers:
       Host: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-- name: 🇹🇼 10 [家宽级] 1.6MB/s 2850ms
-  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+- name: 🇹🇼 05 [家宽级] 0.4MB/s 3921ms
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -127,80 +54,30 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
-- name: 🇹🇼 11 [家宽级] 1.5MB/s 1393ms
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇯🇵 12 [家宽级] 1.3MB/s 1604ms
-  server: 138.2.59.96
-  port: 10129
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇹🇼 13 [家宽级] 0.7MB/s 1761ms
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 6.5MB/s 108ms
-  - 🇺🇸 02 [家宽级] 8.3MB/s 338ms
-  - 🇺🇸 03 [家宽级] 15.6MB/s 443ms
-  - 🇺🇸 04 [家宽级] 20.4MB/s 479ms
-  - 🇺🇸 05 [家宽级] 5.2MB/s 682ms
-  - 🇺🇸 06 [家宽级] 7.2MB/s 908ms
-  - 🇯🇵 07 [家宽级] 4.5MB/s 988ms
-  - 🇯🇵 08 [家宽级] 2.0MB/s 1088ms
-  - 🇹🇼 09 [家宽级] 1.7MB/s 2422ms
-  - 🇹🇼 10 [家宽级] 1.6MB/s 2850ms
-  - 🇹🇼 11 [家宽级] 1.5MB/s 1393ms
-  - 🇯🇵 12 [家宽级] 1.3MB/s 1604ms
-  - 🇹🇼 13 [家宽级] 0.7MB/s 1761ms
+  - 🇹🇼 01 [家宽级] 1.7MB/s 1042ms
+  - 🇰🇷 02 [家宽级] 1.7MB/s 1023ms
+  - 🇹🇼 03 [家宽级] 1.1MB/s 2147ms
+  - 🇹🇼 04 [家宽级] 0.6MB/s 5028ms
+  - 🇹🇼 05 [家宽级] 0.4MB/s 3921ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 6.5MB/s 108ms
-  - 🇺🇸 02 [家宽级] 8.3MB/s 338ms
-  - 🇺🇸 03 [家宽级] 15.6MB/s 443ms
-  - 🇺🇸 04 [家宽级] 20.4MB/s 479ms
-  - 🇺🇸 05 [家宽级] 5.2MB/s 682ms
-  - 🇺🇸 06 [家宽级] 7.2MB/s 908ms
-  - 🇯🇵 07 [家宽级] 4.5MB/s 988ms
-  - 🇯🇵 08 [家宽级] 2.0MB/s 1088ms
-  - 🇹🇼 09 [家宽级] 1.7MB/s 2422ms
-  - 🇹🇼 10 [家宽级] 1.6MB/s 2850ms
-  - 🇹🇼 11 [家宽级] 1.5MB/s 1393ms
-  - 🇯🇵 12 [家宽级] 1.3MB/s 1604ms
-  - 🇹🇼 13 [家宽级] 0.7MB/s 1761ms
+  - 🇹🇼 01 [家宽级] 1.7MB/s 1042ms
+  - 🇰🇷 02 [家宽级] 1.7MB/s 1023ms
+  - 🇹🇼 03 [家宽级] 1.1MB/s 2147ms
+  - 🇹🇼 04 [家宽级] 0.6MB/s 5028ms
+  - 🇹🇼 05 [家宽级] 0.4MB/s 3921ms
 rules:
 - MATCH,PROXIES
