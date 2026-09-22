@@ -5,70 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 01 [家宽级] 2.0MB/s 1520ms",
-      "server": "185.125.103.62",
-      "server_port": 8082,
-      "uuid": "2f146d09-a953-4bc2-bbef-503a1c0e6b70",
+      "tag": "🇯🇵 01 [家宽级] 2.1MB/s 1243ms",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "c5a761f7-d009-499f-952c-e256bf3fa829",
       "tls": {
         "enabled": true,
-        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 02 [家宽级] 1.9MB/s 1197ms",
-      "server": "129.151.64.169",
-      "server_port": 31867,
-      "uuid": "af9bbaac-efc1-48d3-ac0e-0b75f4de36ca",
-      "tls": {
-        "enabled": true,
-        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 03 [家宽级] 1.8MB/s 1773ms",
-      "server": "91.186.218.227",
-      "server_port": 4443,
-      "uuid": "c4755b66-4f0c-4f02-a581-27d6b32e9c8c",
-      "tls": {
-        "enabled": true,
-        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
+          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
         }
       }
     },
@@ -77,18 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 01 [家宽级] 2.0MB/s 1520ms",
-        "🇯🇵 02 [家宽级] 1.9MB/s 1197ms",
-        "🇯🇵 03 [家宽级] 1.8MB/s 1773ms"
+        "🇯🇵 01 [家宽级] 2.1MB/s 1243ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 01 [家宽级] 2.0MB/s 1520ms",
-        "🇯🇵 02 [家宽级] 1.9MB/s 1197ms",
-        "🇯🇵 03 [家宽级] 1.8MB/s 1773ms"
+        "🇯🇵 01 [家宽级] 2.1MB/s 1243ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

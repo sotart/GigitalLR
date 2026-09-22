@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 01 [家宽级] 4.8MB/s 888ms",
+      "tag": "🇺🇸 01 [家宽级] 9.0MB/s 618ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -24,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 4.8MB/s 888ms"
+        "🇺🇸 01 [家宽级] 9.0MB/s 618ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 4.8MB/s 888ms"
+        "🇺🇸 01 [家宽级] 9.0MB/s 618ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
