@@ -4,17 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 9.5MB/s 327ms
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇭🇰 02 [家宽级] 57.4MB/s 6036ms
+- name: 🇭🇰 01 [家宽级] 18.7MB/s 4239ms
   server: v10.hdacd.com
   port: 30807
   udp: true
@@ -22,29 +12,8 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: 🇹🇼 03 [家宽级] 1.5MB/s 624ms
-  server: 36.224.141.124
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇭🇰 04 [家宽级] 1.8MB/s 1029ms
-  server: 45.192.247.199
-  port: 443
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇹🇼 05 [家宽级] 1.4MB/s 1206ms
-  server: hinet1.2yly.com
+- name: 🇹🇼 02 [家宽级] 2.6MB/s 1128ms
+  server: 118.167.206.152
   port: 24215
   udp: true
   type: vless
@@ -53,26 +22,66 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
+  client-fingerprint: safari
+- name: 🇹🇼 03 [家宽级] 2.3MB/s 1142ms
+  server: ttszhrmghgdssbkqf.cfooov.xyz
+  port: 42241
+  udp: true
+  type: vless
+  uuid: 55848813-689e-4a39-82cf-00748cbc7289
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lFZuIsmEomT8zwJ2f7wTI-C87oA78R9amDVHgemYmmQ
+    short-id: 1cb574e4d5d8
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 04 [家宽级] 2.0MB/s 1824ms
+  server: clhkzzzdbgwxxndnlm.cfooov.xyz
+  port: 61205
+  udp: true
+  type: vless
+  uuid: 55848813-689e-4a39-82cf-00748cbc7289
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PhXLfJ4s8EPauWaeRpzAjSuZibhmMiZFEMr8h8qU6iI
+    short-id: d1f38c0f15ed22
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇭🇰 05 [家宽级] 0.3MB/s 6443ms
+  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+  port: 443
+  udp: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 9.5MB/s 327ms
-  - 🇭🇰 02 [家宽级] 57.4MB/s 6036ms
-  - 🇹🇼 03 [家宽级] 1.5MB/s 624ms
-  - 🇭🇰 04 [家宽级] 1.8MB/s 1029ms
-  - 🇹🇼 05 [家宽级] 1.4MB/s 1206ms
+  - 🇭🇰 01 [家宽级] 18.7MB/s 4239ms
+  - 🇹🇼 02 [家宽级] 2.6MB/s 1128ms
+  - 🇹🇼 03 [家宽级] 2.3MB/s 1142ms
+  - 🇰🇷 04 [家宽级] 2.0MB/s 1824ms
+  - 🇭🇰 05 [家宽级] 0.3MB/s 6443ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 9.5MB/s 327ms
-  - 🇭🇰 02 [家宽级] 57.4MB/s 6036ms
-  - 🇹🇼 03 [家宽级] 1.5MB/s 624ms
-  - 🇭🇰 04 [家宽级] 1.8MB/s 1029ms
-  - 🇹🇼 05 [家宽级] 1.4MB/s 1206ms
+  - 🇭🇰 01 [家宽级] 18.7MB/s 4239ms
+  - 🇹🇼 02 [家宽级] 2.6MB/s 1128ms
+  - 🇹🇼 03 [家宽级] 2.3MB/s 1142ms
+  - 🇰🇷 04 [家宽级] 2.0MB/s 1824ms
+  - 🇭🇰 05 [家宽级] 0.3MB/s 6443ms
 rules:
 - MATCH,PROXIES

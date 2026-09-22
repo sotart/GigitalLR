@@ -4,15 +4,8 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 1.5MB/s 624ms
-  server: 36.224.141.124
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 02 [家宽级] 1.4MB/s 1206ms
-  server: hinet1.2yly.com
+- name: 🇹🇼 01 [家宽级] 2.6MB/s 1128ms
+  server: 118.167.206.152
   port: 24215
   udp: true
   type: vless
@@ -21,20 +14,33 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
+  client-fingerprint: safari
+- name: 🇹🇼 02 [家宽级] 2.3MB/s 1142ms
+  server: ttszhrmghgdssbkqf.cfooov.xyz
+  port: 42241
+  udp: true
+  type: vless
+  uuid: 55848813-689e-4a39-82cf-00748cbc7289
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lFZuIsmEomT8zwJ2f7wTI-C87oA78R9amDVHgemYmmQ
+    short-id: 1cb574e4d5d8
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 1.5MB/s 624ms
-  - 🇹🇼 02 [家宽级] 1.4MB/s 1206ms
+  - 🇹🇼 01 [家宽级] 2.6MB/s 1128ms
+  - 🇹🇼 02 [家宽级] 2.3MB/s 1142ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 1.5MB/s 624ms
-  - 🇹🇼 02 [家宽级] 1.4MB/s 1206ms
+  - 🇹🇼 01 [家宽级] 2.6MB/s 1128ms
+  - 🇹🇼 02 [家宽级] 2.3MB/s 1142ms
 rules:
 - MATCH,PROXIES

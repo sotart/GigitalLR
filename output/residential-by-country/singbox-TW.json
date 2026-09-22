@@ -4,17 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 01 [家宽级] 1.5MB/s 624ms",
-      "server": "36.224.141.124",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 1.4MB/s 1206ms",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 01 [家宽级] 2.6MB/s 1128ms",
+      "server": "118.167.206.152",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -22,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -32,20 +24,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 02 [家宽级] 2.3MB/s 1142ms",
+      "server": "ttszhrmghgdssbkqf.cfooov.xyz",
+      "server_port": 42241,
+      "uuid": "55848813-689e-4a39-82cf-00748cbc7289",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lFZuIsmEomT8zwJ2f7wTI-C87oA78R9amDVHgemYmmQ",
+          "short_id": "1cb574e4d5d8"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 1.5MB/s 624ms",
-        "🇹🇼 02 [家宽级] 1.4MB/s 1206ms"
+        "🇹🇼 01 [家宽级] 2.6MB/s 1128ms",
+        "🇹🇼 02 [家宽级] 2.3MB/s 1142ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 1.5MB/s 624ms",
-        "🇹🇼 02 [家宽级] 1.4MB/s 1206ms"
+        "🇹🇼 01 [家宽级] 2.6MB/s 1128ms",
+        "🇹🇼 02 [家宽级] 2.3MB/s 1142ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

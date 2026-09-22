@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 57.4MB/s 6036ms",
+      "tag": "🇭🇰 01 [家宽级] 18.7MB/s 4239ms",
       "server": "v10.hdacd.com",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -13,22 +13,20 @@
       "alter_id": 2
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 02 [家宽级] 1.8MB/s 1029ms",
-      "server": "45.192.247.199",
+      "type": "vmess",
+      "tag": "🇭🇰 02 [家宽级] 0.3MB/s 6443ms",
+      "server": "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn",
       "server_port": 443,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "e34bq.oa9r.zl3.hh.vavava.kdns.fr",
+        "server_name": "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "e34bq.oa9r.zl3.hh.vavava.kdns.fr"
-        }
+        "path": "/"
       }
     },
     {
@@ -36,16 +34,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 57.4MB/s 6036ms",
-        "🇭🇰 02 [家宽级] 1.8MB/s 1029ms"
+        "🇭🇰 01 [家宽级] 18.7MB/s 4239ms",
+        "🇭🇰 02 [家宽级] 0.3MB/s 6443ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 57.4MB/s 6036ms",
-        "🇭🇰 02 [家宽级] 1.8MB/s 1029ms"
+        "🇭🇰 01 [家宽级] 18.7MB/s 4239ms",
+        "🇭🇰 02 [家宽级] 0.3MB/s 6443ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
