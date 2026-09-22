@@ -1,0 +1,69 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇯🇵 01 [家宽级] 2.0MB/s 1520ms
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: 2f146d09-a953-4bc2-bbef-503a1c0e6b70
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇯🇵 02 [家宽级] 1.9MB/s 1197ms
+  server: 129.151.64.169
+  port: 31867
+  udp: true
+  type: vless
+  uuid: af9bbaac-efc1-48d3-ac0e-0b75f4de36ca
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇯🇵 03 [家宽级] 1.8MB/s 1773ms
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: c4755b66-4f0c-4f02-a581-27d6b32e9c8c
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇯🇵 01 [家宽级] 2.0MB/s 1520ms
+  - 🇯🇵 02 [家宽级] 1.9MB/s 1197ms
+  - 🇯🇵 03 [家宽级] 1.8MB/s 1773ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 01 [家宽级] 2.0MB/s 1520ms
+  - 🇯🇵 02 [家宽级] 1.9MB/s 1197ms
+  - 🇯🇵 03 [家宽级] 1.8MB/s 1773ms
+rules:
+- MATCH,PROXIES

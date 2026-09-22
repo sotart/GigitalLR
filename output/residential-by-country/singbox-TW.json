@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 1.5MB/s 1393ms",
+      "tag": "🇹🇼 01 [家宽级] 1.7MB/s 1403ms",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -24,37 +24,18 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 02 [家宽级] 0.5MB/s 6205ms",
-      "server": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 1.5MB/s 1393ms",
-        "🇹🇼 02 [家宽级] 0.5MB/s 6205ms"
+        "🇹🇼 01 [家宽级] 1.7MB/s 1403ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 1.5MB/s 1393ms",
-        "🇹🇼 02 [家宽级] 0.5MB/s 6205ms"
+        "🇹🇼 01 [家宽级] 1.7MB/s 1403ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
