@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 57.6MB/s 9015ms",
+      "tag": "🇭🇰 01 [家宽级] 57.0MB/s 5445ms",
       "server": "v10.hdacd.com",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -13,25 +13,23 @@
       "alter_id": 2
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 02 [家宽级] 6.6MB/s 984ms",
-      "server": "155.117.19.17",
-      "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
+      "type": "vless",
+      "tag": "🇨🇦 02 [家宽级] 7.0MB/s 896ms",
+      "server": "188.114.97.6",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 03 [家宽级] 1.5MB/s 2923ms",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 03 [家宽级] 0.5MB/s 1363ms",
+      "server": "118.167.206.152",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -39,7 +37,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -53,18 +51,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 57.6MB/s 9015ms",
-        "🇺🇸 02 [家宽级] 6.6MB/s 984ms",
-        "🇹🇼 03 [家宽级] 1.5MB/s 2923ms"
+        "🇭🇰 01 [家宽级] 57.0MB/s 5445ms",
+        "🇨🇦 02 [家宽级] 7.0MB/s 896ms",
+        "🇹🇼 03 [家宽级] 0.5MB/s 1363ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 57.6MB/s 9015ms",
-        "🇺🇸 02 [家宽级] 6.6MB/s 984ms",
-        "🇹🇼 03 [家宽级] 1.5MB/s 2923ms"
+        "🇭🇰 01 [家宽级] 57.0MB/s 5445ms",
+        "🇨🇦 02 [家宽级] 7.0MB/s 896ms",
+        "🇹🇼 03 [家宽级] 0.5MB/s 1363ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

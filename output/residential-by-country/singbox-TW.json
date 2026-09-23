@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 1.5MB/s 2923ms",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 01 [家宽级] 0.5MB/s 1363ms",
+      "server": "118.167.206.152",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -14,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 1.5MB/s 2923ms"
+        "🇹🇼 01 [家宽级] 0.5MB/s 1363ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 1.5MB/s 2923ms"
+        "🇹🇼 01 [家宽级] 0.5MB/s 1363ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

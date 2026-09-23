@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 57.6MB/s 9015ms",
+      "tag": "🇭🇰 01 [家宽级] 57.0MB/s 5445ms",
       "server": "v10.hdacd.com",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -17,14 +17,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 57.6MB/s 9015ms"
+        "🇭🇰 01 [家宽级] 57.0MB/s 5445ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 57.6MB/s 9015ms"
+        "🇭🇰 01 [家宽级] 57.0MB/s 5445ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

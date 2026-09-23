@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 57.6MB/s 9015ms
+- name: 🇭🇰 01 [家宽级] 57.0MB/s 5445ms
   server: v10.hdacd.com
   port: 30807
   udp: true
@@ -12,18 +12,19 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: 🇺🇸 02 [家宽级] 6.6MB/s 984ms
-  server: 155.117.19.17
-  port: 443
+- name: 🇨🇦 02 [家宽级] 7.0MB/s 896ms
+  server: 188.114.97.6
+  port: 80
   udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 03 [家宽级] 1.5MB/s 2923ms
-  server: hinet1.2yly.com
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇹🇼 03 [家宽级] 0.5MB/s 1363ms
+  server: 118.167.206.152
   port: 24215
   udp: true
   type: vless
@@ -32,22 +33,22 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 57.6MB/s 9015ms
-  - 🇺🇸 02 [家宽级] 6.6MB/s 984ms
-  - 🇹🇼 03 [家宽级] 1.5MB/s 2923ms
+  - 🇭🇰 01 [家宽级] 57.0MB/s 5445ms
+  - 🇨🇦 02 [家宽级] 7.0MB/s 896ms
+  - 🇹🇼 03 [家宽级] 0.5MB/s 1363ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 57.6MB/s 9015ms
-  - 🇺🇸 02 [家宽级] 6.6MB/s 984ms
-  - 🇹🇼 03 [家宽级] 1.5MB/s 2923ms
+  - 🇭🇰 01 [家宽级] 57.0MB/s 5445ms
+  - 🇨🇦 02 [家宽级] 7.0MB/s 896ms
+  - 🇹🇼 03 [家宽级] 0.5MB/s 1363ms
 rules:
 - MATCH,PROXIES
