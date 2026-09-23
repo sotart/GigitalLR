@@ -4,15 +4,8 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 1.2MB/s 914ms
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 02 [家宽级] 1.2MB/s 2643ms
-  server: 118.167.206.152
+- name: 🇹🇼 01 [家宽级] 1.5MB/s 2923ms
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -21,20 +14,18 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: safari
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 1.2MB/s 914ms
-  - 🇹🇼 02 [家宽级] 1.2MB/s 2643ms
+  - 🇹🇼 01 [家宽级] 1.5MB/s 2923ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 1.2MB/s 914ms
-  - 🇹🇼 02 [家宽级] 1.2MB/s 2643ms
+  - 🇹🇼 01 [家宽级] 1.5MB/s 2923ms
 rules:
 - MATCH,PROXIES
