@@ -19,15 +19,7 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇭🇰 02 [家宽级] 57.6MB/s 5736ms
-  server: v10.zgtfqs.click
-  port: 30807
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇯🇵 03 [家宽级] 2.1MB/s 1350ms
+- name: 🇯🇵 02 [家宽级] 2.1MB/s 1350ms
   server: 57.129.130.57
   port: 52014
   udp: true
@@ -42,25 +34,7 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇹🇼 04 [家宽级] 1.7MB/s 1364ms
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 05 [家宽级] 1.0MB/s 1594ms
-  server: 36.224.141.124
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇯🇵 06 [家宽级] 1.0MB/s 1843ms
+- name: 🇯🇵 03 [家宽级] 1.0MB/s 1843ms
   server: 210.152.85.154
   port: 19364
   udp: true
@@ -75,21 +49,7 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇭🇰 07 [家宽级] 0.6MB/s 5883ms
-  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇯🇵 08 [家宽级] 0.2MB/s 2182ms
+- name: 🇯🇵 04 [家宽级] 0.2MB/s 2182ms
   server: 45.77.241.190
   port: 8441
   udp: true
@@ -110,25 +70,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇯🇵 01 [家宽级] 5.6MB/s 1241ms
-  - 🇭🇰 02 [家宽级] 57.6MB/s 5736ms
-  - 🇯🇵 03 [家宽级] 2.1MB/s 1350ms
-  - 🇹🇼 04 [家宽级] 1.7MB/s 1364ms
-  - 🇹🇼 05 [家宽级] 1.0MB/s 1594ms
-  - 🇯🇵 06 [家宽级] 1.0MB/s 1843ms
-  - 🇭🇰 07 [家宽级] 0.6MB/s 5883ms
-  - 🇯🇵 08 [家宽级] 0.2MB/s 2182ms
+  - 🇯🇵 02 [家宽级] 2.1MB/s 1350ms
+  - 🇯🇵 03 [家宽级] 1.0MB/s 1843ms
+  - 🇯🇵 04 [家宽级] 0.2MB/s 2182ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 01 [家宽级] 5.6MB/s 1241ms
-  - 🇭🇰 02 [家宽级] 57.6MB/s 5736ms
-  - 🇯🇵 03 [家宽级] 2.1MB/s 1350ms
-  - 🇹🇼 04 [家宽级] 1.7MB/s 1364ms
-  - 🇹🇼 05 [家宽级] 1.0MB/s 1594ms
-  - 🇯🇵 06 [家宽级] 1.0MB/s 1843ms
-  - 🇭🇰 07 [家宽级] 0.6MB/s 5883ms
-  - 🇯🇵 08 [家宽级] 0.2MB/s 2182ms
+  - 🇯🇵 02 [家宽级] 2.1MB/s 1350ms
+  - 🇯🇵 03 [家宽级] 1.0MB/s 1843ms
+  - 🇯🇵 04 [家宽级] 0.2MB/s 2182ms
 rules:
 - MATCH,PROXIES
