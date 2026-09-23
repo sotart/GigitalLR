@@ -4,83 +4,48 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 01 [家宽级] 5.6MB/s 1241ms
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: 0d5489ad-db99-43a3-bc58-3648386fc7e7
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 02 [家宽级] 2.1MB/s 1350ms
-  server: 57.129.130.57
+- name: 🇯🇵 01 [家宽级] 0.8MB/s 1379ms
+  server: 57.129.130.200
   port: 52014
   udp: true
   type: vless
-  uuid: a351220c-f8dc-4c52-8a2d-f4470f886a53
+  uuid: 93c53b59-1523-4621-9528-77b016a28304
   tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /@Marisa_kristifp=chrome
     headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 03 [家宽级] 1.0MB/s 1843ms
-  server: 210.152.85.154
-  port: 19364
-  udp: true
-  type: vless
-  uuid: c7c508cf-68d6-4b12-88b7-ba2786851a36
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 04 [家宽级] 0.2MB/s 2182ms
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇯🇵 02 [家宽级] 0.2MB/s 2485ms
   server: 45.77.241.190
   port: 8441
   udp: true
   type: vless
-  uuid: 8a9dff00-0705-4c1b-9126-8c1bdc8b5d0a
+  uuid: 208250f3-2dd1-4421-87d4-5e8691fd7b15
   tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 01 [家宽级] 5.6MB/s 1241ms
-  - 🇯🇵 02 [家宽级] 2.1MB/s 1350ms
-  - 🇯🇵 03 [家宽级] 1.0MB/s 1843ms
-  - 🇯🇵 04 [家宽级] 0.2MB/s 2182ms
+  - 🇯🇵 01 [家宽级] 0.8MB/s 1379ms
+  - 🇯🇵 02 [家宽级] 0.2MB/s 2485ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 01 [家宽级] 5.6MB/s 1241ms
-  - 🇯🇵 02 [家宽级] 2.1MB/s 1350ms
-  - 🇯🇵 03 [家宽级] 1.0MB/s 1843ms
-  - 🇯🇵 04 [家宽级] 0.2MB/s 2182ms
+  - 🇯🇵 01 [家宽级] 0.8MB/s 1379ms
+  - 🇯🇵 02 [家宽级] 0.2MB/s 2485ms
 rules:
 - MATCH,PROXIES
