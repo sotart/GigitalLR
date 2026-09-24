@@ -4,99 +4,48 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 01 [家宽级] 4.7MB/s 983ms
-  server: 128.241.25.11
+- name: 🇯🇵 01 [家宽级] 2.4MB/s 804ms
+  server: 128.241.25.3
   port: 30021
   udp: true
   type: vless
-  uuid: bf30b487-858c-4166-8216-370ae1ef9591
+  uuid: 27334ef0-a362-4b1b-8773-849c8a944ae1
   tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 02 [家宽级] 1.7MB/s 2093ms
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: e3f097e5-0214-47ce-9127-7e5a5e968ffa
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 02 [家宽级] 3.8MB/s 1063ms
-  server: 128.241.25.11
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 96e2e8fa-f7e6-466c-bd21-689d29c7ccb2
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 03 [家宽级] 2.7MB/s 1749ms
-  server: 109.120.155.155
-  port: 444
-  udp: true
-  type: vless
-  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 04 [家宽级] 2.3MB/s 1300ms
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: b80ea549-156d-4cc1-8683-3f53d5b335cb
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 05 [家宽级] 1.7MB/s 1538ms
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 091ea5fd-4e8d-4459-90af-e4d10179efff
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristifp=chrome
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 01 [家宽级] 4.7MB/s 983ms
-  - 🇯🇵 02 [家宽级] 3.8MB/s 1063ms
-  - 🇯🇵 03 [家宽级] 2.7MB/s 1749ms
-  - 🇯🇵 04 [家宽级] 2.3MB/s 1300ms
-  - 🇯🇵 05 [家宽级] 1.7MB/s 1538ms
+  - 🇯🇵 01 [家宽级] 2.4MB/s 804ms
+  - 🇯🇵 02 [家宽级] 1.7MB/s 2093ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 01 [家宽级] 4.7MB/s 983ms
-  - 🇯🇵 02 [家宽级] 3.8MB/s 1063ms
-  - 🇯🇵 03 [家宽级] 2.7MB/s 1749ms
-  - 🇯🇵 04 [家宽级] 2.3MB/s 1300ms
-  - 🇯🇵 05 [家宽级] 1.7MB/s 1538ms
+  - 🇯🇵 01 [家宽级] 2.4MB/s 804ms
+  - 🇯🇵 02 [家宽级] 1.7MB/s 2093ms
 rules:
 - MATCH,PROXIES

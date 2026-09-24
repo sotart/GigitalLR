@@ -4,9 +4,9 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 14.0MB/s 316ms
-  server: 104.18.46.46
-  port: 2082
+- name: 🇺🇸 01 [S级] 33.2MB/s 399ms
+  server: 172.64.158.146
+  port: 80
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -15,43 +15,17 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇩🇪 02 [S级] 3.8MB/s 193ms
-  server: 7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: 401d950d-4f5c-45c7-bf44-8b69acf35f6f
-  tls: true
-  servername: 7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiR2xWQ1FCQzYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-    headers:
-      Host: 7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev
-- name: 🇺🇸 03 [S级] 3.9MB/s 386ms
-  server: 38.180.135.156
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YHtesZ0qvgtg
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 14.0MB/s 316ms
-  - 🇩🇪 02 [S级] 3.8MB/s 193ms
-  - 🇺🇸 03 [S级] 3.9MB/s 386ms
+  - 🇺🇸 01 [S级] 33.2MB/s 399ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 14.0MB/s 316ms
-  - 🇩🇪 02 [S级] 3.8MB/s 193ms
-  - 🇺🇸 03 [S级] 3.9MB/s 386ms
+  - 🇺🇸 01 [S级] 33.2MB/s 399ms
 rules:
 - MATCH,PROXIES
