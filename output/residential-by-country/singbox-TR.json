@@ -4,30 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 01 [家宽级] 1.8MB/s 2091ms",
-      "server": "hk01.kfc-520.com",
-      "server_port": 60001,
-      "password": "8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk01.kfc-520.com",
-        "insecure": true
-      }
+      "type": "vless",
+      "tag": "🇹🇷 01 [家宽级] 0.9MB/s 1492ms",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 1.8MB/s 2091ms"
+        "🇹🇷 01 [家宽级] 0.9MB/s 1492ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 1.8MB/s 2091ms"
+        "🇹🇷 01 [家宽级] 0.9MB/s 1492ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

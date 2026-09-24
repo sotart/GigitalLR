@@ -4,25 +4,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 59.2MB/s 10040ms
-  server: v10.hdacd.com
-  port: 30807
+- name: 🇭🇰 01 [家宽级] 1.8MB/s 2091ms
+  server: hk01.kfc-520.com
+  port: 60001
   udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
+  type: hysteria2
+  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  sni: hk01.kfc-520.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 59.2MB/s 10040ms
+  - 🇭🇰 01 [家宽级] 1.8MB/s 2091ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 59.2MB/s 10040ms
+  - 🇭🇰 01 [家宽级] 1.8MB/s 2091ms
 rules:
 - MATCH,PROXIES

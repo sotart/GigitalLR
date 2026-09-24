@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 0.4MB/s 6211ms",
-      "server": "118.167.206.152",
+      "tag": "🇹🇼 01 [家宽级] 3.5MB/s 2246ms",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -14,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -24,18 +24,28 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 02 [家宽级] 1.4MB/s 2076ms",
+      "server": "36.224.141.124",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 0.4MB/s 6211ms"
+        "🇹🇼 01 [家宽级] 3.5MB/s 2246ms",
+        "🇹🇼 02 [家宽级] 1.4MB/s 2076ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 0.4MB/s 6211ms"
+        "🇹🇼 01 [家宽级] 3.5MB/s 2246ms",
+        "🇹🇼 02 [家宽级] 1.4MB/s 2076ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
