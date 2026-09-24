@@ -97,35 +97,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 05 [家宽级] 1.9MB/s 1353ms",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 06 [家宽级] 1.7MB/s 1050ms",
-      "server": "49.254.204.134",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 07 [家宽级] 1.7MB/s 1538ms",
+      "tag": "🇯🇵 05 [家宽级] 1.7MB/s 1538ms",
       "server": "57.129.130.57",
       "server_port": 52014,
       "uuid": "091ea5fd-4e8d-4459-90af-e4d10179efff",
@@ -143,43 +115,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 08 [家宽级] 1.5MB/s 1535ms",
-      "server": "r3mrcg001286ek2.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 09 [家宽级] 0.7MB/s 5514ms",
-      "server": "v10.hdacd.com",
-      "server_port": 30807,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 10 [家宽级] 0.6MB/s 1869ms",
-      "server": "iriguchi.proxy.rlwy.net",
-      "server_port": 25156,
-      "uuid": "8a0757d9-b317-47df-b506-5c7b8798982e",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇳 11 [家宽级] 0.1MB/s 1408ms",
-      "server": "112.132.215.108",
-      "server_port": 50002,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-      "security": "auto",
-      "alter_id": 64
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -188,13 +123,7 @@
         "🇯🇵 02 [家宽级] 3.8MB/s 1063ms",
         "🇯🇵 03 [家宽级] 2.7MB/s 1749ms",
         "🇯🇵 04 [家宽级] 2.3MB/s 1300ms",
-        "🇹🇼 05 [家宽级] 1.9MB/s 1353ms",
-        "🇰🇷 06 [家宽级] 1.7MB/s 1050ms",
-        "🇯🇵 07 [家宽级] 1.7MB/s 1538ms",
-        "🇹🇼 08 [家宽级] 1.5MB/s 1535ms",
-        "🇭🇰 09 [家宽级] 0.7MB/s 5514ms",
-        "🇹🇷 10 [家宽级] 0.6MB/s 1869ms",
-        "🇨🇳 11 [家宽级] 0.1MB/s 1408ms"
+        "🇯🇵 05 [家宽级] 1.7MB/s 1538ms"
       ]
     },
     {
@@ -205,13 +134,7 @@
         "🇯🇵 02 [家宽级] 3.8MB/s 1063ms",
         "🇯🇵 03 [家宽级] 2.7MB/s 1749ms",
         "🇯🇵 04 [家宽级] 2.3MB/s 1300ms",
-        "🇹🇼 05 [家宽级] 1.9MB/s 1353ms",
-        "🇰🇷 06 [家宽级] 1.7MB/s 1050ms",
-        "🇯🇵 07 [家宽级] 1.7MB/s 1538ms",
-        "🇹🇼 08 [家宽级] 1.5MB/s 1535ms",
-        "🇭🇰 09 [家宽级] 0.7MB/s 5514ms",
-        "🇹🇷 10 [家宽级] 0.6MB/s 1869ms",
-        "🇨🇳 11 [家宽级] 0.1MB/s 1408ms"
+        "🇯🇵 05 [家宽级] 1.7MB/s 1538ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

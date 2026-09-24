@@ -5,16 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇦 01 [家宽级] 7.0MB/s 896ms",
-      "server": "188.114.97.6",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "tag": "🇹🇷 01 [家宽级] 0.6MB/s 1869ms",
+      "server": "iriguchi.proxy.rlwy.net",
+      "server_port": 25156,
+      "uuid": "8a0757d9-b317-47df-b506-5c7b8798982e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
-        }
+        "path": "/"
       }
     },
     {
@@ -22,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 01 [家宽级] 7.0MB/s 896ms"
+        "🇹🇷 01 [家宽级] 0.6MB/s 1869ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 01 [家宽级] 7.0MB/s 896ms"
+        "🇹🇷 01 [家宽级] 0.6MB/s 1869ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

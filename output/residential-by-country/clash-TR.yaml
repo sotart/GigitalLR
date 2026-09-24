@@ -4,28 +4,26 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦 01 [家宽级] 7.0MB/s 896ms
-  server: 188.114.97.6
-  port: 80
+- name: 🇹🇷 01 [家宽级] 0.6MB/s 1869ms
+  server: iriguchi.proxy.rlwy.net
+  port: 25156
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 8a0757d9-b317-47df-b506-5c7b8798982e
   network: ws
   ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇦 01 [家宽级] 7.0MB/s 896ms
+  - 🇹🇷 01 [家宽级] 0.6MB/s 1869ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 01 [家宽级] 7.0MB/s 896ms
+  - 🇹🇷 01 [家宽级] 0.6MB/s 1869ms
 rules:
 - MATCH,PROXIES

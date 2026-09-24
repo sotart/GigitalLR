@@ -5,26 +5,26 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 0.7MB/s 5514ms",
-      "server": "v10.hdacd.com",
-      "server_port": 30807,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "tag": "🇨🇳 01 [家宽级] 0.1MB/s 1408ms",
+      "server": "112.132.215.108",
+      "server_port": 50002,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
       "security": "auto",
-      "alter_id": 2
+      "alter_id": 64
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 0.7MB/s 5514ms"
+        "🇨🇳 01 [家宽级] 0.1MB/s 1408ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 0.7MB/s 5514ms"
+        "🇨🇳 01 [家宽级] 0.1MB/s 1408ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
