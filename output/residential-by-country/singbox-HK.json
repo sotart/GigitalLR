@@ -4,31 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 01 [S级] 33.2MB/s 399ms",
-      "server": "172.64.158.146",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇭🇰 01 [家宽级] 59.2MB/s 10040ms",
+      "server": "v10.hdacd.com",
+      "server_port": 30807,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [S级] 33.2MB/s 399ms"
+        "🇭🇰 01 [家宽级] 59.2MB/s 10040ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [S级] 33.2MB/s 399ms"
+        "🇭🇰 01 [家宽级] 59.2MB/s 10040ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

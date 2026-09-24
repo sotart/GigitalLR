@@ -18,17 +18,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 02 [家宽级] 59.2MB/s 10040ms",
-      "server": "v10.hdacd.com",
-      "server_port": 30807,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 03 [家宽级] 6.5MB/s 824ms",
+      "tag": "🇺🇸 02 [家宽级] 6.5MB/s 824ms",
       "server": "188.114.97.6",
       "server_port": 443,
       "uuid": "50414e45-4c5f-5a45-5553-44890b90d17e",
@@ -47,7 +38,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 04 [家宽级] 4.5MB/s 1372ms",
+      "tag": "🇺🇸 03 [家宽级] 4.5MB/s 1372ms",
       "server": "162.159.0.169",
       "server_port": 80,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
@@ -60,35 +51,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 05 [家宽级] 0.4MB/s 6211ms",
-      "server": "118.167.206.152",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 01 [家宽级] 8.1MB/s 598ms",
-        "🇭🇰 02 [家宽级] 59.2MB/s 10040ms",
-        "🇺🇸 03 [家宽级] 6.5MB/s 824ms",
-        "🇺🇸 04 [家宽级] 4.5MB/s 1372ms",
-        "🇹🇼 05 [家宽级] 0.4MB/s 6211ms"
+        "🇺🇸 02 [家宽级] 6.5MB/s 824ms",
+        "🇺🇸 03 [家宽级] 4.5MB/s 1372ms"
       ]
     },
     {
@@ -96,10 +65,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 01 [家宽级] 8.1MB/s 598ms",
-        "🇭🇰 02 [家宽级] 59.2MB/s 10040ms",
-        "🇺🇸 03 [家宽级] 6.5MB/s 824ms",
-        "🇺🇸 04 [家宽级] 4.5MB/s 1372ms",
-        "🇹🇼 05 [家宽级] 0.4MB/s 6211ms"
+        "🇺🇸 02 [家宽级] 6.5MB/s 824ms",
+        "🇺🇸 03 [家宽级] 4.5MB/s 1372ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
