@@ -4,25 +4,65 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 2.2MB/s 1462ms
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+- name: 🇭🇰 01 [家宽级] 62.8MB/s 7354ms
+  server: v10.zgtfqs.click
+  port: 30807
+  udp: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: 🇭🇰 02 [家宽级] 3.9MB/s 1276ms
+  server: 6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  password: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  sni: 6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com
   skip-cert-verify: true
+- name: 🇭🇰 03 [家宽级] 1.7MB/s 1059ms
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 04 [家宽级] 1.7MB/s 1253ms
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16116
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 05 [家宽级] 1.2MB/s 2101ms
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+  port: 443
+  udp: true
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 2.2MB/s 1462ms
+  - 🇭🇰 01 [家宽级] 62.8MB/s 7354ms
+  - 🇭🇰 02 [家宽级] 3.9MB/s 1276ms
+  - 🇭🇰 03 [家宽级] 1.7MB/s 1059ms
+  - 🇭🇰 04 [家宽级] 1.7MB/s 1253ms
+  - 🇭🇰 05 [家宽级] 1.2MB/s 2101ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 2.2MB/s 1462ms
+  - 🇭🇰 01 [家宽级] 62.8MB/s 7354ms
+  - 🇭🇰 02 [家宽级] 3.9MB/s 1276ms
+  - 🇭🇰 03 [家宽级] 1.7MB/s 1059ms
+  - 🇭🇰 04 [家宽级] 1.7MB/s 1253ms
+  - 🇭🇰 05 [家宽级] 1.2MB/s 2101ms
 rules:
 - MATCH,PROXIES

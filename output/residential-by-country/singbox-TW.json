@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 2.0MB/s 1407ms",
+      "tag": "🇹🇼 01 [家宽级] 1.5MB/s 870ms",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -14,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -24,40 +24,18 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 02 [家宽级] 0.5MB/s 3131ms",
-      "server": "24864168545164.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "24864168545164.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "24864168545164.oylfmxz.cn"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 2.0MB/s 1407ms",
-        "🇹🇼 02 [家宽级] 0.5MB/s 3131ms"
+        "🇹🇼 01 [家宽级] 1.5MB/s 870ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 2.0MB/s 1407ms",
-        "🇹🇼 02 [家宽级] 0.5MB/s 3131ms"
+        "🇹🇼 01 [家宽级] 1.5MB/s 870ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

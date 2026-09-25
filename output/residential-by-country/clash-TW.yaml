@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 2.0MB/s 1407ms
+- name: 🇹🇼 01 [家宽级] 1.5MB/s 870ms
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -14,36 +14,18 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 02 [家宽级] 0.5MB/s 3131ms
-  server: 24864168545164.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 24864168545164.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 24864168545164.oylfmxz.cn
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 2.0MB/s 1407ms
-  - 🇹🇼 02 [家宽级] 0.5MB/s 3131ms
+  - 🇹🇼 01 [家宽级] 1.5MB/s 870ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 2.0MB/s 1407ms
-  - 🇹🇼 02 [家宽级] 0.5MB/s 3131ms
+  - 🇹🇼 01 [家宽级] 1.5MB/s 870ms
 rules:
 - MATCH,PROXIES

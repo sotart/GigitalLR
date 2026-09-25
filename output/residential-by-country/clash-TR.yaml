@@ -4,23 +4,28 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 01 [家宽级] 0.8MB/s 1657ms
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇹🇷 01 [家宽级] 0.4MB/s 1231ms
+  server: 206.1.98.72
+  port: 21811
   udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  type: vmess
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 01 [家宽级] 0.8MB/s 1657ms
+  - 🇹🇷 01 [家宽级] 0.4MB/s 1231ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 01 [家宽级] 0.8MB/s 1657ms
+  - 🇹🇷 01 [家宽级] 0.4MB/s 1231ms
 rules:
 - MATCH,PROXIES
