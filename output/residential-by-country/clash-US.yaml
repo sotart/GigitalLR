@@ -4,25 +4,27 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 2.2MB/s 1462ms
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+- name: 🇺🇸 01 [家宽级] 0.2MB/s 5088ms
+  server: 155.117.19.17
   port: 443
   udp: true
   type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
   skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 2.2MB/s 1462ms
+  - 🇺🇸 01 [家宽级] 0.2MB/s 5088ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 2.2MB/s 1462ms
+  - 🇺🇸 01 [家宽级] 0.2MB/s 5088ms
 rules:
 - MATCH,PROXIES

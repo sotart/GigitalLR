@@ -4,244 +4,39 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 14.4MB/s 307ms
-  server: 104.18.39.218
-  port: 2095
+- name: 🇮🇱 01 [S级] 9.1MB/s 360ms
+  server: 185.95.231.156
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 02 [S级] 20.0MB/s 316ms
-  server: 172.64.32.103
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 03 [S级] 18.4MB/s 319ms
-  server: 104.18.46.46
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 04 [S级] 5.9MB/s 326ms
-  server: 162.159.24.131
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 05 [S级] 7.8MB/s 356ms
-  server: 172.64.229.170
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 06 [S级] 14.7MB/s 366ms
-  server: 162.159.0.169
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 07 [S级] 6.2MB/s 374ms
-  server: 79.141.172.154
-  port: 10453
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
-  servername: www.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇺🇸 08 [S级] 22.7MB/s 390ms
-  server: www.wto.org
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: llm-api.sofurry.dpdns.org
-- name: 🇺🇸 09 [S级] 15.7MB/s 392ms
-  server: 104.18.46.46
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 10 [S级] 7.7MB/s 375ms
-  server: 104.18.47.113
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 11 [S级] 14.9MB/s 336ms
-  server: 172.235.43.210
-  port: 53957
-  udp: true
-  type: vless
-  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
-    short-id: 44e82fd7b97b14
-  servername: www.nvidia.com
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇺🇸 12 [S级] 5.9MB/s 338ms
-  server: 104.18.46.46
-  port: 8080
+- name: 🇺🇸 02 [S级] 4.6MB/s 380ms
+  server: 5.78.51.123
+  port: 1080
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇯🇵 13 [S级] 4.1MB/s 297ms
-  server: 128.241.25.11
-  port: 30021
-  udp: true
-  type: vless
-  uuid: c7dcd436-76e0-4f8f-9a28-d9c20bff304a
-  tls: true
-  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-- name: 🇺🇸 14 [S级] 3.5MB/s 350ms
-  server: 162.159.43.187
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇩🇪 15 [S级] 3.3MB/s 280ms
-  server: 151.101.56.7
-  port: 443
-  udp: true
-  type: trojan
-  password: MItIVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇳🇱 16 [S级] 3.3MB/s 385ms
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
-- name: 🇩🇪 17 [S级] 3.1MB/s 347ms
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: f2f4e2dc-3e7b-402f-a461-b48acc6aa310
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoid2JBOTRVclNMOVdBSVQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-    headers:
-      Host: steep-bonus-8e6a.amirhon1376.workers.dev
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 8tmnvX5zYuWGVIDP2jglZw
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 14.4MB/s 307ms
-  - 🇺🇸 02 [S级] 20.0MB/s 316ms
-  - 🇺🇸 03 [S级] 18.4MB/s 319ms
-  - 🇺🇸 04 [S级] 5.9MB/s 326ms
-  - 🇺🇸 05 [S级] 7.8MB/s 356ms
-  - 🇺🇸 06 [S级] 14.7MB/s 366ms
-  - 🇺🇸 07 [S级] 6.2MB/s 374ms
-  - 🇺🇸 08 [S级] 22.7MB/s 390ms
-  - 🇺🇸 09 [S级] 15.7MB/s 392ms
-  - 🇺🇸 10 [S级] 7.7MB/s 375ms
-  - 🇺🇸 11 [S级] 14.9MB/s 336ms
-  - 🇺🇸 12 [S级] 5.9MB/s 338ms
-  - 🇯🇵 13 [S级] 4.1MB/s 297ms
-  - 🇺🇸 14 [S级] 3.5MB/s 350ms
-  - 🇩🇪 15 [S级] 3.3MB/s 280ms
-  - 🇳🇱 16 [S级] 3.3MB/s 385ms
-  - 🇩🇪 17 [S级] 3.1MB/s 347ms
+  - 🇮🇱 01 [S级] 9.1MB/s 360ms
+  - 🇺🇸 02 [S级] 4.6MB/s 380ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 14.4MB/s 307ms
-  - 🇺🇸 02 [S级] 20.0MB/s 316ms
-  - 🇺🇸 03 [S级] 18.4MB/s 319ms
-  - 🇺🇸 04 [S级] 5.9MB/s 326ms
-  - 🇺🇸 05 [S级] 7.8MB/s 356ms
-  - 🇺🇸 06 [S级] 14.7MB/s 366ms
-  - 🇺🇸 07 [S级] 6.2MB/s 374ms
-  - 🇺🇸 08 [S级] 22.7MB/s 390ms
-  - 🇺🇸 09 [S级] 15.7MB/s 392ms
-  - 🇺🇸 10 [S级] 7.7MB/s 375ms
-  - 🇺🇸 11 [S级] 14.9MB/s 336ms
-  - 🇺🇸 12 [S级] 5.9MB/s 338ms
-  - 🇯🇵 13 [S级] 4.1MB/s 297ms
-  - 🇺🇸 14 [S级] 3.5MB/s 350ms
-  - 🇩🇪 15 [S级] 3.3MB/s 280ms
-  - 🇳🇱 16 [S级] 3.3MB/s 385ms
-  - 🇩🇪 17 [S级] 3.1MB/s 347ms
+  - 🇮🇱 01 [S级] 9.1MB/s 360ms
+  - 🇺🇸 02 [S级] 4.6MB/s 380ms
 rules:
 - MATCH,PROXIES
