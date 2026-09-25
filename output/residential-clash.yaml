@@ -4,15 +4,58 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 01 [家宽级] 5.1MB/s 10848ms
-  server: 112.132.215.108
-  port: 50002
+- name: 🇭🇰 01 [家宽级] 65.5MB/s 4504ms
+  server: v10.zgtfqs.click
+  port: 30807
   udp: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 0
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
-- name: 🇹🇼 02 [家宽级] 3.5MB/s 2246ms
+- name: 🇭🇰 02 [家宽级] 3.2MB/s 734ms
+  server: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇯🇵 03 [家宽级] 2.0MB/s 949ms
+  server: 57.129.52.47
+  port: 52014
+  udp: true
+  type: vless
+  uuid: ecc4675b-1607-4699-8b20-23af97b671af
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇹🇷 04 [家宽级] 1.9MB/s 1149ms
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇯🇵 05 [家宽级] 1.8MB/s 1297ms
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 091ea5fd-4e8d-4459-90af-e4d10179efff
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇹🇼 06 [家宽级] 1.8MB/s 984ms
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -23,7 +66,37 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇭🇰 03 [家宽级] 1.8MB/s 2091ms
+- name: 🇯🇵 07 [家宽级] 0.6MB/s 1003ms
+  server: 188.34.142.174
+  port: 444
+  udp: true
+  type: vless
+  uuid: da46ec1f-84ad-4470-866f-010b58357b19
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 08 [家宽级] 0.3MB/s 1107ms
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 66b076d4-519d-4b05-872e-d0366d15bace
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇭🇰 09 [家宽级] 0.1MB/s 1262ms
   server: hk01.kfc-520.com
   port: 60001
   udp: true
@@ -31,38 +104,33 @@ proxies:
   password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
   sni: hk01.kfc-520.com
   skip-cert-verify: true
-- name: 🇹🇼 04 [家宽级] 1.4MB/s 2076ms
-  server: 36.224.141.124
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇷 05 [家宽级] 0.9MB/s 1492ms
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 01 [家宽级] 5.1MB/s 10848ms
-  - 🇹🇼 02 [家宽级] 3.5MB/s 2246ms
-  - 🇭🇰 03 [家宽级] 1.8MB/s 2091ms
-  - 🇹🇼 04 [家宽级] 1.4MB/s 2076ms
-  - 🇹🇷 05 [家宽级] 0.9MB/s 1492ms
+  - 🇭🇰 01 [家宽级] 65.5MB/s 4504ms
+  - 🇭🇰 02 [家宽级] 3.2MB/s 734ms
+  - 🇯🇵 03 [家宽级] 2.0MB/s 949ms
+  - 🇹🇷 04 [家宽级] 1.9MB/s 1149ms
+  - 🇯🇵 05 [家宽级] 1.8MB/s 1297ms
+  - 🇹🇼 06 [家宽级] 1.8MB/s 984ms
+  - 🇯🇵 07 [家宽级] 0.6MB/s 1003ms
+  - 🇯🇵 08 [家宽级] 0.3MB/s 1107ms
+  - 🇭🇰 09 [家宽级] 0.1MB/s 1262ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 01 [家宽级] 5.1MB/s 10848ms
-  - 🇹🇼 02 [家宽级] 3.5MB/s 2246ms
-  - 🇭🇰 03 [家宽级] 1.8MB/s 2091ms
-  - 🇹🇼 04 [家宽级] 1.4MB/s 2076ms
-  - 🇹🇷 05 [家宽级] 0.9MB/s 1492ms
+  - 🇭🇰 01 [家宽级] 65.5MB/s 4504ms
+  - 🇭🇰 02 [家宽级] 3.2MB/s 734ms
+  - 🇯🇵 03 [家宽级] 2.0MB/s 949ms
+  - 🇹🇷 04 [家宽级] 1.9MB/s 1149ms
+  - 🇯🇵 05 [家宽级] 1.8MB/s 1297ms
+  - 🇹🇼 06 [家宽级] 1.8MB/s 984ms
+  - 🇯🇵 07 [家宽级] 0.6MB/s 1003ms
+  - 🇯🇵 08 [家宽级] 0.3MB/s 1107ms
+  - 🇭🇰 09 [家宽级] 0.1MB/s 1262ms
 rules:
 - MATCH,PROXIES

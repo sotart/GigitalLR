@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
+      "type": "vmess",
+      "tag": "🇭🇰 01 [家宽级] 65.5MB/s 4504ms",
+      "server": "v10.zgtfqs.click",
+      "server_port": 30807,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇭🇰 01 [家宽级] 1.8MB/s 2091ms",
+      "tag": "🇭🇰 02 [家宽级] 3.2MB/s 734ms",
+      "server": "311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 03 [家宽级] 0.1MB/s 1262ms",
       "server": "hk01.kfc-520.com",
       "server_port": 60001,
       "password": "8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3",
@@ -20,14 +41,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 1.8MB/s 2091ms"
+        "🇭🇰 01 [家宽级] 65.5MB/s 4504ms",
+        "🇭🇰 02 [家宽级] 3.2MB/s 734ms",
+        "🇭🇰 03 [家宽级] 0.1MB/s 1262ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 1.8MB/s 2091ms"
+        "🇭🇰 01 [家宽级] 65.5MB/s 4504ms",
+        "🇭🇰 02 [家宽级] 3.2MB/s 734ms",
+        "🇭🇰 03 [家宽级] 0.1MB/s 1262ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

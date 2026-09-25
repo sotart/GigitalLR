@@ -1,0 +1,85 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇯🇵 01 [家宽级] 2.0MB/s 949ms
+  server: 57.129.52.47
+  port: 52014
+  udp: true
+  type: vless
+  uuid: ecc4675b-1607-4699-8b20-23af97b671af
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇯🇵 02 [家宽级] 1.8MB/s 1297ms
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 091ea5fd-4e8d-4459-90af-e4d10179efff
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇯🇵 03 [家宽级] 0.6MB/s 1003ms
+  server: 188.34.142.174
+  port: 444
+  udp: true
+  type: vless
+  uuid: da46ec1f-84ad-4470-866f-010b58357b19
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 04 [家宽级] 0.3MB/s 1107ms
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 66b076d4-519d-4b05-872e-d0366d15bace
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇯🇵 01 [家宽级] 2.0MB/s 949ms
+  - 🇯🇵 02 [家宽级] 1.8MB/s 1297ms
+  - 🇯🇵 03 [家宽级] 0.6MB/s 1003ms
+  - 🇯🇵 04 [家宽级] 0.3MB/s 1107ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 01 [家宽级] 2.0MB/s 949ms
+  - 🇯🇵 02 [家宽级] 1.8MB/s 1297ms
+  - 🇯🇵 03 [家宽级] 0.6MB/s 1003ms
+  - 🇯🇵 04 [家宽级] 0.3MB/s 1107ms
+rules:
+- MATCH,PROXIES
