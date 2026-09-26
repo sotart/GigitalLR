@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 01 [家宽级] 1.6MB/s 1266ms",
+      "server": "namrcg001640lrm.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 2.0MB/s 1256ms",
+      "tag": "🇹🇼 02 [家宽级] 1.0MB/s 993ms",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -24,28 +32,20 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 02 [家宽级] 1.4MB/s 1250ms",
-      "server": "namrcg001640lrm.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "a9a0d092-6f0e-4701-81ee-454643d6d506"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 2.0MB/s 1256ms",
-        "🇹🇼 02 [家宽级] 1.4MB/s 1250ms"
+        "🇹🇼 01 [家宽级] 1.6MB/s 1266ms",
+        "🇹🇼 02 [家宽级] 1.0MB/s 993ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 2.0MB/s 1256ms",
-        "🇹🇼 02 [家宽级] 1.4MB/s 1250ms"
+        "🇹🇼 01 [家宽级] 1.6MB/s 1266ms",
+        "🇹🇼 02 [家宽级] 1.0MB/s 993ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
