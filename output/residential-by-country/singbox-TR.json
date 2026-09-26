@@ -4,8 +4,15 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇹🇷 01 [家宽级] 2.4MB/s 1749ms",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
       "type": "vmess",
-      "tag": "🇹🇷 01 [家宽级] 0.4MB/s 1231ms",
+      "tag": "🇹🇷 02 [家宽级] 1.2MB/s 970ms",
       "server": "206.1.98.72",
       "server_port": 21811,
       "uuid": "Nitro_Skybot@",
@@ -20,14 +27,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 01 [家宽级] 0.4MB/s 1231ms"
+        "🇹🇷 01 [家宽级] 2.4MB/s 1749ms",
+        "🇹🇷 02 [家宽级] 1.2MB/s 970ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 01 [家宽级] 0.4MB/s 1231ms"
+        "🇹🇷 01 [家宽级] 2.4MB/s 1749ms",
+        "🇹🇷 02 [家宽级] 1.2MB/s 970ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
