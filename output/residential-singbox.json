@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 51.1MB/s 5511ms",
-      "server": "v10.zgtfqs.click",
+      "tag": "🇭🇰 01 [家宽级] 65.5MB/s 6296ms",
+      "server": "v10.hdacd.com",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "security": "auto",
       "alter_id": 2
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 02 [家宽级] 2.3MB/s 1906ms",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16113,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "type": "shadowsocks",
+      "tag": "🇹🇼 02 [家宽级] 1.6MB/s 669ms",
+      "server": "namrcg001640lrm.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "a9a0d092-6f0e-4701-81ee-454643d6d506"
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 03 [家宽级] 2.2MB/s 1304ms",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 03 [家宽级] 1.5MB/s 2246ms",
+      "server": "118.167.230.191",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -31,7 +31,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -41,75 +41,40 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 04 [家宽级] 2.0MB/s 1098ms",
-      "server": "namrcg001640lrm.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "a9a0d092-6f0e-4701-81ee-454643d6d506"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇭🇰 05 [家宽级] 2.0MB/s 2364ms",
-      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
+      "type": "hysteria2",
+      "tag": "🇺🇸 04 [家宽级] 0.2MB/s 946ms",
+      "server": "155.117.19.17",
       "server_port": 443,
-      "password": "9sK2mP8xQ7vL3nZ6",
+      "password": "5fa748137b6d822308eea4611f474ad5",
       "tls": {
         "enabled": true,
-        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
-        "insecure": false
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 06 [家宽级] 1.8MB/s 9629ms",
-      "server": "ce1fc2d8.krkt.hkssip.com",
-      "server_port": 49642,
-      "method": "aes-256-gcm",
-      "password": "ac9c0a7b"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 07 [家宽级] 1.7MB/s 1515ms",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16115,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 08 [家宽级] 0.3MB/s 1909ms",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 51.1MB/s 5511ms",
-        "🇭🇰 02 [家宽级] 2.3MB/s 1906ms",
-        "🇹🇼 03 [家宽级] 2.2MB/s 1304ms",
-        "🇹🇼 04 [家宽级] 2.0MB/s 1098ms",
-        "🇭🇰 05 [家宽级] 2.0MB/s 2364ms",
-        "🇰🇷 06 [家宽级] 1.8MB/s 9629ms",
-        "🇭🇰 07 [家宽级] 1.7MB/s 1515ms",
-        "🇹🇷 08 [家宽级] 0.3MB/s 1909ms"
+        "🇭🇰 01 [家宽级] 65.5MB/s 6296ms",
+        "🇹🇼 02 [家宽级] 1.6MB/s 669ms",
+        "🇹🇼 03 [家宽级] 1.5MB/s 2246ms",
+        "🇺🇸 04 [家宽级] 0.2MB/s 946ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 51.1MB/s 5511ms",
-        "🇭🇰 02 [家宽级] 2.3MB/s 1906ms",
-        "🇹🇼 03 [家宽级] 2.2MB/s 1304ms",
-        "🇹🇼 04 [家宽级] 2.0MB/s 1098ms",
-        "🇭🇰 05 [家宽级] 2.0MB/s 2364ms",
-        "🇰🇷 06 [家宽级] 1.8MB/s 9629ms",
-        "🇭🇰 07 [家宽级] 1.7MB/s 1515ms",
-        "🇹🇷 08 [家宽级] 0.3MB/s 1909ms"
+        "🇭🇰 01 [家宽级] 65.5MB/s 6296ms",
+        "🇹🇼 02 [家宽级] 1.6MB/s 669ms",
+        "🇹🇼 03 [家宽级] 1.5MB/s 2246ms",
+        "🇺🇸 04 [家宽级] 0.2MB/s 946ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
