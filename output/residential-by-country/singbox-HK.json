@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 60.3MB/s 8510ms",
+      "tag": "🇭🇰 01 [家宽级] 52.7MB/s 7182ms",
       "server": "v10.zgtfqs.click",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -13,32 +13,18 @@
       "alter_id": 2
     },
     {
-      "type": "anytls",
-      "tag": "🇭🇰 02 [家宽级] 1.1MB/s 3070ms",
-      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
-      "server_port": 443,
-      "password": "9sK2mP8xQ7vL3nZ6",
-      "tls": {
-        "enabled": true,
-        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 60.3MB/s 8510ms",
-        "🇭🇰 02 [家宽级] 1.1MB/s 3070ms"
+        "🇭🇰 01 [家宽级] 52.7MB/s 7182ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 60.3MB/s 8510ms",
-        "🇭🇰 02 [家宽级] 1.1MB/s 3070ms"
+        "🇭🇰 01 [家宽级] 52.7MB/s 7182ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
