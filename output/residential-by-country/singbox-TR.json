@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 01 [家宽级] 4.9MB/s 758ms",
-      "server": "82.47.63.156",
+      "tag": "🇹🇷 01 [家宽级] 0.2MB/s 4781ms",
+      "server": "test.keoplentuio.xyz",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
@@ -15,14 +15,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 01 [家宽级] 4.9MB/s 758ms"
+        "🇹🇷 01 [家宽级] 0.2MB/s 4781ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 01 [家宽级] 4.9MB/s 758ms"
+        "🇹🇷 01 [家宽级] 0.2MB/s 4781ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
