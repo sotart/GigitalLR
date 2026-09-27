@@ -1,0 +1,27 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇰🇷 01 [家宽级] 65.5MB/s 5512ms
+  server: 211.174.113.172
+  port: 49642
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇰🇷 01 [家宽级] 65.5MB/s 5512ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇷 01 [家宽级] 65.5MB/s 5512ms
+rules:
+- MATCH,PROXIES

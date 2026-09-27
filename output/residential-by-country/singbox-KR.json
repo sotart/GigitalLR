@@ -1,0 +1,39 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 01 [家宽级] 65.5MB/s 5512ms",
+      "server": "211.174.113.172",
+      "server_port": 49642,
+      "method": "aes-256-gcm",
+      "password": "ac9c0a7b"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇷 01 [家宽级] 65.5MB/s 5512ms"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇷 01 [家宽级] 65.5MB/s 5512ms"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
