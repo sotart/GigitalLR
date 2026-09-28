@@ -1,0 +1,216 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇩🇪 01 [S级] 5.3MB/s 303ms
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 057.electrocellco-cf-057.workers.dev
+- name: 🇩🇪 02 [S级] 4.8MB/s 267ms
+  server: 104.21.69.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
+  tls: true
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/uWq9DFRgj8BwQiSXmZ46
+    headers:
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+- name: 🇺🇸 03 [S级] 18.2MB/s 338ms
+  server: 104.18.46.46
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tlssecurity=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 04 [S级] 10.4MB/s 356ms
+  server: 104.18.46.234
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 05 [S级] 13.7MB/s 377ms
+  server: 162.159.45.19
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇩🇪 06 [S级] 4.8MB/s 328ms
+  server: 104.21.96.56
+  port: 80
+  udp: true
+  type: vless
+  uuid: 923e051a-f598-4ea5-9c6c-f7e37c438a60
+  network: ws
+  ws-opts:
+    path: /vl/D2pryqVs9LAgCYdTK76lsafWY?ed=2560
+    headers:
+      Host: vkvd8bpskvxgjwdvcidxgoccr.javanbaghe.workers.dev
+- name: 🇺🇸 07 [S级] 14.2MB/s 387ms
+  server: 172.64.53.55
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 08 [S级] 9.5MB/s 393ms
+  server: 188.114.96.3
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
+  tls: true
+  servername: ez-98919a.motoricb.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+    headers:
+      Host: ez-98919a.motoricb.workers.dev
+- name: 🇺🇸 09 [S级] 14.5MB/s 394ms
+  server: 104.18.34.14
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 10 [S级] 6.0MB/s 338ms
+  server: 188.114.97.3
+  port: 2083
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: newwk1.f1w.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newwk1.f1w.de5.net
+- name: 🇺🇸 11 [S级] 4.4MB/s 325ms
+  server: 172.64.154.8
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 12 [S级] 33.4MB/s 365ms
+  server: 162.35.104.143
+  port: 443
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
+    short-id: 84be686ea1d16478
+  servername: sheetpeek.com
+  client-fingerprint: firefox
+- name: 🇺🇸 13 [S级] 25.4MB/s 370ms
+  server: 162.35.96.18
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇩🇪 14 [S级] 4.4MB/s 222ms
+  server: medium.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇩🇪 01 [S级] 5.3MB/s 303ms
+  - 🇩🇪 02 [S级] 4.8MB/s 267ms
+  - 🇺🇸 03 [S级] 18.2MB/s 338ms
+  - 🇭🇰 04 [S级] 10.4MB/s 356ms
+  - 🇺🇸 05 [S级] 13.7MB/s 377ms
+  - 🇩🇪 06 [S级] 4.8MB/s 328ms
+  - 🇺🇸 07 [S级] 14.2MB/s 387ms
+  - 🇺🇸 08 [S级] 9.5MB/s 393ms
+  - 🇺🇸 09 [S级] 14.5MB/s 394ms
+  - 🇺🇸 10 [S级] 6.0MB/s 338ms
+  - 🇺🇸 11 [S级] 4.4MB/s 325ms
+  - 🇺🇸 12 [S级] 33.4MB/s 365ms
+  - 🇺🇸 13 [S级] 25.4MB/s 370ms
+  - 🇩🇪 14 [S级] 4.4MB/s 222ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 01 [S级] 5.3MB/s 303ms
+  - 🇩🇪 02 [S级] 4.8MB/s 267ms
+  - 🇺🇸 03 [S级] 18.2MB/s 338ms
+  - 🇭🇰 04 [S级] 10.4MB/s 356ms
+  - 🇺🇸 05 [S级] 13.7MB/s 377ms
+  - 🇩🇪 06 [S级] 4.8MB/s 328ms
+  - 🇺🇸 07 [S级] 14.2MB/s 387ms
+  - 🇺🇸 08 [S级] 9.5MB/s 393ms
+  - 🇺🇸 09 [S级] 14.5MB/s 394ms
+  - 🇺🇸 10 [S级] 6.0MB/s 338ms
+  - 🇺🇸 11 [S级] 4.4MB/s 325ms
+  - 🇺🇸 12 [S级] 33.4MB/s 365ms
+  - 🇺🇸 13 [S级] 25.4MB/s 370ms
+  - 🇩🇪 14 [S级] 4.4MB/s 222ms
+rules:
+- MATCH,PROXIES
