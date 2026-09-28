@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 0.7MB/s 1825ms",
+      "tag": "🇹🇼 01 [家宽级] 2.2MB/s 833ms",
       "server": "118.167.230.191",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -14,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -24,18 +24,28 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 02 [家宽级] 2.0MB/s 934ms",
+      "server": "r3mrcg001286ek2.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 0.7MB/s 1825ms"
+        "🇹🇼 01 [家宽级] 2.2MB/s 833ms",
+        "🇹🇼 02 [家宽级] 2.0MB/s 934ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 0.7MB/s 1825ms"
+        "🇹🇼 01 [家宽级] 2.2MB/s 833ms",
+        "🇹🇼 02 [家宽级] 2.0MB/s 934ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
