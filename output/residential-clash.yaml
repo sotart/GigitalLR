@@ -4,63 +4,22 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 10.4MB/s 460ms
-  server: 172.64.32.103
-  port: 2052
+- name: 🇭🇰 01 [家宽级] 57.6MB/s 4298ms
+  server: v10.zgtfqs.click
+  port: 30807
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 02 [家宽级] 12.4MB/s 586ms
-  server: 104.18.47.113
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 03 [家宽级] 6.5MB/s 729ms
-  server: 167.82.76.7
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇰🇷 04 [家宽级] 65.5MB/s 3947ms
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: 🇰🇷 02 [家宽级] 57.3MB/s 4157ms
   server: ce1fc2d8.krkt.hkssip.com
   port: 49642
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ac9c0a7b
-- name: 🇸🇬 05 [家宽级] 56.9MB/s 2603ms
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰 06 [家宽级] 2.1MB/s 1431ms
-  server: b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  sni: b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 07 [家宽级] 2.0MB/s 1823ms
+- name: 🇭🇰 03 [家宽级] 2.7MB/s 1449ms
   server: hk01.kfc-520.com
   port: 60001
   udp: true
@@ -68,47 +27,51 @@ proxies:
   password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
   sni: hk01.kfc-520.com
   skip-cert-verify: true
-- name: 🇭🇰 08 [家宽级] 1.5MB/s 1159ms
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16115
+- name: 🇺🇸 04 [家宽级] 0.2MB/s 4196ms
+  server: 155.117.19.17
+  port: 443
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷 09 [家宽级] 0.1MB/s 1460ms
-  server: test.keoplentuio.xyz
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇹🇷 05 [家宽级] 0.1MB/s 1436ms
+  server: 145.239.30.17
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇸🇬 06 [家宽级] 0.1MB/s 1319ms
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 10.4MB/s 460ms
-  - 🇺🇸 02 [家宽级] 12.4MB/s 586ms
-  - 🇺🇸 03 [家宽级] 6.5MB/s 729ms
-  - 🇰🇷 04 [家宽级] 65.5MB/s 3947ms
-  - 🇸🇬 05 [家宽级] 56.9MB/s 2603ms
-  - 🇭🇰 06 [家宽级] 2.1MB/s 1431ms
-  - 🇭🇰 07 [家宽级] 2.0MB/s 1823ms
-  - 🇭🇰 08 [家宽级] 1.5MB/s 1159ms
-  - 🇹🇷 09 [家宽级] 0.1MB/s 1460ms
+  - 🇭🇰 01 [家宽级] 57.6MB/s 4298ms
+  - 🇰🇷 02 [家宽级] 57.3MB/s 4157ms
+  - 🇭🇰 03 [家宽级] 2.7MB/s 1449ms
+  - 🇺🇸 04 [家宽级] 0.2MB/s 4196ms
+  - 🇹🇷 05 [家宽级] 0.1MB/s 1436ms
+  - 🇸🇬 06 [家宽级] 0.1MB/s 1319ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 10.4MB/s 460ms
-  - 🇺🇸 02 [家宽级] 12.4MB/s 586ms
-  - 🇺🇸 03 [家宽级] 6.5MB/s 729ms
-  - 🇰🇷 04 [家宽级] 65.5MB/s 3947ms
-  - 🇸🇬 05 [家宽级] 56.9MB/s 2603ms
-  - 🇭🇰 06 [家宽级] 2.1MB/s 1431ms
-  - 🇭🇰 07 [家宽级] 2.0MB/s 1823ms
-  - 🇭🇰 08 [家宽级] 1.5MB/s 1159ms
-  - 🇹🇷 09 [家宽级] 0.1MB/s 1460ms
+  - 🇭🇰 01 [家宽级] 57.6MB/s 4298ms
+  - 🇰🇷 02 [家宽级] 57.3MB/s 4157ms
+  - 🇭🇰 03 [家宽级] 2.7MB/s 1449ms
+  - 🇺🇸 04 [家宽级] 0.2MB/s 4196ms
+  - 🇹🇷 05 [家宽级] 0.1MB/s 1436ms
+  - 🇸🇬 06 [家宽级] 0.1MB/s 1319ms
 rules:
 - MATCH,PROXIES
