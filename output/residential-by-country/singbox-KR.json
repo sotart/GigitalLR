@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 01 [家宽级] 42.9MB/s 6423ms",
+      "tag": "🇰🇷 01 [家宽级] 65.5MB/s 3947ms",
       "server": "ce1fc2d8.krkt.hkssip.com",
       "server_port": 49642,
       "method": "aes-256-gcm",
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 01 [家宽级] 42.9MB/s 6423ms"
+        "🇰🇷 01 [家宽级] 65.5MB/s 3947ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 01 [家宽级] 42.9MB/s 6423ms"
+        "🇰🇷 01 [家宽级] 65.5MB/s 3947ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
