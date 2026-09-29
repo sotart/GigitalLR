@@ -4,25 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 01 [家宽级] 0.1MB/s 1253ms",
-      "server": "145.239.30.17",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "type": "vmess",
+      "tag": "🇨🇳 01 [家宽级] 60.1MB/s 3110ms",
+      "server": "112.132.215.108",
+      "server_port": 50002,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 01 [家宽级] 0.1MB/s 1253ms"
+        "🇨🇳 01 [家宽级] 60.1MB/s 3110ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 01 [家宽级] 0.1MB/s 1253ms"
+        "🇨🇳 01 [家宽级] 60.1MB/s 3110ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

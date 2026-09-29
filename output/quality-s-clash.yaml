@@ -4,153 +4,20 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 28.8MB/s 47ms
-  server: 129.146.143.80
-  port: 48111
-  udp: true
-  type: vmess
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 02 [S级] 32.1MB/s 85ms
-  server: 172.64.32.108
+- name: 🇺🇸 01 [S级] 8.7MB/s 238ms
+  server: 162.159.0.53
   port: 2086
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: '/?ed=2560security=tls '
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 03 [S级] 31.5MB/s 85ms
-  server: 172.64.154.8
+- name: 🇺🇸 02 [S级] 20.1MB/s 263ms
+  server: 172.64.32.103
   port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 04 [S级] 39.4MB/s 91ms
-  server: 104.18.46.234
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 05 [S级] 34.6MB/s 91ms
-  server: 162.159.0.169
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 06 [S级] 30.9MB/s 95ms
-  server: 162.159.24.131
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 07 [S级] 13.4MB/s 97ms
-  server: 162.159.24.131
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 08 [S级] 16.2MB/s 101ms
-  server: 172.64.229.2
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 09 [S级] 9.5MB/s 86ms
-  server: 162.159.48.32
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 10 [S级] 8.7MB/s 87ms
-  server: 162.159.0.53
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 11 [S级] 14.4MB/s 108ms
-  server: 104.26.13.140
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  servername: c7dabe95.proxy-978.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 12 [S级] 8.7MB/s 112ms
-  server: 172.64.229.170
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 13 [S级] 9.7MB/s 114ms
-  server: 172.64.154.8
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 14 [S级] 30.6MB/s 119ms
-  server: 162.159.24.131
-  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -159,722 +26,18 @@ proxies:
     path: /?ed=2560security=tlssecurity=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 15 [S级] 6.6MB/s 123ms
-  server: 162.159.24.131
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 16 [S级] 6.6MB/s 121ms
-  server: 172.64.154.8
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 17 [S级] 9.6MB/s 126ms
-  server: 104.18.46.234
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 18 [S级] 6.1MB/s 105ms
-  server: 172.64.229.2
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 19 [S级] 28.7MB/s 126ms
-  server: 172.67.75.52
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  servername: c7dabe95.proxy-978.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 20 [S级] 6.6MB/s 128ms
-  server: 104.18.46.234
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 21 [S级] 8.6MB/s 127ms
-  server: 162.159.0.53
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 22 [S级] 18.9MB/s 134ms
-  server: 108.162.198.178
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 23 [S级] 36.6MB/s 140ms
-  server: 104.18.34.14
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 24 [S级] 8.6MB/s 142ms
-  server: 172.64.42.85
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 25 [S级] 13.1MB/s 148ms
-  server: 172.67.70.92
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  servername: c7dabe95.proxy-978.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 26 [S级] 30.8MB/s 160ms
-  server: 104.18.39.218
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 27 [S级] 35.4MB/s 164ms
-  server: 172.64.42.85
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 28 [S级] 33.5MB/s 148ms
-  server: 104.18.46.46
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 29 [S级] 6.9MB/s 166ms
-  server: 172.64.229.2
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 30 [S级] 23.6MB/s 174ms
-  server: 163.192.14.135
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 099830134df5ac3a04a4b21d39b8c395
-  sni: whatsapp.com
-  skip-cert-verify: true
-- name: 🇺🇸 31 [S级] 39.6MB/s 173ms
-  server: 104.16.148.244
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  servername: c7dabe95.proxy-978.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 32 [S级] 6.5MB/s 173ms
-  server: 104.18.39.218
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 33 [S级] 17.7MB/s 176ms
-  server: 172.64.32.108
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 34 [S级] 29.9MB/s 177ms
-  server: 172.64.158.146
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 35 [S级] 13.8MB/s 178ms
-  server: 172.64.32.103
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇬🇧 36 [S级] 8.6MB/s 113ms
-  server: 8.47.69.9
-  port: 443
-  udp: true
-  type: vless
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
-  tls: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
-- name: 🇺🇸 37 [S级] 6.1MB/s 189ms
-  server: 5.78.51.123
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8tmnvX5zYuWGVIDP2jglZw
-- name: 🇯🇵 38 [S级] 4.9MB/s 158ms
-  server: 162.159.228.255
-  port: 443
-  udp: true
-  type: vless
-  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
-  tls: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇺🇸 39 [S级] 5.8MB/s 114ms
-  server: 172.64.158.146
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 40 [S级] 6.8MB/s 195ms
-  server: 172.64.154.8
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇩🇪 41 [S级] 38.2MB/s 200ms
-  server: www.speedtest.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: af0db32b-2cb0-48c7-b04e-96003f8c2369
-  tls: true
-  servername: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/lIp8WbnljVYVSeQwjoRQPUGWwnVL?ed=2560
-    headers:
-      Host: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
-- name: 🇺🇸 42 [S级] 7.8MB/s 181ms
-  server: 162.159.0.53
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 43 [S级] 25.6MB/s 202ms
-  server: 172.64.42.85
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 44 [S级] 34.0MB/s 125ms
-  server: 104.20.47.114
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  servername: c7dabe95.proxy-978.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 45 [S级] 29.2MB/s 90ms
-  server: 172.235.43.210
-  port: 53957
-  udp: true
-  type: vless
-  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
-    short-id: 44e82fd7b97b14
-  servername: www.nvidia.com
-  client-fingerprint: firefox
-- name: 🇺🇸 46 [S级] 13.2MB/s 129ms
-  server: 104.26.4.57
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  servername: c7dabe95.proxy-978.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 47 [S级] 34.0MB/s 217ms
-  server: 104.18.46.46
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 48 [S级] 6.6MB/s 217ms
+- name: 🇺🇸 03 [S级] 6.5MB/s 295ms
   server: 162.159.43.187
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 49 [S级] 11.3MB/s 178ms
-  server: 45.62.106.145
-  port: 8443
-  udp: true
-  type: vless
-  uuid: a3054186-5e1d-4c95-a849-a79ee1e447b2
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 45.62.106.145
-- name: 🇺🇸 50 [S级] 27.4MB/s 208ms
-  server: 144.24.46.175
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: pbgLTkd5276SN1sZ
-  sni: 144.24.46.175
-  skip-cert-verify: true
-- name: 🇺🇸 51 [S级] 21.3MB/s 229ms
-  server: 108.162.198.178
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 52 [S级] 8.0MB/s 123ms
-  server: 172.64.154.8
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 53 [S级] 10.3MB/s 242ms
-  server: 162.159.45.19
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 54 [S级] 6.3MB/s 243ms
-  server: 79.141.172.154
-  port: 10453
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
-  servername: www.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇺🇸 55 [S级] 5.9MB/s 216ms
-  server: 34.201.71.226
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 56 [S级] 12.8MB/s 163ms
-  server: 38.107.232.36
   port: 80
   udp: true
   type: vless
-  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 3h-unitedstates1.09vpn.com
-- name: 🇺🇸 57 [S级] 7.2MB/s 264ms
-  server: 104.18.0.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  tls: true
-  servername: all.speedtest03.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
-- name: 🇺🇸 58 [S级] 7.1MB/s 147ms
-  server: 172.64.146.116
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  tls: true
-  servername: support.zoom.us.blackshadow.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /44.209.52.7-443
-    headers:
-      Host: support.zoom.us.blackshadow.dpdns.org
-- name: 🇺🇸 59 [S级] 16.0MB/s 209ms
-  server: 54.234.217.115
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 60 [S级] 6.3MB/s 286ms
-  server: 195.211.98.43
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
-    short-id: 9c56fddf237e8eaf
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 61 [S级] 5.9MB/s 211ms
-  server: 47.90.153.88
-  port: 8388
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: ABpp50oz/6gDZGxZQhVyKA==
-- name: 🇺🇸 62 [S级] 30.2MB/s 127ms
-  server: 172.64.158.146
-  port: 2052
-  udp: true
-  type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 63 [S级] 37.5MB/s 76ms
-  server: 172.235.38.85
-  port: 42942
-  udp: true
-  type: vless
-  uuid: bca46025-bf43-40c0-895b-054a6fbcfd32
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU
-    short-id: a56d7d8da977f860
-  servername: www.tesla.com
-  client-fingerprint: random
-- name: 🇺🇸 64 [S级] 8.1MB/s 283ms
-  server: vpn-us-006.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-us-006.fastervpn.world
-  skip-cert-verify: true
-- name: 🇺🇸 65 [S级] 11.2MB/s 189ms
-  server: 15.204.97.214
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  servername: fuck.rkn
-  client-fingerprint: random
-- name: 🇺🇸 66 [S级] 5.5MB/s 316ms
-  server: 167.17.69.171
-  port: 443
-  udp: true
-  type: vless
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
-    short-id: 0990d22f
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇺🇸 67 [S级] 5.8MB/s 205ms
-  server: 67.217.57.157
-  port: 19743
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: e5ec86c79d726d01bf0958087e0dd91f
-- name: 🇺🇸 68 [S级] 80.8MB/s 108ms
-  server: 172.96.141.206
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c2cc86b4-4481-4807-ac9e-24e2d7041248
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Y0zCjvOLHuHWgv4HUyqb9O0lSMnTrl26XO8qwnWoQXw
-    short-id: b85875a13da4
-  servername: room.rootvana.top
-  client-fingerprint: chrome
-- name: 🇺🇸 69 [S级] 5.8MB/s 328ms
-  server: 45.91.138.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
-    short-id: 169fc2df88419465
-  servername: us05.shifor01.life
-  client-fingerprint: chrome
-- name: 🇮🇱 70 [S级] 6.1MB/s 288ms
-  server: 185.95.231.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸 71 [S级] 5.8MB/s 213ms
-  server: 47.85.188.30
-  port: 12004
-  udp: true
-  type: vmess
-  uuid: 8b5552bd-4cc7-4cac-af08-81c21686fd4f
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 72 [S级] 12.7MB/s 211ms
-  server: 15.204.97.219
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 73 [S级] 6.0MB/s 218ms
-  server: 3.95.209.183
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 74 [S级] 6.2MB/s 273ms
-  server: 47.90.153.88
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1e255ca5-93b1-4952-a838-0783dfc034d8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QtYyp41YbDij6nygTaPPpqXqEGzDD3wYFI3YlfTjfBo
-    short-id: 6b85179e
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇺🇸 75 [S级] 23.4MB/s 69ms
-  server: 216.105.168.18
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hCCWOcIsK5wrFz4OX70rWf
-- name: 🇺🇸 76 [S级] 33.6MB/s 348ms
-  server: 104.18.27.94
-  port: 443
-  udp: true
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  servername: c7dabe95.proxy-978.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 77 [S级] 5.7MB/s 295ms
-  server: 54.89.222.160
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 78 [S级] 26.4MB/s 114ms
+- name: 🇺🇸 04 [S级] 20.0MB/s 327ms
   server: 172.64.42.85
   port: 2052
   udp: true
@@ -885,97 +48,7 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 79 [S级] 5.9MB/s 242ms
-  server: 98.89.22.134
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 80 [S级] 4.9MB/s 334ms
-  server: 172.67.215.39
-  port: 443
-  udp: true
-  type: vless
-  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
-  tls: true
-  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /js/cHlpcC55Z2tray5kcGRucy5vcmc=/
-    headers:
-      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
-- name: 🇺🇸 81 [S级] 5.7MB/s 265ms
-  server: 47.253.144.114
-  port: 443
-  udp: true
-  type: vless
-  uuid: a4c6bab6-bd83-4b72-8c78-99e96f40cde3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: yEpPLsSy8aCXkQ4wzc9t38gQACipc_k54upD9fJj5y4
-    short-id: 4679f07417e9feb4
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇺🇸 82 [S级] 30.3MB/s 135ms
-  server: 104.18.34.14
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇯🇵 83 [S级] 4.4MB/s 207ms
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: 6c7c10f8-2387-4756-ab4b-64c9c6981f0e
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 84 [S级] 4.2MB/s 136ms
-  server: 128.241.25.11
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 72fbb611-628d-4afa-8198-bda3e38021f9
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇩🇪 85 [S级] 4.2MB/s 179ms
-  server: 104.21.16.109
-  port: 443
-  udp: true
-  type: vless
-  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
-  tls: true
-  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/6871nrbnl9WsdAiOUInt
-    headers:
-      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-- name: 🇺🇸 86 [S级] 6.3MB/s 326ms
+- name: 🇺🇸 05 [S级] 17.9MB/s 341ms
   server: 104.21.90.210
   port: 443
   udp: true
@@ -990,274 +63,83 @@ proxies:
     path: /
     headers:
       Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 87 [S级] 5.6MB/s 258ms
-  server: 162.35.104.144
-  port: 8081
+- name: 🇺🇸 06 [S级] 9.8MB/s 356ms
+  server: 172.64.32.103
+  port: 8880
   udp: true
   type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /vless-test
-- name: 🇯🇵 88 [S级] 4.3MB/s 205ms
-  server: 128.241.25.11
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 3a3bf607-2e15-4963-9b1d-aeabd7f6b466
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
+    path: /?ed=2560security=tls
     headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 89 [S级] 4.3MB/s 179ms
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: 3e956106-7f92-4cbf-bf77-715d3890fa84
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 90 [S级] 6.0MB/s 157ms
-  server: 128.241.25.3
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 423d9455-09ce-471c-8cee-cec0366a2c7a
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇺🇸 91 [S级] 10.8MB/s 352ms
-  server: 192.255.128.123
-  port: 443
-  udp: true
-  type: hysteria2
-  password: RN_3f80eeb4bbd0f13f
-  sni: 192.255.128.123
-  skip-cert-verify: true
-- name: 🇯🇵 92 [S级] 4.1MB/s 170ms
-  server: 128.241.25.3
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 0e8371c0-0287-4805-a882-42a7b482a9de
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇩🇪 93 [S级] 4.3MB/s 238ms
-  server: 104.21.31.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 59c70620-d2f3-4255-9d6f-f4c5103d64ce
-  tls: true
-  servername: 59fssIBE-SDDrRs3qW83QQZz0H1NT-o.q7qwsxItB6BYi5nMTa4naAlz.woRkErs.deV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed
-    headers:
-      Host: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
-- name: 🇨🇦 94 [S级] 4.7MB/s 383ms
-  server: 66.70.179.198
-  port: 2053
-  udp: true
-  type: vless
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  tls: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇺🇸 95 [S级] 5.0MB/s 313ms
-  server: 162.35.96.35
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇺🇸 96 [S级] 5.0MB/s 315ms
-  server: 162.35.96.15
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇺🇸 97 [S级] 5.1MB/s 324ms
-  server: 162.35.96.18
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇯🇵 98 [S级] 3.7MB/s 134ms
-  server: 128.241.25.3
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 27334ef0-a362-4b1b-8773-849c8a944ae1
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇳🇱 99 [S级] 3.9MB/s 210ms
-  server: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
-  tls: true
-  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vl/6871nrbnl9WsdAiOUInt?ed=2560
-    headers:
-      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-- name: 🇬🇧 100 [S级] 4.1MB/s 226ms
-  server: 172.67.130.187
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  tls: true
-  servername: fans.liverpool.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇨🇦 101 [S级] 4.2MB/s 354ms
-  server: 137.184.174.93
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 102 [S级] 4.4MB/s 389ms
-  server: 104.21.69.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
-  tls: true
-  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/uWq9DFRgj8BwQiSXmZ46
-    headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-- name: 🇺🇸 103 [S级] 12.2MB/s 349ms
-  server: 172.233.139.46
-  port: 53734
-  udp: true
-  type: vless
-  uuid: 56a1b253-cde4-490f-9c5e-09a523882bdd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JAG5rl6KEt7KAV0y8Z2x6orWHymCXRSX49SkEnEftWU
-    short-id: a56d7d8da977f860
-  servername: www.tesla.com
-  client-fingerprint: safari
-- name: 🇩🇪 104 [S级] 5.0MB/s 352ms
-  server: 188.114.97.8
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
-  tls: true
-  servername: square-salad-ebde.zdfgvccfguuyggg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
-- name: 🇩🇪 105 [S级] 3.3MB/s 94ms
-  server: 104.17.148.22
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 07 [S级] 11.5MB/s 370ms
+  server: 108.162.198.178
   port: 80
   udp: true
   type: vless
-  uuid: 63f1ef69-92fd-427a-b3e4-98ffddf81ac6
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: young-rice-749e.heliy78750.workers.dev
-- name: 🇺🇸 106 [S级] 5.0MB/s 378ms
-  server: 169.40.42.89
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 08 [S级] 10.0MB/s 320ms
+  server: vpn-us-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇺🇸 09 [S级] 14.0MB/s 365ms
+  server: 162.159.0.169
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 10 [S级] 15.3MB/s 330ms
+  server: 54.89.222.160
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 11 [S级] 5.4MB/s 398ms
+  server: 104.18.46.234
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tlssecurity=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇩🇪 12 [S级] 4.8MB/s 327ms
+  server: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
   port: 443
   udp: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
+  uuid: eb24c3b4-7936-45e2-a253-e54fd1955a7f
   tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: firefox
-- name: 🇺🇸 107 [S级] 4.3MB/s 283ms
-  server: 162.35.96.21
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  servername: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vless-test
-- name: 🇺🇸 108 [S级] 4.1MB/s 237ms
-  server: 38.180.135.156
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YHtesZ0qvgtg
-- name: 🇺🇸 109 [S级] 3.1MB/s 118ms
-  server: 162.159.48.32
-  port: 2086
+    path: /vl/mzLc59gMyjrsaNojAJ6g04
+    headers:
+      Host: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
+- name: 🇺🇸 13 [S级] 13.3MB/s 398ms
+  server: 172.64.158.146
+  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -1266,150 +148,30 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇯🇵 110 [S级] 4.1MB/s 175ms
-  server: 129.153.71.28
-  port: 28863
+- name: 🇺🇸 14 [S级] 7.2MB/s 351ms
+  server: 104.18.34.14
+  port: 2052
   udp: true
   type: vless
-  uuid: 02073765-76e0-46d0-9109-82ccb48d3c6f
-  tls: true
-  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-- name: 🇩🇪 111 [S级] 3.2MB/s 113ms
-  server: www.speedtest.net
-  port: 80
-  udp: true
-  type: vless
-  uuid: 7201b2cd-0675-4c1a-9c76-07ca14ffcf08
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiTlZxbGYyajQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-    headers:
-      Host: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
-- name: 🇬🇧 112 [S级] 3.0MB/s 128ms
-  server: 8.6.112.9
-  port: 443
-  udp: true
-  type: vless
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
-  tls: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
-- name: 🇩🇪 113 [S级] 4.3MB/s 234ms
-  server: 104.21.67.236
-  port: 443
-  udp: true
-  type: vless
-  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
-  tls: true
-  servername: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
-- name: 🇩🇪 114 [S级] 3.1MB/s 153ms
-  server: www.speedtest.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7fc7f295-b80e-4235-bb17-61e3ddc0744a
-  tls: true
-  servername: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/dirxIBhljtrTSM76Q
-    headers:
-      Host: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
-- name: 🇩🇪 115 [S级] 3.0MB/s 142ms
-  server: 172.67.173.75
-  port: 80
-  udp: true
-  type: vless
-  uuid: 923e051a-f598-4ea5-9c6c-f7e37c438a60
-  network: ws
-  ws-opts:
-    path: /vl/D2pryqVs9LAgCYdTK76lsafWY
-    headers:
-      Host: vkvd8bpskvxgjwdvcidxgoccr.javanbaghe.workers.dev
-- name: 🇩🇪 116 [S级] 3.2MB/s 213ms
-  server: 104.19.164.155
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
-  tls: true
-  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
-- name: 🇩🇪 117 [S级] 3.0MB/s 152ms
-  server: 104.18.37.127
-  port: 443
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 15 [S级] 5.5MB/s 382ms
+  server: 162.159.0.169
+  port: 2086
   udp: true
   type: vless
-  uuid: fa9ec1a9-6c24-4be2-9472-d1e2592b45b4
-  tls: true
-  servername: g84-nee38ryd6helyz6z9qw1rm1bdl1.fornewiran-1056.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /vl/pmsM6vhny85OmnvYbXIpf1l?ed=2560
+    path: /?ed=2560security=tls
     headers:
-      Host: g84-nee38ryd6helyz6z9qw1rm1bdl1.fornewiran-1056.workers.dev
-- name: 🇩🇪 118 [S级] 3.2MB/s 240ms
-  server: 172.66.44.124
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇯🇵 119 [S级] 3.6MB/s 369ms
-  server: 146.190.124.36
-  port: 74
-  udp: true
-  type: vless
-  uuid: d4d0d523-0c2a-4b9d-b630-0637f0b77904
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇺🇸 120 [S级] 3.8MB/s 260ms
-  server: 162.35.96.22
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 16 [S级] 18.4MB/s 367ms
+  server: 162.35.96.18
   port: 8081
   udp: true
   type: vless
@@ -1417,344 +179,85 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇯🇵 121 [S级] 3.2MB/s 244ms
-  server: 128.241.25.3
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 482b62dd-b73e-44eb-bc35-3226746e5d99
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇩🇪 122 [S级] 3.1MB/s 286ms
-  server: 104.17.147.22
+- name: 🇺🇸 17 [S级] 6.3MB/s 266ms
+  server: 172.64.32.108
   port: 80
   udp: true
   type: vless
-  uuid: 7201b2cd-0675-4c1a-9c76-07ca14ffcf08
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiTlZxbGYyajQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    path: /?ed=2560security=tls
     headers:
-      Host: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
-- name: 🇨🇦 123 [S级] 3.1MB/s 394ms
-  server: 130.107.73.148
-  port: 41373
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 18 [S级] 13.5MB/s 392ms
+  server: 162.35.104.144
+  port: 8081
   udp: true
   type: vless
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 124 [S级] 3.1MB/s 267ms
-  server: www.speedtest.net
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇩🇪 19 [S级] 4.4MB/s 363ms
+  server: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
   port: 443
   udp: true
   type: vless
-  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
+  uuid: 0b41f339-5809-46ef-8351-b03fdc441539
   tls: true
-  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/1mwugQaZADT6PqPOiKcsn?ed=2560
-    headers:
-      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-- name: 🇩🇪 125 [S级] 3.2MB/s 239ms
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-- name: 🇩🇪 126 [S级] 3.1MB/s 382ms
-  server: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  servername: FpoiXF69hQT3E6d4URTB.MamADNEIZeH.WorKers.DEV
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /pRXE5ot0RZaQSr7B
+    path: /vl/lYNtP7z8pJUmfp01tz5wEnuDujJtZ
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 28.8MB/s 47ms
-  - 🇺🇸 02 [S级] 32.1MB/s 85ms
-  - 🇺🇸 03 [S级] 31.5MB/s 85ms
-  - 🇺🇸 04 [S级] 39.4MB/s 91ms
-  - 🇺🇸 05 [S级] 34.6MB/s 91ms
-  - 🇺🇸 06 [S级] 30.9MB/s 95ms
-  - 🇺🇸 07 [S级] 13.4MB/s 97ms
-  - 🇺🇸 08 [S级] 16.2MB/s 101ms
-  - 🇺🇸 09 [S级] 9.5MB/s 86ms
-  - 🇺🇸 10 [S级] 8.7MB/s 87ms
-  - 🇺🇸 11 [S级] 14.4MB/s 108ms
-  - 🇺🇸 12 [S级] 8.7MB/s 112ms
-  - 🇺🇸 13 [S级] 9.7MB/s 114ms
-  - 🇺🇸 14 [S级] 30.6MB/s 119ms
-  - 🇺🇸 15 [S级] 6.6MB/s 123ms
-  - 🇺🇸 16 [S级] 6.6MB/s 121ms
-  - 🇺🇸 17 [S级] 9.6MB/s 126ms
-  - 🇺🇸 18 [S级] 6.1MB/s 105ms
-  - 🇺🇸 19 [S级] 28.7MB/s 126ms
-  - 🇺🇸 20 [S级] 6.6MB/s 128ms
-  - 🇺🇸 21 [S级] 8.6MB/s 127ms
-  - 🇺🇸 22 [S级] 18.9MB/s 134ms
-  - 🇺🇸 23 [S级] 36.6MB/s 140ms
-  - 🇺🇸 24 [S级] 8.6MB/s 142ms
-  - 🇺🇸 25 [S级] 13.1MB/s 148ms
-  - 🇺🇸 26 [S级] 30.8MB/s 160ms
-  - 🇺🇸 27 [S级] 35.4MB/s 164ms
-  - 🇺🇸 28 [S级] 33.5MB/s 148ms
-  - 🇺🇸 29 [S级] 6.9MB/s 166ms
-  - 🇺🇸 30 [S级] 23.6MB/s 174ms
-  - 🇺🇸 31 [S级] 39.6MB/s 173ms
-  - 🇺🇸 32 [S级] 6.5MB/s 173ms
-  - 🇺🇸 33 [S级] 17.7MB/s 176ms
-  - 🇺🇸 34 [S级] 29.9MB/s 177ms
-  - 🇺🇸 35 [S级] 13.8MB/s 178ms
-  - 🇬🇧 36 [S级] 8.6MB/s 113ms
-  - 🇺🇸 37 [S级] 6.1MB/s 189ms
-  - 🇯🇵 38 [S级] 4.9MB/s 158ms
-  - 🇺🇸 39 [S级] 5.8MB/s 114ms
-  - 🇺🇸 40 [S级] 6.8MB/s 195ms
-  - 🇩🇪 41 [S级] 38.2MB/s 200ms
-  - 🇺🇸 42 [S级] 7.8MB/s 181ms
-  - 🇺🇸 43 [S级] 25.6MB/s 202ms
-  - 🇺🇸 44 [S级] 34.0MB/s 125ms
-  - 🇺🇸 45 [S级] 29.2MB/s 90ms
-  - 🇺🇸 46 [S级] 13.2MB/s 129ms
-  - 🇺🇸 47 [S级] 34.0MB/s 217ms
-  - 🇺🇸 48 [S级] 6.6MB/s 217ms
-  - 🇺🇸 49 [S级] 11.3MB/s 178ms
-  - 🇺🇸 50 [S级] 27.4MB/s 208ms
-  - 🇺🇸 51 [S级] 21.3MB/s 229ms
-  - 🇺🇸 52 [S级] 8.0MB/s 123ms
-  - 🇺🇸 53 [S级] 10.3MB/s 242ms
-  - 🇺🇸 54 [S级] 6.3MB/s 243ms
-  - 🇺🇸 55 [S级] 5.9MB/s 216ms
-  - 🇺🇸 56 [S级] 12.8MB/s 163ms
-  - 🇺🇸 57 [S级] 7.2MB/s 264ms
-  - 🇺🇸 58 [S级] 7.1MB/s 147ms
-  - 🇺🇸 59 [S级] 16.0MB/s 209ms
-  - 🇺🇸 60 [S级] 6.3MB/s 286ms
-  - 🇺🇸 61 [S级] 5.9MB/s 211ms
-  - 🇺🇸 62 [S级] 30.2MB/s 127ms
-  - 🇺🇸 63 [S级] 37.5MB/s 76ms
-  - 🇺🇸 64 [S级] 8.1MB/s 283ms
-  - 🇺🇸 65 [S级] 11.2MB/s 189ms
-  - 🇺🇸 66 [S级] 5.5MB/s 316ms
-  - 🇺🇸 67 [S级] 5.8MB/s 205ms
-  - 🇺🇸 68 [S级] 80.8MB/s 108ms
-  - 🇺🇸 69 [S级] 5.8MB/s 328ms
-  - 🇮🇱 70 [S级] 6.1MB/s 288ms
-  - 🇺🇸 71 [S级] 5.8MB/s 213ms
-  - 🇺🇸 72 [S级] 12.7MB/s 211ms
-  - 🇺🇸 73 [S级] 6.0MB/s 218ms
-  - 🇺🇸 74 [S级] 6.2MB/s 273ms
-  - 🇺🇸 75 [S级] 23.4MB/s 69ms
-  - 🇺🇸 76 [S级] 33.6MB/s 348ms
-  - 🇺🇸 77 [S级] 5.7MB/s 295ms
-  - 🇺🇸 78 [S级] 26.4MB/s 114ms
-  - 🇺🇸 79 [S级] 5.9MB/s 242ms
-  - 🇺🇸 80 [S级] 4.9MB/s 334ms
-  - 🇺🇸 81 [S级] 5.7MB/s 265ms
-  - 🇺🇸 82 [S级] 30.3MB/s 135ms
-  - 🇯🇵 83 [S级] 4.4MB/s 207ms
-  - 🇯🇵 84 [S级] 4.2MB/s 136ms
-  - 🇩🇪 85 [S级] 4.2MB/s 179ms
-  - 🇺🇸 86 [S级] 6.3MB/s 326ms
-  - 🇺🇸 87 [S级] 5.6MB/s 258ms
-  - 🇯🇵 88 [S级] 4.3MB/s 205ms
-  - 🇯🇵 89 [S级] 4.3MB/s 179ms
-  - 🇯🇵 90 [S级] 6.0MB/s 157ms
-  - 🇺🇸 91 [S级] 10.8MB/s 352ms
-  - 🇯🇵 92 [S级] 4.1MB/s 170ms
-  - 🇩🇪 93 [S级] 4.3MB/s 238ms
-  - 🇨🇦 94 [S级] 4.7MB/s 383ms
-  - 🇺🇸 95 [S级] 5.0MB/s 313ms
-  - 🇺🇸 96 [S级] 5.0MB/s 315ms
-  - 🇺🇸 97 [S级] 5.1MB/s 324ms
-  - 🇯🇵 98 [S级] 3.7MB/s 134ms
-  - 🇳🇱 99 [S级] 3.9MB/s 210ms
-  - 🇬🇧 100 [S级] 4.1MB/s 226ms
-  - 🇨🇦 101 [S级] 4.2MB/s 354ms
-  - 🇩🇪 102 [S级] 4.4MB/s 389ms
-  - 🇺🇸 103 [S级] 12.2MB/s 349ms
-  - 🇩🇪 104 [S级] 5.0MB/s 352ms
-  - 🇩🇪 105 [S级] 3.3MB/s 94ms
-  - 🇺🇸 106 [S级] 5.0MB/s 378ms
-  - 🇺🇸 107 [S级] 4.3MB/s 283ms
-  - 🇺🇸 108 [S级] 4.1MB/s 237ms
-  - 🇺🇸 109 [S级] 3.1MB/s 118ms
-  - 🇯🇵 110 [S级] 4.1MB/s 175ms
-  - 🇩🇪 111 [S级] 3.2MB/s 113ms
-  - 🇬🇧 112 [S级] 3.0MB/s 128ms
-  - 🇩🇪 113 [S级] 4.3MB/s 234ms
-  - 🇩🇪 114 [S级] 3.1MB/s 153ms
-  - 🇩🇪 115 [S级] 3.0MB/s 142ms
-  - 🇩🇪 116 [S级] 3.2MB/s 213ms
-  - 🇩🇪 117 [S级] 3.0MB/s 152ms
-  - 🇩🇪 118 [S级] 3.2MB/s 240ms
-  - 🇯🇵 119 [S级] 3.6MB/s 369ms
-  - 🇺🇸 120 [S级] 3.8MB/s 260ms
-  - 🇯🇵 121 [S级] 3.2MB/s 244ms
-  - 🇩🇪 122 [S级] 3.1MB/s 286ms
-  - 🇨🇦 123 [S级] 3.1MB/s 394ms
-  - 🇩🇪 124 [S级] 3.1MB/s 267ms
-  - 🇩🇪 125 [S级] 3.2MB/s 239ms
-  - 🇩🇪 126 [S级] 3.1MB/s 382ms
+  - 🇺🇸 01 [S级] 8.7MB/s 238ms
+  - 🇺🇸 02 [S级] 20.1MB/s 263ms
+  - 🇺🇸 03 [S级] 6.5MB/s 295ms
+  - 🇺🇸 04 [S级] 20.0MB/s 327ms
+  - 🇺🇸 05 [S级] 17.9MB/s 341ms
+  - 🇺🇸 06 [S级] 9.8MB/s 356ms
+  - 🇺🇸 07 [S级] 11.5MB/s 370ms
+  - 🇺🇸 08 [S级] 10.0MB/s 320ms
+  - 🇺🇸 09 [S级] 14.0MB/s 365ms
+  - 🇺🇸 10 [S级] 15.3MB/s 330ms
+  - 🇺🇸 11 [S级] 5.4MB/s 398ms
+  - 🇩🇪 12 [S级] 4.8MB/s 327ms
+  - 🇺🇸 13 [S级] 13.3MB/s 398ms
+  - 🇺🇸 14 [S级] 7.2MB/s 351ms
+  - 🇺🇸 15 [S级] 5.5MB/s 382ms
+  - 🇺🇸 16 [S级] 18.4MB/s 367ms
+  - 🇺🇸 17 [S级] 6.3MB/s 266ms
+  - 🇺🇸 18 [S级] 13.5MB/s 392ms
+  - 🇩🇪 19 [S级] 4.4MB/s 363ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 28.8MB/s 47ms
-  - 🇺🇸 02 [S级] 32.1MB/s 85ms
-  - 🇺🇸 03 [S级] 31.5MB/s 85ms
-  - 🇺🇸 04 [S级] 39.4MB/s 91ms
-  - 🇺🇸 05 [S级] 34.6MB/s 91ms
-  - 🇺🇸 06 [S级] 30.9MB/s 95ms
-  - 🇺🇸 07 [S级] 13.4MB/s 97ms
-  - 🇺🇸 08 [S级] 16.2MB/s 101ms
-  - 🇺🇸 09 [S级] 9.5MB/s 86ms
-  - 🇺🇸 10 [S级] 8.7MB/s 87ms
-  - 🇺🇸 11 [S级] 14.4MB/s 108ms
-  - 🇺🇸 12 [S级] 8.7MB/s 112ms
-  - 🇺🇸 13 [S级] 9.7MB/s 114ms
-  - 🇺🇸 14 [S级] 30.6MB/s 119ms
-  - 🇺🇸 15 [S级] 6.6MB/s 123ms
-  - 🇺🇸 16 [S级] 6.6MB/s 121ms
-  - 🇺🇸 17 [S级] 9.6MB/s 126ms
-  - 🇺🇸 18 [S级] 6.1MB/s 105ms
-  - 🇺🇸 19 [S级] 28.7MB/s 126ms
-  - 🇺🇸 20 [S级] 6.6MB/s 128ms
-  - 🇺🇸 21 [S级] 8.6MB/s 127ms
-  - 🇺🇸 22 [S级] 18.9MB/s 134ms
-  - 🇺🇸 23 [S级] 36.6MB/s 140ms
-  - 🇺🇸 24 [S级] 8.6MB/s 142ms
-  - 🇺🇸 25 [S级] 13.1MB/s 148ms
-  - 🇺🇸 26 [S级] 30.8MB/s 160ms
-  - 🇺🇸 27 [S级] 35.4MB/s 164ms
-  - 🇺🇸 28 [S级] 33.5MB/s 148ms
-  - 🇺🇸 29 [S级] 6.9MB/s 166ms
-  - 🇺🇸 30 [S级] 23.6MB/s 174ms
-  - 🇺🇸 31 [S级] 39.6MB/s 173ms
-  - 🇺🇸 32 [S级] 6.5MB/s 173ms
-  - 🇺🇸 33 [S级] 17.7MB/s 176ms
-  - 🇺🇸 34 [S级] 29.9MB/s 177ms
-  - 🇺🇸 35 [S级] 13.8MB/s 178ms
-  - 🇬🇧 36 [S级] 8.6MB/s 113ms
-  - 🇺🇸 37 [S级] 6.1MB/s 189ms
-  - 🇯🇵 38 [S级] 4.9MB/s 158ms
-  - 🇺🇸 39 [S级] 5.8MB/s 114ms
-  - 🇺🇸 40 [S级] 6.8MB/s 195ms
-  - 🇩🇪 41 [S级] 38.2MB/s 200ms
-  - 🇺🇸 42 [S级] 7.8MB/s 181ms
-  - 🇺🇸 43 [S级] 25.6MB/s 202ms
-  - 🇺🇸 44 [S级] 34.0MB/s 125ms
-  - 🇺🇸 45 [S级] 29.2MB/s 90ms
-  - 🇺🇸 46 [S级] 13.2MB/s 129ms
-  - 🇺🇸 47 [S级] 34.0MB/s 217ms
-  - 🇺🇸 48 [S级] 6.6MB/s 217ms
-  - 🇺🇸 49 [S级] 11.3MB/s 178ms
-  - 🇺🇸 50 [S级] 27.4MB/s 208ms
-  - 🇺🇸 51 [S级] 21.3MB/s 229ms
-  - 🇺🇸 52 [S级] 8.0MB/s 123ms
-  - 🇺🇸 53 [S级] 10.3MB/s 242ms
-  - 🇺🇸 54 [S级] 6.3MB/s 243ms
-  - 🇺🇸 55 [S级] 5.9MB/s 216ms
-  - 🇺🇸 56 [S级] 12.8MB/s 163ms
-  - 🇺🇸 57 [S级] 7.2MB/s 264ms
-  - 🇺🇸 58 [S级] 7.1MB/s 147ms
-  - 🇺🇸 59 [S级] 16.0MB/s 209ms
-  - 🇺🇸 60 [S级] 6.3MB/s 286ms
-  - 🇺🇸 61 [S级] 5.9MB/s 211ms
-  - 🇺🇸 62 [S级] 30.2MB/s 127ms
-  - 🇺🇸 63 [S级] 37.5MB/s 76ms
-  - 🇺🇸 64 [S级] 8.1MB/s 283ms
-  - 🇺🇸 65 [S级] 11.2MB/s 189ms
-  - 🇺🇸 66 [S级] 5.5MB/s 316ms
-  - 🇺🇸 67 [S级] 5.8MB/s 205ms
-  - 🇺🇸 68 [S级] 80.8MB/s 108ms
-  - 🇺🇸 69 [S级] 5.8MB/s 328ms
-  - 🇮🇱 70 [S级] 6.1MB/s 288ms
-  - 🇺🇸 71 [S级] 5.8MB/s 213ms
-  - 🇺🇸 72 [S级] 12.7MB/s 211ms
-  - 🇺🇸 73 [S级] 6.0MB/s 218ms
-  - 🇺🇸 74 [S级] 6.2MB/s 273ms
-  - 🇺🇸 75 [S级] 23.4MB/s 69ms
-  - 🇺🇸 76 [S级] 33.6MB/s 348ms
-  - 🇺🇸 77 [S级] 5.7MB/s 295ms
-  - 🇺🇸 78 [S级] 26.4MB/s 114ms
-  - 🇺🇸 79 [S级] 5.9MB/s 242ms
-  - 🇺🇸 80 [S级] 4.9MB/s 334ms
-  - 🇺🇸 81 [S级] 5.7MB/s 265ms
-  - 🇺🇸 82 [S级] 30.3MB/s 135ms
-  - 🇯🇵 83 [S级] 4.4MB/s 207ms
-  - 🇯🇵 84 [S级] 4.2MB/s 136ms
-  - 🇩🇪 85 [S级] 4.2MB/s 179ms
-  - 🇺🇸 86 [S级] 6.3MB/s 326ms
-  - 🇺🇸 87 [S级] 5.6MB/s 258ms
-  - 🇯🇵 88 [S级] 4.3MB/s 205ms
-  - 🇯🇵 89 [S级] 4.3MB/s 179ms
-  - 🇯🇵 90 [S级] 6.0MB/s 157ms
-  - 🇺🇸 91 [S级] 10.8MB/s 352ms
-  - 🇯🇵 92 [S级] 4.1MB/s 170ms
-  - 🇩🇪 93 [S级] 4.3MB/s 238ms
-  - 🇨🇦 94 [S级] 4.7MB/s 383ms
-  - 🇺🇸 95 [S级] 5.0MB/s 313ms
-  - 🇺🇸 96 [S级] 5.0MB/s 315ms
-  - 🇺🇸 97 [S级] 5.1MB/s 324ms
-  - 🇯🇵 98 [S级] 3.7MB/s 134ms
-  - 🇳🇱 99 [S级] 3.9MB/s 210ms
-  - 🇬🇧 100 [S级] 4.1MB/s 226ms
-  - 🇨🇦 101 [S级] 4.2MB/s 354ms
-  - 🇩🇪 102 [S级] 4.4MB/s 389ms
-  - 🇺🇸 103 [S级] 12.2MB/s 349ms
-  - 🇩🇪 104 [S级] 5.0MB/s 352ms
-  - 🇩🇪 105 [S级] 3.3MB/s 94ms
-  - 🇺🇸 106 [S级] 5.0MB/s 378ms
-  - 🇺🇸 107 [S级] 4.3MB/s 283ms
-  - 🇺🇸 108 [S级] 4.1MB/s 237ms
-  - 🇺🇸 109 [S级] 3.1MB/s 118ms
-  - 🇯🇵 110 [S级] 4.1MB/s 175ms
-  - 🇩🇪 111 [S级] 3.2MB/s 113ms
-  - 🇬🇧 112 [S级] 3.0MB/s 128ms
-  - 🇩🇪 113 [S级] 4.3MB/s 234ms
-  - 🇩🇪 114 [S级] 3.1MB/s 153ms
-  - 🇩🇪 115 [S级] 3.0MB/s 142ms
-  - 🇩🇪 116 [S级] 3.2MB/s 213ms
-  - 🇩🇪 117 [S级] 3.0MB/s 152ms
-  - 🇩🇪 118 [S级] 3.2MB/s 240ms
-  - 🇯🇵 119 [S级] 3.6MB/s 369ms
-  - 🇺🇸 120 [S级] 3.8MB/s 260ms
-  - 🇯🇵 121 [S级] 3.2MB/s 244ms
-  - 🇩🇪 122 [S级] 3.1MB/s 286ms
-  - 🇨🇦 123 [S级] 3.1MB/s 394ms
-  - 🇩🇪 124 [S级] 3.1MB/s 267ms
-  - 🇩🇪 125 [S级] 3.2MB/s 239ms
-  - 🇩🇪 126 [S级] 3.1MB/s 382ms
+  - 🇺🇸 01 [S级] 8.7MB/s 238ms
+  - 🇺🇸 02 [S级] 20.1MB/s 263ms
+  - 🇺🇸 03 [S级] 6.5MB/s 295ms
+  - 🇺🇸 04 [S级] 20.0MB/s 327ms
+  - 🇺🇸 05 [S级] 17.9MB/s 341ms
+  - 🇺🇸 06 [S级] 9.8MB/s 356ms
+  - 🇺🇸 07 [S级] 11.5MB/s 370ms
+  - 🇺🇸 08 [S级] 10.0MB/s 320ms
+  - 🇺🇸 09 [S级] 14.0MB/s 365ms
+  - 🇺🇸 10 [S级] 15.3MB/s 330ms
+  - 🇺🇸 11 [S级] 5.4MB/s 398ms
+  - 🇩🇪 12 [S级] 4.8MB/s 327ms
+  - 🇺🇸 13 [S级] 13.3MB/s 398ms
+  - 🇺🇸 14 [S级] 7.2MB/s 351ms
+  - 🇺🇸 15 [S级] 5.5MB/s 382ms
+  - 🇺🇸 16 [S级] 18.4MB/s 367ms
+  - 🇺🇸 17 [S级] 6.3MB/s 266ms
+  - 🇺🇸 18 [S级] 13.5MB/s 392ms
+  - 🇩🇪 19 [S级] 4.4MB/s 363ms
 rules:
 - MATCH,PROXIES

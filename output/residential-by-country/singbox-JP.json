@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 01 [家宽级] 1.9MB/s 857ms",
-      "server": "185.125.103.62",
-      "server_port": 8082,
-      "uuid": "a56a5bae-45e5-4f0d-9e31-40af97733fd9",
+      "tag": "🇯🇵 01 [家宽级] 3.9MB/s 1312ms",
+      "server": "128.241.25.11",
+      "server_port": 30021,
+      "uuid": "72fbb611-628d-4afa-8198-bda3e38021f9",
       "tls": {
         "enabled": true,
-        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -22,53 +22,7 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 02 [家宽级] 0.4MB/s 939ms",
-      "server": "5.9.117.252",
-      "server_port": 4433,
-      "uuid": "ef286b0e-21ed-4e2b-9110-e2ddc7627892",
-      "tls": {
-        "enabled": true,
-        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 03 [家宽级] 0.3MB/s 1138ms",
-      "server": "45.77.241.190",
-      "server_port": 8441,
-      "uuid": "7e622534-4a90-40ba-bb30-5cb5403be121",
-      "tls": {
-        "enabled": true,
-        "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
         }
       }
     },
@@ -77,18 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 01 [家宽级] 1.9MB/s 857ms",
-        "🇯🇵 02 [家宽级] 0.4MB/s 939ms",
-        "🇯🇵 03 [家宽级] 0.3MB/s 1138ms"
+        "🇯🇵 01 [家宽级] 3.9MB/s 1312ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 01 [家宽级] 1.9MB/s 857ms",
-        "🇯🇵 02 [家宽级] 0.4MB/s 939ms",
-        "🇯🇵 03 [家宽级] 0.3MB/s 1138ms"
+        "🇯🇵 01 [家宽级] 3.9MB/s 1312ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
