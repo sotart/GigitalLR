@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 57.6MB/s 4298ms",
+      "tag": "🇭🇰 01 [家宽级] 44.9MB/s 5555ms",
       "server": "v10.zgtfqs.click",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -14,10 +14,10 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 02 [家宽级] 2.7MB/s 1449ms",
+      "tag": "🇭🇰 02 [家宽级] 0.2MB/s 1359ms",
       "server": "hk01.kfc-520.com",
       "server_port": 60001,
-      "password": "8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3",
+      "password": "5ec96249-b753-317a-b065-b67ad66b8185",
       "tls": {
         "enabled": true,
         "server_name": "hk01.kfc-520.com",
@@ -29,16 +29,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 57.6MB/s 4298ms",
-        "🇭🇰 02 [家宽级] 2.7MB/s 1449ms"
+        "🇭🇰 01 [家宽级] 44.9MB/s 5555ms",
+        "🇭🇰 02 [家宽级] 0.2MB/s 1359ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 57.6MB/s 4298ms",
-        "🇭🇰 02 [家宽级] 2.7MB/s 1449ms"
+        "🇭🇰 01 [家宽级] 44.9MB/s 5555ms",
+        "🇭🇰 02 [家宽级] 0.2MB/s 1359ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

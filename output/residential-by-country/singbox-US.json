@@ -4,8 +4,31 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 01 [家宽级] 9.3MB/s 564ms",
+      "server": "104.24.30.89",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "rayan-007.nastaran.dpdns.org"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇺🇸 01 [家宽级] 0.2MB/s 4196ms",
+      "tag": "🇺🇸 02 [家宽级] 0.4MB/s 965ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -24,14 +47,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 0.2MB/s 4196ms"
+        "🇺🇸 01 [家宽级] 9.3MB/s 564ms",
+        "🇺🇸 02 [家宽级] 0.4MB/s 965ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 0.2MB/s 4196ms"
+        "🇺🇸 01 [家宽级] 9.3MB/s 564ms",
+        "🇺🇸 02 [家宽级] 0.4MB/s 965ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

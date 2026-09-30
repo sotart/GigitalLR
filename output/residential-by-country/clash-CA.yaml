@@ -1,0 +1,61 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇦 01 [家宽级] 10.0MB/s 381ms
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ez-82c7e7.abobaba.workers.dev
+- name: 🇨🇦 02 [家宽级] 6.4MB/s 770ms
+  server: 188.114.97.6
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇦 03 [家宽级] 9.9MB/s 1153ms
+  server: 104.21.78.225
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  tls: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: curly-night-6928.ggdhchjk.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇦 01 [家宽级] 10.0MB/s 381ms
+  - 🇨🇦 02 [家宽级] 6.4MB/s 770ms
+  - 🇨🇦 03 [家宽级] 9.9MB/s 1153ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 01 [家宽级] 10.0MB/s 381ms
+  - 🇨🇦 02 [家宽级] 6.4MB/s 770ms
+  - 🇨🇦 03 [家宽级] 9.9MB/s 1153ms
+rules:
+- MATCH,PROXIES

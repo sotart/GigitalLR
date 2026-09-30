@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 57.6MB/s 4298ms
+- name: 🇭🇰 01 [家宽级] 44.9MB/s 5555ms
   server: v10.zgtfqs.click
   port: 30807
   udp: true
@@ -12,12 +12,12 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: 🇭🇰 02 [家宽级] 2.7MB/s 1449ms
+- name: 🇭🇰 02 [家宽级] 0.2MB/s 1359ms
   server: hk01.kfc-520.com
   port: 60001
   udp: true
   type: hysteria2
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  password: 5ec96249-b753-317a-b065-b67ad66b8185
   sni: hk01.kfc-520.com
   skip-cert-verify: true
 proxy-groups:
@@ -25,14 +25,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 57.6MB/s 4298ms
-  - 🇭🇰 02 [家宽级] 2.7MB/s 1449ms
+  - 🇭🇰 01 [家宽级] 44.9MB/s 5555ms
+  - 🇭🇰 02 [家宽级] 0.2MB/s 1359ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 57.6MB/s 4298ms
-  - 🇭🇰 02 [家宽级] 2.7MB/s 1449ms
+  - 🇭🇰 01 [家宽级] 44.9MB/s 5555ms
+  - 🇭🇰 02 [家宽级] 0.2MB/s 1359ms
 rules:
 - MATCH,PROXIES
