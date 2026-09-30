@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 61.8MB/s 5901ms
+- name: 🇭🇰 01 [家宽级] 63.8MB/s 3809ms
   server: v10.hdacd.com
   port: 30807
   udp: true
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 61.8MB/s 5901ms
+  - 🇭🇰 01 [家宽级] 63.8MB/s 3809ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 61.8MB/s 5901ms
+  - 🇭🇰 01 [家宽级] 63.8MB/s 3809ms
 rules:
 - MATCH,PROXIES

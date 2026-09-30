@@ -4,41 +4,27 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 12.0MB/s 490ms
-  server: 172.64.229.2
-  port: 8080
+- name: 🇺🇸 01 [家宽级] 0.2MB/s 1923ms
+  server: 155.117.19.17
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 02 [家宽级] 9.7MB/s 552ms
-  server: 162.159.43.187
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 12.0MB/s 490ms
-  - 🇺🇸 02 [家宽级] 9.7MB/s 552ms
+  - 🇺🇸 01 [家宽级] 0.2MB/s 1923ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 12.0MB/s 490ms
-  - 🇺🇸 02 [家宽级] 9.7MB/s 552ms
+  - 🇺🇸 01 [家宽级] 0.2MB/s 1923ms
 rules:
 - MATCH,PROXIES
