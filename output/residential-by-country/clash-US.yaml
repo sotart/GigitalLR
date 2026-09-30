@@ -4,44 +4,67 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 9.3MB/s 564ms
-  server: 104.24.30.89
-  port: 443
+- name: 🇺🇸 01 [家宽级] 7.4MB/s 398ms
+  server: 104.21.70.21
+  port: 8080
   udp: true
   type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇺🇸 02 [家宽级] 0.4MB/s 965ms
-  server: 155.117.19.17
-  port: 443
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+- name: 🇺🇸 02 [家宽级] 4.3MB/s 388ms
+  server: 104.18.46.234
+  port: 2095
   udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tlssecurity=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 03 [家宽级] 8.3MB/s 602ms
+  server: 172.64.42.85
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 04 [家宽级] 1.0MB/s 275ms
+  server: 104.18.39.218
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 9.3MB/s 564ms
-  - 🇺🇸 02 [家宽级] 0.4MB/s 965ms
+  - 🇺🇸 01 [家宽级] 7.4MB/s 398ms
+  - 🇺🇸 02 [家宽级] 4.3MB/s 388ms
+  - 🇺🇸 03 [家宽级] 8.3MB/s 602ms
+  - 🇺🇸 04 [家宽级] 1.0MB/s 275ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 9.3MB/s 564ms
-  - 🇺🇸 02 [家宽级] 0.4MB/s 965ms
+  - 🇺🇸 01 [家宽级] 7.4MB/s 398ms
+  - 🇺🇸 02 [家宽级] 4.3MB/s 388ms
+  - 🇺🇸 03 [家宽级] 8.3MB/s 602ms
+  - 🇺🇸 04 [家宽级] 1.0MB/s 275ms
 rules:
 - MATCH,PROXIES
