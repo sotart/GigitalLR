@@ -4,25 +4,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 2.2MB/s 1124ms
-  server: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
-  port: 443
+- name: 🇭🇰 01 [家宽级] 61.8MB/s 5901ms
+  server: v10.hdacd.com
+  port: 30807
   udp: true
-  type: hysteria2
-  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
-  sni: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 2.2MB/s 1124ms
+  - 🇭🇰 01 [家宽级] 61.8MB/s 5901ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 2.2MB/s 1124ms
+  - 🇭🇰 01 [家宽级] 61.8MB/s 5901ms
 rules:
 - MATCH,PROXIES
