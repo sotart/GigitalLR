@@ -4,47 +4,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 01 [家宽级] 0.5MB/s 1939ms
-  server: 104.21.41.247
+- name: 🇹🇷 01 [家宽级] 0.1MB/s 2109ms
+  server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
-  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
-  tls: true
-  servername: tcdnu.azad0namah.ir
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tucdn/
-    headers:
-      Host: tcdnu.azad0namah.ir
-- name: 🇹🇷 02 [家宽级] 0.3MB/s 2376ms
-  server: tcdnu.azad0namah.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
-  tls: true
-  servername: tcdnu.azad0namah.ir
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tuws/
-    headers:
-      Host: tcdnu.azad0namah.ir
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 01 [家宽级] 0.5MB/s 1939ms
-  - 🇹🇷 02 [家宽级] 0.3MB/s 2376ms
+  - 🇹🇷 01 [家宽级] 0.1MB/s 2109ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 01 [家宽级] 0.5MB/s 1939ms
-  - 🇹🇷 02 [家宽级] 0.3MB/s 2376ms
+  - 🇹🇷 01 [家宽级] 0.1MB/s 2109ms
 rules:
 - MATCH,PROXIES

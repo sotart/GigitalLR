@@ -4,7 +4,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 0.3MB/s 1317ms
+- name: 🇺🇸 01 [家宽级] 5.3MB/s 612ms
+  server: 172.64.32.103
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 02 [家宽级] 0.2MB/s 668ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -19,12 +30,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 0.3MB/s 1317ms
+  - 🇺🇸 01 [家宽级] 5.3MB/s 612ms
+  - 🇺🇸 02 [家宽级] 0.2MB/s 668ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 0.3MB/s 1317ms
+  - 🇺🇸 01 [家宽级] 5.3MB/s 612ms
+  - 🇺🇸 02 [家宽级] 0.2MB/s 668ms
 rules:
 - MATCH,PROXIES

@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 01 [S级] 36.2MB/s 168ms",
-      "server": "104.225.237.87",
-      "server_port": 443,
-      "uuid": "2db85988-715e-4481-aad6-90605ca4736d",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇹🇼 01 [家宽级] 3.9MB/s 1296ms",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "LBeNoujOB6Su0ZKL5-sp51LkIZsNbPzE1xVhufJJaGc",
-          "short_id": "b6bac1f358b14f15"
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [S级] 36.2MB/s 168ms"
+        "🇹🇼 01 [家宽级] 3.9MB/s 1296ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [S级] 36.2MB/s 168ms"
+        "🇹🇼 01 [家宽级] 3.9MB/s 1296ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
