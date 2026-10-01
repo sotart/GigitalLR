@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 60.0MB/s 6193ms",
-      "server": "v10.zgtfqs.click",
+      "tag": "🇭🇰 01 [家宽级] 8.1MB/s 11212ms",
+      "server": "v10.hdacd.com",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "security": "auto",
@@ -14,55 +14,71 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 02 [家宽级] 3.9MB/s 1500ms",
-      "server": "52a88eac-tmkao0-u4zl7f-1jk6u.hk3.hyhuawei.com",
+      "tag": "🇭🇰 02 [家宽级] 2.2MB/s 1444ms",
+      "server": "311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9",
+      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "52a88eac-tmkao0-u4zl7f-1jk6u.hk3.hyhuawei.com",
+        "server_name": "311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 03 [家宽级] 2.4MB/s 1681ms",
-      "server": "96b301c8-tmkao0-u4zg37-1jcwu.nw4.hyhuawei.com",
+      "type": "vless",
+      "tag": "🇭🇰 03 [家宽级] 1.8MB/s 1448ms",
+      "server": "42.200.173.5",
       "server_port": 443,
-      "password": "f93486ce-cc84-11ed-9e98-f23c913c8d2b",
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "96b301c8-tmkao0-u4zg37-1jcwu.nw4.hyhuawei.com",
-        "insecure": true
+        "server_name": "s3.ap-east-1.amazonaws.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇭🇰 04 [家宽级] 2.1MB/s 1352ms",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16113,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "tag": "🇭🇰 04 [家宽级] 1.7MB/s 1561ms",
+      "server": "az-1.linkaa.xyz",
+      "server_port": 53617,
+      "uuid": "6E571484-4166-4699-8F58-B34A1823691F",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/game/resources",
+        "headers": {
+          "Host": "az-1.linkaa.xyz"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 60.0MB/s 6193ms",
-        "🇭🇰 02 [家宽级] 3.9MB/s 1500ms",
-        "🇭🇰 03 [家宽级] 2.4MB/s 1681ms",
-        "🇭🇰 04 [家宽级] 2.1MB/s 1352ms"
+        "🇭🇰 01 [家宽级] 8.1MB/s 11212ms",
+        "🇭🇰 02 [家宽级] 2.2MB/s 1444ms",
+        "🇭🇰 03 [家宽级] 1.8MB/s 1448ms",
+        "🇭🇰 04 [家宽级] 1.7MB/s 1561ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 60.0MB/s 6193ms",
-        "🇭🇰 02 [家宽级] 3.9MB/s 1500ms",
-        "🇭🇰 03 [家宽级] 2.4MB/s 1681ms",
-        "🇭🇰 04 [家宽级] 2.1MB/s 1352ms"
+        "🇭🇰 01 [家宽级] 8.1MB/s 11212ms",
+        "🇭🇰 02 [家宽级] 2.2MB/s 1444ms",
+        "🇭🇰 03 [家宽级] 1.8MB/s 1448ms",
+        "🇭🇰 04 [家宽级] 1.7MB/s 1561ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

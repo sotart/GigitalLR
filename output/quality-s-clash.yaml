@@ -4,30 +4,63 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 36.2MB/s 168ms
-  server: 104.225.237.87
-  port: 443
+- name: 🇺🇸 01 [S级] 5.9MB/s 298ms
+  server: 104.18.46.46
+  port: 8080
   udp: true
   type: vless
-  uuid: 2db85988-715e-4481-aad6-90605ca4736d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: LBeNoujOB6Su0ZKL5-sp51LkIZsNbPzE1xVhufJJaGc
-    short-id: b6bac1f358b14f15
-  servername: www.microsoft.com
-  client-fingerprint: random
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 02 [S级] 18.5MB/s 384ms
+  server: 104.18.46.46
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 03 [S级] 7.9MB/s 370ms
+  server: 54.90.169.61
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 04 [S级] 8.1MB/s 392ms
+  server: 172.64.158.146
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 36.2MB/s 168ms
+  - 🇺🇸 01 [S级] 5.9MB/s 298ms
+  - 🇺🇸 02 [S级] 18.5MB/s 384ms
+  - 🇺🇸 03 [S级] 7.9MB/s 370ms
+  - 🇺🇸 04 [S级] 8.1MB/s 392ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 36.2MB/s 168ms
+  - 🇺🇸 01 [S级] 5.9MB/s 298ms
+  - 🇺🇸 02 [S级] 18.5MB/s 384ms
+  - 🇺🇸 03 [S级] 7.9MB/s 370ms
+  - 🇺🇸 04 [S级] 8.1MB/s 392ms
 rules:
 - MATCH,PROXIES

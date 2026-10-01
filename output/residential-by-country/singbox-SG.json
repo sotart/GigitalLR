@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 01 [家宽级] 55.7MB/s 4303ms",
+      "tag": "🇸🇬 01 [家宽级] 42.2MB/s 3514ms",
       "server": "154.86.30.45",
       "server_port": 24443,
       "method": "aes-128-gcm",
@@ -13,7 +13,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 02 [家宽级] 1.5MB/s 1925ms",
+      "tag": "🇸🇬 02 [家宽级] 1.9MB/s 1518ms",
       "server": "s3.huhiuh.space",
       "server_port": 18642,
       "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
@@ -28,16 +28,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 01 [家宽级] 55.7MB/s 4303ms",
-        "🇸🇬 02 [家宽级] 1.5MB/s 1925ms"
+        "🇸🇬 01 [家宽级] 42.2MB/s 3514ms",
+        "🇸🇬 02 [家宽级] 1.9MB/s 1518ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 01 [家宽级] 55.7MB/s 4303ms",
-        "🇸🇬 02 [家宽级] 1.5MB/s 1925ms"
+        "🇸🇬 01 [家宽级] 42.2MB/s 3514ms",
+        "🇸🇬 02 [家宽级] 1.9MB/s 1518ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

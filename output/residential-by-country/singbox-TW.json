@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 3.9MB/s 1296ms",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 01 [家宽级] 1.7MB/s 1224ms",
+      "server": "118.167.207.194",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -14,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -24,18 +24,57 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇼 02 [家宽级] 1.1MB/s 1837ms",
+      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
+      "server_port": 11223,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 03 [家宽级] 0.6MB/s 1863ms",
+      "server": "hi.northcluster.info",
+      "server_port": 52300,
+      "uuid": "6e571484-4166-4699-8f58-b34a1823691f",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/video",
+        "headers": {
+          "Host": "hi.northcluster.info"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 04 [家宽级] 0.3MB/s 3100ms",
+      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
+      "server_port": 11224,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 3.9MB/s 1296ms"
+        "🇹🇼 01 [家宽级] 1.7MB/s 1224ms",
+        "🇹🇼 02 [家宽级] 1.1MB/s 1837ms",
+        "🇹🇼 03 [家宽级] 0.6MB/s 1863ms",
+        "🇹🇼 04 [家宽级] 0.3MB/s 3100ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 3.9MB/s 1296ms"
+        "🇹🇼 01 [家宽级] 1.7MB/s 1224ms",
+        "🇹🇼 02 [家宽级] 1.1MB/s 1837ms",
+        "🇹🇼 03 [家宽级] 0.6MB/s 1863ms",
+        "🇹🇼 04 [家宽级] 0.3MB/s 3100ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
