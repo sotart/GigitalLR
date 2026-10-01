@@ -5,38 +5,35 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 63.8MB/s 3809ms",
-      "server": "v10.hdacd.com",
+      "tag": "🇭🇰 01 [家宽级] 55.3MB/s 5450ms",
+      "server": "v10.zgtfqs.click",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "security": "auto",
       "alter_id": 2
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 02 [家宽级] 23.6MB/s 4951ms",
-      "server": "ce1fc2d8.krkt.hkssip.com",
-      "server_port": 49642,
-      "method": "aes-256-gcm",
-      "password": "ac9c0a7b"
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇺 03 [家宽级] 2.2MB/s 422ms",
-      "server": "188.114.97.6",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "tag": "🇹🇷 02 [家宽级] 2.8MB/s 1891ms",
+      "server": "104.21.41.247",
+      "server_port": 2053,
+      "uuid": "0da0a073-a5b0-4229-bf11-24592f6290b9",
+      "tls": {
+        "enabled": true,
+        "server_name": "tcdnu.azad0namah.ir",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/tucdn/",
         "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+          "Host": "tcdnu.azad0namah.ir"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 04 [家宽级] 2.0MB/s 1146ms",
+      "tag": "🇹🇼 03 [家宽级] 1.8MB/s 1654ms",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -56,27 +53,41 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 05 [家宽级] 1.5MB/s 892ms",
-      "server": "154.86.30.45",
-      "server_port": 24443,
-      "method": "aes-128-gcm",
-      "password": "bKgENdAl@8Zx3lAc-HK-BD-20260622"
+      "tag": "🇰🇷 04 [家宽级] 1.7MB/s 3357ms",
+      "server": "ce1fc2d8.krkt.hkssip.com",
+      "server_port": 49642,
+      "method": "aes-256-gcm",
+      "password": "ac9c0a7b"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 06 [家宽级] 0.2MB/s 1538ms",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
+      "type": "vless",
+      "tag": "🇹🇷 05 [家宽级] 1.0MB/s 1708ms",
+      "server": "tcdnu.azad0namah.ir",
+      "server_port": 8443,
+      "uuid": "0da0a073-a5b0-4229-bf11-24592f6290b9",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+        "server_name": "tcdnu.azad0namah.ir",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tuws/",
+        "headers": {
+          "Host": "tcdnu.azad0namah.ir"
+        }
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 06 [家宽级] 0.2MB/s 1162ms",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇺🇸 07 [家宽级] 0.2MB/s 1923ms",
+      "tag": "🇺🇸 07 [家宽级] 0.2MB/s 2627ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -91,39 +102,40 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 08 [家宽级] 0.1MB/s 1059ms",
-      "server": "178.83.46.216",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "type": "shadowsocks",
+      "tag": "🇸🇬 08 [家宽级] 0.1MB/s 1714ms",
+      "server": "154.86.30.45",
+      "server_port": 24443,
+      "method": "aes-128-gcm",
+      "password": "bKgENdAl@8Zx3lAc-HK-BD-20260622"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 63.8MB/s 3809ms",
-        "🇰🇷 02 [家宽级] 23.6MB/s 4951ms",
-        "🇦🇺 03 [家宽级] 2.2MB/s 422ms",
-        "🇹🇼 04 [家宽级] 2.0MB/s 1146ms",
-        "🇸🇬 05 [家宽级] 1.5MB/s 892ms",
-        "🇸🇬 06 [家宽级] 0.2MB/s 1538ms",
-        "🇺🇸 07 [家宽级] 0.2MB/s 1923ms",
-        "🇹🇷 08 [家宽级] 0.1MB/s 1059ms"
+        "🇭🇰 01 [家宽级] 55.3MB/s 5450ms",
+        "🇹🇷 02 [家宽级] 2.8MB/s 1891ms",
+        "🇹🇼 03 [家宽级] 1.8MB/s 1654ms",
+        "🇰🇷 04 [家宽级] 1.7MB/s 3357ms",
+        "🇹🇷 05 [家宽级] 1.0MB/s 1708ms",
+        "🇹🇷 06 [家宽级] 0.2MB/s 1162ms",
+        "🇺🇸 07 [家宽级] 0.2MB/s 2627ms",
+        "🇸🇬 08 [家宽级] 0.1MB/s 1714ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 63.8MB/s 3809ms",
-        "🇰🇷 02 [家宽级] 23.6MB/s 4951ms",
-        "🇦🇺 03 [家宽级] 2.2MB/s 422ms",
-        "🇹🇼 04 [家宽级] 2.0MB/s 1146ms",
-        "🇸🇬 05 [家宽级] 1.5MB/s 892ms",
-        "🇸🇬 06 [家宽级] 0.2MB/s 1538ms",
-        "🇺🇸 07 [家宽级] 0.2MB/s 1923ms",
-        "🇹🇷 08 [家宽级] 0.1MB/s 1059ms"
+        "🇭🇰 01 [家宽级] 55.3MB/s 5450ms",
+        "🇹🇷 02 [家宽级] 2.8MB/s 1891ms",
+        "🇹🇼 03 [家宽级] 1.8MB/s 1654ms",
+        "🇰🇷 04 [家宽级] 1.7MB/s 3357ms",
+        "🇹🇷 05 [家宽级] 1.0MB/s 1708ms",
+        "🇹🇷 06 [家宽级] 0.2MB/s 1162ms",
+        "🇺🇸 07 [家宽级] 0.2MB/s 2627ms",
+        "🇸🇬 08 [家宽级] 0.1MB/s 1714ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

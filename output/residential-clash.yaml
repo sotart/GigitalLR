@@ -4,33 +4,29 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 63.8MB/s 3809ms
-  server: v10.hdacd.com
+- name: 🇭🇰 01 [家宽级] 55.3MB/s 5450ms
+  server: v10.zgtfqs.click
   port: 30807
   udp: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: 🇰🇷 02 [家宽级] 23.6MB/s 4951ms
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-- name: 🇦🇺 03 [家宽级] 2.2MB/s 422ms
-  server: 188.114.97.6
-  port: 2086
+- name: 🇹🇷 02 [家宽级] 2.8MB/s 1891ms
+  server: 104.21.41.247
+  port: 2053
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
+  tls: true
+  servername: tcdnu.azad0namah.ir
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /tucdn/
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇹🇼 04 [家宽级] 2.0MB/s 1146ms
+      Host: tcdnu.azad0namah.ir
+- name: 🇹🇼 03 [家宽级] 1.8MB/s 1654ms
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -41,22 +37,34 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇸🇬 05 [家宽级] 1.5MB/s 892ms
-  server: 154.86.30.45
-  port: 24443
+- name: 🇰🇷 04 [家宽级] 1.7MB/s 3357ms
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: bKgENdAl@8Zx3lAc-HK-BD-20260622
-- name: 🇸🇬 06 [家宽级] 0.2MB/s 1538ms
-  server: s3.huhiuh.space
-  port: 18642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+- name: 🇹🇷 05 [家宽级] 1.0MB/s 1708ms
+  server: tcdnu.azad0namah.ir
+  port: 8443
   udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 07 [家宽级] 0.2MB/s 1923ms
+  type: vless
+  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
+  tls: true
+  servername: tcdnu.azad0namah.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tuws/
+    headers:
+      Host: tcdnu.azad0namah.ir
+- name: 🇹🇷 06 [家宽级] 0.2MB/s 1162ms
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇺🇸 07 [家宽级] 0.2MB/s 2627ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -66,37 +74,38 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇷 08 [家宽级] 0.1MB/s 1059ms
-  server: 178.83.46.216
-  port: 2053
+- name: 🇸🇬 08 [家宽级] 0.1MB/s 1714ms
+  server: 154.86.30.45
+  port: 24443
   udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  type: ss
+  cipher: aes-128-gcm
+  password: bKgENdAl@8Zx3lAc-HK-BD-20260622
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 63.8MB/s 3809ms
-  - 🇰🇷 02 [家宽级] 23.6MB/s 4951ms
-  - 🇦🇺 03 [家宽级] 2.2MB/s 422ms
-  - 🇹🇼 04 [家宽级] 2.0MB/s 1146ms
-  - 🇸🇬 05 [家宽级] 1.5MB/s 892ms
-  - 🇸🇬 06 [家宽级] 0.2MB/s 1538ms
-  - 🇺🇸 07 [家宽级] 0.2MB/s 1923ms
-  - 🇹🇷 08 [家宽级] 0.1MB/s 1059ms
+  - 🇭🇰 01 [家宽级] 55.3MB/s 5450ms
+  - 🇹🇷 02 [家宽级] 2.8MB/s 1891ms
+  - 🇹🇼 03 [家宽级] 1.8MB/s 1654ms
+  - 🇰🇷 04 [家宽级] 1.7MB/s 3357ms
+  - 🇹🇷 05 [家宽级] 1.0MB/s 1708ms
+  - 🇹🇷 06 [家宽级] 0.2MB/s 1162ms
+  - 🇺🇸 07 [家宽级] 0.2MB/s 2627ms
+  - 🇸🇬 08 [家宽级] 0.1MB/s 1714ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 63.8MB/s 3809ms
-  - 🇰🇷 02 [家宽级] 23.6MB/s 4951ms
-  - 🇦🇺 03 [家宽级] 2.2MB/s 422ms
-  - 🇹🇼 04 [家宽级] 2.0MB/s 1146ms
-  - 🇸🇬 05 [家宽级] 1.5MB/s 892ms
-  - 🇸🇬 06 [家宽级] 0.2MB/s 1538ms
-  - 🇺🇸 07 [家宽级] 0.2MB/s 1923ms
-  - 🇹🇷 08 [家宽级] 0.1MB/s 1059ms
+  - 🇭🇰 01 [家宽级] 55.3MB/s 5450ms
+  - 🇹🇷 02 [家宽级] 2.8MB/s 1891ms
+  - 🇹🇼 03 [家宽级] 1.8MB/s 1654ms
+  - 🇰🇷 04 [家宽级] 1.7MB/s 3357ms
+  - 🇹🇷 05 [家宽级] 1.0MB/s 1708ms
+  - 🇹🇷 06 [家宽级] 0.2MB/s 1162ms
+  - 🇺🇸 07 [家宽级] 0.2MB/s 2627ms
+  - 🇸🇬 08 [家宽级] 0.1MB/s 1714ms
 rules:
 - MATCH,PROXIES

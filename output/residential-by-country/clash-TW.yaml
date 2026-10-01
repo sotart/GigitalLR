@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 2.0MB/s 1146ms
+- name: 🇹🇼 01 [家宽级] 1.8MB/s 1654ms
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -20,12 +20,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 2.0MB/s 1146ms
+  - 🇹🇼 01 [家宽级] 1.8MB/s 1654ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 2.0MB/s 1146ms
+  - 🇹🇼 01 [家宽级] 1.8MB/s 1654ms
 rules:
 - MATCH,PROXIES
