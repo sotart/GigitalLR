@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 01 [家宽级] 2.8MB/s 1891ms",
+      "tag": "🇹🇷 01 [家宽级] 0.5MB/s 1939ms",
       "server": "104.21.41.247",
       "server_port": 2053,
       "uuid": "0da0a073-a5b0-4229-bf11-24592f6290b9",
@@ -24,7 +24,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 02 [家宽级] 1.0MB/s 1708ms",
+      "tag": "🇹🇷 02 [家宽级] 0.3MB/s 2376ms",
       "server": "tcdnu.azad0namah.ir",
       "server_port": 8443,
       "uuid": "0da0a073-a5b0-4229-bf11-24592f6290b9",
@@ -42,29 +42,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 03 [家宽级] 0.2MB/s 1162ms",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 01 [家宽级] 2.8MB/s 1891ms",
-        "🇹🇷 02 [家宽级] 1.0MB/s 1708ms",
-        "🇹🇷 03 [家宽级] 0.2MB/s 1162ms"
+        "🇹🇷 01 [家宽级] 0.5MB/s 1939ms",
+        "🇹🇷 02 [家宽级] 0.3MB/s 2376ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 01 [家宽级] 2.8MB/s 1891ms",
-        "🇹🇷 02 [家宽级] 1.0MB/s 1708ms",
-        "🇹🇷 03 [家宽级] 0.2MB/s 1162ms"
+        "🇹🇷 01 [家宽级] 0.5MB/s 1939ms",
+        "🇹🇷 02 [家宽级] 0.3MB/s 2376ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
