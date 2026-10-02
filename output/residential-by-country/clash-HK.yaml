@@ -4,48 +4,75 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 2.4MB/s 791ms
-  server: 964114bc-tmm5c0-tntd4s-yjq0.nw4.hyhuawei.com
+- name: 🇭🇰 01 [家宽级] 6.2MB/s 747ms
+  server: 7cf51189-tmm5c0-tqrqo1-8rja.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
-  sni: 964114bc-tmm5c0-tntd4s-yjq0.nw4.hyhuawei.com
+  password: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
+  sni: 7cf51189-tmm5c0-tqrqo1-8rja.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 02 [家宽级] 2.2MB/s 951ms
-  server: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+- name: 🇭🇰 02 [家宽级] 6.9MB/s 782ms
+  server: bada37c4-tmm5c0-u1dafb-1ro8s.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: f7d95364-607b-11ee-93af-f23c91369f2d
-  sni: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+  password: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
+  sni: bada37c4-tmm5c0-u1dafb-1ro8s.nw4.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 03 [家宽级] 1.9MB/s 1206ms
-  server: a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com
-  port: 443
+- name: 🇭🇰 03 [家宽级] 56.2MB/s 5412ms
+  server: v10.hdacd.com
+  port: 30807
   udp: true
-  type: vless
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: random
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: 🇭🇰 04 [家宽级] 2.0MB/s 578ms
+  server: dog-hk.kunlun01dns.com
+  port: 21021
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 05 [家宽级] 2.0MB/s 632ms
+  server: dog-hk.kunlun01dns.com
+  port: 21022
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 06 [家宽级] 2.0MB/s 1049ms
+  server: dog-hk.kunlun01dns.com
+  port: 21020
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 2.4MB/s 791ms
-  - 🇭🇰 02 [家宽级] 2.2MB/s 951ms
-  - 🇭🇰 03 [家宽级] 1.9MB/s 1206ms
+  - 🇭🇰 01 [家宽级] 6.2MB/s 747ms
+  - 🇭🇰 02 [家宽级] 6.9MB/s 782ms
+  - 🇭🇰 03 [家宽级] 56.2MB/s 5412ms
+  - 🇭🇰 04 [家宽级] 2.0MB/s 578ms
+  - 🇭🇰 05 [家宽级] 2.0MB/s 632ms
+  - 🇭🇰 06 [家宽级] 2.0MB/s 1049ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 2.4MB/s 791ms
-  - 🇭🇰 02 [家宽级] 2.2MB/s 951ms
-  - 🇭🇰 03 [家宽级] 1.9MB/s 1206ms
+  - 🇭🇰 01 [家宽级] 6.2MB/s 747ms
+  - 🇭🇰 02 [家宽级] 6.9MB/s 782ms
+  - 🇭🇰 03 [家宽级] 56.2MB/s 5412ms
+  - 🇭🇰 04 [家宽级] 2.0MB/s 578ms
+  - 🇭🇰 05 [家宽级] 2.0MB/s 632ms
+  - 🇭🇰 06 [家宽级] 2.0MB/s 1049ms
 rules:
 - MATCH,PROXIES

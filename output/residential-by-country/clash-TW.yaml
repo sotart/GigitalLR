@@ -4,16 +4,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 50.3MB/s 2112ms
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
+- name: 🇹🇼 01 [家宽级] 2.6MB/s 906ms
+  server: tw6.dexlos.com
+  port: 8080
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 02 [家宽级] 1.5MB/s 3422ms
-  server: hinet1.2yly.com
+  type: tuic
+  uuid: D7286728-678E-443B-B76B-B699654C66DD
+  password: D7286728-678E-443B-B76B-B699654C66DD
+  sni: tw6.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇹🇼 02 [家宽级] 1.2MB/s 837ms
+  server: 118.167.235.241
   port: 24215
   udp: true
   type: vless
@@ -22,20 +27,20 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 50.3MB/s 2112ms
-  - 🇹🇼 02 [家宽级] 1.5MB/s 3422ms
+  - 🇹🇼 01 [家宽级] 2.6MB/s 906ms
+  - 🇹🇼 02 [家宽级] 1.2MB/s 837ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 50.3MB/s 2112ms
-  - 🇹🇼 02 [家宽级] 1.5MB/s 3422ms
+  - 🇹🇼 01 [家宽级] 2.6MB/s 906ms
+  - 🇹🇼 02 [家宽级] 1.2MB/s 837ms
 rules:
 - MATCH,PROXIES
