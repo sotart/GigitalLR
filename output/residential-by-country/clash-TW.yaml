@@ -4,7 +4,15 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 1.8MB/s 1943ms
+- name: 🇹🇼 01 [家宽级] 50.3MB/s 2112ms
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇹🇼 02 [家宽级] 1.5MB/s 3422ms
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -14,28 +22,20 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: safari
-- name: 🇹🇼 02 [家宽级] 0.2MB/s 1771ms
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 1.8MB/s 1943ms
-  - 🇹🇼 02 [家宽级] 0.2MB/s 1771ms
+  - 🇹🇼 01 [家宽级] 50.3MB/s 2112ms
+  - 🇹🇼 02 [家宽级] 1.5MB/s 3422ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 1.8MB/s 1943ms
-  - 🇹🇼 02 [家宽级] 0.2MB/s 1771ms
+  - 🇹🇼 01 [家宽级] 50.3MB/s 2112ms
+  - 🇹🇼 02 [家宽级] 1.5MB/s 3422ms
 rules:
 - MATCH,PROXIES

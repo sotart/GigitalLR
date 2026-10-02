@@ -4,24 +4,24 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 3.6MB/s 1106ms
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+- name: 🇭🇰 01 [家宽级] 2.4MB/s 791ms
+  server: 964114bc-tmm5c0-tntd4s-yjq0.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  password: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+  sni: 964114bc-tmm5c0-tntd4s-yjq0.nw4.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 02 [家宽级] 3.1MB/s 1054ms
-  server: 9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com
+- name: 🇭🇰 02 [家宽级] 2.2MB/s 951ms
+  server: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
-  sni: 9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com
+  password: f7d95364-607b-11ee-93af-f23c91369f2d
+  sni: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 03 [家宽级] 1.8MB/s 895ms
-  server: 218.250.216.236
+- name: 🇭🇰 03 [家宽级] 1.9MB/s 1206ms
+  server: a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com
   port: 443
   udp: true
   type: vless
@@ -30,22 +30,22 @@ proxies:
   reality-opts:
     public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
   servername: download.windowsupdate.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 3.6MB/s 1106ms
-  - 🇭🇰 02 [家宽级] 3.1MB/s 1054ms
-  - 🇭🇰 03 [家宽级] 1.8MB/s 895ms
+  - 🇭🇰 01 [家宽级] 2.4MB/s 791ms
+  - 🇭🇰 02 [家宽级] 2.2MB/s 951ms
+  - 🇭🇰 03 [家宽级] 1.9MB/s 1206ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 3.6MB/s 1106ms
-  - 🇭🇰 02 [家宽级] 3.1MB/s 1054ms
-  - 🇭🇰 03 [家宽级] 1.8MB/s 895ms
+  - 🇭🇰 01 [家宽级] 2.4MB/s 791ms
+  - 🇭🇰 02 [家宽级] 2.2MB/s 951ms
+  - 🇭🇰 03 [家宽级] 1.9MB/s 1206ms
 rules:
 - MATCH,PROXIES
