@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 01 [家宽级] 14.1MB/s 635ms",
-      "server": "104.18.47.113",
+      "tag": "🇺🇸 01 [家宽级] 4.5MB/s 269ms",
+      "server": "108.162.198.178",
       "server_port": 2095,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
@@ -19,9 +19,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 02 [家宽级] 7.9MB/s 796ms",
-      "server": "104.18.46.234",
-      "server_port": 8080,
+      "tag": "🇺🇸 02 [家宽级] 0.1MB/s 384ms",
+      "server": "104.18.47.113",
+      "server_port": 2086,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -32,75 +32,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 03 [家宽级] 10.8MB/s 896ms",
-      "server": "172.64.154.8",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 04 [家宽级] 8.7MB/s 936ms",
-      "server": "104.18.42.54",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "newwk1.f1w.de5.net",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "newwk1.f1w.de5.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 05 [家宽级] 2.6MB/s 625ms",
-      "server": "172.64.42.85",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 06 [家宽级] 1.2MB/s 1390ms",
-      "server": "xstack.mahanfixe.workers.dev",
-      "server_port": 443,
-      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
-      "tls": {
-        "enabled": true,
-        "server_name": "xstack.mahanfixe.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "android"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/xiron"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇺🇸 07 [家宽级] 0.4MB/s 887ms",
+      "tag": "🇺🇸 03 [家宽级] 0.2MB/s 452ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -119,26 +52,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 14.1MB/s 635ms",
-        "🇺🇸 02 [家宽级] 7.9MB/s 796ms",
-        "🇺🇸 03 [家宽级] 10.8MB/s 896ms",
-        "🇺🇸 04 [家宽级] 8.7MB/s 936ms",
-        "🇺🇸 05 [家宽级] 2.6MB/s 625ms",
-        "🇺🇸 06 [家宽级] 1.2MB/s 1390ms",
-        "🇺🇸 07 [家宽级] 0.4MB/s 887ms"
+        "🇺🇸 01 [家宽级] 4.5MB/s 269ms",
+        "🇺🇸 02 [家宽级] 0.1MB/s 384ms",
+        "🇺🇸 03 [家宽级] 0.2MB/s 452ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 14.1MB/s 635ms",
-        "🇺🇸 02 [家宽级] 7.9MB/s 796ms",
-        "🇺🇸 03 [家宽级] 10.8MB/s 896ms",
-        "🇺🇸 04 [家宽级] 8.7MB/s 936ms",
-        "🇺🇸 05 [家宽级] 2.6MB/s 625ms",
-        "🇺🇸 06 [家宽级] 1.2MB/s 1390ms",
-        "🇺🇸 07 [家宽级] 0.4MB/s 887ms"
+        "🇺🇸 01 [家宽级] 4.5MB/s 269ms",
+        "🇺🇸 02 [家宽级] 0.1MB/s 384ms",
+        "🇺🇸 03 [家宽级] 0.2MB/s 452ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

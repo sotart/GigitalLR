@@ -5,62 +5,65 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 01 [家宽级] 2.1MB/s 1149ms",
-      "server": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
+      "tag": "🇭🇰 01 [家宽级] 3.6MB/s 1106ms",
+      "server": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
+      "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
+        "server_name": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 02 [家宽级] 3.1MB/s 1054ms",
+      "server": "9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "5f091cbe-fb34-11ea-9777-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 02 [家宽级] 1.9MB/s 1730ms",
-      "server": "t4.qifei.app",
+      "tag": "🇭🇰 03 [家宽级] 1.8MB/s 895ms",
+      "server": "218.250.216.236",
       "server_port": 443,
-      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
-      "flow": "xtls-rprx-vision",
+      "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "s3.ap-east-1.amazonaws.com",
+        "server_name": "download.windowsupdate.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
-          "short_id": "1a"
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "short_id": ""
         }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 03 [家宽级] 1.8MB/s 1625ms",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16115,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 2.1MB/s 1149ms",
-        "🇭🇰 02 [家宽级] 1.9MB/s 1730ms",
-        "🇭🇰 03 [家宽级] 1.8MB/s 1625ms"
+        "🇭🇰 01 [家宽级] 3.6MB/s 1106ms",
+        "🇭🇰 02 [家宽级] 3.1MB/s 1054ms",
+        "🇭🇰 03 [家宽级] 1.8MB/s 895ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 2.1MB/s 1149ms",
-        "🇭🇰 02 [家宽级] 1.9MB/s 1730ms",
-        "🇭🇰 03 [家宽级] 1.8MB/s 1625ms"
+        "🇭🇰 01 [家宽级] 3.6MB/s 1106ms",
+        "🇭🇰 02 [家宽级] 3.1MB/s 1054ms",
+        "🇭🇰 03 [家宽级] 1.8MB/s 895ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

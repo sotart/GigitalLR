@@ -4,23 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 01 [家宽级] 1.9MB/s 1624ms",
-      "server": "hi.northcluster.info",
-      "server_port": 52300,
-      "uuid": "6e571484-4166-4699-8f58-b34a1823691f",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/video",
-        "headers": {
-          "Host": "hi.northcluster.info"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 0.3MB/s 1323ms",
+      "tag": "🇹🇼 01 [家宽级] 1.8MB/s 1943ms",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -29,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -40,7 +25,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 03 [家宽级] 0.2MB/s 1840ms",
+      "tag": "🇹🇼 02 [家宽级] 0.2MB/s 1771ms",
       "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
       "server_port": 11223,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
@@ -52,18 +37,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 1.9MB/s 1624ms",
-        "🇹🇼 02 [家宽级] 0.3MB/s 1323ms",
-        "🇹🇼 03 [家宽级] 0.2MB/s 1840ms"
+        "🇹🇼 01 [家宽级] 1.8MB/s 1943ms",
+        "🇹🇼 02 [家宽级] 0.2MB/s 1771ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 1.9MB/s 1624ms",
-        "🇹🇼 02 [家宽级] 0.3MB/s 1323ms",
-        "🇹🇼 03 [家宽级] 0.2MB/s 1840ms"
+        "🇹🇼 01 [家宽级] 1.8MB/s 1943ms",
+        "🇹🇼 02 [家宽级] 0.2MB/s 1771ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
