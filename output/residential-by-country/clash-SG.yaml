@@ -4,14 +4,14 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 01 [家宽级] 42.2MB/s 3514ms
+- name: 🇸🇬 01 [家宽级] 1.7MB/s 1232ms
   server: 154.86.30.45
   port: 24443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: bKgENdAl@8Zx3lAc-HK-BD-20260622
-- name: 🇸🇬 02 [家宽级] 1.9MB/s 1518ms
+- name: 🇸🇬 02 [家宽级] 1.6MB/s 1782ms
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -24,14 +24,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 01 [家宽级] 42.2MB/s 3514ms
-  - 🇸🇬 02 [家宽级] 1.9MB/s 1518ms
+  - 🇸🇬 01 [家宽级] 1.7MB/s 1232ms
+  - 🇸🇬 02 [家宽级] 1.6MB/s 1782ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 01 [家宽级] 42.2MB/s 3514ms
-  - 🇸🇬 02 [家宽级] 1.9MB/s 1518ms
+  - 🇸🇬 01 [家宽级] 1.7MB/s 1232ms
+  - 🇸🇬 02 [家宽级] 1.6MB/s 1782ms
 rules:
 - MATCH,PROXIES

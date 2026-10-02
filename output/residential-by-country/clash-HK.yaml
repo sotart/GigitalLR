@@ -4,24 +4,16 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 8.1MB/s 11212ms
-  server: v10.hdacd.com
-  port: 30807
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇭🇰 02 [家宽级] 2.2MB/s 1444ms
-  server: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
+- name: 🇭🇰 01 [家宽级] 2.1MB/s 1149ms
+  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
   password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
+  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 03 [家宽级] 1.8MB/s 1448ms
-  server: 42.200.173.5
+- name: 🇭🇰 02 [家宽级] 1.9MB/s 1730ms
+  server: t4.qifei.app
   port: 443
   udp: true
   type: vless
@@ -33,36 +25,29 @@ proxies:
     short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
   client-fingerprint: random
-- name: 🇭🇰 04 [家宽级] 1.7MB/s 1561ms
-  server: az-1.linkaa.xyz
-  port: 53617
+- name: 🇭🇰 03 [家宽级] 1.8MB/s 1625ms
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16115
   udp: true
   type: vmess
-  uuid: 6E571484-4166-4699-8F58-B34A1823691F
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /game/resources
-    headers:
-      Host: az-1.linkaa.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 8.1MB/s 11212ms
-  - 🇭🇰 02 [家宽级] 2.2MB/s 1444ms
-  - 🇭🇰 03 [家宽级] 1.8MB/s 1448ms
-  - 🇭🇰 04 [家宽级] 1.7MB/s 1561ms
+  - 🇭🇰 01 [家宽级] 2.1MB/s 1149ms
+  - 🇭🇰 02 [家宽级] 1.9MB/s 1730ms
+  - 🇭🇰 03 [家宽级] 1.8MB/s 1625ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 8.1MB/s 11212ms
-  - 🇭🇰 02 [家宽级] 2.2MB/s 1444ms
-  - 🇭🇰 03 [家宽级] 1.8MB/s 1448ms
-  - 🇭🇰 04 [家宽级] 1.7MB/s 1561ms
+  - 🇭🇰 01 [家宽级] 2.1MB/s 1149ms
+  - 🇭🇰 02 [家宽级] 1.9MB/s 1730ms
+  - 🇭🇰 03 [家宽级] 1.8MB/s 1625ms
 rules:
 - MATCH,PROXIES
