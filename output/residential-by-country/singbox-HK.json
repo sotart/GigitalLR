@@ -5,33 +5,50 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 01 [家宽级] 4.9MB/s 1338ms",
-      "server": "8a85c177-tmm5c0-tvgkxc-hrtf.hk3.hyhuawei.com",
+      "tag": "🇭🇰 01 [家宽级] 5.6MB/s 1034ms",
+      "server": "19a7f8ba-tmm5c0-tqgocx-1plv4.nw4.hyhuawei.com",
       "server_port": 443,
-      "password": "0da8651e-e1f6-11ec-bd7c-f23c913c8d2b",
+      "password": "28213b50-7ed5-11ee-add6-f23c91369f2d",
       "tls": {
         "enabled": true,
-        "server_name": "8a85c177-tmm5c0-tvgkxc-hrtf.hk3.hyhuawei.com",
+        "server_name": "19a7f8ba-tmm5c0-tqgocx-1plv4.nw4.hyhuawei.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 02 [家宽级] 1.6MB/s 1579ms",
-      "server": "fc0786a4-tmm5c0-tw2fdz-1s824.nw4.hyhuawei.com",
+      "tag": "🇭🇰 02 [家宽级] 5.6MB/s 966ms",
+      "server": "92e6c9f0-tmm5c0-twjnjx-1q9g2.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "6d4abac0-86e6-11ef-83cc-f23c913c8d2b",
+      "password": "9d80dd14-ac44-11ee-a116-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "fc0786a4-tmm5c0-tw2fdz-1s824.nw4.hyhuawei.com",
+        "server_name": "92e6c9f0-tmm5c0-twjnjx-1q9g2.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
       "type": "vmess",
-      "tag": "🇭🇰 03 [家宽级] 1.6MB/s 2276ms",
+      "tag": "🇭🇰 03 [家宽级] 60.4MB/s 6210ms",
+      "server": "v10.hdacd.com",
+      "server_port": 30807,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 04 [家宽级] 1.7MB/s 1757ms",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 05 [家宽级] 1.7MB/s 1114ms",
       "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21020,
+      "server_port": 21019,
       "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
     },
@@ -40,18 +57,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 4.9MB/s 1338ms",
-        "🇭🇰 02 [家宽级] 1.6MB/s 1579ms",
-        "🇭🇰 03 [家宽级] 1.6MB/s 2276ms"
+        "🇭🇰 01 [家宽级] 5.6MB/s 1034ms",
+        "🇭🇰 02 [家宽级] 5.6MB/s 966ms",
+        "🇭🇰 03 [家宽级] 60.4MB/s 6210ms",
+        "🇭🇰 04 [家宽级] 1.7MB/s 1757ms",
+        "🇭🇰 05 [家宽级] 1.7MB/s 1114ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 4.9MB/s 1338ms",
-        "🇭🇰 02 [家宽级] 1.6MB/s 1579ms",
-        "🇭🇰 03 [家宽级] 1.6MB/s 2276ms"
+        "🇭🇰 01 [家宽级] 5.6MB/s 1034ms",
+        "🇭🇰 02 [家宽级] 5.6MB/s 966ms",
+        "🇭🇰 03 [家宽级] 60.4MB/s 6210ms",
+        "🇭🇰 04 [家宽级] 1.7MB/s 1757ms",
+        "🇭🇰 05 [家宽级] 1.7MB/s 1114ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

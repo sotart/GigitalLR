@@ -4,18 +4,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 01 [家宽级] 0.2MB/s 2774ms
+- name: 🇹🇷 01 [家宽级] 0.3MB/s 1608ms
   server: me17.msjia8844.site
   port: 7443
   udp: true
   type: hysteria2
   password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
   sni: me17.msjia8844.site
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 02 [家宽级] 0.1MB/s 11561ms
-  server: 169.40.32.73
+- name: 🇹🇷 02 [家宽级] 0.3MB/s 1372ms
+  server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
@@ -25,14 +25,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 01 [家宽级] 0.2MB/s 2774ms
-  - 🇹🇷 02 [家宽级] 0.1MB/s 11561ms
+  - 🇹🇷 01 [家宽级] 0.3MB/s 1608ms
+  - 🇹🇷 02 [家宽级] 0.3MB/s 1372ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 01 [家宽级] 0.2MB/s 2774ms
-  - 🇹🇷 02 [家宽级] 0.1MB/s 11561ms
+  - 🇹🇷 01 [家宽级] 0.3MB/s 1608ms
+  - 🇹🇷 02 [家宽级] 0.3MB/s 1372ms
 rules:
 - MATCH,PROXIES

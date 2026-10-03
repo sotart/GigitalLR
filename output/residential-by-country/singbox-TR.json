@@ -5,14 +5,14 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇹🇷 01 [家宽级] 0.2MB/s 2774ms",
+      "tag": "🇹🇷 01 [家宽级] 0.3MB/s 1608ms",
       "server": "me17.msjia8844.site",
       "server_port": 7443,
       "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
       "tls": {
         "enabled": true,
         "server_name": "me17.msjia8844.site",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -21,8 +21,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 02 [家宽级] 0.1MB/s 11561ms",
-      "server": "169.40.32.73",
+      "tag": "🇹🇷 02 [家宽级] 0.3MB/s 1372ms",
+      "server": "test.keoplentuio.xyz",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
@@ -31,16 +31,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 01 [家宽级] 0.2MB/s 2774ms",
-        "🇹🇷 02 [家宽级] 0.1MB/s 11561ms"
+        "🇹🇷 01 [家宽级] 0.3MB/s 1608ms",
+        "🇹🇷 02 [家宽级] 0.3MB/s 1372ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 01 [家宽级] 0.2MB/s 2774ms",
-        "🇹🇷 02 [家宽级] 0.1MB/s 11561ms"
+        "🇹🇷 01 [家宽级] 0.3MB/s 1608ms",
+        "🇹🇷 02 [家宽级] 0.3MB/s 1372ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

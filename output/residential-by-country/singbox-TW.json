@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 1.4MB/s 1706ms",
+      "tag": "🇹🇼 01 [家宽级] 1.9MB/s 1172ms",
       "server": "118.167.235.241",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -14,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -25,7 +25,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 02 [家宽级] 0.2MB/s 6557ms",
+      "tag": "🇹🇼 02 [家宽级] 0.2MB/s 1609ms",
       "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
       "server_port": 11224,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
@@ -34,7 +34,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 03 [家宽级] 0.2MB/s 1732ms",
+      "tag": "🇹🇼 03 [家宽级] 0.2MB/s 1492ms",
       "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
       "server_port": 11223,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
@@ -46,18 +46,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 1.4MB/s 1706ms",
-        "🇹🇼 02 [家宽级] 0.2MB/s 6557ms",
-        "🇹🇼 03 [家宽级] 0.2MB/s 1732ms"
+        "🇹🇼 01 [家宽级] 1.9MB/s 1172ms",
+        "🇹🇼 02 [家宽级] 0.2MB/s 1609ms",
+        "🇹🇼 03 [家宽级] 0.2MB/s 1492ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 1.4MB/s 1706ms",
-        "🇹🇼 02 [家宽级] 0.2MB/s 6557ms",
-        "🇹🇼 03 [家宽级] 0.2MB/s 1732ms"
+        "🇹🇼 01 [家宽级] 1.9MB/s 1172ms",
+        "🇹🇼 02 [家宽级] 0.2MB/s 1609ms",
+        "🇹🇼 03 [家宽级] 0.2MB/s 1492ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
