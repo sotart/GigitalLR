@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 0.2MB/s 739ms
+- name: 🇺🇸 01 [家宽级] 0.1MB/s 931ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -14,34 +14,17 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇺🇸 02 [家宽级] 0.2MB/s 1399ms
-  server: 69.63.221.116
-  port: 25517
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==
-    headers:
-      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 0.2MB/s 739ms
-  - 🇺🇸 02 [家宽级] 0.2MB/s 1399ms
+  - 🇺🇸 01 [家宽级] 0.1MB/s 931ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 0.2MB/s 739ms
-  - 🇺🇸 02 [家宽级] 0.2MB/s 1399ms
+  - 🇺🇸 01 [家宽级] 0.1MB/s 931ms
 rules:
 - MATCH,PROXIES
