@@ -4,39 +4,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 18.3MB/s 7244ms
-  server: v10.hdacd.com
-  port: 30807
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇭🇰 02 [家宽级] 3.9MB/s 1241ms
-  server: 7cf51189-tmm5c0-tqrqo1-8rja.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
-  sni: 7cf51189-tmm5c0-tqrqo1-8rja.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 03 [家宽级] 2.0MB/s 981ms
-  server: 10839548-tmm5c0-ttyyk7-1h0r9.nw4.hyhuawei.com
+- name: 🇭🇰 01 [家宽级] 7.5MB/s 857ms
+  server: 879c2f71-tmm5c0-ttyyk7-1h0r9.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
   password: 9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9
-  sni: 10839548-tmm5c0-ttyyk7-1h0r9.nw4.hyhuawei.com
+  sni: 879c2f71-tmm5c0-ttyyk7-1h0r9.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 04 [家宽级] 1.7MB/s 1570ms
-  server: dog-hk.kunlun01dns.com
-  port: 21019
+- name: 🇭🇰 02 [家宽级] 5.7MB/s 1124ms
+  server: 8f9c96e6-tmm5c0-tqruo0-1pqhp.nw4.hyhuawei.com
+  port: 443
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 05 [家宽级] 1.6MB/s 1971ms
+  type: hysteria2
+  password: b02327ac-a49a-11ef-a673-f23c913c8d2b
+  sni: 8f9c96e6-tmm5c0-tqruo0-1pqhp.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 03 [家宽级] 1.7MB/s 2058ms
   server: dog-hk.kunlun01dns.com
   port: 21021
   udp: true
@@ -44,12 +28,12 @@ proxies:
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇭🇰 06 [家宽级] 1.6MB/s 2483ms
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16115
+- name: 🇭🇰 04 [家宽级] 1.7MB/s 1383ms
+  server: dog-hk.kunlun01dns.com
+  port: 21041
   udp: true
   type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
 proxy-groups:
@@ -57,22 +41,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 18.3MB/s 7244ms
-  - 🇭🇰 02 [家宽级] 3.9MB/s 1241ms
-  - 🇭🇰 03 [家宽级] 2.0MB/s 981ms
-  - 🇭🇰 04 [家宽级] 1.7MB/s 1570ms
-  - 🇭🇰 05 [家宽级] 1.6MB/s 1971ms
-  - 🇭🇰 06 [家宽级] 1.6MB/s 2483ms
+  - 🇭🇰 01 [家宽级] 7.5MB/s 857ms
+  - 🇭🇰 02 [家宽级] 5.7MB/s 1124ms
+  - 🇭🇰 03 [家宽级] 1.7MB/s 2058ms
+  - 🇭🇰 04 [家宽级] 1.7MB/s 1383ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 18.3MB/s 7244ms
-  - 🇭🇰 02 [家宽级] 3.9MB/s 1241ms
-  - 🇭🇰 03 [家宽级] 2.0MB/s 981ms
-  - 🇭🇰 04 [家宽级] 1.7MB/s 1570ms
-  - 🇭🇰 05 [家宽级] 1.6MB/s 1971ms
-  - 🇭🇰 06 [家宽级] 1.6MB/s 2483ms
+  - 🇭🇰 01 [家宽级] 7.5MB/s 857ms
+  - 🇭🇰 02 [家宽级] 5.7MB/s 1124ms
+  - 🇭🇰 03 [家宽级] 1.7MB/s 2058ms
+  - 🇭🇰 04 [家宽级] 1.7MB/s 1383ms
 rules:
 - MATCH,PROXIES
