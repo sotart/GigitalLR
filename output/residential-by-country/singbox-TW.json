@@ -4,9 +4,37 @@
   },
   "outbounds": [
     {
+      "type": "vmess",
+      "tag": "🇹🇼 01 [家宽级] 18.4MB/s 6878ms",
+      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
+      "server_port": 11224,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 1.9MB/s 1172ms",
-      "server": "118.167.235.241",
+      "tag": "🇹🇼 02 [家宽级] 4.1MB/s 1306ms",
+      "server": "104.20.36.205",
+      "server_port": 443,
+      "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
+      "tls": {
+        "enabled": true,
+        "server_name": "argo6.5671234.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/e8e2cecb6188f7fb",
+        "headers": {
+          "Host": "argo6.5671234.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 03 [家宽级] 2.2MB/s 1005ms",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -14,7 +42,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,16 +53,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 02 [家宽级] 0.2MB/s 1609ms",
-      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
-      "server_port": 11224,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 03 [家宽级] 0.2MB/s 1492ms",
+      "tag": "🇹🇼 04 [家宽级] 0.2MB/s 1305ms",
       "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
       "server_port": 11223,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
@@ -46,18 +65,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 1.9MB/s 1172ms",
-        "🇹🇼 02 [家宽级] 0.2MB/s 1609ms",
-        "🇹🇼 03 [家宽级] 0.2MB/s 1492ms"
+        "🇹🇼 01 [家宽级] 18.4MB/s 6878ms",
+        "🇹🇼 02 [家宽级] 4.1MB/s 1306ms",
+        "🇹🇼 03 [家宽级] 2.2MB/s 1005ms",
+        "🇹🇼 04 [家宽级] 0.2MB/s 1305ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 1.9MB/s 1172ms",
-        "🇹🇼 02 [家宽级] 0.2MB/s 1609ms",
-        "🇹🇼 03 [家宽级] 0.2MB/s 1492ms"
+        "🇹🇼 01 [家宽级] 18.4MB/s 6878ms",
+        "🇹🇼 02 [家宽级] 4.1MB/s 1306ms",
+        "🇹🇼 03 [家宽级] 2.2MB/s 1005ms",
+        "🇹🇼 04 [家宽级] 0.2MB/s 1305ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
