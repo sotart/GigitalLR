@@ -4,7 +4,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 61.3MB/s 9896ms
+- name: 🇹🇼 01 [家宽级] 52.7MB/s 5003ms
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: safari
+- name: 🇹🇼 02 [家宽级] 64.3MB/s 9817ms
   server: sbgfgov.vip24.wogacnmnagfwgov.com
   port: 11224
   udp: true
@@ -12,7 +23,19 @@ proxies:
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
-- name: 🇹🇼 02 [家宽级] 61.7MB/s 14130ms
+- name: 🇹🇼 03 [家宽级] 3.3MB/s 1817ms
+  server: argo6.5671234.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
+  tls: true
+  servername: argo6.5671234.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /e8e2cecb6188f7fb
+- name: 🇹🇼 04 [家宽级] 2.5MB/s 1584ms
   server: tw6.dexlos.com
   port: 8080
   udp: true
@@ -25,19 +48,7 @@ proxies:
   udp-relay-mode: native
   alpn:
   - h3
-- name: 🇹🇼 03 [家宽级] 2.9MB/s 1630ms
-  server: argo6.5671234.xyz
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
-  tls: true
-  servername: argo6.5671234.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /e8e2cecb6188f7fb
-- name: 🇹🇼 04 [家宽级] 0.7MB/s 2827ms
+- name: 🇹🇼 05 [家宽级] 0.3MB/s 4933ms
   server: tw1.dexlos.com
   port: 8080
   udp: true
@@ -50,33 +61,40 @@ proxies:
   udp-relay-mode: native
   alpn:
   - h3
-- name: 🇹🇼 05 [家宽级] 0.2MB/s 2120ms
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
+- name: 🇹🇼 06 [家宽级] 0.2MB/s 5762ms
+  server: tw3.dexlos.com
+  port: 8080
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  type: tuic
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: tw3.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 61.3MB/s 9896ms
-  - 🇹🇼 02 [家宽级] 61.7MB/s 14130ms
-  - 🇹🇼 03 [家宽级] 2.9MB/s 1630ms
-  - 🇹🇼 04 [家宽级] 0.7MB/s 2827ms
-  - 🇹🇼 05 [家宽级] 0.2MB/s 2120ms
+  - 🇹🇼 01 [家宽级] 52.7MB/s 5003ms
+  - 🇹🇼 02 [家宽级] 64.3MB/s 9817ms
+  - 🇹🇼 03 [家宽级] 3.3MB/s 1817ms
+  - 🇹🇼 04 [家宽级] 2.5MB/s 1584ms
+  - 🇹🇼 05 [家宽级] 0.3MB/s 4933ms
+  - 🇹🇼 06 [家宽级] 0.2MB/s 5762ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 61.3MB/s 9896ms
-  - 🇹🇼 02 [家宽级] 61.7MB/s 14130ms
-  - 🇹🇼 03 [家宽级] 2.9MB/s 1630ms
-  - 🇹🇼 04 [家宽级] 0.7MB/s 2827ms
-  - 🇹🇼 05 [家宽级] 0.2MB/s 2120ms
+  - 🇹🇼 01 [家宽级] 52.7MB/s 5003ms
+  - 🇹🇼 02 [家宽级] 64.3MB/s 9817ms
+  - 🇹🇼 03 [家宽级] 3.3MB/s 1817ms
+  - 🇹🇼 04 [家宽级] 2.5MB/s 1584ms
+  - 🇹🇼 05 [家宽级] 0.3MB/s 4933ms
+  - 🇹🇼 06 [家宽级] 0.2MB/s 5762ms
 rules:
 - MATCH,PROXIES

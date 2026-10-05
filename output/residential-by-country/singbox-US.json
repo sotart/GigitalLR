@@ -4,8 +4,22 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 01 [家宽级] 9.8MB/s 875ms",
+      "server": "188.114.97.6",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇺🇸 01 [家宽级] 60.1MB/s 3022ms",
+      "tag": "🇺🇸 02 [家宽级] 0.6MB/s 1733ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -24,14 +38,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 60.1MB/s 3022ms"
+        "🇺🇸 01 [家宽级] 9.8MB/s 875ms",
+        "🇺🇸 02 [家宽级] 0.6MB/s 1733ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 60.1MB/s 3022ms"
+        "🇺🇸 01 [家宽级] 9.8MB/s 875ms",
+        "🇺🇸 02 [家宽级] 0.6MB/s 1733ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
