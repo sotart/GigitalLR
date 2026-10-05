@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 64.1MB/s 5403ms",
+      "tag": "🇭🇰 01 [家宽级] 61.8MB/s 11043ms",
       "server": "v10.zgtfqs.click",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -13,30 +13,59 @@
       "alter_id": 2
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 02 [家宽级] 61.5MB/s 1594ms",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
       "type": "vmess",
-      "tag": "🇹🇼 02 [家宽级] 58.7MB/s 4168ms",
-      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
-      "server_port": 11223,
+      "tag": "🇹🇼 03 [家宽级] 61.3MB/s 9896ms",
+      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
+      "server_port": 11224,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
       "security": "auto",
       "alter_id": 2
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 03 [家宽级] 4.5MB/s 1460ms",
-      "server": "7b0450c8-tmm5c0-trg4wh-z65w.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "a2313fba-74a6-11ed-a8bf-f23c91cfbbc9",
+      "type": "tuic",
+      "tag": "🇹🇼 04 [家宽级] 61.7MB/s 14130ms",
+      "server": "tw6.dexlos.com",
+      "server_port": 8080,
+      "uuid": "D7286728-678E-443B-B76B-B699654C66DD",
+      "password": "D7286728-678E-443B-B76B-B699654C66DD",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
       "tls": {
         "enabled": true,
-        "server_name": "7b0450c8-tmm5c0-trg4wh-z65w.hk3.hyhuawei.com",
+        "server_name": "tw6.dexlos.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 05 [家宽级] 60.1MB/s 3022ms",
+      "server": "155.117.19.17",
+      "server_port": 443,
+      "password": "5fa748137b6d822308eea4611f474ad5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 04 [家宽级] 2.2MB/s 2055ms",
-      "server": "172.66.152.4",
+      "tag": "🇹🇼 06 [家宽级] 2.9MB/s 1630ms",
+      "server": "argo6.5671234.xyz",
       "server_port": 443,
       "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
@@ -46,55 +75,28 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/e8e2cecb6188f7fb",
-        "headers": {
-          "Host": "argo6.5671234.xyz"
-        }
+        "path": "/e8e2cecb6188f7fb"
       }
     },
     {
       "type": "vmess",
-      "tag": "🇭🇰 05 [家宽级] 1.6MB/s 1784ms",
+      "tag": "🇭🇰 07 [家宽级] 1.8MB/s 1310ms",
       "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21041,
+      "server_port": 21022,
       "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 06 [家宽级] 1.5MB/s 2574ms",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 07 [家宽级] 1.1MB/s 1499ms",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
+      "type": "vmess",
+      "tag": "🇭🇰 08 [家宽级] 1.7MB/s 1401ms",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21020,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
     },
     {
       "type": "tuic",
-      "tag": "🇹🇼 08 [家宽级] 0.6MB/s 6546ms",
+      "tag": "🇹🇼 09 [家宽级] 0.7MB/s 2827ms",
       "server": "tw1.dexlos.com",
       "server_port": 8080,
       "uuid": "D7286728-678E-443B-B76B-B699654C66DD",
@@ -111,76 +113,49 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 09 [家宽级] 0.3MB/s 4031ms",
-      "server": "155.117.19.17",
-      "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇹🇼 10 [家宽级] 0.2MB/s 3385ms",
-      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
-      "server_port": 11224,
+      "tag": "🇹🇼 10 [家宽级] 0.2MB/s 2120ms",
+      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
+      "server_port": 11223,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
       "security": "auto",
       "alter_id": 2
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇷 11 [家宽级] 0.2MB/s 2598ms",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "tag": "🇸🇬 11 [家宽级] 0.1MB/s 2410ms",
+      "server": "s3.huhiuh.space",
+      "server_port": 18642,
+      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
       "tls": {
         "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+        "server_name": "www.bing.com",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 12 [家宽级] 0.1MB/s 1844ms",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 13 [S级] 7.8MB/s 320ms",
-      "server": "108.162.198.178",
-      "server_port": 2082,
+      "tag": "🇺🇸 12 [S级] 23.8MB/s 378ms",
+      "server": "188.114.97.6",
+      "server_port": 2095,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 14 [S级] 6.4MB/s 353ms",
-      "server": "172.64.229.170",
+      "tag": "🇺🇸 13 [S级] 27.3MB/s 383ms",
+      "server": "162.159.0.53",
       "server_port": 2095,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "?ed=2560security=tls",
+        "path": "/?ed=2560security=tlssecurity=tls",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
@@ -188,9 +163,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 15 [S级] 9.0MB/s 364ms",
-      "server": "172.64.32.103",
-      "server_port": 2095,
+      "tag": "🇺🇸 14 [S级] 9.2MB/s 388ms",
+      "server": "104.18.34.14",
+      "server_port": 2086,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -202,9 +177,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 16 [S级] 3.8MB/s 387ms",
-      "server": "104.18.46.46",
+      "tag": "🇺🇸 15 [A级] 9.7MB/s 407ms",
+      "server": "162.159.38.127",
       "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 16 [A级] 7.2MB/s 409ms",
+      "server": "172.64.42.85",
+      "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -215,8 +204,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 17 [A级] 15.1MB/s 435ms",
-      "server": "172.64.32.108",
+      "tag": "🇺🇸 17 [A级] 12.6MB/s 415ms",
+      "server": "162.159.39.218",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 18 [A级] 10.4MB/s 461ms",
+      "server": "104.18.34.14",
       "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
@@ -229,9 +231,37 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 18 [A级] 7.4MB/s 440ms",
-      "server": "162.159.43.187",
-      "server_port": 8080,
+      "tag": "🇺🇸 19 [A级] 9.6MB/s 493ms",
+      "server": "162.159.48.32",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 20 [A级] 15.9MB/s 484ms",
+      "server": "162.159.45.19",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 21 [A级] 6.4MB/s 492ms",
+      "server": "172.64.32.108",
+      "server_port": 8880,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -243,7 +273,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇺🇸 19 [A级] 12.3MB/s 460ms",
+      "tag": "🇺🇸 22 [A级] 6.2MB/s 495ms",
       "server": "64.74.163.69",
       "server_port": 18766,
       "method": "aes-128-gcm",
@@ -251,7 +281,63 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 20 [A级] 10.0MB/s 470ms",
+      "tag": "🇺🇸 23 [A级] 12.4MB/s 501ms",
+      "server": "172.64.158.146",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 24 [A级] 12.7MB/s 477ms",
+      "server": "172.64.42.85",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 25 [A级] 6.2MB/s 492ms",
+      "server": "172.64.32.103",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 26 [A级] 8.6MB/s 504ms",
+      "server": "172.64.154.8",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 27 [A级] 9.8MB/s 530ms",
       "server": "169.40.42.95",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
@@ -261,7 +347,7 @@
         "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -271,169 +357,26 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 21 [A级] 35.5MB/s 446ms",
-      "server": "54.173.150.39",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 22 [A级] 6.3MB/s 459ms",
-      "server": "172.64.158.146",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 23 [A级] 5.3MB/s 478ms",
-      "server": "172.64.32.108",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 24 [A级] 5.6MB/s 509ms",
-      "server": "172.64.229.2",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 25 [A级] 17.1MB/s 477ms",
-      "server": "162.159.45.19",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 26 [A级] 18.3MB/s 529ms",
-      "server": "172.64.229.2",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 27 [A级] 23.5MB/s 528ms",
+      "tag": "🇺🇸 28 [A级] 9.8MB/s 531ms",
       "server": "162.159.48.32",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tlssecurity=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 28 [A级] 19.1MB/s 531ms",
-      "server": "104.18.46.234",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tlssecurity=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 29 [A级] 21.4MB/s 425ms",
-      "server": "98.89.22.134",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 30 [A级] 7.2MB/s 556ms",
-      "server": "162.159.43.187",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 31 [A级] 8.4MB/s 541ms",
-      "server": "162.159.39.218",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 32 [A级] 7.7MB/s 561ms",
-      "server": "172.64.52.6",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 33 [A级] 7.8MB/s 596ms",
-      "server": "172.64.42.85",
       "server_port": 2052,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 29 [A级] 20.7MB/s 525ms",
+      "server": "108.162.198.178",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
         "path": "/",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
@@ -442,346 +385,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 34 [A级] 9.1MB/s 587ms",
-      "server": "104.18.46.46",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 35 [A级] 13.6MB/s 573ms",
-      "server": "129.213.91.185",
-      "server_port": 35013,
-      "password": "4291c983-c520-46ac-82cc-48f14bef573f",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 36 [A级] 6.9MB/s 617ms",
-      "server": "162.159.48.32",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 37 [A级] 25.6MB/s 619ms",
-      "server": "162.159.24.131",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 38 [A级] 6.4MB/s 630ms",
-      "server": "162.159.0.53",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 39 [A级] 29.3MB/s 634ms",
-      "server": "172.64.32.103",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 40 [A级] 11.7MB/s 637ms",
-      "server": "172.64.32.108",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 41 [A级] 6.7MB/s 642ms",
-      "server": "162.159.39.218",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 42 [A级] 7.2MB/s 648ms",
-      "server": "162.159.48.32",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 43 [A级] 7.1MB/s 646ms",
-      "server": "104.18.46.234",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 44 [A级] 15.5MB/s 608ms",
-      "server": "185.95.231.156",
-      "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 45 [A级] 6.1MB/s 648ms",
-      "server": "162.159.24.131",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 46 [A级] 6.8MB/s 645ms",
-      "server": "172.64.154.8",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 47 [A级] 9.3MB/s 652ms",
-      "server": "162.159.45.19",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tlssecurity=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 48 [A级] 19.2MB/s 652ms",
-      "server": "104.18.39.218",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 49 [A级] 6.7MB/s 647ms",
-      "server": "172.64.32.108",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 50 [A级] 12.6MB/s 630ms",
-      "server": "54.226.151.202",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 51 [A级] 23.4MB/s 659ms",
-      "server": "162.159.24.131",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 52 [A级] 6.2MB/s 632ms",
-      "server": "162.159.48.32",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 53 [A级] 14.5MB/s 673ms",
-      "server": "104.18.39.218",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 54 [A级] 6.2MB/s 695ms",
-      "server": "162.159.43.187",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 55 [A级] 7.8MB/s 586ms",
-      "server": "172.64.52.6",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 56 [A级] 9.4MB/s 700ms",
-      "server": "162.159.45.19",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 57 [A级] 29.9MB/s 580ms",
-      "server": "172.64.53.55",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 58 [A级] 7.7MB/s 326ms",
+      "tag": "🇺🇸 30 [A级] 8.0MB/s 544ms",
       "server": "172.64.229.2",
-      "server_port": 2082,
+      "server_port": 2086,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
@@ -789,183 +398,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 59 [A级] 12.0MB/s 634ms",
-      "server": "3h-unitedstates1.09vpn.com",
-      "server_port": 80,
-      "uuid": "18cf8db1-9f86-43f7-baa0-382efb7f2dfa",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "3h-unitedstates1.09vpn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 60 [A级] 9.1MB/s 621ms",
-      "server": "xray1-direct-mci1-fs-ce.freesocks.work",
-      "server_port": 443,
-      "uuid": "0deceb8d-9ac0-4be1-b23f-2a650ec94213",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 61 [A级] 7.9MB/s 699ms",
-      "server": "172.64.53.55",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 62 [A级] 10.2MB/s 365ms",
-      "server": "172.64.229.170",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 63 [A级] 9.1MB/s 674ms",
-      "server": "54.208.227.172",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 64 [A级] 8.9MB/s 734ms",
-      "server": "13.38.84.99",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 65 [A级] 6.3MB/s 746ms",
-      "server": "137.184.174.93",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 66 [A级] 11.7MB/s 716ms",
-      "server": "34.228.79.192",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 67 [A级] 15.0MB/s 745ms",
-      "server": "172.64.32.108",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 68 [A级] 18.0MB/s 727ms",
-      "server": "34.229.138.196",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 69 [A级] 8.4MB/s 738ms",
-      "server": "104.18.47.113",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 70 [A级] 5.7MB/s 765ms",
-      "server": "216.227.161.95",
-      "server_port": 7443,
-      "uuid": "218fd696-e3a2-4c33-b397-a5f13a82969e",
-      "tls": {
-        "enabled": true,
-        "server_name": "media3.abvphelp.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM",
-          "short_id": "48d5cf47"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 71 [A级] 13.6MB/s 697ms",
-      "server": "2.24.124.64",
-      "server_port": 443,
-      "uuid": "719b9354-45e2-4718-8709-d965b64554db",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls",
-          "short_id": "9f1fc5a631ef3126"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 72 [A级] 6.0MB/s 744ms",
+      "tag": "🇺🇸 31 [A级] 9.6MB/s 505ms",
       "server": "us1-r.link-t7.com",
       "server_port": 10238,
       "uuid": "8a9905b7-801b-41af-bfc9-2034212770f6",
@@ -988,17 +421,475 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 32 [A级] 9.3MB/s 566ms",
+      "server": "162.159.48.32",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 33 [A级] 21.1MB/s 577ms",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 34 [A级] 5.2MB/s 587ms",
+      "server": "162.159.0.53",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 35 [A级] 24.7MB/s 587ms",
+      "server": "162.159.0.169",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇺🇸 73 [A级] 10.6MB/s 687ms",
-      "server": "23.22.158.187",
+      "tag": "🇺🇸 36 [A级] 7.7MB/s 469ms",
+      "server": "3.95.209.183",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 74 [A级] 7.8MB/s 454ms",
-      "server": "162.159.45.19",
+      "tag": "🇺🇸 37 [A级] 7.3MB/s 564ms",
+      "server": "162.159.0.169",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tlssecurity=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 38 [A级] 14.0MB/s 580ms",
+      "server": "172.64.158.146",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 39 [A级] 13.4MB/s 585ms",
+      "server": "35.172.220.132",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 40 [A级] 15.8MB/s 618ms",
+      "server": "162.159.0.53",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 41 [A级] 12.3MB/s 617ms",
+      "server": "172.64.42.85",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 42 [A级] 7.4MB/s 610ms",
+      "server": "43.173.90.202",
+      "server_port": 443,
+      "password": "sg-trojan-2026",
+      "tls": {
+        "enabled": true,
+        "server_name": "43.173.90.202",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 43 [A级] 9.0MB/s 513ms",
+      "server": "98.88.252.127",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 44 [A级] 6.7MB/s 620ms",
+      "server": "162.159.24.131",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 45 [A级] 8.5MB/s 575ms",
+      "server": "54.83.117.150",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 46 [A级] 12.8MB/s 446ms",
+      "server": "172.64.229.170",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 47 [A级] 7.9MB/s 636ms",
+      "server": "146.70.72.124",
+      "server_port": 11821,
+      "method": "aes-128-gcm",
+      "password": "228b1383bf4de4edb9c6a47a05ff1173"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 48 [A级] 5.5MB/s 639ms",
+      "server": "172.64.229.170",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 49 [A级] 13.4MB/s 619ms",
+      "server": "54.173.150.39",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 50 [A级] 6.1MB/s 649ms",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 51 [A级] 8.1MB/s 658ms",
+      "server": "172.64.52.6",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 52 [A级] 10.6MB/s 641ms",
+      "server": "104.18.47.113",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 53 [A级] 8.9MB/s 644ms",
+      "server": "vpn-us-001.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-us-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 54 [A级] 6.0MB/s 660ms",
+      "server": "104.18.47.113",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 55 [A级] 29.2MB/s 662ms",
+      "server": "162.159.38.127",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 56 [A级] 11.0MB/s 667ms",
+      "server": "172.64.229.170",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 57 [A级] 4.8MB/s 618ms",
+      "server": "5.78.51.123",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "8tmnvX5zYuWGVIDP2jglZw"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 58 [A级] 6.5MB/s 679ms",
+      "server": "144.24.46.175",
+      "server_port": 8443,
+      "password": "pbgLTkd5276SN1sZ",
+      "tls": {
+        "enabled": true,
+        "server_name": "144.24.46.175",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 59 [A级] 6.3MB/s 669ms",
+      "server": "34.228.79.192",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 60 [A级] 8.6MB/s 332ms",
+      "server": "172.64.53.55",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 61 [A级] 26.7MB/s 699ms",
+      "server": "162.159.43.187",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 62 [A级] 8.6MB/s 720ms",
+      "server": "172.64.154.8",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 63 [A级] 5.9MB/s 724ms",
+      "server": "162.159.24.131",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 64 [A级] 7.2MB/s 734ms",
+      "server": "66.70.179.198",
+      "server_port": 2053,
+      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
+          "short_id": "83f8317a948bb769"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 65 [A级] 4.6MB/s 606ms",
+      "server": "104.24.0.1",
+      "server_port": 2053,
+      "uuid": "dce8ca0a-ed26-45c9-9962-38888c19a0ad",
+      "tls": {
+        "enabled": true,
+        "server_name": "still-scene-fda3.devtahair.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=",
+        "headers": {
+          "Host": "still-scene-fda3.devtahair.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 66 [A级] 8.7MB/s 575ms",
+      "server": "172.86.105.222",
+      "server_port": 443,
+      "uuid": "67a544a2-bfc6-11f1-9c3e-52540030ba36",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "n25FmewpAEsvLl9Vr0bRFcz044f4IE7orWeWOzu8rwk",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 67 [A级] 10.3MB/s 674ms",
+      "server": "38.107.232.36",
+      "server_port": 80,
+      "uuid": "18cf8db1-9f86-43f7-baa0-382efb7f2dfa",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 68 [A级] 28.2MB/s 753ms",
+      "server": "172.64.158.146",
       "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
@@ -1010,47 +901,53 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 75 [A级] 4.5MB/s 670ms",
-      "server": "172.64.52.6",
-      "server_port": 80,
+      "tag": "🇺🇸 69 [A级] 13.1MB/s 368ms",
+      "server": "104.18.39.218",
+      "server_port": 2052,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
+        "path": "/",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 76 [A级] 7.8MB/s 748ms",
-      "server": "b66d1c8e-tmm5c0-trg4wh-z65w.los.hyhuawei.com",
-      "server_port": 443,
-      "password": "a2313fba-74a6-11ed-a8bf-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "b66d1c8e-tmm5c0-trg4wh-z65w.los.hyhuawei.com",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇺🇸 70 [A级] 7.8MB/s 571ms",
+      "server": "15.204.246.132",
+      "server_port": 7307,
+      "method": "aes-256-gcm",
+      "password": "FoOiGlkAA9yPEGP"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 77 [A级] 17.7MB/s 751ms",
-      "server": "1a325dd6-tmm5c0-twj07b-fm2v.los.hyhuawei.com",
+      "type": "vless",
+      "tag": "🇺🇸 71 [A级] 12.3MB/s 685ms",
+      "server": "2.24.124.64",
       "server_port": 443,
-      "password": "3fed19ea-1671-11f0-bd2e-f23c9164ca5d",
+      "uuid": "719b9354-45e2-4718-8709-d965b64554db",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "1a325dd6-tmm5c0-twj07b-fm2v.los.hyhuawei.com",
-        "insecure": true
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls",
+          "short_id": "9f1fc5a631ef3126"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 78 [A级] 9.8MB/s 744ms",
-      "server": "23.191.200.207",
+      "tag": "🇺🇸 72 [A级] 9.0MB/s 667ms",
+      "server": "xray2-direct-mci1-fs-ce.freesocks.work",
       "server_port": 443,
-      "uuid": "554738a5-a649-4bab-88ea-cb6e6ea0be2c",
+      "uuid": "8afbc9cd-3441-4e96-abaf-5a508a13ca02",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -1068,116 +965,20 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇺🇸 79 [A级] 12.9MB/s 714ms",
-      "server": "3.84.97.225",
+      "tag": "🇺🇸 73 [A级] 10.0MB/s 706ms",
+      "server": "54.208.227.172",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 80 [A级] 6.6MB/s 532ms",
-      "server": "104.18.34.14",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 81 [A级] 14.0MB/s 522ms",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 82 [A级] 13.3MB/s 563ms",
-      "server": "172.64.42.85",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 83 [A级] 65.5MB/s 559ms",
-      "server": "104.18.47.113",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 84 [A级] 5.9MB/s 566ms",
-      "server": "162.159.0.53",
+      "tag": "🇺🇸 74 [A级] 10.4MB/s 773ms",
+      "server": "172.64.154.8",
       "server_port": 2086,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 85 [A级] 7.9MB/s 602ms",
-      "server": "162.159.24.131",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 86 [A级] 6.8MB/s 573ms",
-      "server": "162.159.0.53",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 87 [A级] 16.7MB/s 580ms",
-      "server": "108.162.198.178",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
         "path": "/?ed=2560security=tls",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
@@ -1186,131 +987,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 88 [A级] 6.3MB/s 638ms",
-      "server": "162.159.24.131",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tlssecurity=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 89 [A级] 42.5MB/s 609ms",
-      "server": "172.64.42.85",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 90 [A级] 4.6MB/s 676ms",
-      "server": "15.204.246.132",
-      "server_port": 7307,
-      "method": "aes-256-gcm",
-      "password": "FoOiGlkAA9yPEGP"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 91 [A级] 4.1MB/s 620ms",
-      "server": "47.251.108.158",
-      "server_port": 443,
-      "uuid": "975fc322-6e38-434b-a53c-d39fed49b9a9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs",
-          "short_id": "896f52ba2cfca903"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 92 [A级] 7.2MB/s 648ms",
-      "server": "172.64.229.170",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 93 [A级] 14.3MB/s 650ms",
-      "server": "108.162.198.178",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 94 [A级] 3.3MB/s 576ms",
-      "server": "108.162.198.178",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 95 [A级] 3.4MB/s 656ms",
-      "server": "66.90.104.42",
-      "server_port": 2083,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 96 [A级] 11.1MB/s 720ms",
-      "server": "162.159.48.32",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 97 [A级] 3.7MB/s 732ms",
-      "server": "51.158.206.103",
+      "tag": "🇺🇸 75 [A级] 7.9MB/s 655ms",
+      "server": "15.204.97.219",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -1330,9 +1008,164 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 98 [A级] 17.2MB/s 722ms",
-      "server": "162.159.0.53",
+      "tag": "🇺🇸 76 [A级] 20.8MB/s 788ms",
+      "server": "151.101.1.242",
+      "server_port": 443,
+      "uuid": "11c1c5e2-7be9-464a-8945-abe4b131abd7",
+      "tls": {
+        "enabled": true,
+        "server_name": "minimize-evenness.cdn-content.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "minimize-evenness.cdn-content.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 77 [A级] 13.5MB/s 402ms",
+      "server": "108.162.198.178",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 78 [A级] 5.3MB/s 770ms",
+      "server": "guided-ferret.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "guided-ferret.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 79 [A级] 9.4MB/s 689ms",
+      "server": "47.253.226.114",
+      "server_port": 443,
+      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 80 [A级] 9.2MB/s 427ms",
+      "server": "172.64.229.2",
       "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 81 [A级] 15.3MB/s 428ms",
+      "server": "162.159.43.187",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 82 [A级] 4.6MB/s 681ms",
+      "server": "188.114.97.3",
+      "server_port": 8443,
+      "uuid": "a6fd8b83-7926-4b4e-884b-14f64e578815",
+      "tls": {
+        "enabled": true,
+        "server_name": "dn044toytgxw7ya2rygfhrvpw6mbl.pabjienmi.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/w47aznWVyUF9g3ciQ6GVv?ed=2560",
+        "headers": {
+          "Host": "dn044toytgxw7ya2rygfhrvpw6mbl.pabjienmi.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 83 [A级] 8.7MB/s 441ms",
+      "server": "162.159.24.131",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tlssecurity=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 84 [A级] 34.9MB/s 799ms",
+      "server": "188.114.97.6",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 85 [A级] 9.8MB/s 447ms",
+      "server": "104.18.46.234",
+      "server_port": 2052,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -1343,27 +1176,106 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 99 [A级] 6.0MB/s 671ms",
-      "server": "uspanel.unixzone.us",
-      "server_port": 30016,
-      "uuid": "03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a",
+      "tag": "🇺🇸 86 [A级] 7.6MB/s 437ms",
+      "server": "104.18.46.234",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/usserver"
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 100 [A级] 8.6MB/s 723ms",
-      "server": "138.199.48.82",
-      "server_port": 9443,
-      "method": "aes-256-gcm",
-      "password": "eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH"
+      "type": "vless",
+      "tag": "🇺🇸 87 [A级] 17.7MB/s 454ms",
+      "server": "172.64.52.6",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 101 [A级] 3.5MB/s 705ms",
-      "server": "104.18.46.46",
+      "tag": "🇺🇸 88 [A级] 11.3MB/s 747ms",
+      "server": "xray1-direct-mci1-fs-ce.freesocks.work",
+      "server_port": 443,
+      "uuid": "fa670a1a-71b7-441d-841d-8955f6ed5147",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 89 [A级] 14.8MB/s 466ms",
+      "server": "162.159.43.187",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 90 [A级] 7.1MB/s 496ms",
+      "server": "207.246.75.174",
+      "server_port": 443,
+      "uuid": "d90087c3-54f5-4283-a13f-615260c8b0c7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 91 [A级] 11.0MB/s 610ms",
+      "server": "172.64.32.108",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 92 [A级] 5.7MB/s 492ms",
+      "server": "104.18.47.113",
       "server_port": 8880,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
@@ -1376,71 +1288,72 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 102 [A级] 3.5MB/s 745ms",
-      "server": "87.58.201.170",
+      "tag": "🇺🇸 93 [A级] 5.9MB/s 790ms",
+      "server": "47.251.108.158",
       "server_port": 443,
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "uuid": "975fc322-6e38-434b-a53c-d39fed49b9a9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "d3-nl1.cloud-cdn.xyz",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs",
+          "short_id": "896f52ba2cfca903"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "vlgrpc"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 103 [A级] 3.1MB/s 652ms",
-      "server": "193.29.139.198",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 104 [A级] 3.5MB/s 775ms",
-      "server": "31.77.168.33",
-      "server_port": 443,
-      "password": "MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo",
-      "tls": {
-        "enabled": true,
-        "server_name": "d3-de2.cloud-cdn.xyz",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ]
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "ajv"
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 105 [A级] 4.0MB/s 572ms",
-      "server": "104.18.34.14",
-      "server_port": 8080,
+      "tag": "🇺🇸 94 [A级] 7.7MB/s 748ms",
+      "server": "172.86.111.135",
+      "server_port": 443,
+      "uuid": "79ccb156-bfc6-11f1-9811-525400d1d4f7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "n25FmewpAEsvLl9Vr0bRFcz044f4IE7orWeWOzu8rwk",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 95 [A级] 11.8MB/s 529ms",
+      "server": "108.162.198.178",
+      "server_port": 80,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
+        "path": "/?ed=2560security=tls ",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 96 [A级] 10.6MB/s 789ms",
+      "server": "3.84.97.225",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
       "type": "vless",
-      "tag": "🇺🇸 106 [A级] 2.4MB/s 504ms",
-      "server": "172.64.229.170",
+      "tag": "🇺🇸 97 [A级] 14.0MB/s 534ms",
+      "server": "172.64.158.146",
       "server_port": 8080,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
@@ -1453,12 +1366,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 107 [A级] 3.5MB/s 481ms",
-      "server": "104.18.39.218",
-      "server_port": 2095,
+      "tag": "🇺🇸 98 [A级] 8.9MB/s 685ms",
+      "server": "172.64.52.6",
+      "server_port": 2052,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
+        "path": "/?ed=2560security=tls",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
@@ -1466,13 +1380,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 108 [A级] 2.1MB/s 483ms",
-      "server": "188.114.97.6",
-      "server_port": 8880,
+      "tag": "🇺🇸 99 [A级] 8.0MB/s 563ms",
+      "server": "104.18.39.218",
+      "server_port": 80,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560+",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 100 [A级] 7.1MB/s 552ms",
+      "server": "15.204.233.41",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 101 [A级] 6.6MB/s 593ms",
+      "server": "188.114.97.6",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
         "headers": {
           "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
         }
@@ -1480,87 +1416,21 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 109 [A级] 3.0MB/s 753ms",
-      "server": "82.38.31.164",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 110 [A级] 2.7MB/s 696ms",
-      "server": "195.238.126.20",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 111 [A级] 3.0MB/s 786ms",
-      "server": "82.38.31.170",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 112 [A级] 3.1MB/s 722ms",
-      "server": "213.202.208.199",
-      "server_port": 7001,
+      "tag": "🇨🇦 102 [A级] 11.5MB/s 584ms",
+      "server": "138.199.48.82",
+      "server_port": 9443,
       "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
+      "password": "eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH"
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 113 [A级] 3.5MB/s 630ms",
-      "server": "23.95.222.127",
-      "server_port": 8443,
-      "uuid": "352ff568-f971-4613-bf48-92997a5d44ed",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ribQDOlZ69PzvZ1EDF0EcmMvbq_T5RQrVRBSGUU2riU",
-          "short_id": "35cd899f8de04801"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 114 [A级] 2.5MB/s 752ms",
-      "server": "ww2.levikogjgfdd.ir",
-      "server_port": 443,
-      "uuid": "9015f0bc-2053-4ca1-9b9b-a018b97b32d2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.intel.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8",
-          "short_id": "85c86a9863"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 115 [A级] 3.3MB/s 597ms",
-      "server": "172.64.158.146",
-      "server_port": 2052,
+      "tag": "🇺🇸 103 [A级] 8.3MB/s 612ms",
+      "server": "172.64.53.55",
+      "server_port": 2086,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls ",
+        "path": "/?ed=2560security=tls",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
@@ -1568,9 +1438,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 116 [A级] 2.4MB/s 563ms",
-      "server": "104.18.39.218",
-      "server_port": 8080,
+      "tag": "🇺🇸 104 [A级] 9.9MB/s 645ms",
+      "server": "162.159.0.53",
+      "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -1582,33 +1452,376 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 117 [A级] 2.5MB/s 771ms",
-      "server": "91.201.65.122",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇩🇪 118 [A级] 1.6MB/s 763ms",
-      "server": "31.77.8.97",
-      "server_port": 110,
-      "uuid": "d2d8601b-c14b-42c6-b8ea-33889bce152a",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 119 [A级] 2.8MB/s 751ms",
-      "server": "185.226.172.8",
-      "server_port": 8008,
+      "tag": "🇨🇦 105 [A级] 4.7MB/s 628ms",
+      "server": "51.222.155.113",
+      "server_port": 5601,
       "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 120 [A级] 1.2MB/s 732ms",
-      "server": "162.159.0.53",
-      "server_port": 2052,
+      "tag": "🇺🇸 106 [A级] 9.2MB/s 676ms",
+      "server": "104.18.46.46",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 107 [A级] 10.7MB/s 727ms",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 108 [A级] 6.2MB/s 781ms",
+      "server": "15.204.97.214",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 109 [A级] 3.3MB/s 557ms",
+      "server": "129.213.91.185",
+      "server_port": 35013,
+      "password": "4291c983-c520-46ac-82cc-48f14bef573f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 110 [A级] 3.3MB/s 590ms",
+      "server": "104.18.46.234",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 111 [A级] 9.0MB/s 750ms",
+      "server": "45.32.69.110",
+      "server_port": 443,
+      "uuid": "1572b9c5-d741-46eb-b4a2-a5d23958dfbe",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6l-Yq_zkVrnExw8AVv85VwoYnfNc8-dRSpoj_AA-fxY",
+          "short_id": "c5cde18f"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 112 [A级] 6.6MB/s 710ms",
+      "server": "15.204.97.198",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 113 [A级] 7.5MB/s 748ms",
+      "server": "104.18.39.218",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 114 [A级] 9.7MB/s 735ms",
+      "server": "uspanel.unixzone.us",
+      "server_port": 30016,
+      "uuid": "03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a",
+      "transport": {
+        "type": "ws",
+        "path": "/usserver",
+        "headers": {
+          "Host": "uspanel.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 115 [A级] 5.5MB/s 782ms",
+      "server": "51.81.203.63",
+      "server_port": 443,
+      "uuid": "cb2dbb6a-a1ea-4023-9ace-6466cee57241",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0",
+          "short_id": "4477382ff6d3d41c"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 116 [A级] 2.6MB/s 640ms",
+      "server": "82.38.31.180",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 117 [A级] 2.9MB/s 761ms",
+      "server": "51.158.206.93",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 118 [A级] 2.8MB/s 754ms",
+      "server": "nl-2.srv.dvzh.net",
+      "server_port": 443,
+      "uuid": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl-2.srv.dvzh.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
+          "short_id": "e0ccc8c2f487d913"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 119 [A级] 2.4MB/s 303ms",
+      "server": "51.222.200.165",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 120 [A级] 2.7MB/s 734ms",
+      "server": "35.180.48.226",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 121 [A级] 2.7MB/s 766ms",
+      "server": "82.38.31.164",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 122 [A级] 2.7MB/s 773ms",
+      "server": "87.58.201.211",
+      "server_port": 443,
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-nl1.cloud-cdn.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vlgrpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 123 [A级] 2.8MB/s 767ms",
+      "server": "51.158.206.86",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 124 [A级] 2.5MB/s 786ms",
+      "server": "70.34.252.154",
+      "server_port": 80,
+      "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 125 [A级] 2.3MB/s 748ms",
+      "server": "platform101.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform101",
+        "headers": {
+          "Host": "platform101.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 126 [A级] 2.5MB/s 712ms",
+      "server": "152.228.139.33",
+      "server_port": 35108,
+      "uuid": "81dc0b61-f9fe-4ad6-8b4e-b8c067b73712",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg",
+          "short_id": "52add08b86a5ccea"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-common3"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 127 [A级] 2.6MB/s 758ms",
+      "server": "152.228.139.33",
+      "server_port": 51671,
+      "uuid": "75cc7568-abb0-46a8-88be-8137d3c647d4",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.sony.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU",
+          "short_id": "2fed44d8c59f7e71"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc_common3"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 128 [A级] 1.9MB/s 711ms",
+      "server": "51.255.13.232",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "BqnqToih0PbU"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 129 [A级] 1.3MB/s 757ms",
+      "server": "162.159.43.187",
+      "server_port": 80,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -1623,252 +1836,270 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 64.1MB/s 5403ms",
-        "🇹🇼 02 [家宽级] 58.7MB/s 4168ms",
-        "🇭🇰 03 [家宽级] 4.5MB/s 1460ms",
-        "🇹🇼 04 [家宽级] 2.2MB/s 2055ms",
-        "🇭🇰 05 [家宽级] 1.6MB/s 1784ms",
-        "🇸🇬 06 [家宽级] 1.5MB/s 2574ms",
-        "🇹🇼 07 [家宽级] 1.1MB/s 1499ms",
-        "🇹🇼 08 [家宽级] 0.6MB/s 6546ms",
-        "🇺🇸 09 [家宽级] 0.3MB/s 4031ms",
-        "🇹🇼 10 [家宽级] 0.2MB/s 3385ms",
-        "🇹🇷 11 [家宽级] 0.2MB/s 2598ms",
-        "🇹🇷 12 [家宽级] 0.1MB/s 1844ms",
-        "🇺🇸 13 [S级] 7.8MB/s 320ms",
-        "🇺🇸 14 [S级] 6.4MB/s 353ms",
-        "🇺🇸 15 [S级] 9.0MB/s 364ms",
-        "🇺🇸 16 [S级] 3.8MB/s 387ms",
-        "🇺🇸 17 [A级] 15.1MB/s 435ms",
-        "🇺🇸 18 [A级] 7.4MB/s 440ms",
-        "🇺🇸 19 [A级] 12.3MB/s 460ms",
-        "🇺🇸 20 [A级] 10.0MB/s 470ms",
-        "🇺🇸 21 [A级] 35.5MB/s 446ms",
-        "🇺🇸 22 [A级] 6.3MB/s 459ms",
-        "🇺🇸 23 [A级] 5.3MB/s 478ms",
-        "🇺🇸 24 [A级] 5.6MB/s 509ms",
-        "🇺🇸 25 [A级] 17.1MB/s 477ms",
-        "🇺🇸 26 [A级] 18.3MB/s 529ms",
-        "🇺🇸 27 [A级] 23.5MB/s 528ms",
-        "🇺🇸 28 [A级] 19.1MB/s 531ms",
-        "🇺🇸 29 [A级] 21.4MB/s 425ms",
-        "🇺🇸 30 [A级] 7.2MB/s 556ms",
-        "🇺🇸 31 [A级] 8.4MB/s 541ms",
-        "🇺🇸 32 [A级] 7.7MB/s 561ms",
-        "🇺🇸 33 [A级] 7.8MB/s 596ms",
-        "🇺🇸 34 [A级] 9.1MB/s 587ms",
-        "🇺🇸 35 [A级] 13.6MB/s 573ms",
-        "🇺🇸 36 [A级] 6.9MB/s 617ms",
-        "🇺🇸 37 [A级] 25.6MB/s 619ms",
-        "🇺🇸 38 [A级] 6.4MB/s 630ms",
-        "🇺🇸 39 [A级] 29.3MB/s 634ms",
-        "🇺🇸 40 [A级] 11.7MB/s 637ms",
-        "🇸🇬 41 [A级] 6.7MB/s 642ms",
-        "🇸🇬 42 [A级] 7.2MB/s 648ms",
-        "🇺🇸 43 [A级] 7.1MB/s 646ms",
-        "🇮🇱 44 [A级] 15.5MB/s 608ms",
-        "🇺🇸 45 [A级] 6.1MB/s 648ms",
-        "🇺🇸 46 [A级] 6.8MB/s 645ms",
-        "🇺🇸 47 [A级] 9.3MB/s 652ms",
-        "🇺🇸 48 [A级] 19.2MB/s 652ms",
-        "🇺🇸 49 [A级] 6.7MB/s 647ms",
-        "🇺🇸 50 [A级] 12.6MB/s 630ms",
-        "🇺🇸 51 [A级] 23.4MB/s 659ms",
-        "🇺🇸 52 [A级] 6.2MB/s 632ms",
-        "🇸🇬 53 [A级] 14.5MB/s 673ms",
-        "🇺🇸 54 [A级] 6.2MB/s 695ms",
-        "🇺🇸 55 [A级] 7.8MB/s 586ms",
-        "🇺🇸 56 [A级] 9.4MB/s 700ms",
-        "🇺🇸 57 [A级] 29.9MB/s 580ms",
-        "🇺🇸 58 [A级] 7.7MB/s 326ms",
-        "🇺🇸 59 [A级] 12.0MB/s 634ms",
-        "🇺🇸 60 [A级] 9.1MB/s 621ms",
-        "🇺🇸 61 [A级] 7.9MB/s 699ms",
-        "🇺🇸 62 [A级] 10.2MB/s 365ms",
-        "🇺🇸 63 [A级] 9.1MB/s 674ms",
-        "🇫🇷 64 [A级] 8.9MB/s 734ms",
-        "🇨🇦 65 [A级] 6.3MB/s 746ms",
-        "🇺🇸 66 [A级] 11.7MB/s 716ms",
-        "🇺🇸 67 [A级] 15.0MB/s 745ms",
-        "🇺🇸 68 [A级] 18.0MB/s 727ms",
-        "🇺🇸 69 [A级] 8.4MB/s 738ms",
-        "🇺🇸 70 [A级] 5.7MB/s 765ms",
-        "🇺🇸 71 [A级] 13.6MB/s 697ms",
-        "🇺🇸 72 [A级] 6.0MB/s 744ms",
-        "🇺🇸 73 [A级] 10.6MB/s 687ms",
-        "🇺🇸 74 [A级] 7.8MB/s 454ms",
-        "🇺🇸 75 [A级] 4.5MB/s 670ms",
-        "🇺🇸 76 [A级] 7.8MB/s 748ms",
-        "🇺🇸 77 [A级] 17.7MB/s 751ms",
-        "🇺🇸 78 [A级] 9.8MB/s 744ms",
-        "🇺🇸 79 [A级] 12.9MB/s 714ms",
-        "🇺🇸 80 [A级] 6.6MB/s 532ms",
-        "🇺🇸 81 [A级] 14.0MB/s 522ms",
-        "🇺🇸 82 [A级] 13.3MB/s 563ms",
-        "🇺🇸 83 [A级] 65.5MB/s 559ms",
-        "🇺🇸 84 [A级] 5.9MB/s 566ms",
-        "🇺🇸 85 [A级] 7.9MB/s 602ms",
-        "🇺🇸 86 [A级] 6.8MB/s 573ms",
-        "🇺🇸 87 [A级] 16.7MB/s 580ms",
-        "🇺🇸 88 [A级] 6.3MB/s 638ms",
-        "🇺🇸 89 [A级] 42.5MB/s 609ms",
-        "🇺🇸 90 [A级] 4.6MB/s 676ms",
-        "🇺🇸 91 [A级] 4.1MB/s 620ms",
-        "🇺🇸 92 [A级] 7.2MB/s 648ms",
-        "🇺🇸 93 [A级] 14.3MB/s 650ms",
-        "🇺🇸 94 [A级] 3.3MB/s 576ms",
-        "🇬🇧 95 [A级] 3.4MB/s 656ms",
-        "🇺🇸 96 [A级] 11.1MB/s 720ms",
-        "🇳🇱 97 [A级] 3.7MB/s 732ms",
-        "🇺🇸 98 [A级] 17.2MB/s 722ms",
-        "🇺🇸 99 [A级] 6.0MB/s 671ms",
-        "🇨🇦 100 [A级] 8.6MB/s 723ms",
-        "🇺🇸 101 [A级] 3.5MB/s 705ms",
-        "🇳🇱 102 [A级] 3.5MB/s 745ms",
-        "🇳🇱 103 [A级] 3.1MB/s 652ms",
-        "🇩🇪 104 [A级] 3.5MB/s 775ms",
-        "🇺🇸 105 [A级] 4.0MB/s 572ms",
-        "🇺🇸 106 [A级] 2.4MB/s 504ms",
-        "🇺🇸 107 [A级] 3.5MB/s 481ms",
-        "🇺🇸 108 [A级] 2.1MB/s 483ms",
-        "🇳🇱 109 [A级] 3.0MB/s 753ms",
-        "🇱🇹 110 [A级] 2.7MB/s 696ms",
-        "🇳🇱 111 [A级] 3.0MB/s 786ms",
-        "🇩🇪 112 [A级] 3.1MB/s 722ms",
-        "🇺🇸 113 [A级] 3.5MB/s 630ms",
-        "🇩🇪 114 [A级] 2.5MB/s 752ms",
-        "🇺🇸 115 [A级] 3.3MB/s 597ms",
-        "🇺🇸 116 [A级] 2.4MB/s 563ms",
-        "🇮🇹 117 [A级] 2.5MB/s 771ms",
-        "🇩🇪 118 [A级] 1.6MB/s 763ms",
-        "🇩🇪 119 [A级] 2.8MB/s 751ms",
-        "🇺🇸 120 [A级] 1.2MB/s 732ms"
+        "🇭🇰 01 [家宽级] 61.8MB/s 11043ms",
+        "🇹🇷 02 [家宽级] 61.5MB/s 1594ms",
+        "🇹🇼 03 [家宽级] 61.3MB/s 9896ms",
+        "🇹🇼 04 [家宽级] 61.7MB/s 14130ms",
+        "🇺🇸 05 [家宽级] 60.1MB/s 3022ms",
+        "🇹🇼 06 [家宽级] 2.9MB/s 1630ms",
+        "🇭🇰 07 [家宽级] 1.8MB/s 1310ms",
+        "🇭🇰 08 [家宽级] 1.7MB/s 1401ms",
+        "🇹🇼 09 [家宽级] 0.7MB/s 2827ms",
+        "🇹🇼 10 [家宽级] 0.2MB/s 2120ms",
+        "🇸🇬 11 [家宽级] 0.1MB/s 2410ms",
+        "🇺🇸 12 [S级] 23.8MB/s 378ms",
+        "🇺🇸 13 [S级] 27.3MB/s 383ms",
+        "🇺🇸 14 [S级] 9.2MB/s 388ms",
+        "🇺🇸 15 [A级] 9.7MB/s 407ms",
+        "🇺🇸 16 [A级] 7.2MB/s 409ms",
+        "🇺🇸 17 [A级] 12.6MB/s 415ms",
+        "🇺🇸 18 [A级] 10.4MB/s 461ms",
+        "🇺🇸 19 [A级] 9.6MB/s 493ms",
+        "🇺🇸 20 [A级] 15.9MB/s 484ms",
+        "🇺🇸 21 [A级] 6.4MB/s 492ms",
+        "🇺🇸 22 [A级] 6.2MB/s 495ms",
+        "🇺🇸 23 [A级] 12.4MB/s 501ms",
+        "🇺🇸 24 [A级] 12.7MB/s 477ms",
+        "🇺🇸 25 [A级] 6.2MB/s 492ms",
+        "🇺🇸 26 [A级] 8.6MB/s 504ms",
+        "🇺🇸 27 [A级] 9.8MB/s 530ms",
+        "🇺🇸 28 [A级] 9.8MB/s 531ms",
+        "🇺🇸 29 [A级] 20.7MB/s 525ms",
+        "🇺🇸 30 [A级] 8.0MB/s 544ms",
+        "🇺🇸 31 [A级] 9.6MB/s 505ms",
+        "🇺🇸 32 [A级] 9.3MB/s 566ms",
+        "🇺🇸 33 [A级] 21.1MB/s 577ms",
+        "🇺🇸 34 [A级] 5.2MB/s 587ms",
+        "🇺🇸 35 [A级] 24.7MB/s 587ms",
+        "🇺🇸 36 [A级] 7.7MB/s 469ms",
+        "🇺🇸 37 [A级] 7.3MB/s 564ms",
+        "🇺🇸 38 [A级] 14.0MB/s 580ms",
+        "🇺🇸 39 [A级] 13.4MB/s 585ms",
+        "🇺🇸 40 [A级] 15.8MB/s 618ms",
+        "🇺🇸 41 [A级] 12.3MB/s 617ms",
+        "🇺🇸 42 [A级] 7.4MB/s 610ms",
+        "🇺🇸 43 [A级] 9.0MB/s 513ms",
+        "🇺🇸 44 [A级] 6.7MB/s 620ms",
+        "🇺🇸 45 [A级] 8.5MB/s 575ms",
+        "🇺🇸 46 [A级] 12.8MB/s 446ms",
+        "🇺🇸 47 [A级] 7.9MB/s 636ms",
+        "🇺🇸 48 [A级] 5.5MB/s 639ms",
+        "🇺🇸 49 [A级] 13.4MB/s 619ms",
+        "🇨🇦 50 [A级] 6.1MB/s 649ms",
+        "🇺🇸 51 [A级] 8.1MB/s 658ms",
+        "🇺🇸 52 [A级] 10.6MB/s 641ms",
+        "🇺🇸 53 [A级] 8.9MB/s 644ms",
+        "🇺🇸 54 [A级] 6.0MB/s 660ms",
+        "🇺🇸 55 [A级] 29.2MB/s 662ms",
+        "🇺🇸 56 [A级] 11.0MB/s 667ms",
+        "🇺🇸 57 [A级] 4.8MB/s 618ms",
+        "🇺🇸 58 [A级] 6.5MB/s 679ms",
+        "🇺🇸 59 [A级] 6.3MB/s 669ms",
+        "🇺🇸 60 [A级] 8.6MB/s 332ms",
+        "🇺🇸 61 [A级] 26.7MB/s 699ms",
+        "🇺🇸 62 [A级] 8.6MB/s 720ms",
+        "🇺🇸 63 [A级] 5.9MB/s 724ms",
+        "🇨🇦 64 [A级] 7.2MB/s 734ms",
+        "🇬🇧 65 [A级] 4.6MB/s 606ms",
+        "🇺🇸 66 [A级] 8.7MB/s 575ms",
+        "🇺🇸 67 [A级] 10.3MB/s 674ms",
+        "🇺🇸 68 [A级] 28.2MB/s 753ms",
+        "🇺🇸 69 [A级] 13.1MB/s 368ms",
+        "🇺🇸 70 [A级] 7.8MB/s 571ms",
+        "🇺🇸 71 [A级] 12.3MB/s 685ms",
+        "🇺🇸 72 [A级] 9.0MB/s 667ms",
+        "🇺🇸 73 [A级] 10.0MB/s 706ms",
+        "🇺🇸 74 [A级] 10.4MB/s 773ms",
+        "🇺🇸 75 [A级] 7.9MB/s 655ms",
+        "🇺🇸 76 [A级] 20.8MB/s 788ms",
+        "🇺🇸 77 [A级] 13.5MB/s 402ms",
+        "🇺🇸 78 [A级] 5.3MB/s 770ms",
+        "🇺🇸 79 [A级] 9.4MB/s 689ms",
+        "🇺🇸 80 [A级] 9.2MB/s 427ms",
+        "🇺🇸 81 [A级] 15.3MB/s 428ms",
+        "🇩🇪 82 [A级] 4.6MB/s 681ms",
+        "🇺🇸 83 [A级] 8.7MB/s 441ms",
+        "🇺🇸 84 [A级] 34.9MB/s 799ms",
+        "🇺🇸 85 [A级] 9.8MB/s 447ms",
+        "🇺🇸 86 [A级] 7.6MB/s 437ms",
+        "🇺🇸 87 [A级] 17.7MB/s 454ms",
+        "🇺🇸 88 [A级] 11.3MB/s 747ms",
+        "🇺🇸 89 [A级] 14.8MB/s 466ms",
+        "🇺🇸 90 [A级] 7.1MB/s 496ms",
+        "🇺🇸 91 [A级] 11.0MB/s 610ms",
+        "🇺🇸 92 [A级] 5.7MB/s 492ms",
+        "🇺🇸 93 [A级] 5.9MB/s 790ms",
+        "🇺🇸 94 [A级] 7.7MB/s 748ms",
+        "🇺🇸 95 [A级] 11.8MB/s 529ms",
+        "🇺🇸 96 [A级] 10.6MB/s 789ms",
+        "🇺🇸 97 [A级] 14.0MB/s 534ms",
+        "🇺🇸 98 [A级] 8.9MB/s 685ms",
+        "🇺🇸 99 [A级] 8.0MB/s 563ms",
+        "🇺🇸 100 [A级] 7.1MB/s 552ms",
+        "🇺🇸 101 [A级] 6.6MB/s 593ms",
+        "🇨🇦 102 [A级] 11.5MB/s 584ms",
+        "🇺🇸 103 [A级] 8.3MB/s 612ms",
+        "🇺🇸 104 [A级] 9.9MB/s 645ms",
+        "🇨🇦 105 [A级] 4.7MB/s 628ms",
+        "🇺🇸 106 [A级] 9.2MB/s 676ms",
+        "🇨🇦 107 [A级] 10.7MB/s 727ms",
+        "🇺🇸 108 [A级] 6.2MB/s 781ms",
+        "🇺🇸 109 [A级] 3.3MB/s 557ms",
+        "🇺🇸 110 [A级] 3.3MB/s 590ms",
+        "🇺🇸 111 [A级] 9.0MB/s 750ms",
+        "🇺🇸 112 [A级] 6.6MB/s 710ms",
+        "🇺🇸 113 [A级] 7.5MB/s 748ms",
+        "🇺🇸 114 [A级] 9.7MB/s 735ms",
+        "🇺🇸 115 [A级] 5.5MB/s 782ms",
+        "🇳🇱 116 [A级] 2.6MB/s 640ms",
+        "🇳🇱 117 [A级] 2.9MB/s 761ms",
+        "🇳🇱 118 [A级] 2.8MB/s 754ms",
+        "🇨🇦 119 [A级] 2.4MB/s 303ms",
+        "🇫🇷 120 [A级] 2.7MB/s 734ms",
+        "🇳🇱 121 [A级] 2.7MB/s 766ms",
+        "🇳🇱 122 [A级] 2.7MB/s 773ms",
+        "🇳🇱 123 [A级] 2.8MB/s 767ms",
+        "🇵🇱 124 [A级] 2.5MB/s 786ms",
+        "🇨🇱 125 [A级] 2.3MB/s 748ms",
+        "🇫🇷 126 [A级] 2.5MB/s 712ms",
+        "🇫🇷 127 [A级] 2.6MB/s 758ms",
+        "🇫🇷 128 [A级] 1.9MB/s 711ms",
+        "🇺🇸 129 [A级] 1.3MB/s 757ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 64.1MB/s 5403ms",
-        "🇹🇼 02 [家宽级] 58.7MB/s 4168ms",
-        "🇭🇰 03 [家宽级] 4.5MB/s 1460ms",
-        "🇹🇼 04 [家宽级] 2.2MB/s 2055ms",
-        "🇭🇰 05 [家宽级] 1.6MB/s 1784ms",
-        "🇸🇬 06 [家宽级] 1.5MB/s 2574ms",
-        "🇹🇼 07 [家宽级] 1.1MB/s 1499ms",
-        "🇹🇼 08 [家宽级] 0.6MB/s 6546ms",
-        "🇺🇸 09 [家宽级] 0.3MB/s 4031ms",
-        "🇹🇼 10 [家宽级] 0.2MB/s 3385ms",
-        "🇹🇷 11 [家宽级] 0.2MB/s 2598ms",
-        "🇹🇷 12 [家宽级] 0.1MB/s 1844ms",
-        "🇺🇸 13 [S级] 7.8MB/s 320ms",
-        "🇺🇸 14 [S级] 6.4MB/s 353ms",
-        "🇺🇸 15 [S级] 9.0MB/s 364ms",
-        "🇺🇸 16 [S级] 3.8MB/s 387ms",
-        "🇺🇸 17 [A级] 15.1MB/s 435ms",
-        "🇺🇸 18 [A级] 7.4MB/s 440ms",
-        "🇺🇸 19 [A级] 12.3MB/s 460ms",
-        "🇺🇸 20 [A级] 10.0MB/s 470ms",
-        "🇺🇸 21 [A级] 35.5MB/s 446ms",
-        "🇺🇸 22 [A级] 6.3MB/s 459ms",
-        "🇺🇸 23 [A级] 5.3MB/s 478ms",
-        "🇺🇸 24 [A级] 5.6MB/s 509ms",
-        "🇺🇸 25 [A级] 17.1MB/s 477ms",
-        "🇺🇸 26 [A级] 18.3MB/s 529ms",
-        "🇺🇸 27 [A级] 23.5MB/s 528ms",
-        "🇺🇸 28 [A级] 19.1MB/s 531ms",
-        "🇺🇸 29 [A级] 21.4MB/s 425ms",
-        "🇺🇸 30 [A级] 7.2MB/s 556ms",
-        "🇺🇸 31 [A级] 8.4MB/s 541ms",
-        "🇺🇸 32 [A级] 7.7MB/s 561ms",
-        "🇺🇸 33 [A级] 7.8MB/s 596ms",
-        "🇺🇸 34 [A级] 9.1MB/s 587ms",
-        "🇺🇸 35 [A级] 13.6MB/s 573ms",
-        "🇺🇸 36 [A级] 6.9MB/s 617ms",
-        "🇺🇸 37 [A级] 25.6MB/s 619ms",
-        "🇺🇸 38 [A级] 6.4MB/s 630ms",
-        "🇺🇸 39 [A级] 29.3MB/s 634ms",
-        "🇺🇸 40 [A级] 11.7MB/s 637ms",
-        "🇸🇬 41 [A级] 6.7MB/s 642ms",
-        "🇸🇬 42 [A级] 7.2MB/s 648ms",
-        "🇺🇸 43 [A级] 7.1MB/s 646ms",
-        "🇮🇱 44 [A级] 15.5MB/s 608ms",
-        "🇺🇸 45 [A级] 6.1MB/s 648ms",
-        "🇺🇸 46 [A级] 6.8MB/s 645ms",
-        "🇺🇸 47 [A级] 9.3MB/s 652ms",
-        "🇺🇸 48 [A级] 19.2MB/s 652ms",
-        "🇺🇸 49 [A级] 6.7MB/s 647ms",
-        "🇺🇸 50 [A级] 12.6MB/s 630ms",
-        "🇺🇸 51 [A级] 23.4MB/s 659ms",
-        "🇺🇸 52 [A级] 6.2MB/s 632ms",
-        "🇸🇬 53 [A级] 14.5MB/s 673ms",
-        "🇺🇸 54 [A级] 6.2MB/s 695ms",
-        "🇺🇸 55 [A级] 7.8MB/s 586ms",
-        "🇺🇸 56 [A级] 9.4MB/s 700ms",
-        "🇺🇸 57 [A级] 29.9MB/s 580ms",
-        "🇺🇸 58 [A级] 7.7MB/s 326ms",
-        "🇺🇸 59 [A级] 12.0MB/s 634ms",
-        "🇺🇸 60 [A级] 9.1MB/s 621ms",
-        "🇺🇸 61 [A级] 7.9MB/s 699ms",
-        "🇺🇸 62 [A级] 10.2MB/s 365ms",
-        "🇺🇸 63 [A级] 9.1MB/s 674ms",
-        "🇫🇷 64 [A级] 8.9MB/s 734ms",
-        "🇨🇦 65 [A级] 6.3MB/s 746ms",
-        "🇺🇸 66 [A级] 11.7MB/s 716ms",
-        "🇺🇸 67 [A级] 15.0MB/s 745ms",
-        "🇺🇸 68 [A级] 18.0MB/s 727ms",
-        "🇺🇸 69 [A级] 8.4MB/s 738ms",
-        "🇺🇸 70 [A级] 5.7MB/s 765ms",
-        "🇺🇸 71 [A级] 13.6MB/s 697ms",
-        "🇺🇸 72 [A级] 6.0MB/s 744ms",
-        "🇺🇸 73 [A级] 10.6MB/s 687ms",
-        "🇺🇸 74 [A级] 7.8MB/s 454ms",
-        "🇺🇸 75 [A级] 4.5MB/s 670ms",
-        "🇺🇸 76 [A级] 7.8MB/s 748ms",
-        "🇺🇸 77 [A级] 17.7MB/s 751ms",
-        "🇺🇸 78 [A级] 9.8MB/s 744ms",
-        "🇺🇸 79 [A级] 12.9MB/s 714ms",
-        "🇺🇸 80 [A级] 6.6MB/s 532ms",
-        "🇺🇸 81 [A级] 14.0MB/s 522ms",
-        "🇺🇸 82 [A级] 13.3MB/s 563ms",
-        "🇺🇸 83 [A级] 65.5MB/s 559ms",
-        "🇺🇸 84 [A级] 5.9MB/s 566ms",
-        "🇺🇸 85 [A级] 7.9MB/s 602ms",
-        "🇺🇸 86 [A级] 6.8MB/s 573ms",
-        "🇺🇸 87 [A级] 16.7MB/s 580ms",
-        "🇺🇸 88 [A级] 6.3MB/s 638ms",
-        "🇺🇸 89 [A级] 42.5MB/s 609ms",
-        "🇺🇸 90 [A级] 4.6MB/s 676ms",
-        "🇺🇸 91 [A级] 4.1MB/s 620ms",
-        "🇺🇸 92 [A级] 7.2MB/s 648ms",
-        "🇺🇸 93 [A级] 14.3MB/s 650ms",
-        "🇺🇸 94 [A级] 3.3MB/s 576ms",
-        "🇬🇧 95 [A级] 3.4MB/s 656ms",
-        "🇺🇸 96 [A级] 11.1MB/s 720ms",
-        "🇳🇱 97 [A级] 3.7MB/s 732ms",
-        "🇺🇸 98 [A级] 17.2MB/s 722ms",
-        "🇺🇸 99 [A级] 6.0MB/s 671ms",
-        "🇨🇦 100 [A级] 8.6MB/s 723ms",
-        "🇺🇸 101 [A级] 3.5MB/s 705ms",
-        "🇳🇱 102 [A级] 3.5MB/s 745ms",
-        "🇳🇱 103 [A级] 3.1MB/s 652ms",
-        "🇩🇪 104 [A级] 3.5MB/s 775ms",
-        "🇺🇸 105 [A级] 4.0MB/s 572ms",
-        "🇺🇸 106 [A级] 2.4MB/s 504ms",
-        "🇺🇸 107 [A级] 3.5MB/s 481ms",
-        "🇺🇸 108 [A级] 2.1MB/s 483ms",
-        "🇳🇱 109 [A级] 3.0MB/s 753ms",
-        "🇱🇹 110 [A级] 2.7MB/s 696ms",
-        "🇳🇱 111 [A级] 3.0MB/s 786ms",
-        "🇩🇪 112 [A级] 3.1MB/s 722ms",
-        "🇺🇸 113 [A级] 3.5MB/s 630ms",
-        "🇩🇪 114 [A级] 2.5MB/s 752ms",
-        "🇺🇸 115 [A级] 3.3MB/s 597ms",
-        "🇺🇸 116 [A级] 2.4MB/s 563ms",
-        "🇮🇹 117 [A级] 2.5MB/s 771ms",
-        "🇩🇪 118 [A级] 1.6MB/s 763ms",
-        "🇩🇪 119 [A级] 2.8MB/s 751ms",
-        "🇺🇸 120 [A级] 1.2MB/s 732ms"
+        "🇭🇰 01 [家宽级] 61.8MB/s 11043ms",
+        "🇹🇷 02 [家宽级] 61.5MB/s 1594ms",
+        "🇹🇼 03 [家宽级] 61.3MB/s 9896ms",
+        "🇹🇼 04 [家宽级] 61.7MB/s 14130ms",
+        "🇺🇸 05 [家宽级] 60.1MB/s 3022ms",
+        "🇹🇼 06 [家宽级] 2.9MB/s 1630ms",
+        "🇭🇰 07 [家宽级] 1.8MB/s 1310ms",
+        "🇭🇰 08 [家宽级] 1.7MB/s 1401ms",
+        "🇹🇼 09 [家宽级] 0.7MB/s 2827ms",
+        "🇹🇼 10 [家宽级] 0.2MB/s 2120ms",
+        "🇸🇬 11 [家宽级] 0.1MB/s 2410ms",
+        "🇺🇸 12 [S级] 23.8MB/s 378ms",
+        "🇺🇸 13 [S级] 27.3MB/s 383ms",
+        "🇺🇸 14 [S级] 9.2MB/s 388ms",
+        "🇺🇸 15 [A级] 9.7MB/s 407ms",
+        "🇺🇸 16 [A级] 7.2MB/s 409ms",
+        "🇺🇸 17 [A级] 12.6MB/s 415ms",
+        "🇺🇸 18 [A级] 10.4MB/s 461ms",
+        "🇺🇸 19 [A级] 9.6MB/s 493ms",
+        "🇺🇸 20 [A级] 15.9MB/s 484ms",
+        "🇺🇸 21 [A级] 6.4MB/s 492ms",
+        "🇺🇸 22 [A级] 6.2MB/s 495ms",
+        "🇺🇸 23 [A级] 12.4MB/s 501ms",
+        "🇺🇸 24 [A级] 12.7MB/s 477ms",
+        "🇺🇸 25 [A级] 6.2MB/s 492ms",
+        "🇺🇸 26 [A级] 8.6MB/s 504ms",
+        "🇺🇸 27 [A级] 9.8MB/s 530ms",
+        "🇺🇸 28 [A级] 9.8MB/s 531ms",
+        "🇺🇸 29 [A级] 20.7MB/s 525ms",
+        "🇺🇸 30 [A级] 8.0MB/s 544ms",
+        "🇺🇸 31 [A级] 9.6MB/s 505ms",
+        "🇺🇸 32 [A级] 9.3MB/s 566ms",
+        "🇺🇸 33 [A级] 21.1MB/s 577ms",
+        "🇺🇸 34 [A级] 5.2MB/s 587ms",
+        "🇺🇸 35 [A级] 24.7MB/s 587ms",
+        "🇺🇸 36 [A级] 7.7MB/s 469ms",
+        "🇺🇸 37 [A级] 7.3MB/s 564ms",
+        "🇺🇸 38 [A级] 14.0MB/s 580ms",
+        "🇺🇸 39 [A级] 13.4MB/s 585ms",
+        "🇺🇸 40 [A级] 15.8MB/s 618ms",
+        "🇺🇸 41 [A级] 12.3MB/s 617ms",
+        "🇺🇸 42 [A级] 7.4MB/s 610ms",
+        "🇺🇸 43 [A级] 9.0MB/s 513ms",
+        "🇺🇸 44 [A级] 6.7MB/s 620ms",
+        "🇺🇸 45 [A级] 8.5MB/s 575ms",
+        "🇺🇸 46 [A级] 12.8MB/s 446ms",
+        "🇺🇸 47 [A级] 7.9MB/s 636ms",
+        "🇺🇸 48 [A级] 5.5MB/s 639ms",
+        "🇺🇸 49 [A级] 13.4MB/s 619ms",
+        "🇨🇦 50 [A级] 6.1MB/s 649ms",
+        "🇺🇸 51 [A级] 8.1MB/s 658ms",
+        "🇺🇸 52 [A级] 10.6MB/s 641ms",
+        "🇺🇸 53 [A级] 8.9MB/s 644ms",
+        "🇺🇸 54 [A级] 6.0MB/s 660ms",
+        "🇺🇸 55 [A级] 29.2MB/s 662ms",
+        "🇺🇸 56 [A级] 11.0MB/s 667ms",
+        "🇺🇸 57 [A级] 4.8MB/s 618ms",
+        "🇺🇸 58 [A级] 6.5MB/s 679ms",
+        "🇺🇸 59 [A级] 6.3MB/s 669ms",
+        "🇺🇸 60 [A级] 8.6MB/s 332ms",
+        "🇺🇸 61 [A级] 26.7MB/s 699ms",
+        "🇺🇸 62 [A级] 8.6MB/s 720ms",
+        "🇺🇸 63 [A级] 5.9MB/s 724ms",
+        "🇨🇦 64 [A级] 7.2MB/s 734ms",
+        "🇬🇧 65 [A级] 4.6MB/s 606ms",
+        "🇺🇸 66 [A级] 8.7MB/s 575ms",
+        "🇺🇸 67 [A级] 10.3MB/s 674ms",
+        "🇺🇸 68 [A级] 28.2MB/s 753ms",
+        "🇺🇸 69 [A级] 13.1MB/s 368ms",
+        "🇺🇸 70 [A级] 7.8MB/s 571ms",
+        "🇺🇸 71 [A级] 12.3MB/s 685ms",
+        "🇺🇸 72 [A级] 9.0MB/s 667ms",
+        "🇺🇸 73 [A级] 10.0MB/s 706ms",
+        "🇺🇸 74 [A级] 10.4MB/s 773ms",
+        "🇺🇸 75 [A级] 7.9MB/s 655ms",
+        "🇺🇸 76 [A级] 20.8MB/s 788ms",
+        "🇺🇸 77 [A级] 13.5MB/s 402ms",
+        "🇺🇸 78 [A级] 5.3MB/s 770ms",
+        "🇺🇸 79 [A级] 9.4MB/s 689ms",
+        "🇺🇸 80 [A级] 9.2MB/s 427ms",
+        "🇺🇸 81 [A级] 15.3MB/s 428ms",
+        "🇩🇪 82 [A级] 4.6MB/s 681ms",
+        "🇺🇸 83 [A级] 8.7MB/s 441ms",
+        "🇺🇸 84 [A级] 34.9MB/s 799ms",
+        "🇺🇸 85 [A级] 9.8MB/s 447ms",
+        "🇺🇸 86 [A级] 7.6MB/s 437ms",
+        "🇺🇸 87 [A级] 17.7MB/s 454ms",
+        "🇺🇸 88 [A级] 11.3MB/s 747ms",
+        "🇺🇸 89 [A级] 14.8MB/s 466ms",
+        "🇺🇸 90 [A级] 7.1MB/s 496ms",
+        "🇺🇸 91 [A级] 11.0MB/s 610ms",
+        "🇺🇸 92 [A级] 5.7MB/s 492ms",
+        "🇺🇸 93 [A级] 5.9MB/s 790ms",
+        "🇺🇸 94 [A级] 7.7MB/s 748ms",
+        "🇺🇸 95 [A级] 11.8MB/s 529ms",
+        "🇺🇸 96 [A级] 10.6MB/s 789ms",
+        "🇺🇸 97 [A级] 14.0MB/s 534ms",
+        "🇺🇸 98 [A级] 8.9MB/s 685ms",
+        "🇺🇸 99 [A级] 8.0MB/s 563ms",
+        "🇺🇸 100 [A级] 7.1MB/s 552ms",
+        "🇺🇸 101 [A级] 6.6MB/s 593ms",
+        "🇨🇦 102 [A级] 11.5MB/s 584ms",
+        "🇺🇸 103 [A级] 8.3MB/s 612ms",
+        "🇺🇸 104 [A级] 9.9MB/s 645ms",
+        "🇨🇦 105 [A级] 4.7MB/s 628ms",
+        "🇺🇸 106 [A级] 9.2MB/s 676ms",
+        "🇨🇦 107 [A级] 10.7MB/s 727ms",
+        "🇺🇸 108 [A级] 6.2MB/s 781ms",
+        "🇺🇸 109 [A级] 3.3MB/s 557ms",
+        "🇺🇸 110 [A级] 3.3MB/s 590ms",
+        "🇺🇸 111 [A级] 9.0MB/s 750ms",
+        "🇺🇸 112 [A级] 6.6MB/s 710ms",
+        "🇺🇸 113 [A级] 7.5MB/s 748ms",
+        "🇺🇸 114 [A级] 9.7MB/s 735ms",
+        "🇺🇸 115 [A级] 5.5MB/s 782ms",
+        "🇳🇱 116 [A级] 2.6MB/s 640ms",
+        "🇳🇱 117 [A级] 2.9MB/s 761ms",
+        "🇳🇱 118 [A级] 2.8MB/s 754ms",
+        "🇨🇦 119 [A级] 2.4MB/s 303ms",
+        "🇫🇷 120 [A级] 2.7MB/s 734ms",
+        "🇳🇱 121 [A级] 2.7MB/s 766ms",
+        "🇳🇱 122 [A级] 2.7MB/s 773ms",
+        "🇳🇱 123 [A级] 2.8MB/s 767ms",
+        "🇵🇱 124 [A级] 2.5MB/s 786ms",
+        "🇨🇱 125 [A级] 2.3MB/s 748ms",
+        "🇫🇷 126 [A级] 2.5MB/s 712ms",
+        "🇫🇷 127 [A级] 2.6MB/s 758ms",
+        "🇫🇷 128 [A级] 1.9MB/s 711ms",
+        "🇺🇸 129 [A级] 1.3MB/s 757ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

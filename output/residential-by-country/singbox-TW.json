@@ -5,17 +5,35 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇹🇼 01 [家宽级] 58.7MB/s 4168ms",
-      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
-      "server_port": 11223,
+      "tag": "🇹🇼 01 [家宽级] 61.3MB/s 9896ms",
+      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
+      "server_port": 11224,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
       "security": "auto",
       "alter_id": 2
     },
     {
+      "type": "tuic",
+      "tag": "🇹🇼 02 [家宽级] 61.7MB/s 14130ms",
+      "server": "tw6.dexlos.com",
+      "server_port": 8080,
+      "uuid": "D7286728-678E-443B-B76B-B699654C66DD",
+      "password": "D7286728-678E-443B-B76B-B699654C66DD",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw6.dexlos.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 2.2MB/s 2055ms",
-      "server": "172.66.152.4",
+      "tag": "🇹🇼 03 [家宽级] 2.9MB/s 1630ms",
+      "server": "argo6.5671234.xyz",
       "server_port": 443,
       "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
@@ -25,35 +43,12 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/e8e2cecb6188f7fb",
-        "headers": {
-          "Host": "argo6.5671234.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 03 [家宽级] 1.1MB/s 1499ms",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
+        "path": "/e8e2cecb6188f7fb"
       }
     },
     {
       "type": "tuic",
-      "tag": "🇹🇼 04 [家宽级] 0.6MB/s 6546ms",
+      "tag": "🇹🇼 04 [家宽级] 0.7MB/s 2827ms",
       "server": "tw1.dexlos.com",
       "server_port": 8080,
       "uuid": "D7286728-678E-443B-B76B-B699654C66DD",
@@ -71,9 +66,9 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 05 [家宽级] 0.2MB/s 3385ms",
-      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
-      "server_port": 11224,
+      "tag": "🇹🇼 05 [家宽级] 0.2MB/s 2120ms",
+      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
+      "server_port": 11223,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
       "security": "auto",
       "alter_id": 2
@@ -83,22 +78,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 58.7MB/s 4168ms",
-        "🇹🇼 02 [家宽级] 2.2MB/s 2055ms",
-        "🇹🇼 03 [家宽级] 1.1MB/s 1499ms",
-        "🇹🇼 04 [家宽级] 0.6MB/s 6546ms",
-        "🇹🇼 05 [家宽级] 0.2MB/s 3385ms"
+        "🇹🇼 01 [家宽级] 61.3MB/s 9896ms",
+        "🇹🇼 02 [家宽级] 61.7MB/s 14130ms",
+        "🇹🇼 03 [家宽级] 2.9MB/s 1630ms",
+        "🇹🇼 04 [家宽级] 0.7MB/s 2827ms",
+        "🇹🇼 05 [家宽级] 0.2MB/s 2120ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 58.7MB/s 4168ms",
-        "🇹🇼 02 [家宽级] 2.2MB/s 2055ms",
-        "🇹🇼 03 [家宽级] 1.1MB/s 1499ms",
-        "🇹🇼 04 [家宽级] 0.6MB/s 6546ms",
-        "🇹🇼 05 [家宽级] 0.2MB/s 3385ms"
+        "🇹🇼 01 [家宽级] 61.3MB/s 9896ms",
+        "🇹🇼 02 [家宽级] 61.7MB/s 14130ms",
+        "🇹🇼 03 [家宽级] 2.9MB/s 1630ms",
+        "🇹🇼 04 [家宽级] 0.7MB/s 2827ms",
+        "🇹🇼 05 [家宽级] 0.2MB/s 2120ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
