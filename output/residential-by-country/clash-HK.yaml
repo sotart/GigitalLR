@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 48.3MB/s 5584ms
+- name: 🇭🇰 01 [家宽级] 21.8MB/s 4948ms
   server: v10.zgtfqs.click
   port: 30807
   udp: true
@@ -12,37 +12,17 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: 🇭🇰 02 [家宽级] 5.6MB/s 1191ms
-  server: c8dc0c18-tmrpc0-tt8rqc-jjv2.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-  sni: c8dc0c18-tmrpc0-tt8rqc-jjv2.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 03 [家宽级] 1.8MB/s 1320ms
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16115
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 48.3MB/s 5584ms
-  - 🇭🇰 02 [家宽级] 5.6MB/s 1191ms
-  - 🇭🇰 03 [家宽级] 1.8MB/s 1320ms
+  - 🇭🇰 01 [家宽级] 21.8MB/s 4948ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 48.3MB/s 5584ms
-  - 🇭🇰 02 [家宽级] 5.6MB/s 1191ms
-  - 🇭🇰 03 [家宽级] 1.8MB/s 1320ms
+  - 🇭🇰 01 [家宽级] 21.8MB/s 4948ms
 rules:
 - MATCH,PROXIES
