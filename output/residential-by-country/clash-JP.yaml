@@ -1,0 +1,102 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇯🇵 01 [家宽级] 4.5MB/s 984ms
+  server: 128.241.25.72
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 65f26a08-9a5e-4b28-9004-f98676cc1e49
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: '/@Marisa_kristi+ '
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇯🇵 02 [家宽级] 2.1MB/s 1201ms
+  server: 129.151.64.169
+  port: 31867
+  udp: true
+  type: vless
+  uuid: 627d0676-3ec6-427a-b4e6-91dd1138e694
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 03 [家宽级] 2.1MB/s 1122ms
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: b24e9a6a-d069-464d-86d4-e822e315f6d5
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 04 [家宽级] 1.4MB/s 1476ms
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: e5b2a063-a114-4bd0-802d-b2da1fe1d1da
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 05 [家宽级] 1.0MB/s 1855ms
+  server: 175.41.179.37
+  port: 51262
+  udp: true
+  type: vless
+  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇯🇵 01 [家宽级] 4.5MB/s 984ms
+  - 🇯🇵 02 [家宽级] 2.1MB/s 1201ms
+  - 🇯🇵 03 [家宽级] 2.1MB/s 1122ms
+  - 🇯🇵 04 [家宽级] 1.4MB/s 1476ms
+  - 🇯🇵 05 [家宽级] 1.0MB/s 1855ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 01 [家宽级] 4.5MB/s 984ms
+  - 🇯🇵 02 [家宽级] 2.1MB/s 1201ms
+  - 🇯🇵 03 [家宽级] 2.1MB/s 1122ms
+  - 🇯🇵 04 [家宽级] 1.4MB/s 1476ms
+  - 🇯🇵 05 [家宽级] 1.0MB/s 1855ms
+rules:
+- MATCH,PROXIES

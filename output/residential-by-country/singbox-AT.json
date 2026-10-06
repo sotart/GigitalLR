@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇹 01 [家宽级] 2.4MB/s 1428ms",
+      "tag": "🇦🇹 01 [家宽级] 2.6MB/s 1455ms",
       "server": "31.77.227.6",
       "server_port": 52006,
       "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
@@ -13,11 +13,7 @@
       "tls": {
         "enabled": true,
         "server_name": "bigdick.gamegrow.ru",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
+        "insecure": false
       }
     },
     {
@@ -25,14 +21,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 01 [家宽级] 2.4MB/s 1428ms"
+        "🇦🇹 01 [家宽级] 2.6MB/s 1455ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 01 [家宽级] 2.4MB/s 1428ms"
+        "🇦🇹 01 [家宽级] 2.6MB/s 1455ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

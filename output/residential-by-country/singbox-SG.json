@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 01 [家宽级] 0.1MB/s 2518ms",
+      "tag": "🇸🇬 01 [家宽级] 0.4MB/s 1675ms",
       "server": "s3.huhiuh.space",
       "server_port": 18642,
       "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 01 [家宽级] 0.1MB/s 2518ms"
+        "🇸🇬 01 [家宽级] 0.4MB/s 1675ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 01 [家宽级] 0.1MB/s 2518ms"
+        "🇸🇬 01 [家宽级] 0.4MB/s 1675ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
