@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 01 [家宽级] 0.7MB/s 1071ms",
+      "tag": "🇰🇷 01 [家宽级] 1.2MB/s 1823ms",
       "server": "p141.panda001.net",
       "server_port": 4652,
       "method": "aes-256-cfb",
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 01 [家宽级] 0.7MB/s 1071ms"
+        "🇰🇷 01 [家宽级] 1.2MB/s 1823ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 01 [家宽级] 0.7MB/s 1071ms"
+        "🇰🇷 01 [家宽级] 1.2MB/s 1823ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

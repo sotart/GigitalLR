@@ -4,7 +4,22 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 01 [家宽级] 1.7MB/s 1472ms
+- name: 🇯🇵 01 [家宽级] 4.0MB/s 1209ms
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 0e8371c0-0287-4805-a882-42a7b482a9de
+  tls: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇯🇵 02 [家宽级] 1.9MB/s 1979ms
   server: 79.137.199.52
   port: 21
   udp: true
@@ -19,34 +34,52 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 02 [家宽级] 1.7MB/s 1541ms
-  server: 45.76.87.125
-  port: 14750
+- name: 🇯🇵 03 [家宽级] 1.7MB/s 1932ms
+  server: 185.220.68.226
+  port: 20205
   udp: true
   type: vless
-  uuid: 432289de-8dec-46ef-9a3f-001a3af178a7
+  uuid: 6830c2dd-466e-4d4d-9dea-f9f79758c560
   tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+- name: 🇯🇵 04 [家宽级] 0.9MB/s 1169ms
+  server: 129.151.64.169
+  port: 31867
+  udp: true
+  type: vless
+  uuid: 627d0676-3ec6-427a-b4e6-91dd1138e694
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 01 [家宽级] 1.7MB/s 1472ms
-  - 🇯🇵 02 [家宽级] 1.7MB/s 1541ms
+  - 🇯🇵 01 [家宽级] 4.0MB/s 1209ms
+  - 🇯🇵 02 [家宽级] 1.9MB/s 1979ms
+  - 🇯🇵 03 [家宽级] 1.7MB/s 1932ms
+  - 🇯🇵 04 [家宽级] 0.9MB/s 1169ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 01 [家宽级] 1.7MB/s 1472ms
-  - 🇯🇵 02 [家宽级] 1.7MB/s 1541ms
+  - 🇯🇵 01 [家宽级] 4.0MB/s 1209ms
+  - 🇯🇵 02 [家宽级] 1.9MB/s 1979ms
+  - 🇯🇵 03 [家宽级] 1.7MB/s 1932ms
+  - 🇯🇵 04 [家宽级] 0.9MB/s 1169ms
 rules:
 - MATCH,PROXIES
