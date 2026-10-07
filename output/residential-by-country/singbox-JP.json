@@ -5,89 +5,39 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 01 [家宽级] 4.0MB/s 1209ms",
-      "server": "128.241.25.3",
+      "tag": "🇯🇵 01 [家宽级] 3.3MB/s 924ms",
+      "server": "128.241.25.11",
       "server_port": 30021,
-      "uuid": "0e8371c0-0287-4805-a882-42a7b482a9de",
+      "uuid": "19d767db-da16-4263-87ec-fd6cacf69ba7",
       "tls": {
         "enabled": true,
-        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 02 [家宽级] 1.9MB/s 1979ms",
-      "server": "79.137.199.52",
-      "server_port": 21,
-      "uuid": "763e2ddd-c830-4f4f-801c-f6f2c3418d4f",
-      "tls": {
-        "enabled": true,
-        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 03 [家宽级] 1.7MB/s 1932ms",
-      "server": "185.220.68.226",
-      "server_port": 20205,
-      "uuid": "6830c2dd-466e-4d4d-9dea-f9f79758c560",
-      "tls": {
-        "enabled": true,
-        "server_name": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 04 [家宽级] 0.9MB/s 1169ms",
-      "server": "129.151.64.169",
-      "server_port": 31867,
-      "uuid": "627d0676-3ec6-427a-b4e6-91dd1138e694",
-      "tls": {
-        "enabled": true,
-        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
         "insecure": false
       },
       "transport": {
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 02 [家宽级] 1.8MB/s 1926ms",
+      "server": "210.152.85.154",
+      "server_port": 19364,
+      "uuid": "2a731bb4-6c55-40ef-8c8d-80969db19e08",
+      "tls": {
+        "enabled": true,
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
         }
       }
     },
@@ -96,20 +46,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 01 [家宽级] 4.0MB/s 1209ms",
-        "🇯🇵 02 [家宽级] 1.9MB/s 1979ms",
-        "🇯🇵 03 [家宽级] 1.7MB/s 1932ms",
-        "🇯🇵 04 [家宽级] 0.9MB/s 1169ms"
+        "🇯🇵 01 [家宽级] 3.3MB/s 924ms",
+        "🇯🇵 02 [家宽级] 1.8MB/s 1926ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 01 [家宽级] 4.0MB/s 1209ms",
-        "🇯🇵 02 [家宽级] 1.9MB/s 1979ms",
-        "🇯🇵 03 [家宽级] 1.7MB/s 1932ms",
-        "🇯🇵 04 [家宽级] 0.9MB/s 1169ms"
+        "🇯🇵 01 [家宽级] 3.3MB/s 924ms",
+        "🇯🇵 02 [家宽级] 1.8MB/s 1926ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

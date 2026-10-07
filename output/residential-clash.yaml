@@ -4,31 +4,29 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 34.7MB/s 7445ms
-  server: v10.hdacd.com
-  port: 30807
+- name: 🇹🇼 01 [家宽级] 43.4MB/s 2643ms
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
   udp: true
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
-- name: 🇯🇵 02 [家宽级] 4.0MB/s 1209ms
-  server: 128.241.25.3
-  port: 30021
+- name: 🇹🇼 02 [家宽级] 49.1MB/s 8882ms
+  server: tw3.dexlos.com
+  port: 8080
   udp: true
-  type: vless
-  uuid: 0e8371c0-0287-4805-a882-42a7b482a9de
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇹🇼 03 [家宽级] 2.6MB/s 1563ms
-  server: 45.192.201.140
+  type: tuic
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: tw3.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇹🇼 03 [家宽级] 3.6MB/s 1772ms
+  server: 172.66.152.4
   port: 443
   udp: true
   type: vless
@@ -41,44 +39,44 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇯🇵 04 [家宽级] 1.9MB/s 1979ms
-  server: 79.137.199.52
-  port: 21
+- name: 🇯🇵 04 [家宽级] 3.3MB/s 924ms
+  server: 128.241.25.11
+  port: 30021
   udp: true
   type: vless
-  uuid: 763e2ddd-c830-4f4f-801c-f6f2c3418d4f
+  uuid: 19d767db-da16-4263-87ec-fd6cacf69ba7
   tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇹🇷 05 [家宽级] 1.9MB/s 1305ms
-  server: test.keoplentuio.xyz
-  port: 2053
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇯🇵 05 [家宽级] 1.8MB/s 1926ms
+  server: 210.152.85.154
+  port: 19364
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇯🇵 06 [家宽级] 1.7MB/s 1932ms
-  server: 185.220.68.226
-  port: 20205
-  udp: true
-  type: vless
-  uuid: 6830c2dd-466e-4d4d-9dea-f9f79758c560
+  uuid: 2a731bb4-6c55-40ef-8c8d-80969db19e08
   tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇹🇼 07 [家宽级] 1.6MB/s 1344ms
-  server: 61.230.172.241
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇸🇬 06 [家宽级] 1.2MB/s 2473ms
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇹🇼 07 [家宽级] 0.6MB/s 1810ms
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -87,52 +85,24 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇰🇷 08 [家宽级] 1.2MB/s 1823ms
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇯🇵 09 [家宽级] 0.9MB/s 1169ms
-  server: 129.151.64.169
-  port: 31867
-  udp: true
-  type: vless
-  uuid: 627d0676-3ec6-427a-b4e6-91dd1138e694
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇸🇬 10 [家宽级] 0.3MB/s 3166ms
-  server: wzs.echo.net.eu.org
+  client-fingerprint: qq
+- name: 🇺🇸 08 [家宽级] 0.5MB/s 827ms
+  server: 155.117.19.17
   port: 443
   udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇼 11 [家宽级] 0.2MB/s 1656ms
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇹🇷 09 [家宽级] 0.4MB/s 1558ms
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 12 [家宽级] 0.2MB/s 1715ms
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 10 [家宽级] 0.2MB/s 3896ms
   server: sbgfgov.vip23.wogacnmnagfwgov.com
   port: 11223
   udp: true
@@ -145,34 +115,30 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 34.7MB/s 7445ms
-  - 🇯🇵 02 [家宽级] 4.0MB/s 1209ms
-  - 🇹🇼 03 [家宽级] 2.6MB/s 1563ms
-  - 🇯🇵 04 [家宽级] 1.9MB/s 1979ms
-  - 🇹🇷 05 [家宽级] 1.9MB/s 1305ms
-  - 🇯🇵 06 [家宽级] 1.7MB/s 1932ms
-  - 🇹🇼 07 [家宽级] 1.6MB/s 1344ms
-  - 🇰🇷 08 [家宽级] 1.2MB/s 1823ms
-  - 🇯🇵 09 [家宽级] 0.9MB/s 1169ms
-  - 🇸🇬 10 [家宽级] 0.3MB/s 3166ms
-  - 🇹🇼 11 [家宽级] 0.2MB/s 1656ms
-  - 🇹🇼 12 [家宽级] 0.2MB/s 1715ms
+  - 🇹🇼 01 [家宽级] 43.4MB/s 2643ms
+  - 🇹🇼 02 [家宽级] 49.1MB/s 8882ms
+  - 🇹🇼 03 [家宽级] 3.6MB/s 1772ms
+  - 🇯🇵 04 [家宽级] 3.3MB/s 924ms
+  - 🇯🇵 05 [家宽级] 1.8MB/s 1926ms
+  - 🇸🇬 06 [家宽级] 1.2MB/s 2473ms
+  - 🇹🇼 07 [家宽级] 0.6MB/s 1810ms
+  - 🇺🇸 08 [家宽级] 0.5MB/s 827ms
+  - 🇹🇷 09 [家宽级] 0.4MB/s 1558ms
+  - 🇹🇼 10 [家宽级] 0.2MB/s 3896ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 34.7MB/s 7445ms
-  - 🇯🇵 02 [家宽级] 4.0MB/s 1209ms
-  - 🇹🇼 03 [家宽级] 2.6MB/s 1563ms
-  - 🇯🇵 04 [家宽级] 1.9MB/s 1979ms
-  - 🇹🇷 05 [家宽级] 1.9MB/s 1305ms
-  - 🇯🇵 06 [家宽级] 1.7MB/s 1932ms
-  - 🇹🇼 07 [家宽级] 1.6MB/s 1344ms
-  - 🇰🇷 08 [家宽级] 1.2MB/s 1823ms
-  - 🇯🇵 09 [家宽级] 0.9MB/s 1169ms
-  - 🇸🇬 10 [家宽级] 0.3MB/s 3166ms
-  - 🇹🇼 11 [家宽级] 0.2MB/s 1656ms
-  - 🇹🇼 12 [家宽级] 0.2MB/s 1715ms
+  - 🇹🇼 01 [家宽级] 43.4MB/s 2643ms
+  - 🇹🇼 02 [家宽级] 49.1MB/s 8882ms
+  - 🇹🇼 03 [家宽级] 3.6MB/s 1772ms
+  - 🇯🇵 04 [家宽级] 3.3MB/s 924ms
+  - 🇯🇵 05 [家宽级] 1.8MB/s 1926ms
+  - 🇸🇬 06 [家宽级] 1.2MB/s 2473ms
+  - 🇹🇼 07 [家宽级] 0.6MB/s 1810ms
+  - 🇺🇸 08 [家宽级] 0.5MB/s 827ms
+  - 🇹🇷 09 [家宽级] 0.4MB/s 1558ms
+  - 🇹🇼 10 [家宽级] 0.2MB/s 3896ms
 rules:
 - MATCH,PROXIES
