@@ -1,0 +1,38 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇰 01 [家宽级] 55.0MB/s 4596ms
+  server: v10.hdacd.com
+  port: 30807
+  udp: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: 🇭🇰 02 [家宽级] 1.8MB/s 890ms
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16114
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇰 01 [家宽级] 55.0MB/s 4596ms
+  - 🇭🇰 02 [家宽级] 1.8MB/s 890ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 01 [家宽级] 55.0MB/s 4596ms
+  - 🇭🇰 02 [家宽级] 1.8MB/s 890ms
+rules:
+- MATCH,PROXIES
