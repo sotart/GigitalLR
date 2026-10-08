@@ -4,30 +4,31 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 01 [家宽级] 63.2MB/s 2438ms
+- name: 🇸🇬 01 [家宽级] 60.1MB/s 4122ms
   server: s3.huhiuh.space
   port: 18642
   udp: true
   type: hysteria2
   password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
+  sni: s3.huhiuh.space
   skip-cert-verify: true
-- name: 🇭🇰 02 [家宽级] 55.0MB/s 4596ms
-  server: v10.hdacd.com
+- name: 🇭🇰 02 [家宽级] 62.7MB/s 7585ms
+  server: v10.zgtfqs.click
   port: 30807
   udp: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: 🇰🇷 03 [家宽级] 2.0MB/s 866ms
-  server: p141.panda001.net
-  port: 4652
+- name: 🇹🇼 03 [家宽级] 65.5MB/s 1733ms
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇭🇰 04 [家宽级] 1.8MB/s 890ms
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇭🇰 04 [家宽级] 1.6MB/s 952ms
   server: zfd-hkv1.kunlun01dns.com
   port: 16114
   udp: true
@@ -35,8 +36,23 @@ proxies:
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-- name: 🇹🇼 05 [家宽级] 0.4MB/s 7633ms
-  server: hinet1.2yly.com
+- name: 🇭🇰 05 [家宽级] 1.5MB/s 839ms
+  server: dog-hk.kunlun01dns.com
+  port: 21021
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 06 [家宽级] 1.3MB/s 2321ms
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 07 [家宽级] 0.4MB/s 2924ms
+  server: 61.230.162.88
   port: 24215
   udp: true
   type: vless
@@ -46,15 +62,13 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: firefox
-- name: 🇹🇼 06 [家宽级] 0.2MB/s 1295ms
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
+- name: 🇹🇷 08 [家宽级] 0.4MB/s 1121ms
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 07 [家宽级] 0.1MB/s 1211ms
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 09 [家宽级] 0.2MB/s 3750ms
   server: sbgfgov.vip23.wogacnmnagfwgov.com
   port: 11223
   udp: true
@@ -62,29 +76,45 @@ proxies:
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
+- name: 🇺🇸 10 [家宽级] 0.2MB/s 1294ms
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 01 [家宽级] 63.2MB/s 2438ms
-  - 🇭🇰 02 [家宽级] 55.0MB/s 4596ms
-  - 🇰🇷 03 [家宽级] 2.0MB/s 866ms
-  - 🇭🇰 04 [家宽级] 1.8MB/s 890ms
-  - 🇹🇼 05 [家宽级] 0.4MB/s 7633ms
-  - 🇹🇼 06 [家宽级] 0.2MB/s 1295ms
-  - 🇹🇼 07 [家宽级] 0.1MB/s 1211ms
+  - 🇸🇬 01 [家宽级] 60.1MB/s 4122ms
+  - 🇭🇰 02 [家宽级] 62.7MB/s 7585ms
+  - 🇹🇼 03 [家宽级] 65.5MB/s 1733ms
+  - 🇭🇰 04 [家宽级] 1.6MB/s 952ms
+  - 🇭🇰 05 [家宽级] 1.5MB/s 839ms
+  - 🇰🇷 06 [家宽级] 1.3MB/s 2321ms
+  - 🇹🇼 07 [家宽级] 0.4MB/s 2924ms
+  - 🇹🇷 08 [家宽级] 0.4MB/s 1121ms
+  - 🇹🇼 09 [家宽级] 0.2MB/s 3750ms
+  - 🇺🇸 10 [家宽级] 0.2MB/s 1294ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 01 [家宽级] 63.2MB/s 2438ms
-  - 🇭🇰 02 [家宽级] 55.0MB/s 4596ms
-  - 🇰🇷 03 [家宽级] 2.0MB/s 866ms
-  - 🇭🇰 04 [家宽级] 1.8MB/s 890ms
-  - 🇹🇼 05 [家宽级] 0.4MB/s 7633ms
-  - 🇹🇼 06 [家宽级] 0.2MB/s 1295ms
-  - 🇹🇼 07 [家宽级] 0.1MB/s 1211ms
+  - 🇸🇬 01 [家宽级] 60.1MB/s 4122ms
+  - 🇭🇰 02 [家宽级] 62.7MB/s 7585ms
+  - 🇹🇼 03 [家宽级] 65.5MB/s 1733ms
+  - 🇭🇰 04 [家宽级] 1.6MB/s 952ms
+  - 🇭🇰 05 [家宽级] 1.5MB/s 839ms
+  - 🇰🇷 06 [家宽级] 1.3MB/s 2321ms
+  - 🇹🇼 07 [家宽级] 0.4MB/s 2924ms
+  - 🇹🇷 08 [家宽级] 0.4MB/s 1121ms
+  - 🇹🇼 09 [家宽级] 0.2MB/s 3750ms
+  - 🇺🇸 10 [家宽级] 0.2MB/s 1294ms
 rules:
 - MATCH,PROXIES
