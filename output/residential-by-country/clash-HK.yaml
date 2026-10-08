@@ -4,25 +4,50 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 49.0MB/s 5259ms
-  server: v10.zgtfqs.click
+- name: 🇭🇰 01 [家宽级] 15.1MB/s 4030ms
+  server: v10.hdacd.com
   port: 30807
   udp: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
+- name: 🇭🇰 02 [家宽级] 1.7MB/s 609ms
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 03 [家宽级] 1.9MB/s 1581ms
+  server: 42.200.173.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: s3.ap-east-1.amazonaws.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 49.0MB/s 5259ms
+  - 🇭🇰 01 [家宽级] 15.1MB/s 4030ms
+  - 🇭🇰 02 [家宽级] 1.7MB/s 609ms
+  - 🇭🇰 03 [家宽级] 1.9MB/s 1581ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 49.0MB/s 5259ms
+  - 🇭🇰 01 [家宽级] 15.1MB/s 4030ms
+  - 🇭🇰 02 [家宽级] 1.7MB/s 609ms
+  - 🇭🇰 03 [家宽级] 1.9MB/s 1581ms
 rules:
 - MATCH,PROXIES
