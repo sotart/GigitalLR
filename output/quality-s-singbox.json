@@ -4,148 +4,79 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 01 [S级] 7.2MB/s 257ms",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "uuid": "3ccba794-1c6d-48a8-acf2-f5caf0e69d86",
-      "tls": {
-        "enabled": true,
-        "server_name": "all.speedtest03.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "all.speedtest03.ccwu.cc"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇺🇸 02 [S级] 19.8MB/s 312ms",
-      "server": "98.91.210.43",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "tag": "🇺🇸 01 [S级] 62.7MB/s 375ms",
+      "server": "5.78.51.123",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "8tmnvX5zYuWGVIDP2jglZw"
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 03 [S级] 4.5MB/s 372ms",
-      "server": "104.26.0.1",
-      "server_port": 2053,
-      "uuid": "dce8ca0a-ed26-45c9-9962-38888c19a0ad",
+      "tag": "🇺🇸 02 [S级] 29.9MB/s 294ms",
+      "server": "38.107.236.166",
+      "server_port": 8443,
+      "uuid": "48572af1-d091-457b-a86e-4a457e99927f",
       "tls": {
         "enabled": true,
-        "server_name": "still-scene-fda3.devtahair.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "3h-unitedstates3.09vpn.com",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=",
+        "path": "/vless/",
         "headers": {
-          "Host": "still-scene-fda3.devtahair.workers.dev"
+          "Host": "3h-unitedstates3.09vpn.com"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 04 [S级] 12.4MB/s 399ms",
-      "server": "45.148.103.85",
+      "tag": "🇺🇸 03 [S级] 43.1MB/s 351ms",
+      "server": "47.251.108.158",
       "server_port": 443,
-      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
+      "uuid": "975fc322-6e38-434b-a53c-d39fed49b9a9",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ca-root.sworkingvpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-          "short_id": "15bcc0a77c3cacdf"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 05 [S级] 4.3MB/s 376ms",
-      "server": "8.6.112.9",
-      "server_port": 443,
-      "uuid": "11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf",
-      "tls": {
-        "enabled": true,
-        "server_name": "ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
-        "headers": {
-          "Host": "ancient-heart-60c5.dpccgizieb.workers.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs",
+          "short_id": "896f52ba2cfca903"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 06 [S级] 3.2MB/s 372ms",
-      "server": "63.141.128.22",
-      "server_port": 443,
-      "uuid": "b8b01773-36b1-4b49-9bd0-6249f52345b4",
-      "tls": {
-        "enabled": true,
-        "server_name": "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
-        "headers": {
-          "Host": "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv"
-        }
-      }
+      "tag": "🇺🇸 04 [S级] 4.0MB/s 394ms",
+      "server": "104.243.33.154",
+      "server_port": 45299,
+      "uuid": "261f011c-e97a-4d72-b596-e6329b50b47b"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [S级] 7.2MB/s 257ms",
-        "🇺🇸 02 [S级] 19.8MB/s 312ms",
-        "🇬🇧 03 [S级] 4.5MB/s 372ms",
-        "🇨🇦 04 [S级] 12.4MB/s 399ms",
-        "🇩🇪 05 [S级] 4.3MB/s 376ms",
-        "🇬🇧 06 [S级] 3.2MB/s 372ms"
+        "🇺🇸 01 [S级] 62.7MB/s 375ms",
+        "🇺🇸 02 [S级] 29.9MB/s 294ms",
+        "🇺🇸 03 [S级] 43.1MB/s 351ms",
+        "🇺🇸 04 [S级] 4.0MB/s 394ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [S级] 7.2MB/s 257ms",
-        "🇺🇸 02 [S级] 19.8MB/s 312ms",
-        "🇬🇧 03 [S级] 4.5MB/s 372ms",
-        "🇨🇦 04 [S级] 12.4MB/s 399ms",
-        "🇩🇪 05 [S级] 4.3MB/s 376ms",
-        "🇬🇧 06 [S级] 3.2MB/s 372ms"
+        "🇺🇸 01 [S级] 62.7MB/s 375ms",
+        "🇺🇸 02 [S级] 29.9MB/s 294ms",
+        "🇺🇸 03 [S级] 43.1MB/s 351ms",
+        "🇺🇸 04 [S级] 4.0MB/s 394ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

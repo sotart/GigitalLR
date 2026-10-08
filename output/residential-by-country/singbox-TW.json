@@ -4,18 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 01 [家宽级] 65.5MB/s 1733ms",
-      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
-      "server_port": 11224,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 0.4MB/s 2924ms",
-      "server": "61.230.162.88",
+      "tag": "🇹🇼 01 [家宽级] 0.4MB/s 1962ms",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -23,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -34,7 +25,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 03 [家宽级] 0.2MB/s 3750ms",
+      "tag": "🇹🇼 02 [家宽级] 0.1MB/s 7208ms",
       "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
       "server_port": 11223,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
@@ -46,18 +37,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 65.5MB/s 1733ms",
-        "🇹🇼 02 [家宽级] 0.4MB/s 2924ms",
-        "🇹🇼 03 [家宽级] 0.2MB/s 3750ms"
+        "🇹🇼 01 [家宽级] 0.4MB/s 1962ms",
+        "🇹🇼 02 [家宽级] 0.1MB/s 7208ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 65.5MB/s 1733ms",
-        "🇹🇼 02 [家宽级] 0.4MB/s 2924ms",
-        "🇹🇼 03 [家宽级] 0.2MB/s 3750ms"
+        "🇹🇼 01 [家宽级] 0.4MB/s 1962ms",
+        "🇹🇼 02 [家宽级] 0.1MB/s 7208ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
