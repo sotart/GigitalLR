@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 15.1MB/s 4030ms",
+      "tag": "🇭🇰 01 [家宽级] 58.7MB/s 3933ms",
       "server": "v10.hdacd.com",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
@@ -13,16 +13,8 @@
       "alter_id": 2
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 02 [家宽级] 1.7MB/s 609ms",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 03 [家宽级] 1.9MB/s 1581ms",
+      "tag": "🇭🇰 02 [家宽级] 1.7MB/s 1290ms",
       "server": "42.200.173.5",
       "server_port": 443,
       "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
@@ -32,7 +24,7 @@
         "server_name": "s3.ap-east-1.amazonaws.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -42,22 +34,30 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 03 [家宽级] 1.5MB/s 1634ms",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16114,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 15.1MB/s 4030ms",
-        "🇭🇰 02 [家宽级] 1.7MB/s 609ms",
-        "🇭🇰 03 [家宽级] 1.9MB/s 1581ms"
+        "🇭🇰 01 [家宽级] 58.7MB/s 3933ms",
+        "🇭🇰 02 [家宽级] 1.7MB/s 1290ms",
+        "🇭🇰 03 [家宽级] 1.5MB/s 1634ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 15.1MB/s 4030ms",
-        "🇭🇰 02 [家宽级] 1.7MB/s 609ms",
-        "🇭🇰 03 [家宽级] 1.9MB/s 1581ms"
+        "🇭🇰 01 [家宽级] 58.7MB/s 3933ms",
+        "🇭🇰 02 [家宽级] 1.7MB/s 1290ms",
+        "🇭🇰 03 [家宽级] 1.5MB/s 1634ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
