@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 58.7MB/s 3933ms",
-      "server": "v10.hdacd.com",
+      "tag": "🇭🇰 01 [家宽级] 65.5MB/s 3720ms",
+      "server": "v10.zgtfqs.click",
       "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "security": "auto",
@@ -14,8 +14,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 02 [家宽级] 1.7MB/s 1290ms",
-      "server": "42.200.173.5",
+      "tag": "🇭🇰 02 [家宽级] 2.9MB/s 1144ms",
+      "server": "61.18.134.10",
+      "server_port": 443,
+      "uuid": "e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384",
+      "tls": {
+        "enabled": true,
+        "server_name": "mswo-gy191m.zhiyuantech.cloud",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384",
+        "headers": {
+          "Host": "mswo-gy191m.zhiyuantech.cloud"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 03 [家宽级] 1.8MB/s 3342ms",
+      "server": "t4.qifei.app",
       "server_port": 443,
       "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
       "flow": "xtls-rprx-vision",
@@ -24,7 +43,7 @@
         "server_name": "s3.ap-east-1.amazonaws.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -35,10 +54,10 @@
     },
     {
       "type": "vmess",
-      "tag": "🇭🇰 03 [家宽级] 1.5MB/s 1634ms",
-      "server": "zfd-hkv1.kunlun01dns.com",
-      "server_port": 16114,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "tag": "🇭🇰 04 [家宽级] 1.7MB/s 979ms",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21019,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
     },
     {
@@ -46,18 +65,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 58.7MB/s 3933ms",
-        "🇭🇰 02 [家宽级] 1.7MB/s 1290ms",
-        "🇭🇰 03 [家宽级] 1.5MB/s 1634ms"
+        "🇭🇰 01 [家宽级] 65.5MB/s 3720ms",
+        "🇭🇰 02 [家宽级] 2.9MB/s 1144ms",
+        "🇭🇰 03 [家宽级] 1.8MB/s 3342ms",
+        "🇭🇰 04 [家宽级] 1.7MB/s 979ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 58.7MB/s 3933ms",
-        "🇭🇰 02 [家宽级] 1.7MB/s 1290ms",
-        "🇭🇰 03 [家宽级] 1.5MB/s 1634ms"
+        "🇭🇰 01 [家宽级] 65.5MB/s 3720ms",
+        "🇭🇰 02 [家宽级] 2.9MB/s 1144ms",
+        "🇭🇰 03 [家宽级] 1.8MB/s 3342ms",
+        "🇭🇰 04 [家宽级] 1.7MB/s 979ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

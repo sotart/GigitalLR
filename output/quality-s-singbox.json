@@ -4,45 +4,90 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 01 [S级] 15.3MB/s 325ms",
-      "server": "104.26.12.54",
-      "server_port": 443,
-      "uuid": "767b6340-96dc-4aa0-8013-a8af7513d920",
-      "tls": {
-        "enabled": true,
-        "server_name": "c7dabe95.proxy-978.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "c7dabe95.proxy-978.pages.dev"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇺🇸 02 [S级] 22.0MB/s 345ms",
-      "server": "98.91.210.43",
+      "tag": "🇺🇸 01 [S级] 10.6MB/s 207ms",
+      "server": "54.83.117.150",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 03 [S级] 18.5MB/s 384ms",
+      "tag": "🇺🇸 02 [S级] 11.6MB/s 279ms",
+      "server": "195.211.98.43",
+      "server_port": 443,
+      "uuid": "1b4b11d5-4c2d-4533-9a55-636757cdee94",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA",
+          "short_id": "9c56fddf237e8eaf"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 03 [S级] 10.4MB/s 356ms",
+      "server": "163.192.14.135",
+      "server_port": 50160,
+      "password": "099830134df5ac3a04a4b21d39b8c395",
+      "tls": {
+        "enabled": true,
+        "server_name": "163.192.14.135",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 04 [S级] 6.2MB/s 354ms",
+      "server": "44.255.171.20",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-us-006.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 05 [S级] 12.6MB/s 356ms",
+      "server": "129.213.91.185",
+      "server_port": 35013,
+      "password": "4291c983-c520-46ac-82cc-48f14bef573f",
+      "tls": {
+        "enabled": true,
+        "server_name": "129.213.91.185",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 06 [S级] 18.2MB/s 399ms",
+      "server": "18.208.223.39",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 07 [S级] 8.3MB/s 353ms",
       "server": "3h-unitedstates1.09vpn.com",
       "server_port": 80,
       "uuid": "18cf8db1-9f86-43f7-baa0-382efb7f2dfa",
       "transport": {
         "type": "ws",
-        "path": "/vless/"
+        "path": "/vless/",
+        "headers": {
+          "Host": "3h-unitedstates1.09vpn.com"
+        }
       }
     },
     {
@@ -50,18 +95,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [S级] 15.3MB/s 325ms",
-        "🇺🇸 02 [S级] 22.0MB/s 345ms",
-        "🇺🇸 03 [S级] 18.5MB/s 384ms"
+        "🇺🇸 01 [S级] 10.6MB/s 207ms",
+        "🇺🇸 02 [S级] 11.6MB/s 279ms",
+        "🇺🇸 03 [S级] 10.4MB/s 356ms",
+        "🇺🇸 04 [S级] 6.2MB/s 354ms",
+        "🇺🇸 05 [S级] 12.6MB/s 356ms",
+        "🇺🇸 06 [S级] 18.2MB/s 399ms",
+        "🇺🇸 07 [S级] 8.3MB/s 353ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [S级] 15.3MB/s 325ms",
-        "🇺🇸 02 [S级] 22.0MB/s 345ms",
-        "🇺🇸 03 [S级] 18.5MB/s 384ms"
+        "🇺🇸 01 [S级] 10.6MB/s 207ms",
+        "🇺🇸 02 [S级] 11.6MB/s 279ms",
+        "🇺🇸 03 [S级] 10.4MB/s 356ms",
+        "🇺🇸 04 [S级] 6.2MB/s 354ms",
+        "🇺🇸 05 [S级] 12.6MB/s 356ms",
+        "🇺🇸 06 [S级] 18.2MB/s 399ms",
+        "🇺🇸 07 [S级] 8.3MB/s 353ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

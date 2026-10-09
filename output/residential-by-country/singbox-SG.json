@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 01 [家宽级] 0.9MB/s 2213ms",
+      "tag": "🇸🇬 01 [家宽级] 65.5MB/s 2518ms",
       "server": "s3.huhiuh.space",
       "server_port": 18642,
       "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
       "tls": {
         "enabled": true,
-        "server_name": "s3.huhiuh.space",
+        "server_name": "www.bing.com",
         "insecure": true
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 01 [家宽级] 0.9MB/s 2213ms"
+        "🇸🇬 01 [家宽级] 65.5MB/s 2518ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 01 [家宽级] 0.9MB/s 2213ms"
+        "🇸🇬 01 [家宽级] 65.5MB/s 2518ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

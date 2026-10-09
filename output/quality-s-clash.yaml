@@ -4,29 +4,58 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 15.3MB/s 325ms
-  server: 104.26.12.54
-  port: 443
-  udp: true
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  servername: c7dabe95.proxy-978.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 🇺🇸 02 [S级] 22.0MB/s 345ms
-  server: 98.91.210.43
+- name: 🇺🇸 01 [S级] 10.6MB/s 207ms
+  server: 54.83.117.150
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 03 [S级] 18.5MB/s 384ms
+- name: 🇺🇸 02 [S级] 11.6MB/s 279ms
+  server: 195.211.98.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
+    short-id: 9c56fddf237e8eaf
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇺🇸 03 [S级] 10.4MB/s 356ms
+  server: 163.192.14.135
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 099830134df5ac3a04a4b21d39b8c395
+  sni: 163.192.14.135
+  skip-cert-verify: true
+- name: 🇺🇸 04 [S级] 6.2MB/s 354ms
+  server: 44.255.171.20
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-006.fastervpn.world
+  skip-cert-verify: true
+- name: 🇺🇸 05 [S级] 12.6MB/s 356ms
+  server: 129.213.91.185
+  port: 35013
+  udp: true
+  type: hysteria2
+  password: 4291c983-c520-46ac-82cc-48f14bef573f
+  sni: 129.213.91.185
+  skip-cert-verify: true
+- name: 🇺🇸 06 [S级] 18.2MB/s 399ms
+  server: 18.208.223.39
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 07 [S级] 8.3MB/s 353ms
   server: 3h-unitedstates1.09vpn.com
   port: 80
   udp: true
@@ -35,21 +64,31 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
+    headers:
+      Host: 3h-unitedstates1.09vpn.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 15.3MB/s 325ms
-  - 🇺🇸 02 [S级] 22.0MB/s 345ms
-  - 🇺🇸 03 [S级] 18.5MB/s 384ms
+  - 🇺🇸 01 [S级] 10.6MB/s 207ms
+  - 🇺🇸 02 [S级] 11.6MB/s 279ms
+  - 🇺🇸 03 [S级] 10.4MB/s 356ms
+  - 🇺🇸 04 [S级] 6.2MB/s 354ms
+  - 🇺🇸 05 [S级] 12.6MB/s 356ms
+  - 🇺🇸 06 [S级] 18.2MB/s 399ms
+  - 🇺🇸 07 [S级] 8.3MB/s 353ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 15.3MB/s 325ms
-  - 🇺🇸 02 [S级] 22.0MB/s 345ms
-  - 🇺🇸 03 [S级] 18.5MB/s 384ms
+  - 🇺🇸 01 [S级] 10.6MB/s 207ms
+  - 🇺🇸 02 [S级] 11.6MB/s 279ms
+  - 🇺🇸 03 [S级] 10.4MB/s 356ms
+  - 🇺🇸 04 [S级] 6.2MB/s 354ms
+  - 🇺🇸 05 [S级] 12.6MB/s 356ms
+  - 🇺🇸 06 [S级] 18.2MB/s 399ms
+  - 🇺🇸 07 [S级] 8.3MB/s 353ms
 rules:
 - MATCH,PROXIES

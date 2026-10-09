@@ -4,16 +4,30 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 58.7MB/s 3933ms
-  server: v10.hdacd.com
+- name: 🇭🇰 01 [家宽级] 65.5MB/s 3720ms
+  server: v10.zgtfqs.click
   port: 30807
   udp: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
-- name: 🇭🇰 02 [家宽级] 1.7MB/s 1290ms
-  server: 42.200.173.5
+- name: 🇭🇰 02 [家宽级] 2.9MB/s 1144ms
+  server: 61.18.134.10
+  port: 443
+  udp: true
+  type: vless
+  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+  tls: true
+  servername: mswo-gy191m.zhiyuantech.cloud
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+    headers:
+      Host: mswo-gy191m.zhiyuantech.cloud
+- name: 🇭🇰 03 [家宽级] 1.8MB/s 3342ms
+  server: t4.qifei.app
   port: 443
   udp: true
   type: vless
@@ -24,13 +38,13 @@ proxies:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: ios
-- name: 🇭🇰 03 [家宽级] 1.5MB/s 1634ms
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16114
+  client-fingerprint: random
+- name: 🇭🇰 04 [家宽级] 1.7MB/s 979ms
+  server: dog-hk.kunlun01dns.com
+  port: 21019
   udp: true
   type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
 proxy-groups:
@@ -38,16 +52,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 58.7MB/s 3933ms
-  - 🇭🇰 02 [家宽级] 1.7MB/s 1290ms
-  - 🇭🇰 03 [家宽级] 1.5MB/s 1634ms
+  - 🇭🇰 01 [家宽级] 65.5MB/s 3720ms
+  - 🇭🇰 02 [家宽级] 2.9MB/s 1144ms
+  - 🇭🇰 03 [家宽级] 1.8MB/s 3342ms
+  - 🇭🇰 04 [家宽级] 1.7MB/s 979ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 58.7MB/s 3933ms
-  - 🇭🇰 02 [家宽级] 1.7MB/s 1290ms
-  - 🇭🇰 03 [家宽级] 1.5MB/s 1634ms
+  - 🇭🇰 01 [家宽级] 65.5MB/s 3720ms
+  - 🇭🇰 02 [家宽级] 2.9MB/s 1144ms
+  - 🇭🇰 03 [家宽级] 1.8MB/s 3342ms
+  - 🇭🇰 04 [家宽级] 1.7MB/s 979ms
 rules:
 - MATCH,PROXIES
