@@ -4,25 +4,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 01 [家宽级] 64.8MB/s 3072ms
+- name: 🇸🇬 01 [家宽级] 63.3MB/s 3707ms
   server: s3.huhiuh.space
   port: 18642
   udp: true
   type: hysteria2
   password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
+  sni: www.bing.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 01 [家宽级] 64.8MB/s 3072ms
+  - 🇸🇬 01 [家宽级] 63.3MB/s 3707ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 01 [家宽级] 64.8MB/s 3072ms
+  - 🇸🇬 01 [家宽级] 63.3MB/s 3707ms
 rules:
 - MATCH,PROXIES

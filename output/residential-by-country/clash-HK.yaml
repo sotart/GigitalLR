@@ -4,8 +4,8 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 1.9MB/s 1027ms
-  server: 42.200.173.5
+- name: 🇭🇰 01 [家宽级] 2.1MB/s 1188ms
+  server: t4.qifei.app
   port: 443
   udp: true
   type: vless
@@ -14,10 +14,17 @@ proxies:
   tls: true
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: edge
-- name: 🇭🇰 02 [家宽级] 1.8MB/s 1458ms
+  client-fingerprint: random
+- name: 🇭🇰 02 [家宽级] 2.0MB/s 1234ms
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 03 [家宽级] 2.0MB/s 2212ms
   server: dog-hk.kunlun01dns.com
   port: 21021
   udp: true
@@ -25,29 +32,21 @@ proxies:
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇭🇰 03 [家宽级] 1.6MB/s 3974ms
-  server: v10.zgtfqs.click
-  port: 30807
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 1.9MB/s 1027ms
-  - 🇭🇰 02 [家宽级] 1.8MB/s 1458ms
-  - 🇭🇰 03 [家宽级] 1.6MB/s 3974ms
+  - 🇭🇰 01 [家宽级] 2.1MB/s 1188ms
+  - 🇭🇰 02 [家宽级] 2.0MB/s 1234ms
+  - 🇭🇰 03 [家宽级] 2.0MB/s 2212ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 1.9MB/s 1027ms
-  - 🇭🇰 02 [家宽级] 1.8MB/s 1458ms
-  - 🇭🇰 03 [家宽级] 1.6MB/s 3974ms
+  - 🇭🇰 01 [家宽级] 2.1MB/s 1188ms
+  - 🇭🇰 02 [家宽级] 2.0MB/s 1234ms
+  - 🇭🇰 03 [家宽级] 2.0MB/s 2212ms
 rules:
 - MATCH,PROXIES
