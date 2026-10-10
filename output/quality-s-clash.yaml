@@ -1,0 +1,204 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 01 [S级] 23.6MB/s 58ms
+  server: 5.78.51.123
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 8tmnvX5zYuWGVIDP2jglZw
+- name: 🇺🇸 02 [S级] 42.0MB/s 74ms
+  server: 15.204.97.219
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 03 [S级] 16.4MB/s 128ms
+  server: alert-titmouse.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: alert-titmouse.rooster465.autos
+  skip-cert-verify: false
+- name: 🇺🇸 04 [S级] 17.9MB/s 130ms
+  server: pro-mako.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pro-mako.rooster465.autos
+  skip-cert-verify: false
+- name: 🇺🇸 05 [S级] 12.2MB/s 221ms
+  server: rb1211-4.vatilon.cc
+  port: 10003
+  udp: true
+  type: trojan
+  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  sni: rb1211-4.vatilon.cc
+  skip-cert-verify: false
+- name: 🇺🇸 06 [S级] 6.9MB/s 218ms
+  server: 129.146.77.248
+  port: 39495
+  udp: true
+  type: vmess
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: 🇺🇸 07 [S级] 16.0MB/s 257ms
+  server: 163.192.14.135
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 099830134df5ac3a04a4b21d39b8c395
+  sni: 163.192.14.135
+  skip-cert-verify: true
+- name: 🇺🇸 08 [S级] 4.8MB/s 245ms
+  server: 64.74.163.67
+  port: 18764
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 4efe1af272e7292139b889f6a63ee071
+- name: 🇺🇸 09 [S级] 5.6MB/s 312ms
+  server: 195.211.98.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
+    short-id: 9c56fddf237e8eaf
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇺🇸 10 [S级] 13.5MB/s 231ms
+  server: 47.251.25.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: 18805ff3-b420-45de-af18-93be14024ae8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇺🇸 11 [S级] 4.7MB/s 249ms
+  server: 64.74.163.69
+  port: 18766
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 4efe1af272e7292139b889f6a63ee071
+- name: 🇺🇸 12 [S级] 7.0MB/s 335ms
+  server: 129.213.91.185
+  port: 35013
+  udp: true
+  type: hysteria2
+  password: 4291c983-c520-46ac-82cc-48f14bef573f
+  sni: 129.213.91.185
+  skip-cert-verify: true
+- name: 🇮🇱 13 [S级] 4.9MB/s 329ms
+  server: 185.95.231.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇺🇸 14 [S级] 10.3MB/s 157ms
+  server: 107.173.237.146
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
+  tls: true
+  reality-opts:
+    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
+  servername: updates.cdn-apple.com
+  client-fingerprint: firefox
+- name: 🇨🇦 15 [S级] 4.7MB/s 396ms
+  server: 66.70.179.198
+  port: 2053
+  udp: true
+  type: vless
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  tls: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇺🇸 16 [S级] 4.7MB/s 303ms
+  server: 104.243.33.154
+  port: 45299
+  udp: true
+  type: vless
+  uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇸 01 [S级] 23.6MB/s 58ms
+  - 🇺🇸 02 [S级] 42.0MB/s 74ms
+  - 🇺🇸 03 [S级] 16.4MB/s 128ms
+  - 🇺🇸 04 [S级] 17.9MB/s 130ms
+  - 🇺🇸 05 [S级] 12.2MB/s 221ms
+  - 🇺🇸 06 [S级] 6.9MB/s 218ms
+  - 🇺🇸 07 [S级] 16.0MB/s 257ms
+  - 🇺🇸 08 [S级] 4.8MB/s 245ms
+  - 🇺🇸 09 [S级] 5.6MB/s 312ms
+  - 🇺🇸 10 [S级] 13.5MB/s 231ms
+  - 🇺🇸 11 [S级] 4.7MB/s 249ms
+  - 🇺🇸 12 [S级] 7.0MB/s 335ms
+  - 🇮🇱 13 [S级] 4.9MB/s 329ms
+  - 🇺🇸 14 [S级] 10.3MB/s 157ms
+  - 🇨🇦 15 [S级] 4.7MB/s 396ms
+  - 🇺🇸 16 [S级] 4.7MB/s 303ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 01 [S级] 23.6MB/s 58ms
+  - 🇺🇸 02 [S级] 42.0MB/s 74ms
+  - 🇺🇸 03 [S级] 16.4MB/s 128ms
+  - 🇺🇸 04 [S级] 17.9MB/s 130ms
+  - 🇺🇸 05 [S级] 12.2MB/s 221ms
+  - 🇺🇸 06 [S级] 6.9MB/s 218ms
+  - 🇺🇸 07 [S级] 16.0MB/s 257ms
+  - 🇺🇸 08 [S级] 4.8MB/s 245ms
+  - 🇺🇸 09 [S级] 5.6MB/s 312ms
+  - 🇺🇸 10 [S级] 13.5MB/s 231ms
+  - 🇺🇸 11 [S级] 4.7MB/s 249ms
+  - 🇺🇸 12 [S级] 7.0MB/s 335ms
+  - 🇮🇱 13 [S级] 4.9MB/s 329ms
+  - 🇺🇸 14 [S级] 10.3MB/s 157ms
+  - 🇨🇦 15 [S级] 4.7MB/s 396ms
+  - 🇺🇸 16 [S级] 4.7MB/s 303ms
+rules:
+- MATCH,PROXIES
