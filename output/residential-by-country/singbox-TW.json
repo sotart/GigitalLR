@@ -4,18 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 01 [家宽级] 65.5MB/s 3466ms",
-      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
-      "server_port": 11223,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 1.3MB/s 831ms",
-      "server": "61.230.162.88",
+      "tag": "🇹🇼 01 [家宽级] 0.3MB/s 1948ms",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -33,20 +24,43 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇼 02 [家宽级] 0.3MB/s 3198ms",
+      "server": "sg.australiacaregroup.site",
+      "server_port": 20004,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw.australiacaregroup.site",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 03 [家宽级] 0.2MB/s 4204ms",
+      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
+      "server_port": 11224,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 65.5MB/s 3466ms",
-        "🇹🇼 02 [家宽级] 1.3MB/s 831ms"
+        "🇹🇼 01 [家宽级] 0.3MB/s 1948ms",
+        "🇹🇼 02 [家宽级] 0.3MB/s 3198ms",
+        "🇹🇼 03 [家宽级] 0.2MB/s 4204ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 65.5MB/s 3466ms",
-        "🇹🇼 02 [家宽级] 1.3MB/s 831ms"
+        "🇹🇼 01 [家宽级] 0.3MB/s 1948ms",
+        "🇹🇼 02 [家宽级] 0.3MB/s 3198ms",
+        "🇹🇼 03 [家宽级] 0.2MB/s 4204ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
