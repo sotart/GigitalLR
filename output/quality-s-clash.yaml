@@ -1,0 +1,47 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇷🇺 01 [S级] 6.0MB/s 394ms
+  server: 147.45.60.160
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇩🇪 02 [S级] 3.4MB/s 374ms
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  network: ws
+  ws-opts:
+    path: /rN50nmm9L1DeY73C?ed=2560
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇷🇺 01 [S级] 6.0MB/s 394ms
+  - 🇩🇪 02 [S级] 3.4MB/s 374ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇷🇺 01 [S级] 6.0MB/s 394ms
+  - 🇩🇪 02 [S级] 3.4MB/s 374ms
+rules:
+- MATCH,PROXIES

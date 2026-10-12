@@ -1,0 +1,71 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇷🇺 01 [S级] 6.0MB/s 394ms",
+      "server": "147.45.60.160",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 02 [S级] 3.4MB/s 374ms",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8a36be1d-7c78-4885-8a1f-bedf5ba7db1c",
+      "transport": {
+        "type": "ws",
+        "path": "/rN50nmm9L1DeY73C?ed=2560",
+        "headers": {
+          "Host": "lucky-lab-ac6d.caveyi8071.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇷🇺 01 [S级] 6.0MB/s 394ms",
+        "🇩🇪 02 [S级] 3.4MB/s 374ms"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇷🇺 01 [S级] 6.0MB/s 394ms",
+        "🇩🇪 02 [S级] 3.4MB/s 374ms"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
