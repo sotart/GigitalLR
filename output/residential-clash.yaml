@@ -4,15 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 01 [家宽级] 51.5MB/s 4688ms
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
-  skip-cert-verify: true
-- name: 🇺🇸 02 [家宽级] 3.4MB/s 882ms
+- name: 🇺🇸 01 [家宽级] 10.1MB/s 706ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -22,8 +14,23 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 03 [家宽级] 0.4MB/s 2435ms
-  server: 118.167.248.243
+- name: 🇸🇬 02 [家宽级] 59.6MB/s 2375ms
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
+- name: 🇰🇷 03 [家宽级] 1.0MB/s 1054ms
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 04 [家宽级] 0.7MB/s 9176ms
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -32,71 +39,32 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇹🇷 04 [家宽级] 0.3MB/s 4485ms
+  client-fingerprint: chrome
+- name: 🇹🇷 05 [家宽级] 0.3MB/s 1086ms
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇰🇷 05 [家宽级] 0.2MB/s 2002ms
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇭🇰 06 [家宽级] 0.2MB/s 1003ms
-  server: v10.zgtfqs.click
-  port: 30807
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇹🇷 07 [家宽级] 0.2MB/s 2294ms
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇨🇳 08 [家宽级] 0.1MB/s 2935ms
-  server: 112.132.215.108
-  port: 50002
-  udp: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 01 [家宽级] 51.5MB/s 4688ms
-  - 🇺🇸 02 [家宽级] 3.4MB/s 882ms
-  - 🇹🇼 03 [家宽级] 0.4MB/s 2435ms
-  - 🇹🇷 04 [家宽级] 0.3MB/s 4485ms
-  - 🇰🇷 05 [家宽级] 0.2MB/s 2002ms
-  - 🇭🇰 06 [家宽级] 0.2MB/s 1003ms
-  - 🇹🇷 07 [家宽级] 0.2MB/s 2294ms
-  - 🇨🇳 08 [家宽级] 0.1MB/s 2935ms
+  - 🇺🇸 01 [家宽级] 10.1MB/s 706ms
+  - 🇸🇬 02 [家宽级] 59.6MB/s 2375ms
+  - 🇰🇷 03 [家宽级] 1.0MB/s 1054ms
+  - 🇹🇼 04 [家宽级] 0.7MB/s 9176ms
+  - 🇹🇷 05 [家宽级] 0.3MB/s 1086ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 01 [家宽级] 51.5MB/s 4688ms
-  - 🇺🇸 02 [家宽级] 3.4MB/s 882ms
-  - 🇹🇼 03 [家宽级] 0.4MB/s 2435ms
-  - 🇹🇷 04 [家宽级] 0.3MB/s 4485ms
-  - 🇰🇷 05 [家宽级] 0.2MB/s 2002ms
-  - 🇭🇰 06 [家宽级] 0.2MB/s 1003ms
-  - 🇹🇷 07 [家宽级] 0.2MB/s 2294ms
-  - 🇨🇳 08 [家宽级] 0.1MB/s 2935ms
+  - 🇺🇸 01 [家宽级] 10.1MB/s 706ms
+  - 🇸🇬 02 [家宽级] 59.6MB/s 2375ms
+  - 🇰🇷 03 [家宽级] 1.0MB/s 1054ms
+  - 🇹🇼 04 [家宽级] 0.7MB/s 9176ms
+  - 🇹🇷 05 [家宽级] 0.3MB/s 1086ms
 rules:
 - MATCH,PROXIES
