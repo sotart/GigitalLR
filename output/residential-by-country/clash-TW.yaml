@@ -4,23 +4,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 20.9MB/s 10066ms
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
+- name: 🇹🇼 01 [家宽级] 2.4MB/s 1228ms
+  server: hinet1.2yly.com
+  port: 24215
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 02 [家宽级] 54.3MB/s 1727ms
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 03 [家宽级] 1.7MB/s 2373ms
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: ios
+- name: 🇹🇼 02 [家宽级] 2.1MB/s 1939ms
   server: 654168416355441.d6f54hd1j.cc
   port: 443
   udp: true
@@ -36,26 +31,7 @@ proxies:
     path: /
     headers:
       Host: 654168416355441.d6f54hd1j.cc
-- name: 🇹🇼 04 [家宽级] 1.5MB/s 1132ms
-  server: dog-tw.kunlun01dns.com
-  port: 21036
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 05 [家宽级] 1.5MB/s 1054ms
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 06 [家宽级] 0.5MB/s 4948ms
+- name: 🇹🇼 03 [家宽级] 0.3MB/s 11092ms
   server: tw5.dexlos.com
   port: 8080
   udp: true
@@ -68,27 +44,41 @@ proxies:
   udp-relay-mode: native
   alpn:
   - h3
+- name: 🇹🇼 04 [家宽级] 0.2MB/s 7432ms
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇹🇼 05 [家宽级] 0.2MB/s 1666ms
+  server: sbgfgov.vip23.wogacnmnagfwgov.com
+  port: 11223
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 20.9MB/s 10066ms
-  - 🇹🇼 02 [家宽级] 54.3MB/s 1727ms
-  - 🇹🇼 03 [家宽级] 1.7MB/s 2373ms
-  - 🇹🇼 04 [家宽级] 1.5MB/s 1132ms
-  - 🇹🇼 05 [家宽级] 1.5MB/s 1054ms
-  - 🇹🇼 06 [家宽级] 0.5MB/s 4948ms
+  - 🇹🇼 01 [家宽级] 2.4MB/s 1228ms
+  - 🇹🇼 02 [家宽级] 2.1MB/s 1939ms
+  - 🇹🇼 03 [家宽级] 0.3MB/s 11092ms
+  - 🇹🇼 04 [家宽级] 0.2MB/s 7432ms
+  - 🇹🇼 05 [家宽级] 0.2MB/s 1666ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 20.9MB/s 10066ms
-  - 🇹🇼 02 [家宽级] 54.3MB/s 1727ms
-  - 🇹🇼 03 [家宽级] 1.7MB/s 2373ms
-  - 🇹🇼 04 [家宽级] 1.5MB/s 1132ms
-  - 🇹🇼 05 [家宽级] 1.5MB/s 1054ms
-  - 🇹🇼 06 [家宽级] 0.5MB/s 4948ms
+  - 🇹🇼 01 [家宽级] 2.4MB/s 1228ms
+  - 🇹🇼 02 [家宽级] 2.1MB/s 1939ms
+  - 🇹🇼 03 [家宽级] 0.3MB/s 11092ms
+  - 🇹🇼 04 [家宽级] 0.2MB/s 7432ms
+  - 🇹🇼 05 [家宽级] 0.2MB/s 1666ms
 rules:
 - MATCH,PROXIES

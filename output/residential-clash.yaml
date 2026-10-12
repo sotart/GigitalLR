@@ -4,31 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 45.7MB/s 5216ms
-  server: v10.zgtfqs.click
-  port: 30807
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 02 [家宽级] 20.9MB/s 10066ms
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 03 [家宽级] 54.3MB/s 1727ms
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇺🇸 04 [家宽级] 4.5MB/s 1055ms
+- name: 🇺🇸 01 [家宽级] 7.4MB/s 787ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -38,7 +14,26 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 05 [家宽级] 1.7MB/s 2373ms
+- name: 🇭🇰 02 [家宽级] 60.8MB/s 3679ms
+  server: v10.hdacd.com
+  port: 30807
+  udp: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: 🇹🇼 03 [家宽级] 2.4MB/s 1228ms
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: ios
+- name: 🇹🇼 04 [家宽级] 2.1MB/s 1939ms
   server: 654168416355441.d6f54hd1j.cc
   port: 443
   udp: true
@@ -54,42 +49,36 @@ proxies:
     path: /
     headers:
       Host: 654168416355441.d6f54hd1j.cc
-- name: 🇹🇼 06 [家宽级] 1.5MB/s 1132ms
-  server: dog-tw.kunlun01dns.com
-  port: 21036
+- name: 🇹🇷 05 [家宽级] 2.1MB/s 1796ms
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 07 [家宽级] 1.5MB/s 842ms
-  server: dog-hk.kunlun01dns.com
-  port: 21021
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 08 [家宽级] 1.5MB/s 1095ms
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16115
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇭🇰 06 [家宽级] 1.7MB/s 1344ms
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16114
   udp: true
   type: vmess
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-- name: 🇹🇼 09 [家宽级] 1.5MB/s 1054ms
-  server: hinet1.2yly.com
-  port: 24215
+- name: 🇸🇬 07 [家宽级] 0.6MB/s 1999ms
+  server: s3.huhiuh.space
+  port: 18642
   udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 10 [家宽级] 0.5MB/s 4948ms
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
+- name: 🇰🇷 08 [家宽级] 0.4MB/s 979ms
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 09 [家宽级] 0.3MB/s 11092ms
   server: tw5.dexlos.com
   port: 8080
   udp: true
@@ -102,35 +91,53 @@ proxies:
   udp-relay-mode: native
   alpn:
   - h3
+- name: 🇹🇼 10 [家宽级] 0.2MB/s 7432ms
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇹🇼 11 [家宽级] 0.2MB/s 1666ms
+  server: sbgfgov.vip23.wogacnmnagfwgov.com
+  port: 11223
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 45.7MB/s 5216ms
-  - 🇹🇼 02 [家宽级] 20.9MB/s 10066ms
-  - 🇹🇼 03 [家宽级] 54.3MB/s 1727ms
-  - 🇺🇸 04 [家宽级] 4.5MB/s 1055ms
-  - 🇹🇼 05 [家宽级] 1.7MB/s 2373ms
-  - 🇹🇼 06 [家宽级] 1.5MB/s 1132ms
-  - 🇭🇰 07 [家宽级] 1.5MB/s 842ms
-  - 🇭🇰 08 [家宽级] 1.5MB/s 1095ms
-  - 🇹🇼 09 [家宽级] 1.5MB/s 1054ms
-  - 🇹🇼 10 [家宽级] 0.5MB/s 4948ms
+  - 🇺🇸 01 [家宽级] 7.4MB/s 787ms
+  - 🇭🇰 02 [家宽级] 60.8MB/s 3679ms
+  - 🇹🇼 03 [家宽级] 2.4MB/s 1228ms
+  - 🇹🇼 04 [家宽级] 2.1MB/s 1939ms
+  - 🇹🇷 05 [家宽级] 2.1MB/s 1796ms
+  - 🇭🇰 06 [家宽级] 1.7MB/s 1344ms
+  - 🇸🇬 07 [家宽级] 0.6MB/s 1999ms
+  - 🇰🇷 08 [家宽级] 0.4MB/s 979ms
+  - 🇹🇼 09 [家宽级] 0.3MB/s 11092ms
+  - 🇹🇼 10 [家宽级] 0.2MB/s 7432ms
+  - 🇹🇼 11 [家宽级] 0.2MB/s 1666ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 45.7MB/s 5216ms
-  - 🇹🇼 02 [家宽级] 20.9MB/s 10066ms
-  - 🇹🇼 03 [家宽级] 54.3MB/s 1727ms
-  - 🇺🇸 04 [家宽级] 4.5MB/s 1055ms
-  - 🇹🇼 05 [家宽级] 1.7MB/s 2373ms
-  - 🇹🇼 06 [家宽级] 1.5MB/s 1132ms
-  - 🇭🇰 07 [家宽级] 1.5MB/s 842ms
-  - 🇭🇰 08 [家宽级] 1.5MB/s 1095ms
-  - 🇹🇼 09 [家宽级] 1.5MB/s 1054ms
-  - 🇹🇼 10 [家宽级] 0.5MB/s 4948ms
+  - 🇺🇸 01 [家宽级] 7.4MB/s 787ms
+  - 🇭🇰 02 [家宽级] 60.8MB/s 3679ms
+  - 🇹🇼 03 [家宽级] 2.4MB/s 1228ms
+  - 🇹🇼 04 [家宽级] 2.1MB/s 1939ms
+  - 🇹🇷 05 [家宽级] 2.1MB/s 1796ms
+  - 🇭🇰 06 [家宽级] 1.7MB/s 1344ms
+  - 🇸🇬 07 [家宽级] 0.6MB/s 1999ms
+  - 🇰🇷 08 [家宽级] 0.4MB/s 979ms
+  - 🇹🇼 09 [家宽级] 0.3MB/s 11092ms
+  - 🇹🇼 10 [家宽级] 0.2MB/s 7432ms
+  - 🇹🇼 11 [家宽级] 0.2MB/s 1666ms
 rules:
 - MATCH,PROXIES
