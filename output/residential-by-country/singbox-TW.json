@@ -4,47 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 01 [家宽级] 44.6MB/s 6423ms",
-      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
-      "server_port": 11224,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 02 [家宽级] 60.3MB/s 7609ms",
-      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
-      "server_port": 11223,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 03 [家宽级] 1.5MB/s 2578ms",
-      "server": "654168416355441.d6f54hd1j.cc",
-      "server_port": 443,
-      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "654168416355441.d6f54hd1j.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "654168416355441.d6f54hd1j.cc"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 04 [家宽级] 1.1MB/s 1890ms",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 01 [家宽级] 0.4MB/s 2435ms",
+      "server": "118.167.248.243",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -62,46 +24,18 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 05 [家宽级] 0.8MB/s 2981ms",
-      "server": "24864168545164.d6f54hd1j.cc",
-      "server_port": 443,
-      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "24864168545164.d6f54hd1j.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "24864168545164.d6f54hd1j.cc"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 44.6MB/s 6423ms",
-        "🇹🇼 02 [家宽级] 60.3MB/s 7609ms",
-        "🇹🇼 03 [家宽级] 1.5MB/s 2578ms",
-        "🇹🇼 04 [家宽级] 1.1MB/s 1890ms",
-        "🇹🇼 05 [家宽级] 0.8MB/s 2981ms"
+        "🇹🇼 01 [家宽级] 0.4MB/s 2435ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 44.6MB/s 6423ms",
-        "🇹🇼 02 [家宽级] 60.3MB/s 7609ms",
-        "🇹🇼 03 [家宽级] 1.5MB/s 2578ms",
-        "🇹🇼 04 [家宽级] 1.1MB/s 1890ms",
-        "🇹🇼 05 [家宽级] 0.8MB/s 2981ms"
+        "🇹🇼 01 [家宽级] 0.4MB/s 2435ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
