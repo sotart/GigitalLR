@@ -5,25 +5,14 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 01 [家宽级] 0.2MB/s 1399ms",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 02 [家宽级] 0.2MB/s 1416ms",
-      "server": "googol.wookshop.ir",
+      "tag": "🇹🇷 01 [家宽级] 2.4MB/s 2204ms",
+      "server": "206.1.102.81",
       "server_port": 17915,
       "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
       "tls": {
         "enabled": true,
         "server_name": "googol.wookshop.ir",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -31,38 +20,27 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇷 03 [家宽级] 0.1MB/s 3192ms",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-      "tls": {
-        "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
-      }
+      "type": "vless",
+      "tag": "🇹🇷 02 [家宽级] 0.1MB/s 1489ms",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 01 [家宽级] 0.2MB/s 1399ms",
-        "🇹🇷 02 [家宽级] 0.2MB/s 1416ms",
-        "🇹🇷 03 [家宽级] 0.1MB/s 3192ms"
+        "🇹🇷 01 [家宽级] 2.4MB/s 2204ms",
+        "🇹🇷 02 [家宽级] 0.1MB/s 1489ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 01 [家宽级] 0.2MB/s 1399ms",
-        "🇹🇷 02 [家宽级] 0.2MB/s 1416ms",
-        "🇹🇷 03 [家宽级] 0.1MB/s 3192ms"
+        "🇹🇷 01 [家宽级] 2.4MB/s 2204ms",
+        "🇹🇷 02 [家宽级] 0.1MB/s 1489ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

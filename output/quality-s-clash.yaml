@@ -4,36 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 23.0MB/s 254ms
-  server: 129.213.91.185
-  port: 35013
-  udp: true
-  type: hysteria2
-  password: 4291c983-c520-46ac-82cc-48f14bef573f
-  sni: 129.213.91.185
-  skip-cert-verify: true
-- name: 🇺🇸 02 [S级] 20.6MB/s 309ms
-  server: 169.40.42.95
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 03 [S级] 21.8MB/s 367ms
-  server: 69.164.240.85
-  port: 50875
-  udp: true
-  type: trojan
-  password: nwilryafgkyvuxauc8pz
-  sni: 69.164.240.85
-  skip-cert-verify: true
-- name: 🇺🇸 04 [S级] 7.1MB/s 375ms
+- name: 🇺🇸 01 [S级] 35.6MB/s 168ms
   server: 195.211.98.43
   port: 443
   udp: true
@@ -46,46 +17,57 @@ proxies:
     short-id: 9c56fddf237e8eaf
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 05 [S级] 8.1MB/s 390ms
-  server: 137.184.174.93
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 06 [S级] 11.8MB/s 374ms
-  server: 136.107.170.196
+- name: 🇮🇱 02 [S级] 12.0MB/s 245ms
+  server: 185.95.231.156
   port: 443
   udp: true
   type: vless
-  uuid: d6d58f01-b5ce-4d47-bce0-b8a806155852
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: L1S0DpFtHPBeyENZUvJPcrFZIct6kcHUPxuzNaGXIFY
-    short-id: 4c69c4b51c580d60
-  servername: www.cloudflare.com
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇺🇸 03 [S级] 10.6MB/s 390ms
+  server: 129.213.91.185
+  port: 35013
+  udp: true
+  type: hysteria2
+  password: 4291c983-c520-46ac-82cc-48f14bef573f
+  sni: 129.213.91.185
+  skip-cert-verify: true
+- name: 🇺🇸 04 [S级] 4.5MB/s 389ms
+  server: 47.251.108.158
+  port: 443
+  udp: true
+  type: vless
+  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
+    short-id: 896f52ba2cfca903
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 23.0MB/s 254ms
-  - 🇺🇸 02 [S级] 20.6MB/s 309ms
-  - 🇺🇸 03 [S级] 21.8MB/s 367ms
-  - 🇺🇸 04 [S级] 7.1MB/s 375ms
-  - 🇨🇦 05 [S级] 8.1MB/s 390ms
-  - 🇺🇸 06 [S级] 11.8MB/s 374ms
+  - 🇺🇸 01 [S级] 35.6MB/s 168ms
+  - 🇮🇱 02 [S级] 12.0MB/s 245ms
+  - 🇺🇸 03 [S级] 10.6MB/s 390ms
+  - 🇺🇸 04 [S级] 4.5MB/s 389ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 23.0MB/s 254ms
-  - 🇺🇸 02 [S级] 20.6MB/s 309ms
-  - 🇺🇸 03 [S级] 21.8MB/s 367ms
-  - 🇺🇸 04 [S级] 7.1MB/s 375ms
-  - 🇨🇦 05 [S级] 8.1MB/s 390ms
-  - 🇺🇸 06 [S级] 11.8MB/s 374ms
+  - 🇺🇸 01 [S级] 35.6MB/s 168ms
+  - 🇮🇱 02 [S级] 12.0MB/s 245ms
+  - 🇺🇸 03 [S级] 10.6MB/s 390ms
+  - 🇺🇸 04 [S级] 4.5MB/s 389ms
 rules:
 - MATCH,PROXIES
