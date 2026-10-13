@@ -4,29 +4,43 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 17.2MB/s 193ms
-  server: 15.204.97.219
-  port: 23576
+- name: 🇺🇸 01 [S级] 5.9MB/s 326ms
+  server: 136.107.170.196
+  port: 443
   udp: true
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
+  uuid: d6d58f01-b5ce-4d47-bce0-b8a806155852
   tls: true
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  servername: fuck.rkn
-  client-fingerprint: chrome
+    public-key: L1S0DpFtHPBeyENZUvJPcrFZIct6kcHUPxuzNaGXIFY
+    short-id: 4c69c4b51c580d60
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇨🇦 02 [S级] 9.5MB/s 367ms
+  server: 66.70.179.198
+  port: 2053
+  udp: true
+  type: vless
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  tls: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 17.2MB/s 193ms
+  - 🇺🇸 01 [S级] 5.9MB/s 326ms
+  - 🇨🇦 02 [S级] 9.5MB/s 367ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 17.2MB/s 193ms
+  - 🇺🇸 01 [S级] 5.9MB/s 326ms
+  - 🇨🇦 02 [S级] 9.5MB/s 367ms
 rules:
 - MATCH,PROXIES
