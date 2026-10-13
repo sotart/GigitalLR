@@ -4,33 +4,33 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 01 [家宽级] 1.3MB/s 1455ms
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 02 [家宽级] 0.1MB/s 1119ms
+- name: 🇰🇷 01 [家宽级] 1.0MB/s 1023ms
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
+- name: 🇰🇷 02 [家宽级] 0.1MB/s 1789ms
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 01 [家宽级] 1.3MB/s 1455ms
-  - 🇰🇷 02 [家宽级] 0.1MB/s 1119ms
+  - 🇰🇷 01 [家宽级] 1.0MB/s 1023ms
+  - 🇰🇷 02 [家宽级] 0.1MB/s 1789ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 01 [家宽级] 1.3MB/s 1455ms
-  - 🇰🇷 02 [家宽级] 0.1MB/s 1119ms
+  - 🇰🇷 01 [家宽级] 1.0MB/s 1023ms
+  - 🇰🇷 02 [家宽级] 0.1MB/s 1789ms
 rules:
 - MATCH,PROXIES

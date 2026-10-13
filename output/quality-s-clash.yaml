@@ -4,7 +4,56 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 5.9MB/s 326ms
+- name: 🇺🇸 01 [S级] 23.0MB/s 254ms
+  server: 129.213.91.185
+  port: 35013
+  udp: true
+  type: hysteria2
+  password: 4291c983-c520-46ac-82cc-48f14bef573f
+  sni: 129.213.91.185
+  skip-cert-verify: true
+- name: 🇺🇸 02 [S级] 20.6MB/s 309ms
+  server: 169.40.42.95
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 03 [S级] 21.8MB/s 367ms
+  server: 69.164.240.85
+  port: 50875
+  udp: true
+  type: trojan
+  password: nwilryafgkyvuxauc8pz
+  sni: 69.164.240.85
+  skip-cert-verify: true
+- name: 🇺🇸 04 [S级] 7.1MB/s 375ms
+  server: 195.211.98.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
+    short-id: 9c56fddf237e8eaf
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 05 [S级] 8.1MB/s 390ms
+  server: 137.184.174.93
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 06 [S级] 11.8MB/s 374ms
   server: 136.107.170.196
   port: 443
   udp: true
@@ -15,32 +64,28 @@ proxies:
     public-key: L1S0DpFtHPBeyENZUvJPcrFZIct6kcHUPxuzNaGXIFY
     short-id: 4c69c4b51c580d60
   servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇨🇦 02 [S级] 9.5MB/s 367ms
-  server: 66.70.179.198
-  port: 2053
-  udp: true
-  type: vless
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  tls: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 5.9MB/s 326ms
-  - 🇨🇦 02 [S级] 9.5MB/s 367ms
+  - 🇺🇸 01 [S级] 23.0MB/s 254ms
+  - 🇺🇸 02 [S级] 20.6MB/s 309ms
+  - 🇺🇸 03 [S级] 21.8MB/s 367ms
+  - 🇺🇸 04 [S级] 7.1MB/s 375ms
+  - 🇨🇦 05 [S级] 8.1MB/s 390ms
+  - 🇺🇸 06 [S级] 11.8MB/s 374ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 5.9MB/s 326ms
-  - 🇨🇦 02 [S级] 9.5MB/s 367ms
+  - 🇺🇸 01 [S级] 23.0MB/s 254ms
+  - 🇺🇸 02 [S级] 20.6MB/s 309ms
+  - 🇺🇸 03 [S级] 21.8MB/s 367ms
+  - 🇺🇸 04 [S级] 7.1MB/s 375ms
+  - 🇨🇦 05 [S级] 8.1MB/s 390ms
+  - 🇺🇸 06 [S级] 11.8MB/s 374ms
 rules:
 - MATCH,PROXIES
