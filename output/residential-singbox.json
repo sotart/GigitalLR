@@ -5,15 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇨🇳 01 [家宽级] 65.4MB/s 17263ms",
-      "server": "112.132.215.108",
-      "server_port": 50002,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 02 [家宽级] 2.0MB/s 1992ms",
+      "tag": "🇹🇼 01 [家宽级] 1.1MB/s 1673ms",
       "server": "fujrdt.d6f54hd1j.cc",
       "server_port": 443,
       "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
@@ -32,49 +24,18 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 03 [家宽级] 1.8MB/s 1311ms",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21020,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 04 [家宽级] 1.6MB/s 895ms",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 05 [家宽级] 0.1MB/s 1191ms",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 01 [家宽级] 65.4MB/s 17263ms",
-        "🇹🇼 02 [家宽级] 2.0MB/s 1992ms",
-        "🇭🇰 03 [家宽级] 1.8MB/s 1311ms",
-        "🇰🇷 04 [家宽级] 1.6MB/s 895ms",
-        "🇹🇷 05 [家宽级] 0.1MB/s 1191ms"
+        "🇹🇼 01 [家宽级] 1.1MB/s 1673ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 01 [家宽级] 65.4MB/s 17263ms",
-        "🇹🇼 02 [家宽级] 2.0MB/s 1992ms",
-        "🇭🇰 03 [家宽级] 1.8MB/s 1311ms",
-        "🇰🇷 04 [家宽级] 1.6MB/s 895ms",
-        "🇹🇷 05 [家宽级] 0.1MB/s 1191ms"
+        "🇹🇼 01 [家宽级] 1.1MB/s 1673ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
