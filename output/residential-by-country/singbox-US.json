@@ -1,0 +1,54 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇺🇸 01 [家宽级] 5.6MB/s 1297ms",
+      "server": "mfactor.ir",
+      "server_port": 443,
+      "uuid": "d6e2e36b-177c-4092-b93f-d01b2d20e4cb",
+      "tls": {
+        "enabled": true,
+        "server_name": "app-owkeny.user-wnv8kr.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "app-owkeny.user-wnv8kr.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇺🇸 01 [家宽级] 5.6MB/s 1297ms"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇺🇸 01 [家宽级] 5.6MB/s 1297ms"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

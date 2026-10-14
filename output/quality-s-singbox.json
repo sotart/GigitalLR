@@ -5,76 +5,56 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 01 [S级] 35.6MB/s 168ms",
-      "server": "195.211.98.43",
+      "tag": "🇺🇸 01 [S级] 12.9MB/s 178ms",
+      "server": "5.161.243.170",
       "server_port": 443,
-      "uuid": "1b4b11d5-4c2d-4533-9a55-636757cdee94",
+      "uuid": "a16a3e32-8d63-4dec-8c67-1361388a64ca",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA",
-          "short_id": "9c56fddf237e8eaf"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 02 [S级] 12.0MB/s 245ms",
-      "server": "185.95.231.156",
-      "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 03 [S级] 10.6MB/s 390ms",
-      "server": "129.213.91.185",
-      "server_port": 35013,
-      "password": "4291c983-c520-46ac-82cc-48f14bef573f",
-      "tls": {
-        "enabled": true,
-        "server_name": "129.213.91.185",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 04 [S级] 4.5MB/s 389ms",
-      "server": "47.251.108.158",
-      "server_port": 443,
-      "uuid": "975fc322-6e38-434b-a53c-d39fed49b9a9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "ajax.aspnetcdn.com",
         "utls": {
           "enabled": true,
           "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs",
-          "short_id": "896f52ba2cfca903"
+          "public_key": "wGU52D9ma5glfMZBlecIb1nVcBdG1nKsBtSXxMTttCA",
+          "short_id": "844a9f695e96785e"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 02 [S级] 11.8MB/s 388ms",
+      "server": "69.164.240.85",
+      "server_port": 50875,
+      "password": "nwilryafgkyvuxauc8pz",
+      "tls": {
+        "enabled": true,
+        "server_name": "69.164.240.85",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 03 [S级] 62.5MB/s 381ms",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 04 [S级] 4.3MB/s 392ms",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8f53fce2-6c17-4e37-9ae9-d969fd85117c",
+      "transport": {
+        "type": "ws",
+        "path": "/vl/Wp4FqWLcoYNYXCovu4",
+        "headers": {
+          "Host": "api-hub-c9a393.alimirzai539-484.workers.dev"
         }
       }
     },
@@ -83,20 +63,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [S级] 35.6MB/s 168ms",
-        "🇮🇱 02 [S级] 12.0MB/s 245ms",
-        "🇺🇸 03 [S级] 10.6MB/s 390ms",
-        "🇺🇸 04 [S级] 4.5MB/s 389ms"
+        "🇺🇸 01 [S级] 12.9MB/s 178ms",
+        "🇺🇸 02 [S级] 11.8MB/s 388ms",
+        "🇨🇦 03 [S级] 62.5MB/s 381ms",
+        "🇩🇪 04 [S级] 4.3MB/s 392ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [S级] 35.6MB/s 168ms",
-        "🇮🇱 02 [S级] 12.0MB/s 245ms",
-        "🇺🇸 03 [S级] 10.6MB/s 390ms",
-        "🇺🇸 04 [S级] 4.5MB/s 389ms"
+        "🇺🇸 01 [S级] 12.9MB/s 178ms",
+        "🇺🇸 02 [S级] 11.8MB/s 388ms",
+        "🇨🇦 03 [S级] 62.5MB/s 381ms",
+        "🇩🇪 04 [S级] 4.3MB/s 392ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,14 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 01 [家宽级] 2.4MB/s 2204ms",
+      "tag": "🇹🇷 01 [家宽级] 2.8MB/s 1092ms",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 02 [家宽级] 0.4MB/s 3885ms",
       "server": "206.1.102.81",
       "server_port": 17915,
       "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
@@ -20,27 +27,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 02 [家宽级] 0.1MB/s 1489ms",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 01 [家宽级] 2.4MB/s 2204ms",
-        "🇹🇷 02 [家宽级] 0.1MB/s 1489ms"
+        "🇹🇷 01 [家宽级] 2.8MB/s 1092ms",
+        "🇹🇷 02 [家宽级] 0.4MB/s 3885ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 01 [家宽级] 2.4MB/s 2204ms",
-        "🇹🇷 02 [家宽级] 0.1MB/s 1489ms"
+        "🇹🇷 01 [家宽级] 2.8MB/s 1092ms",
+        "🇹🇷 02 [家宽级] 0.4MB/s 3885ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
