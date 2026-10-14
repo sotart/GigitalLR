@@ -4,17 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 01 [家宽级] 0.3MB/s 5529ms
-  server: googol.wookshop.ir
-  port: 17915
-  udp: true
-  type: vless
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
-  tls: true
-  servername: googol.wookshop.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇹🇷 02 [家宽级] 0.2MB/s 1519ms
+- name: 🇹🇷 01 [家宽级] 0.1MB/s 1191ms
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -25,14 +15,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 01 [家宽级] 0.3MB/s 5529ms
-  - 🇹🇷 02 [家宽级] 0.2MB/s 1519ms
+  - 🇹🇷 01 [家宽级] 0.1MB/s 1191ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 01 [家宽级] 0.3MB/s 5529ms
-  - 🇹🇷 02 [家宽级] 0.2MB/s 1519ms
+  - 🇹🇷 01 [家宽级] 0.1MB/s 1191ms
 rules:
 - MATCH,PROXIES

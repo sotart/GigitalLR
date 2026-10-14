@@ -5,23 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 01 [家宽级] 0.3MB/s 5529ms",
-      "server": "googol.wookshop.ir",
-      "server_port": 17915,
-      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
-      "tls": {
-        "enabled": true,
-        "server_name": "googol.wookshop.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 02 [家宽级] 0.2MB/s 1519ms",
+      "tag": "🇹🇷 01 [家宽级] 0.1MB/s 1191ms",
       "server": "test.keoplentuio.xyz",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
@@ -31,16 +15,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 01 [家宽级] 0.3MB/s 5529ms",
-        "🇹🇷 02 [家宽级] 0.2MB/s 1519ms"
+        "🇹🇷 01 [家宽级] 0.1MB/s 1191ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 01 [家宽级] 0.3MB/s 5529ms",
-        "🇹🇷 02 [家宽级] 0.2MB/s 1519ms"
+        "🇹🇷 01 [家宽级] 0.1MB/s 1191ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
