@@ -4,15 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 01 [家宽级] 1.8MB/s 1170ms
-  server: 206.1.102.64
-  port: 8080
-  udp: true
-  type: vmess
-  uuid: 184a0393-5c9e-403c-9be6-427b066308e1
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷 02 [家宽级] 1.8MB/s 1918ms
+- name: 🇹🇷 01 [家宽级] 0.1MB/s 2363ms
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -23,14 +15,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 01 [家宽级] 1.8MB/s 1170ms
-  - 🇹🇷 02 [家宽级] 1.8MB/s 1918ms
+  - 🇹🇷 01 [家宽级] 0.1MB/s 2363ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 01 [家宽级] 1.8MB/s 1170ms
-  - 🇹🇷 02 [家宽级] 1.8MB/s 1918ms
+  - 🇹🇷 01 [家宽级] 0.1MB/s 2363ms
 rules:
 - MATCH,PROXIES
