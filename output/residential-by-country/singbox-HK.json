@@ -1,0 +1,52 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇭🇰 01 [家宽级] 0.9MB/s 1953ms",
+      "server": "874e71ae-6c7c-4944-a959-dd6004aab194.ad68289f-02c1-4eeb-83e3-f18114f90c86.byteprivatelink.com",
+      "server_port": 443,
+      "uuid": "66d0b230-3b09-421d-be15-ad2e27a90c00",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "live.douyin.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "em4y1LNcT6JuLvEa3LoNYikp1vShx4ToM1rhvNe-kSY",
+          "short_id": "c975352f"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇭🇰 01 [家宽级] 0.9MB/s 1953ms"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇭🇰 01 [家宽级] 0.9MB/s 1953ms"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

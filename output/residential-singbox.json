@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 01 [家宽级] 12.3MB/s 1035ms",
+      "tag": "🇺🇸 01 [家宽级] 3.9MB/s 1045ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -20,9 +20,17 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 02 [家宽级] 1.6MB/s 1214ms",
+      "server": "218.237.185.234",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 1.2MB/s 1690ms",
-      "server": "118.167.219.24",
+      "tag": "🇹🇼 03 [家宽级] 1.0MB/s 1705ms",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -30,7 +38,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -40,8 +48,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇭🇰 04 [家宽级] 0.9MB/s 1953ms",
+      "server": "874e71ae-6c7c-4944-a959-dd6004aab194.ad68289f-02c1-4eeb-83e3-f18114f90c86.byteprivatelink.com",
+      "server_port": 443,
+      "uuid": "66d0b230-3b09-421d-be15-ad2e27a90c00",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "live.douyin.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "em4y1LNcT6JuLvEa3LoNYikp1vShx4ToM1rhvNe-kSY",
+          "short_id": "c975352f"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇰🇷 03 [家宽级] 0.5MB/s 1468ms",
+      "tag": "🇰🇷 05 [家宽级] 0.5MB/s 1083ms",
       "server": "183.109.131.75",
       "server_port": 20086,
       "uuid": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
@@ -52,36 +81,35 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 04 [家宽级] 0.1MB/s 3710ms",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "s3.huhiuh.space",
-        "insecure": true
-      }
+      "type": "vless",
+      "tag": "🇹🇷 06 [家宽级] 0.3MB/s 1359ms",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 12.3MB/s 1035ms",
-        "🇹🇼 02 [家宽级] 1.2MB/s 1690ms",
-        "🇰🇷 03 [家宽级] 0.5MB/s 1468ms",
-        "🇸🇬 04 [家宽级] 0.1MB/s 3710ms"
+        "🇺🇸 01 [家宽级] 3.9MB/s 1045ms",
+        "🇰🇷 02 [家宽级] 1.6MB/s 1214ms",
+        "🇹🇼 03 [家宽级] 1.0MB/s 1705ms",
+        "🇭🇰 04 [家宽级] 0.9MB/s 1953ms",
+        "🇰🇷 05 [家宽级] 0.5MB/s 1083ms",
+        "🇹🇷 06 [家宽级] 0.3MB/s 1359ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 12.3MB/s 1035ms",
-        "🇹🇼 02 [家宽级] 1.2MB/s 1690ms",
-        "🇰🇷 03 [家宽级] 0.5MB/s 1468ms",
-        "🇸🇬 04 [家宽级] 0.1MB/s 3710ms"
+        "🇺🇸 01 [家宽级] 3.9MB/s 1045ms",
+        "🇰🇷 02 [家宽级] 1.6MB/s 1214ms",
+        "🇹🇼 03 [家宽级] 1.0MB/s 1705ms",
+        "🇭🇰 04 [家宽级] 0.9MB/s 1953ms",
+        "🇰🇷 05 [家宽级] 0.5MB/s 1083ms",
+        "🇹🇷 06 [家宽级] 0.3MB/s 1359ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

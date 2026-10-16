@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 12.3MB/s 1035ms
+- name: 🇺🇸 01 [家宽级] 3.9MB/s 1045ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -14,8 +14,15 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 02 [家宽级] 1.2MB/s 1690ms
-  server: 118.167.219.24
+- name: 🇰🇷 02 [家宽级] 1.6MB/s 1214ms
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 03 [家宽级] 1.0MB/s 1705ms
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -24,8 +31,21 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇰🇷 03 [家宽级] 0.5MB/s 1468ms
+  client-fingerprint: chrome
+- name: 🇭🇰 04 [家宽级] 0.9MB/s 1953ms
+  server: 874e71ae-6c7c-4944-a959-dd6004aab194.ad68289f-02c1-4eeb-83e3-f18114f90c86.byteprivatelink.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 66d0b230-3b09-421d-be15-ad2e27a90c00
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: em4y1LNcT6JuLvEa3LoNYikp1vShx4ToM1rhvNe-kSY
+    short-id: c975352f
+  servername: live.douyin.com
+  client-fingerprint: chrome
+- name: 🇰🇷 05 [家宽级] 0.5MB/s 1083ms
   server: 183.109.131.75
   port: 20086
   udp: true
@@ -36,31 +56,33 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇸🇬 04 [家宽级] 0.1MB/s 3710ms
-  server: s3.huhiuh.space
-  port: 18642
+- name: 🇹🇷 06 [家宽级] 0.3MB/s 1359ms
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
-  skip-cert-verify: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 12.3MB/s 1035ms
-  - 🇹🇼 02 [家宽级] 1.2MB/s 1690ms
-  - 🇰🇷 03 [家宽级] 0.5MB/s 1468ms
-  - 🇸🇬 04 [家宽级] 0.1MB/s 3710ms
+  - 🇺🇸 01 [家宽级] 3.9MB/s 1045ms
+  - 🇰🇷 02 [家宽级] 1.6MB/s 1214ms
+  - 🇹🇼 03 [家宽级] 1.0MB/s 1705ms
+  - 🇭🇰 04 [家宽级] 0.9MB/s 1953ms
+  - 🇰🇷 05 [家宽级] 0.5MB/s 1083ms
+  - 🇹🇷 06 [家宽级] 0.3MB/s 1359ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 12.3MB/s 1035ms
-  - 🇹🇼 02 [家宽级] 1.2MB/s 1690ms
-  - 🇰🇷 03 [家宽级] 0.5MB/s 1468ms
-  - 🇸🇬 04 [家宽级] 0.1MB/s 3710ms
+  - 🇺🇸 01 [家宽级] 3.9MB/s 1045ms
+  - 🇰🇷 02 [家宽级] 1.6MB/s 1214ms
+  - 🇹🇼 03 [家宽级] 1.0MB/s 1705ms
+  - 🇭🇰 04 [家宽级] 0.9MB/s 1953ms
+  - 🇰🇷 05 [家宽级] 0.5MB/s 1083ms
+  - 🇹🇷 06 [家宽级] 0.3MB/s 1359ms
 rules:
 - MATCH,PROXIES

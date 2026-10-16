@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇰 01 [家宽级] 0.9MB/s 1953ms
+  server: 874e71ae-6c7c-4944-a959-dd6004aab194.ad68289f-02c1-4eeb-83e3-f18114f90c86.byteprivatelink.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 66d0b230-3b09-421d-be15-ad2e27a90c00
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: em4y1LNcT6JuLvEa3LoNYikp1vShx4ToM1rhvNe-kSY
+    short-id: c975352f
+  servername: live.douyin.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇰 01 [家宽级] 0.9MB/s 1953ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 01 [家宽级] 0.9MB/s 1953ms
+rules:
+- MATCH,PROXIES
