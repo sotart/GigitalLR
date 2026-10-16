@@ -4,36 +4,30 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 01 [家宽级] 54.5MB/s 3635ms
+- name: 🇺🇸 01 [家宽级] 6.5MB/s 868ms
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇹🇷 02 [家宽级] 2.5MB/s 1528ms
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇭🇰 02 [家宽级] 1.8MB/s 1887ms
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16112
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 03 [家宽级] 1.7MB/s 1821ms
-  server: dog-hk.kunlun01dns.com
-  port: 21021
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 04 [家宽级] 0.3MB/s 4229ms
-  server: p141.panda001.net
+- name: 🇰🇷 03 [家宽级] 1.5MB/s 1729ms
+  server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇸🇬 05 [家宽级] 0.1MB/s 3602ms
+- name: 🇸🇬 04 [家宽级] 0.2MB/s 2365ms
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -46,20 +40,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 01 [家宽级] 54.5MB/s 3635ms
-  - 🇭🇰 02 [家宽级] 1.8MB/s 1887ms
-  - 🇭🇰 03 [家宽级] 1.7MB/s 1821ms
-  - 🇰🇷 04 [家宽级] 0.3MB/s 4229ms
-  - 🇸🇬 05 [家宽级] 0.1MB/s 3602ms
+  - 🇺🇸 01 [家宽级] 6.5MB/s 868ms
+  - 🇹🇷 02 [家宽级] 2.5MB/s 1528ms
+  - 🇰🇷 03 [家宽级] 1.5MB/s 1729ms
+  - 🇸🇬 04 [家宽级] 0.2MB/s 2365ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 01 [家宽级] 54.5MB/s 3635ms
-  - 🇭🇰 02 [家宽级] 1.8MB/s 1887ms
-  - 🇭🇰 03 [家宽级] 1.7MB/s 1821ms
-  - 🇰🇷 04 [家宽级] 0.3MB/s 4229ms
-  - 🇸🇬 05 [家宽级] 0.1MB/s 3602ms
+  - 🇺🇸 01 [家宽级] 6.5MB/s 868ms
+  - 🇹🇷 02 [家宽级] 2.5MB/s 1528ms
+  - 🇰🇷 03 [家宽级] 1.5MB/s 1729ms
+  - 🇸🇬 04 [家宽级] 0.2MB/s 2365ms
 rules:
 - MATCH,PROXIES

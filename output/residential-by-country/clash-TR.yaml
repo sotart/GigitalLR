@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 01 [家宽级] 54.5MB/s 3635ms
+- name: 🇹🇷 01 [家宽级] 2.5MB/s 1528ms
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -15,12 +15,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 01 [家宽级] 54.5MB/s 3635ms
+  - 🇹🇷 01 [家宽级] 2.5MB/s 1528ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 01 [家宽级] 54.5MB/s 3635ms
+  - 🇹🇷 01 [家宽级] 2.5MB/s 1528ms
 rules:
 - MATCH,PROXIES
