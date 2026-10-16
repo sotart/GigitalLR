@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 01 [家宽级] 5.8MB/s 514ms",
+      "tag": "🇺🇸 01 [家宽级] 12.3MB/s 1035ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -21,8 +21,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 0.9MB/s 964ms",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 02 [家宽级] 1.2MB/s 1690ms",
+      "server": "118.167.219.24",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -30,7 +30,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -40,31 +40,20 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇷 03 [家宽级] 0.6MB/s 1011ms",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-      "tls": {
-        "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+      "type": "vmess",
+      "tag": "🇰🇷 03 [家宽级] 0.5MB/s 1468ms",
+      "server": "183.109.131.75",
+      "server_port": 20086,
+      "uuid": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 04 [家宽级] 0.1MB/s 6993ms",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇸🇬 05 [家宽级] 0.1MB/s 2024ms",
+      "tag": "🇸🇬 04 [家宽级] 0.1MB/s 3710ms",
       "server": "s3.huhiuh.space",
       "server_port": 18642,
       "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
@@ -79,22 +68,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 5.8MB/s 514ms",
-        "🇹🇼 02 [家宽级] 0.9MB/s 964ms",
-        "🇹🇷 03 [家宽级] 0.6MB/s 1011ms",
-        "🇹🇷 04 [家宽级] 0.1MB/s 6993ms",
-        "🇸🇬 05 [家宽级] 0.1MB/s 2024ms"
+        "🇺🇸 01 [家宽级] 12.3MB/s 1035ms",
+        "🇹🇼 02 [家宽级] 1.2MB/s 1690ms",
+        "🇰🇷 03 [家宽级] 0.5MB/s 1468ms",
+        "🇸🇬 04 [家宽级] 0.1MB/s 3710ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 5.8MB/s 514ms",
-        "🇹🇼 02 [家宽级] 0.9MB/s 964ms",
-        "🇹🇷 03 [家宽级] 0.6MB/s 1011ms",
-        "🇹🇷 04 [家宽级] 0.1MB/s 6993ms",
-        "🇸🇬 05 [家宽级] 0.1MB/s 2024ms"
+        "🇺🇸 01 [家宽级] 12.3MB/s 1035ms",
+        "🇹🇼 02 [家宽级] 1.2MB/s 1690ms",
+        "🇰🇷 03 [家宽级] 0.5MB/s 1468ms",
+        "🇸🇬 04 [家宽级] 0.1MB/s 3710ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

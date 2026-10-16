@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 5.8MB/s 514ms
+- name: 🇺🇸 01 [家宽级] 12.3MB/s 1035ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -14,8 +14,8 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 02 [家宽级] 0.9MB/s 964ms
-  server: hinet1.2yly.com
+- name: 🇹🇼 02 [家宽级] 1.2MB/s 1690ms
+  server: 118.167.219.24
   port: 24215
   udp: true
   type: vless
@@ -24,24 +24,19 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇹🇷 03 [家宽级] 0.6MB/s 1011ms
-  server: me17.msjia8844.site
-  port: 7443
+  client-fingerprint: firefox
+- name: 🇰🇷 03 [家宽级] 0.5MB/s 1468ms
+  server: 183.109.131.75
+  port: 20086
   udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 04 [家宽级] 0.1MB/s 6993ms
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇸🇬 05 [家宽级] 0.1MB/s 2024ms
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 04 [家宽级] 0.1MB/s 3710ms
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -54,20 +49,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 5.8MB/s 514ms
-  - 🇹🇼 02 [家宽级] 0.9MB/s 964ms
-  - 🇹🇷 03 [家宽级] 0.6MB/s 1011ms
-  - 🇹🇷 04 [家宽级] 0.1MB/s 6993ms
-  - 🇸🇬 05 [家宽级] 0.1MB/s 2024ms
+  - 🇺🇸 01 [家宽级] 12.3MB/s 1035ms
+  - 🇹🇼 02 [家宽级] 1.2MB/s 1690ms
+  - 🇰🇷 03 [家宽级] 0.5MB/s 1468ms
+  - 🇸🇬 04 [家宽级] 0.1MB/s 3710ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 5.8MB/s 514ms
-  - 🇹🇼 02 [家宽级] 0.9MB/s 964ms
-  - 🇹🇷 03 [家宽级] 0.6MB/s 1011ms
-  - 🇹🇷 04 [家宽级] 0.1MB/s 6993ms
-  - 🇸🇬 05 [家宽级] 0.1MB/s 2024ms
+  - 🇺🇸 01 [家宽级] 12.3MB/s 1035ms
+  - 🇹🇼 02 [家宽级] 1.2MB/s 1690ms
+  - 🇰🇷 03 [家宽级] 0.5MB/s 1468ms
+  - 🇸🇬 04 [家宽级] 0.1MB/s 3710ms
 rules:
 - MATCH,PROXIES
