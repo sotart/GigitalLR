@@ -5,24 +5,46 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 01 [家宽级] 0.3MB/s 1359ms",
+      "tag": "🇹🇷 01 [家宽级] 2.0MB/s 1236ms",
       "server": "test.keoplentuio.xyz",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 02 [家宽级] 1.4MB/s 1813ms",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgmansion.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-tr"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 01 [家宽级] 0.3MB/s 1359ms"
+        "🇹🇷 01 [家宽级] 2.0MB/s 1236ms",
+        "🇹🇷 02 [家宽级] 1.4MB/s 1813ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 01 [家宽级] 0.3MB/s 1359ms"
+        "🇹🇷 01 [家宽级] 2.0MB/s 1236ms",
+        "🇹🇷 02 [家宽级] 1.4MB/s 1813ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
