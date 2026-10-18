@@ -4,27 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇷 01 [家宽级] 1.7MB/s 881ms",
-      "server": "206.1.102.64",
-      "server_port": 1777,
-      "uuid": "75ceca7d-2bb0-4da7-a5c8-0555b9e95ae5",
-      "security": "auto",
-      "transport": {
-        "type": "grpc",
-        "service_name": "206.1.102.64"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 02 [家宽级] 0.7MB/s 1725ms",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇹🇷 03 [家宽级] 0.1MB/s 2010ms",
+      "tag": "🇹🇷 01 [家宽级] 61.1MB/s 2955ms",
       "server": "me17.msjia8844.site",
       "server_port": 7443,
       "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
@@ -39,22 +20,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 02 [家宽级] 1.6MB/s 1329ms",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 01 [家宽级] 1.7MB/s 881ms",
-        "🇹🇷 02 [家宽级] 0.7MB/s 1725ms",
-        "🇹🇷 03 [家宽级] 0.1MB/s 2010ms"
+        "🇹🇷 01 [家宽级] 61.1MB/s 2955ms",
+        "🇹🇷 02 [家宽级] 1.6MB/s 1329ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 01 [家宽级] 1.7MB/s 881ms",
-        "🇹🇷 02 [家宽级] 0.7MB/s 1725ms",
-        "🇹🇷 03 [家宽级] 0.1MB/s 2010ms"
+        "🇹🇷 01 [家宽级] 61.1MB/s 2955ms",
+        "🇹🇷 02 [家宽级] 1.6MB/s 1329ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

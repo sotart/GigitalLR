@@ -4,24 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 01 [家宽级] 1.7MB/s 881ms
-  server: 206.1.102.64
-  port: 1777
-  udp: true
-  type: vmess
-  uuid: 75ceca7d-2bb0-4da7-a5c8-0555b9e95ae5
-  alterId: 0
-  cipher: auto
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 206.1.102.64
-- name: 🇹🇷 02 [家宽级] 0.7MB/s 1725ms
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 03 [家宽级] 0.1MB/s 2010ms
+- name: 🇹🇷 01 [家宽级] 61.1MB/s 2955ms
   server: me17.msjia8844.site
   port: 7443
   udp: true
@@ -31,21 +14,25 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇷 02 [家宽级] 1.6MB/s 1329ms
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 01 [家宽级] 1.7MB/s 881ms
-  - 🇹🇷 02 [家宽级] 0.7MB/s 1725ms
-  - 🇹🇷 03 [家宽级] 0.1MB/s 2010ms
+  - 🇹🇷 01 [家宽级] 61.1MB/s 2955ms
+  - 🇹🇷 02 [家宽级] 1.6MB/s 1329ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 01 [家宽级] 1.7MB/s 881ms
-  - 🇹🇷 02 [家宽级] 0.7MB/s 1725ms
-  - 🇹🇷 03 [家宽级] 0.1MB/s 2010ms
+  - 🇹🇷 01 [家宽级] 61.1MB/s 2955ms
+  - 🇹🇷 02 [家宽级] 1.6MB/s 1329ms
 rules:
 - MATCH,PROXIES

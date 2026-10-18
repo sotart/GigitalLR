@@ -4,23 +4,55 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 01 [S级] 10.2MB/s 373ms",
-      "server": "tk1.high-speed-test-56424.me",
+      "type": "shadowsocks",
+      "tag": "🇺🇸 01 [S级] 12.4MB/s 317ms",
+      "server": "198.98.53.130",
       "server_port": 443,
-      "uuid": "37615d66-5467-44a3-bc23-f2c3bef7f761",
-      "flow": "xtls-rprx-vision",
+      "method": "chacha20-ietf-poly1305",
+      "password": "eDfN7SODQceIOmIAbtJJtK"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 02 [S级] 12.9MB/s 346ms",
+      "server": "147.45.60.160",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
       "tls": {
         "enabled": true,
-        "server_name": "aws.amazon.com",
+        "server_name": "github.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM",
-          "short_id": "21270a66"
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 03 [S级] 22.8MB/s 351ms",
+      "server": "169.40.42.163",
+      "server_port": 443,
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },
@@ -29,14 +61,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [S级] 10.2MB/s 373ms"
+        "🇺🇸 01 [S级] 12.4MB/s 317ms",
+        "🇷🇺 02 [S级] 12.9MB/s 346ms",
+        "🇺🇸 03 [S级] 22.8MB/s 351ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [S级] 10.2MB/s 373ms"
+        "🇺🇸 01 [S级] 12.4MB/s 317ms",
+        "🇷🇺 02 [S级] 12.9MB/s 346ms",
+        "🇺🇸 03 [S级] 22.8MB/s 351ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

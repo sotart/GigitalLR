@@ -4,64 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 6.6MB/s 772ms
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇰🇷 02 [家宽级] 1.9MB/s 2062ms
-  server: 183.109.131.75
-  port: 20086
-  udp: true
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇹🇷 03 [家宽级] 1.7MB/s 881ms
-  server: 206.1.102.64
-  port: 1777
-  udp: true
-  type: vmess
-  uuid: 75ceca7d-2bb0-4da7-a5c8-0555b9e95ae5
-  alterId: 0
-  cipher: auto
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 206.1.102.64
-- name: 🇹🇼 04 [家宽级] 1.5MB/s 1672ms
-  server: 118.167.219.24
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇹🇷 05 [家宽级] 0.7MB/s 1725ms
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇸🇬 06 [家宽级] 0.2MB/s 2255ms
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇹🇷 07 [家宽级] 0.1MB/s 2010ms
+- name: 🇹🇷 01 [家宽级] 61.1MB/s 2955ms
   server: me17.msjia8844.site
   port: 7443
   udp: true
@@ -71,29 +14,79 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇼 02 [家宽级] 61.6MB/s 2696ms
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: safari
+- name: 🇺🇸 03 [家宽级] 6.1MB/s 906ms
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇹🇷 04 [家宽级] 1.6MB/s 1329ms
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇭🇰 05 [家宽级] 1.6MB/s 1396ms
+  server: dog-hk.kunlun01dns.com
+  port: 21020
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 06 [家宽级] 0.2MB/s 3745ms
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇸🇬 07 [家宽级] 0.1MB/s 2806ms
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 6.6MB/s 772ms
-  - 🇰🇷 02 [家宽级] 1.9MB/s 2062ms
-  - 🇹🇷 03 [家宽级] 1.7MB/s 881ms
-  - 🇹🇼 04 [家宽级] 1.5MB/s 1672ms
-  - 🇹🇷 05 [家宽级] 0.7MB/s 1725ms
-  - 🇸🇬 06 [家宽级] 0.2MB/s 2255ms
-  - 🇹🇷 07 [家宽级] 0.1MB/s 2010ms
+  - 🇹🇷 01 [家宽级] 61.1MB/s 2955ms
+  - 🇹🇼 02 [家宽级] 61.6MB/s 2696ms
+  - 🇺🇸 03 [家宽级] 6.1MB/s 906ms
+  - 🇹🇷 04 [家宽级] 1.6MB/s 1329ms
+  - 🇭🇰 05 [家宽级] 1.6MB/s 1396ms
+  - 🇰🇷 06 [家宽级] 0.2MB/s 3745ms
+  - 🇸🇬 07 [家宽级] 0.1MB/s 2806ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 6.6MB/s 772ms
-  - 🇰🇷 02 [家宽级] 1.9MB/s 2062ms
-  - 🇹🇷 03 [家宽级] 1.7MB/s 881ms
-  - 🇹🇼 04 [家宽级] 1.5MB/s 1672ms
-  - 🇹🇷 05 [家宽级] 0.7MB/s 1725ms
-  - 🇸🇬 06 [家宽级] 0.2MB/s 2255ms
-  - 🇹🇷 07 [家宽级] 0.1MB/s 2010ms
+  - 🇹🇷 01 [家宽级] 61.1MB/s 2955ms
+  - 🇹🇼 02 [家宽级] 61.6MB/s 2696ms
+  - 🇺🇸 03 [家宽级] 6.1MB/s 906ms
+  - 🇹🇷 04 [家宽级] 1.6MB/s 1329ms
+  - 🇭🇰 05 [家宽级] 1.6MB/s 1396ms
+  - 🇰🇷 06 [家宽级] 0.2MB/s 3745ms
+  - 🇸🇬 07 [家宽级] 0.1MB/s 2806ms
 rules:
 - MATCH,PROXIES
