@@ -4,38 +4,48 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 01 [家宽级] 2.0MB/s 1236ms
+- name: 🇹🇷 01 [家宽级] 1.7MB/s 881ms
+  server: 206.1.102.64
+  port: 1777
+  udp: true
+  type: vmess
+  uuid: 75ceca7d-2bb0-4da7-a5c8-0555b9e95ae5
+  alterId: 0
+  cipher: auto
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 206.1.102.64
+- name: 🇹🇷 02 [家宽级] 0.7MB/s 1725ms
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 02 [家宽级] 1.4MB/s 1813ms
-  server: 177.3.208.65
-  port: 443
+- name: 🇹🇷 03 [家宽级] 0.1MB/s 2010ms
+  server: me17.msjia8844.site
+  port: 7443
   udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-tr
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 01 [家宽级] 2.0MB/s 1236ms
-  - 🇹🇷 02 [家宽级] 1.4MB/s 1813ms
+  - 🇹🇷 01 [家宽级] 1.7MB/s 881ms
+  - 🇹🇷 02 [家宽级] 0.7MB/s 1725ms
+  - 🇹🇷 03 [家宽级] 0.1MB/s 2010ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 01 [家宽级] 2.0MB/s 1236ms
-  - 🇹🇷 02 [家宽级] 1.4MB/s 1813ms
+  - 🇹🇷 01 [家宽级] 1.7MB/s 881ms
+  - 🇹🇷 02 [家宽级] 0.7MB/s 1725ms
+  - 🇹🇷 03 [家宽级] 0.1MB/s 2010ms
 rules:
 - MATCH,PROXIES
