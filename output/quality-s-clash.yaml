@@ -4,26 +4,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 4.9MB/s 293ms
-  server: 38.107.232.36
-  port: 80
+- name: 🇺🇸 01 [S级] 17.3MB/s 274ms
+  server: 45.138.100.248
+  port: 10443
   udp: true
   type: vless
-  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
-  network: ws
-  ws-opts:
-    path: /vless/
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 4.9MB/s 293ms
+  - 🇺🇸 01 [S级] 17.3MB/s 274ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 4.9MB/s 293ms
+  - 🇺🇸 01 [S级] 17.3MB/s 274ms
 rules:
 - MATCH,PROXIES
