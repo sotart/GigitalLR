@@ -4,8 +4,18 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 5.0MB/s 3569ms
-  server: hinet1.2yly.com
+- name: 🇺🇸 01 [家宽级] 5.0MB/s 946ms
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇹🇼 02 [家宽级] 2.8MB/s 1552ms
+  server: 61.230.160.34
   port: 24215
   udp: true
   type: vless
@@ -14,8 +24,44 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇰🇷 03 [家宽级] 1.1MB/s 1208ms
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇭🇰 04 [家宽级] 1.1MB/s 1598ms
+  server: t9.qifei.app
+  port: 443
+  udp: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇸🇬 02 [家宽级] 0.1MB/s 4629ms
+- name: 🇨🇦 05 [家宽级] 0.3MB/s 3718ms
+  server: 47.129.115.96
+  port: 30330
+  udp: true
+  type: vmess
+  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: sg-transit-3.nebulacloud.win
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ca/getData
+    headers:
+      Host: sg-transit-3.nebulacloud.win
+- name: 🇸🇬 06 [家宽级] 0.1MB/s 2717ms
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -28,14 +74,22 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 5.0MB/s 3569ms
-  - 🇸🇬 02 [家宽级] 0.1MB/s 4629ms
+  - 🇺🇸 01 [家宽级] 5.0MB/s 946ms
+  - 🇹🇼 02 [家宽级] 2.8MB/s 1552ms
+  - 🇰🇷 03 [家宽级] 1.1MB/s 1208ms
+  - 🇭🇰 04 [家宽级] 1.1MB/s 1598ms
+  - 🇨🇦 05 [家宽级] 0.3MB/s 3718ms
+  - 🇸🇬 06 [家宽级] 0.1MB/s 2717ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 5.0MB/s 3569ms
-  - 🇸🇬 02 [家宽级] 0.1MB/s 4629ms
+  - 🇺🇸 01 [家宽级] 5.0MB/s 946ms
+  - 🇹🇼 02 [家宽级] 2.8MB/s 1552ms
+  - 🇰🇷 03 [家宽级] 1.1MB/s 1208ms
+  - 🇭🇰 04 [家宽级] 1.1MB/s 1598ms
+  - 🇨🇦 05 [家宽级] 0.3MB/s 3718ms
+  - 🇸🇬 06 [家宽级] 0.1MB/s 2717ms
 rules:
 - MATCH,PROXIES
