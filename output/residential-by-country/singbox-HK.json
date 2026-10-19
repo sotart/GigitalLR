@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 1.6MB/s 1396ms",
+      "tag": "🇭🇰 01 [家宽级] 1.8MB/s 1545ms",
       "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21020,
+      "server_port": 21021,
       "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
     },
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 1.6MB/s 1396ms"
+        "🇭🇰 01 [家宽级] 1.8MB/s 1545ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 1.6MB/s 1396ms"
+        "🇭🇰 01 [家宽级] 1.8MB/s 1545ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

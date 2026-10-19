@@ -4,28 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 01 [家宽级] 61.1MB/s 2955ms
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇼 02 [家宽级] 61.6MB/s 2696ms
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: safari
-- name: 🇺🇸 03 [家宽级] 6.1MB/s 906ms
+- name: 🇺🇸 01 [家宽级] 12.1MB/s 773ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -35,28 +14,67 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇷 04 [家宽级] 1.6MB/s 1329ms
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇺🇸 02 [家宽级] 7.1MB/s 1670ms
+  server: 104.24.30.89
+  port: 443
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇭🇰 05 [家宽级] 1.6MB/s 1396ms
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇭🇰 03 [家宽级] 1.8MB/s 1545ms
   server: dog-hk.kunlun01dns.com
-  port: 21020
+  port: 21021
   udp: true
   type: vmess
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇰🇷 06 [家宽级] 0.2MB/s 3745ms
-  server: p141.panda001.net
+- name: 🇩🇪 04 [家宽级] 1.7MB/s 1682ms
+  server: 209.38.238.229
+  port: 20202
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇰🇷 05 [家宽级] 1.6MB/s 1296ms
+  server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇸🇬 07 [家宽级] 0.1MB/s 2806ms
+- name: 🇸🇬 06 [家宽级] 0.7MB/s 2290ms
+  server: 152.70.253.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇸🇬 07 [家宽级] 0.1MB/s 2101ms
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -69,24 +87,24 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 01 [家宽级] 61.1MB/s 2955ms
-  - 🇹🇼 02 [家宽级] 61.6MB/s 2696ms
-  - 🇺🇸 03 [家宽级] 6.1MB/s 906ms
-  - 🇹🇷 04 [家宽级] 1.6MB/s 1329ms
-  - 🇭🇰 05 [家宽级] 1.6MB/s 1396ms
-  - 🇰🇷 06 [家宽级] 0.2MB/s 3745ms
-  - 🇸🇬 07 [家宽级] 0.1MB/s 2806ms
+  - 🇺🇸 01 [家宽级] 12.1MB/s 773ms
+  - 🇺🇸 02 [家宽级] 7.1MB/s 1670ms
+  - 🇭🇰 03 [家宽级] 1.8MB/s 1545ms
+  - 🇩🇪 04 [家宽级] 1.7MB/s 1682ms
+  - 🇰🇷 05 [家宽级] 1.6MB/s 1296ms
+  - 🇸🇬 06 [家宽级] 0.7MB/s 2290ms
+  - 🇸🇬 07 [家宽级] 0.1MB/s 2101ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 01 [家宽级] 61.1MB/s 2955ms
-  - 🇹🇼 02 [家宽级] 61.6MB/s 2696ms
-  - 🇺🇸 03 [家宽级] 6.1MB/s 906ms
-  - 🇹🇷 04 [家宽级] 1.6MB/s 1329ms
-  - 🇭🇰 05 [家宽级] 1.6MB/s 1396ms
-  - 🇰🇷 06 [家宽级] 0.2MB/s 3745ms
-  - 🇸🇬 07 [家宽级] 0.1MB/s 2806ms
+  - 🇺🇸 01 [家宽级] 12.1MB/s 773ms
+  - 🇺🇸 02 [家宽级] 7.1MB/s 1670ms
+  - 🇭🇰 03 [家宽级] 1.8MB/s 1545ms
+  - 🇩🇪 04 [家宽级] 1.7MB/s 1682ms
+  - 🇰🇷 05 [家宽级] 1.6MB/s 1296ms
+  - 🇸🇬 06 [家宽级] 0.7MB/s 2290ms
+  - 🇸🇬 07 [家宽级] 0.1MB/s 2101ms
 rules:
 - MATCH,PROXIES
