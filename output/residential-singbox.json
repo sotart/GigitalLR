@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 01 [家宽级] 5.0MB/s 946ms",
+      "tag": "🇺🇸 01 [家宽级] 14.9MB/s 944ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -20,8 +20,73 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇨🇳 02 [家宽级] 57.6MB/s 2222ms",
+      "server": "112.132.215.108",
+      "server_port": 50002,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 03 [家宽级] 52.5MB/s 5092ms",
+      "server": "s3.huhiuh.space",
+      "server_port": 18642,
+      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
+      "tls": {
+        "enabled": true,
+        "server_name": "s3.huhiuh.space",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 2.8MB/s 1552ms",
+      "tag": "🇩🇪 04 [家宽级] 1.6MB/s 1679ms",
+      "server": "209.38.238.229",
+      "server_port": 20202,
+      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "tls": {
+        "enabled": true,
+        "server_name": "wzs.echo.net.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=",
+        "headers": {
+          "Host": "wzs.echo.net.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 05 [家宽级] 1.1MB/s 5565ms",
+      "server": "t9.qifei.app",
+      "server_port": 443,
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 06 [家宽级] 0.7MB/s 2106ms",
       "server": "61.230.160.34",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -40,37 +105,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 03 [家宽级] 1.1MB/s 1208ms",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 04 [家宽级] 1.1MB/s 1598ms",
-      "server": "t9.qifei.app",
-      "server_port": 443,
-      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
-          "short_id": "1a"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇨🇦 05 [家宽级] 0.3MB/s 3718ms",
+      "tag": "🇨🇦 07 [家宽级] 0.3MB/s 3465ms",
       "server": "47.129.115.96",
       "server_port": 30330,
       "uuid": "dfa9f875-3805-49d9-8636-46b6899be24e",
@@ -89,40 +125,40 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 06 [家宽级] 0.1MB/s 2717ms",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "s3.huhiuh.space",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 08 [家宽级] 0.1MB/s 2087ms",
+      "server": "p141.panda001.net",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 5.0MB/s 946ms",
-        "🇹🇼 02 [家宽级] 2.8MB/s 1552ms",
-        "🇰🇷 03 [家宽级] 1.1MB/s 1208ms",
-        "🇭🇰 04 [家宽级] 1.1MB/s 1598ms",
-        "🇨🇦 05 [家宽级] 0.3MB/s 3718ms",
-        "🇸🇬 06 [家宽级] 0.1MB/s 2717ms"
+        "🇺🇸 01 [家宽级] 14.9MB/s 944ms",
+        "🇨🇳 02 [家宽级] 57.6MB/s 2222ms",
+        "🇸🇬 03 [家宽级] 52.5MB/s 5092ms",
+        "🇩🇪 04 [家宽级] 1.6MB/s 1679ms",
+        "🇭🇰 05 [家宽级] 1.1MB/s 5565ms",
+        "🇹🇼 06 [家宽级] 0.7MB/s 2106ms",
+        "🇨🇦 07 [家宽级] 0.3MB/s 3465ms",
+        "🇰🇷 08 [家宽级] 0.1MB/s 2087ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 5.0MB/s 946ms",
-        "🇹🇼 02 [家宽级] 2.8MB/s 1552ms",
-        "🇰🇷 03 [家宽级] 1.1MB/s 1208ms",
-        "🇭🇰 04 [家宽级] 1.1MB/s 1598ms",
-        "🇨🇦 05 [家宽级] 0.3MB/s 3718ms",
-        "🇸🇬 06 [家宽级] 0.1MB/s 2717ms"
+        "🇺🇸 01 [家宽级] 14.9MB/s 944ms",
+        "🇨🇳 02 [家宽级] 57.6MB/s 2222ms",
+        "🇸🇬 03 [家宽级] 52.5MB/s 5092ms",
+        "🇩🇪 04 [家宽级] 1.6MB/s 1679ms",
+        "🇭🇰 05 [家宽级] 1.1MB/s 5565ms",
+        "🇹🇼 06 [家宽级] 0.7MB/s 2106ms",
+        "🇨🇦 07 [家宽级] 0.3MB/s 3465ms",
+        "🇰🇷 08 [家宽级] 0.1MB/s 2087ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇰 01 [家宽级] 1.1MB/s 1598ms",
+      "tag": "🇭🇰 01 [家宽级] 1.1MB/s 5565ms",
       "server": "t9.qifei.app",
       "server_port": 443,
       "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
@@ -15,7 +15,7 @@
         "server_name": "www.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 1.1MB/s 1598ms"
+        "🇭🇰 01 [家宽级] 1.1MB/s 5565ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 1.1MB/s 1598ms"
+        "🇭🇰 01 [家宽级] 1.1MB/s 5565ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
