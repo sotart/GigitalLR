@@ -1,0 +1,43 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 01 [家宽级] 2.4MB/s 1613ms",
+      "server": "7108fdc9-tmm5c0-tnkuks-wujn.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "51362ab6-b5e6-11ea-ad28-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "7108fdc9-tmm5c0-tnkuks-wujn.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇭🇰 01 [家宽级] 2.4MB/s 1613ms"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇭🇰 01 [家宽级] 2.4MB/s 1613ms"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
