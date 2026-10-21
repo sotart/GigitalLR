@@ -4,9 +4,29 @@
   },
   "outbounds": [
     {
+      "type": "vmess",
+      "tag": "🇹🇼 01 [家宽级] 2.5MB/s 2737ms",
+      "server": "9641684.sdf65h4.top",
+      "server_port": 443,
+      "uuid": "250c015d-bab0-4ed3-b638-b4eda48f5840",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "9641684.sdf65h4.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "9641684.sdf65h4.top"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 52.3MB/s 1575ms",
-      "server": "61.230.160.34",
+      "tag": "🇹🇼 02 [家宽级] 2.5MB/s 2150ms",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -25,7 +45,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 0.8MB/s 1373ms",
+      "tag": "🇹🇼 03 [家宽级] 0.9MB/s 1890ms",
       "server": "6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com",
       "server_port": 443,
       "uuid": "2a778078-9f4f-4203-a204-6fb94547b707",
@@ -49,16 +69,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 52.3MB/s 1575ms",
-        "🇹🇼 02 [家宽级] 0.8MB/s 1373ms"
+        "🇹🇼 01 [家宽级] 2.5MB/s 2737ms",
+        "🇹🇼 02 [家宽级] 2.5MB/s 2150ms",
+        "🇹🇼 03 [家宽级] 0.9MB/s 1890ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 52.3MB/s 1575ms",
-        "🇹🇼 02 [家宽级] 0.8MB/s 1373ms"
+        "🇹🇼 01 [家宽级] 2.5MB/s 2737ms",
+        "🇹🇼 02 [家宽级] 2.5MB/s 2150ms",
+        "🇹🇼 03 [家宽级] 0.9MB/s 1890ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

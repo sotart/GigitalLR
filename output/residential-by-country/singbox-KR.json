@@ -5,7 +5,27 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 01 [家宽级] 1.8MB/s 1272ms",
+      "tag": "🇰🇷 01 [家宽级] 2.3MB/s 1382ms",
+      "server": "218.237.185.234",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 02 [家宽级] 2.0MB/s 3922ms",
+      "server": "183.109.131.75",
+      "server_port": 20086,
+      "uuid": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 03 [家宽级] 0.8MB/s 1410ms",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
@@ -16,14 +36,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 01 [家宽级] 1.8MB/s 1272ms"
+        "🇰🇷 01 [家宽级] 2.3MB/s 1382ms",
+        "🇰🇷 02 [家宽级] 2.0MB/s 3922ms",
+        "🇰🇷 03 [家宽级] 0.8MB/s 1410ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 01 [家宽级] 1.8MB/s 1272ms"
+        "🇰🇷 01 [家宽级] 2.3MB/s 1382ms",
+        "🇰🇷 02 [家宽级] 2.0MB/s 3922ms",
+        "🇰🇷 03 [家宽级] 0.8MB/s 1410ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

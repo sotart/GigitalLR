@@ -4,8 +4,24 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 52.3MB/s 1575ms
-  server: 61.230.160.34
+- name: 🇹🇼 01 [家宽级] 2.5MB/s 2737ms
+  server: 9641684.sdf65h4.top
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 9641684.sdf65h4.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 9641684.sdf65h4.top
+- name: 🇹🇼 02 [家宽级] 2.5MB/s 2150ms
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -15,7 +31,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇹🇼 02 [家宽级] 0.8MB/s 1373ms
+- name: 🇹🇼 03 [家宽级] 0.9MB/s 1890ms
   server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
   port: 443
   udp: true
@@ -33,14 +49,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 52.3MB/s 1575ms
-  - 🇹🇼 02 [家宽级] 0.8MB/s 1373ms
+  - 🇹🇼 01 [家宽级] 2.5MB/s 2737ms
+  - 🇹🇼 02 [家宽级] 2.5MB/s 2150ms
+  - 🇹🇼 03 [家宽级] 0.9MB/s 1890ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 52.3MB/s 1575ms
-  - 🇹🇼 02 [家宽级] 0.8MB/s 1373ms
+  - 🇹🇼 01 [家宽级] 2.5MB/s 2737ms
+  - 🇹🇼 02 [家宽级] 2.5MB/s 2150ms
+  - 🇹🇼 03 [家宽级] 0.9MB/s 1890ms
 rules:
 - MATCH,PROXIES
