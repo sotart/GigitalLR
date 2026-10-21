@@ -4,24 +4,24 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 01 [家宽级] 1.4MB/s 1642ms
-  server: 218.237.185.234
-  port: 4652
+- name: 🇰🇷 01 [家宽级] 1.8MB/s 1272ms
+  server: 49.254.204.133
+  port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qwerREWQ@@
+  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 01 [家宽级] 1.4MB/s 1642ms
+  - 🇰🇷 01 [家宽级] 1.8MB/s 1272ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 01 [家宽级] 1.4MB/s 1642ms
+  - 🇰🇷 01 [家宽级] 1.8MB/s 1272ms
 rules:
 - MATCH,PROXIES

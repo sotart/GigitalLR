@@ -5,7 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 0.8MB/s 1457ms",
+      "tag": "🇹🇼 01 [家宽级] 52.3MB/s 1575ms",
+      "server": "61.230.160.34",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 02 [家宽级] 0.8MB/s 1373ms",
       "server": "6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com",
       "server_port": 443,
       "uuid": "2a778078-9f4f-4203-a204-6fb94547b707",
@@ -25,40 +45,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 0.7MB/s 1558ms",
-      "server": "61.230.160.34",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 0.8MB/s 1457ms",
-        "🇹🇼 02 [家宽级] 0.7MB/s 1558ms"
+        "🇹🇼 01 [家宽级] 52.3MB/s 1575ms",
+        "🇹🇼 02 [家宽级] 0.8MB/s 1373ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 0.8MB/s 1457ms",
-        "🇹🇼 02 [家宽级] 0.7MB/s 1558ms"
+        "🇹🇼 01 [家宽级] 52.3MB/s 1575ms",
+        "🇹🇼 02 [家宽级] 0.8MB/s 1373ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
