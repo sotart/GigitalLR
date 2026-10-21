@@ -4,7 +4,31 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 1.6MB/s 1198ms
+- name: 🇺🇸 01 [家宽级] 16.3MB/s 644ms
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇰🇷 02 [家宽级] 2.7MB/s 1187ms
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 03 [家宽级] 1.5MB/s 1816ms
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇹🇼 04 [家宽级] 0.6MB/s 1572ms
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -14,49 +38,34 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇰🇷 02 [家宽级] 1.4MB/s 1471ms
-  server: 218.237.185.234
-  port: 4652
+  client-fingerprint: ios
+- name: 🇸🇬 05 [家宽级] 0.1MB/s 3632ms
+  server: s3.huhiuh.space
+  port: 18642
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 03 [家宽级] 1.2MB/s 1486ms
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇷 04 [家宽级] 0.9MB/s 2812ms
-  server: 183.109.131.75
-  port: 20086
-  udp: true
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 1.6MB/s 1198ms
-  - 🇰🇷 02 [家宽级] 1.4MB/s 1471ms
-  - 🇰🇷 03 [家宽级] 1.2MB/s 1486ms
-  - 🇰🇷 04 [家宽级] 0.9MB/s 2812ms
+  - 🇺🇸 01 [家宽级] 16.3MB/s 644ms
+  - 🇰🇷 02 [家宽级] 2.7MB/s 1187ms
+  - 🇰🇷 03 [家宽级] 1.5MB/s 1816ms
+  - 🇹🇼 04 [家宽级] 0.6MB/s 1572ms
+  - 🇸🇬 05 [家宽级] 0.1MB/s 3632ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 1.6MB/s 1198ms
-  - 🇰🇷 02 [家宽级] 1.4MB/s 1471ms
-  - 🇰🇷 03 [家宽级] 1.2MB/s 1486ms
-  - 🇰🇷 04 [家宽级] 0.9MB/s 2812ms
+  - 🇺🇸 01 [家宽级] 16.3MB/s 644ms
+  - 🇰🇷 02 [家宽级] 2.7MB/s 1187ms
+  - 🇰🇷 03 [家宽级] 1.5MB/s 1816ms
+  - 🇹🇼 04 [家宽级] 0.6MB/s 1572ms
+  - 🇸🇬 05 [家宽级] 0.1MB/s 3632ms
 rules:
 - MATCH,PROXIES
