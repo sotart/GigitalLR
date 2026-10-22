@@ -1,0 +1,28 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇷 01 [家宽级] 0.7MB/s 1049ms
+  server: 206.1.99.36
+  port: 58202
+  udp: true
+  type: vmess
+  uuid: e2adaa66-0a40-4e48-a53d-e349e7ac3b80
+  alterId: 0
+  cipher: auto
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇷 01 [家宽级] 0.7MB/s 1049ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 01 [家宽级] 0.7MB/s 1049ms
+rules:
+- MATCH,PROXIES
