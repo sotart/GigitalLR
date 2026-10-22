@@ -4,14 +4,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 01 [家宽级] 2.3MB/s 1382ms
+- name: 🇰🇷 01 [家宽级] 2.6MB/s 1238ms
   server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇰🇷 02 [家宽级] 2.0MB/s 3922ms
+- name: 🇰🇷 02 [家宽级] 1.6MB/s 1517ms
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 03 [家宽级] 1.0MB/s 7049ms
   server: 183.109.131.75
   port: 20086
   udp: true
@@ -22,28 +29,21 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 03 [家宽级] 0.8MB/s 1410ms
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 01 [家宽级] 2.3MB/s 1382ms
-  - 🇰🇷 02 [家宽级] 2.0MB/s 3922ms
-  - 🇰🇷 03 [家宽级] 0.8MB/s 1410ms
+  - 🇰🇷 01 [家宽级] 2.6MB/s 1238ms
+  - 🇰🇷 02 [家宽级] 1.6MB/s 1517ms
+  - 🇰🇷 03 [家宽级] 1.0MB/s 7049ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 01 [家宽级] 2.3MB/s 1382ms
-  - 🇰🇷 02 [家宽级] 2.0MB/s 3922ms
-  - 🇰🇷 03 [家宽级] 0.8MB/s 1410ms
+  - 🇰🇷 01 [家宽级] 2.6MB/s 1238ms
+  - 🇰🇷 02 [家宽级] 1.6MB/s 1517ms
+  - 🇰🇷 03 [家宽级] 1.0MB/s 7049ms
 rules:
 - MATCH,PROXIES

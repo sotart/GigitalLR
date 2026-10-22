@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 7.3MB/s 1193ms
+- name: 🇺🇸 01 [家宽级] 10.1MB/s 809ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 02 [家宽级] 2.5MB/s 2737ms
+- name: 🇹🇼 02 [家宽级] 3.5MB/s 1957ms
   server: 9641684.sdf65h4.top
   port: 443
   udp: true
@@ -30,16 +30,15 @@ proxies:
     path: /
     headers:
       Host: 9641684.sdf65h4.top
-- name: 🇭🇰 03 [家宽级] 2.5MB/s 1446ms
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16116
+- name: 🇰🇷 03 [家宽级] 2.6MB/s 1238ms
+  server: 218.237.185.234
+  port: 4652
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 04 [家宽级] 2.5MB/s 2150ms
-  server: hinet1.2yly.com
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 04 [家宽级] 2.3MB/s 1445ms
+  server: 61.230.160.34
   port: 24215
   udp: true
   type: vless
@@ -48,15 +47,15 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇰🇷 05 [家宽级] 2.3MB/s 1382ms
-  server: 218.237.185.234
-  port: 4652
+  client-fingerprint: safari
+- name: 🇰🇷 05 [家宽级] 1.6MB/s 1517ms
+  server: 49.254.204.133
+  port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 06 [家宽级] 2.0MB/s 3922ms
+  password: 1234!@#$
+- name: 🇰🇷 06 [家宽级] 1.0MB/s 7049ms
   server: 183.109.131.75
   port: 20086
   udp: true
@@ -67,83 +66,27 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇹🇼 07 [家宽级] 0.9MB/s 1890ms
-  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
-    short-id: d369dbc2
-  servername: www.douyin.com
-  client-fingerprint: ios
-- name: 🇰🇷 08 [家宽级] 0.8MB/s 1410ms
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇸🇬 09 [家宽级] 0.1MB/s 2469ms
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇹🇷 10 [家宽级] 0.1MB/s 2586ms
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇨🇳 11 [家宽级] 0.1MB/s 1466ms
-  server: 112.132.215.108
-  port: 50002
-  udp: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 7.3MB/s 1193ms
-  - 🇹🇼 02 [家宽级] 2.5MB/s 2737ms
-  - 🇭🇰 03 [家宽级] 2.5MB/s 1446ms
-  - 🇹🇼 04 [家宽级] 2.5MB/s 2150ms
-  - 🇰🇷 05 [家宽级] 2.3MB/s 1382ms
-  - 🇰🇷 06 [家宽级] 2.0MB/s 3922ms
-  - 🇹🇼 07 [家宽级] 0.9MB/s 1890ms
-  - 🇰🇷 08 [家宽级] 0.8MB/s 1410ms
-  - 🇸🇬 09 [家宽级] 0.1MB/s 2469ms
-  - 🇹🇷 10 [家宽级] 0.1MB/s 2586ms
-  - 🇨🇳 11 [家宽级] 0.1MB/s 1466ms
+  - 🇺🇸 01 [家宽级] 10.1MB/s 809ms
+  - 🇹🇼 02 [家宽级] 3.5MB/s 1957ms
+  - 🇰🇷 03 [家宽级] 2.6MB/s 1238ms
+  - 🇹🇼 04 [家宽级] 2.3MB/s 1445ms
+  - 🇰🇷 05 [家宽级] 1.6MB/s 1517ms
+  - 🇰🇷 06 [家宽级] 1.0MB/s 7049ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 7.3MB/s 1193ms
-  - 🇹🇼 02 [家宽级] 2.5MB/s 2737ms
-  - 🇭🇰 03 [家宽级] 2.5MB/s 1446ms
-  - 🇹🇼 04 [家宽级] 2.5MB/s 2150ms
-  - 🇰🇷 05 [家宽级] 2.3MB/s 1382ms
-  - 🇰🇷 06 [家宽级] 2.0MB/s 3922ms
-  - 🇹🇼 07 [家宽级] 0.9MB/s 1890ms
-  - 🇰🇷 08 [家宽级] 0.8MB/s 1410ms
-  - 🇸🇬 09 [家宽级] 0.1MB/s 2469ms
-  - 🇹🇷 10 [家宽级] 0.1MB/s 2586ms
-  - 🇨🇳 11 [家宽级] 0.1MB/s 1466ms
+  - 🇺🇸 01 [家宽级] 10.1MB/s 809ms
+  - 🇹🇼 02 [家宽级] 3.5MB/s 1957ms
+  - 🇰🇷 03 [家宽级] 2.6MB/s 1238ms
+  - 🇹🇼 04 [家宽级] 2.3MB/s 1445ms
+  - 🇰🇷 05 [家宽级] 1.6MB/s 1517ms
+  - 🇰🇷 06 [家宽级] 1.0MB/s 7049ms
 rules:
 - MATCH,PROXIES
