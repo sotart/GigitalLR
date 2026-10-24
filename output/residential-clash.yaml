@@ -4,52 +4,14 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 4.8MB/s 120ms
-  server: 104.18.42.54
-  port: 2083
+- name: 🇰🇷 01 [家宽级] 1.9MB/s 719ms
+  server: 218.237.185.234
+  port: 4652
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: newwk1.f1w.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇺🇸 02 [家宽级] 6.1MB/s 617ms
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇩🇪 03 [家宽级] 2.3MB/s 988ms
-  server: 209.38.238.229
-  port: 20202
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇺🇸 04 [家宽级] 0.3MB/s 467ms
-  server: 23.160.56.99
-  port: 2087
-  udp: true
-  type: vless
-  uuid: f1e7eafa-0d6f-441e-8565-29f34171aef2
-- name: 🇹🇼 05 [家宽级] 1.2MB/s 1240ms
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 02 [家宽级] 1.4MB/s 1224ms
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -59,45 +21,28 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇰🇷 06 [家宽级] 0.4MB/s 1042ms
-  server: 218.237.185.234
-  port: 4652
+  client-fingerprint: qq
+- name: 🇺🇸 03 [家宽级] 0.4MB/s 4540ms
+  server: 23.160.56.99
+  port: 2087
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇸🇬 07 [家宽级] 0.1MB/s 2272ms
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
-  skip-cert-verify: true
+  type: vless
+  uuid: f1e7eafa-0d6f-441e-8565-29f34171aef2
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 4.8MB/s 120ms
-  - 🇺🇸 02 [家宽级] 6.1MB/s 617ms
-  - 🇩🇪 03 [家宽级] 2.3MB/s 988ms
-  - 🇺🇸 04 [家宽级] 0.3MB/s 467ms
-  - 🇹🇼 05 [家宽级] 1.2MB/s 1240ms
-  - 🇰🇷 06 [家宽级] 0.4MB/s 1042ms
-  - 🇸🇬 07 [家宽级] 0.1MB/s 2272ms
+  - 🇰🇷 01 [家宽级] 1.9MB/s 719ms
+  - 🇹🇼 02 [家宽级] 1.4MB/s 1224ms
+  - 🇺🇸 03 [家宽级] 0.4MB/s 4540ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 4.8MB/s 120ms
-  - 🇺🇸 02 [家宽级] 6.1MB/s 617ms
-  - 🇩🇪 03 [家宽级] 2.3MB/s 988ms
-  - 🇺🇸 04 [家宽级] 0.3MB/s 467ms
-  - 🇹🇼 05 [家宽级] 1.2MB/s 1240ms
-  - 🇰🇷 06 [家宽级] 0.4MB/s 1042ms
-  - 🇸🇬 07 [家宽级] 0.1MB/s 2272ms
+  - 🇰🇷 01 [家宽级] 1.9MB/s 719ms
+  - 🇹🇼 02 [家宽级] 1.4MB/s 1224ms
+  - 🇺🇸 03 [家宽级] 0.4MB/s 4540ms
 rules:
 - MATCH,PROXIES
