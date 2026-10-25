@@ -4,38 +4,84 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦 01 [家宽级] 55.2MB/s 5284ms
-  server: sg-transit-3.nebulacloud.win
-  port: 30330
+- name: 🇭🇰 01 [家宽级] 2.1MB/s 1098ms
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16114
   udp: true
   type: vmess
-  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-  tls: true
-  servername: sg-transit-3.nebulacloud.win
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ca/getData
-- name: 🇺🇸 02 [家宽级] 63.9MB/s 15803ms
-  server: 155.117.19.17
-  port: 443
+- name: 🇰🇷 02 [家宽级] 1.8MB/s 1398ms
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇹🇼 03 [家宽级] 1.7MB/s 3178ms
+  server: gu232.izzzzzi.com
+  port: 20052
+  udp: true
+  type: trojan
+  password: e56e752c86a640cd
+  sni: gu232.izzzzzi.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇰🇷 03 [家宽级] 1.9MB/s 995ms
+- name: 🇰🇷 04 [家宽级] 1.3MB/s 1080ms
   server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇹🇼 04 [家宽级] 1.0MB/s 869ms
+- name: 🇰🇷 05 [家宽级] 1.2MB/s 2202ms
+  server: 183.109.131.75
+  port: 20086
+  udp: true
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 06 [家宽级] 1.0MB/s 2255ms
+  server: 144.24.140.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇺🇸 07 [家宽级] 0.4MB/s 924ms
+  server: 23.160.56.99
+  port: 2087
+  udp: true
+  type: vless
+  uuid: f1e7eafa-0d6f-441e-8565-29f34171aef2
+- name: 🇰🇷 08 [家宽级] 0.4MB/s 4519ms
+  server: saas.sin.fan
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  tls: true
+  servername: vp7.1145678.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /movies/video/TkZDG0RVE1kPREsSEQ8YEEBHSEpZUwhIFF4WRBIIFUkVRQQQRhNYEFASC0FbR1ZETQ9cXUZAQ1laV0cXFBJEXFRWAF0DAFZUB0pYElFeVhQDWV0SQwEWQlpGWRoNC1wYSw==
+    headers:
+      Host: vp7.1145678.xyz
+- name: 🇹🇼 09 [家宽级] 0.3MB/s 1360ms
   server: 61.230.160.34
   port: 24215
   udp: true
@@ -45,46 +91,46 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: ios
-- name: 🇹🇷 05 [家宽级] 0.1MB/s 1925ms
-  server: me17.msjia8844.site
-  port: 7443
+  client-fingerprint: firefox
+- name: 🇺🇸 10 [家宽级] 0.2MB/s 3411ms
+  server: 155.117.19.17
+  port: 443
   udp: true
   type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇸🇬 06 [家宽级] 0.1MB/s 2454ms
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
   skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇦 01 [家宽级] 55.2MB/s 5284ms
-  - 🇺🇸 02 [家宽级] 63.9MB/s 15803ms
-  - 🇰🇷 03 [家宽级] 1.9MB/s 995ms
-  - 🇹🇼 04 [家宽级] 1.0MB/s 869ms
-  - 🇹🇷 05 [家宽级] 0.1MB/s 1925ms
-  - 🇸🇬 06 [家宽级] 0.1MB/s 2454ms
+  - 🇭🇰 01 [家宽级] 2.1MB/s 1098ms
+  - 🇰🇷 02 [家宽级] 1.8MB/s 1398ms
+  - 🇹🇼 03 [家宽级] 1.7MB/s 3178ms
+  - 🇰🇷 04 [家宽级] 1.3MB/s 1080ms
+  - 🇰🇷 05 [家宽级] 1.2MB/s 2202ms
+  - 🇸🇬 06 [家宽级] 1.0MB/s 2255ms
+  - 🇺🇸 07 [家宽级] 0.4MB/s 924ms
+  - 🇰🇷 08 [家宽级] 0.4MB/s 4519ms
+  - 🇹🇼 09 [家宽级] 0.3MB/s 1360ms
+  - 🇺🇸 10 [家宽级] 0.2MB/s 3411ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 01 [家宽级] 55.2MB/s 5284ms
-  - 🇺🇸 02 [家宽级] 63.9MB/s 15803ms
-  - 🇰🇷 03 [家宽级] 1.9MB/s 995ms
-  - 🇹🇼 04 [家宽级] 1.0MB/s 869ms
-  - 🇹🇷 05 [家宽级] 0.1MB/s 1925ms
-  - 🇸🇬 06 [家宽级] 0.1MB/s 2454ms
+  - 🇭🇰 01 [家宽级] 2.1MB/s 1098ms
+  - 🇰🇷 02 [家宽级] 1.8MB/s 1398ms
+  - 🇹🇼 03 [家宽级] 1.7MB/s 3178ms
+  - 🇰🇷 04 [家宽级] 1.3MB/s 1080ms
+  - 🇰🇷 05 [家宽级] 1.2MB/s 2202ms
+  - 🇸🇬 06 [家宽级] 1.0MB/s 2255ms
+  - 🇺🇸 07 [家宽级] 0.4MB/s 924ms
+  - 🇰🇷 08 [家宽级] 0.4MB/s 4519ms
+  - 🇹🇼 09 [家宽级] 0.3MB/s 1360ms
+  - 🇺🇸 10 [家宽级] 0.2MB/s 3411ms
 rules:
 - MATCH,PROXIES
