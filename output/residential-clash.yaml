@@ -4,8 +4,8 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 1.9MB/s 1230ms
-  server: hinet1.2yly.com
+- name: 🇹🇼 01 [家宽级] 1.4MB/s 1620ms
+  server: 61.230.160.34
   port: 24215
   udp: true
   type: vless
@@ -15,38 +15,14 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: firefox
-- name: 🇰🇷 02 [家宽级] 1.7MB/s 975ms
-  server: 49.254.204.133
-  port: 1774
+- name: 🇰🇷 02 [家宽级] 1.2MB/s 1864ms
+  server: 218.237.185.234
+  port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇹🇼 03 [家宽级] 0.9MB/s 1128ms
-  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
-    short-id: d369dbc2
-  servername: www.douyin.com
-  client-fingerprint: ios
-- name: 🇭🇰 04 [家宽级] 0.8MB/s 1412ms
-  server: hkgb707.ifastcdncache.com
-  port: 60852
-  udp: true
-  type: vmess
-  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 05 [家宽级] 0.1MB/s 2175ms
+  password: qwerREWQ@@
+- name: 🇸🇬 03 [家宽级] 0.1MB/s 4553ms
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -59,20 +35,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 1.9MB/s 1230ms
-  - 🇰🇷 02 [家宽级] 1.7MB/s 975ms
-  - 🇹🇼 03 [家宽级] 0.9MB/s 1128ms
-  - 🇭🇰 04 [家宽级] 0.8MB/s 1412ms
-  - 🇸🇬 05 [家宽级] 0.1MB/s 2175ms
+  - 🇹🇼 01 [家宽级] 1.4MB/s 1620ms
+  - 🇰🇷 02 [家宽级] 1.2MB/s 1864ms
+  - 🇸🇬 03 [家宽级] 0.1MB/s 4553ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 1.9MB/s 1230ms
-  - 🇰🇷 02 [家宽级] 1.7MB/s 975ms
-  - 🇹🇼 03 [家宽级] 0.9MB/s 1128ms
-  - 🇭🇰 04 [家宽级] 0.8MB/s 1412ms
-  - 🇸🇬 05 [家宽级] 0.1MB/s 2175ms
+  - 🇹🇼 01 [家宽级] 1.4MB/s 1620ms
+  - 🇰🇷 02 [家宽级] 1.2MB/s 1864ms
+  - 🇸🇬 03 [家宽级] 0.1MB/s 4553ms
 rules:
 - MATCH,PROXIES
