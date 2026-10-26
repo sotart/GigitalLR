@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 1.4MB/s 1620ms",
-      "server": "61.230.160.34",
+      "tag": "🇹🇼 01 [家宽级] 1.7MB/s 1346ms",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 1.4MB/s 1620ms"
+        "🇹🇼 01 [家宽级] 1.7MB/s 1346ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 1.4MB/s 1620ms"
+        "🇹🇼 01 [家宽级] 1.7MB/s 1346ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
