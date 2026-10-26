@@ -4,7 +4,33 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 1.8MB/s 1595ms
+- name: 🇹🇼 01 [家宽级] 1.7MB/s 1534ms
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: qq
+- name: 🇰🇷 02 [家宽级] 1.6MB/s 1370ms
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇭🇰 03 [家宽级] 1.6MB/s 1882ms
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16113
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 04 [家宽级] 1.5MB/s 1772ms
   server: kw119.zxmm.eu.org
   port: 20031
   udp: true
@@ -12,21 +38,14 @@ proxies:
   password: 00a72bf349e6479b
   sni: kw119.zxmm.eu.org
   skip-cert-verify: true
-- name: 🇰🇷 02 [家宽级] 1.5MB/s 1457ms
+- name: 🇰🇷 05 [家宽级] 1.3MB/s 1486ms
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇰🇷 03 [家宽级] 1.5MB/s 1814ms
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇺🇸 04 [家宽级] 0.2MB/s 1369ms
+- name: 🇺🇸 06 [家宽级] 1.0MB/s 2493ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -41,18 +60,22 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 1.8MB/s 1595ms
-  - 🇰🇷 02 [家宽级] 1.5MB/s 1457ms
-  - 🇰🇷 03 [家宽级] 1.5MB/s 1814ms
-  - 🇺🇸 04 [家宽级] 0.2MB/s 1369ms
+  - 🇹🇼 01 [家宽级] 1.7MB/s 1534ms
+  - 🇰🇷 02 [家宽级] 1.6MB/s 1370ms
+  - 🇭🇰 03 [家宽级] 1.6MB/s 1882ms
+  - 🇹🇼 04 [家宽级] 1.5MB/s 1772ms
+  - 🇰🇷 05 [家宽级] 1.3MB/s 1486ms
+  - 🇺🇸 06 [家宽级] 1.0MB/s 2493ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 1.8MB/s 1595ms
-  - 🇰🇷 02 [家宽级] 1.5MB/s 1457ms
-  - 🇰🇷 03 [家宽级] 1.5MB/s 1814ms
-  - 🇺🇸 04 [家宽级] 0.2MB/s 1369ms
+  - 🇹🇼 01 [家宽级] 1.7MB/s 1534ms
+  - 🇰🇷 02 [家宽级] 1.6MB/s 1370ms
+  - 🇭🇰 03 [家宽级] 1.6MB/s 1882ms
+  - 🇹🇼 04 [家宽级] 1.5MB/s 1772ms
+  - 🇰🇷 05 [家宽级] 1.3MB/s 1486ms
+  - 🇺🇸 06 [家宽级] 1.0MB/s 2493ms
 rules:
 - MATCH,PROXIES

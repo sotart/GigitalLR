@@ -4,25 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 01 [S级] 15.4MB/s 331ms",
-      "server": "45.138.100.248",
-      "server_port": 10443,
-      "uuid": "ae908ff5-f749-402c-af25-e6e9aef4d6bb"
+      "type": "vmess",
+      "tag": "🇭🇰 01 [家宽级] 1.6MB/s 1882ms",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16113,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [S级] 15.4MB/s 331ms"
+        "🇭🇰 01 [家宽级] 1.6MB/s 1882ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [S级] 15.4MB/s 331ms"
+        "🇭🇰 01 [家宽级] 1.6MB/s 1882ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
