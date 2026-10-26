@@ -1,0 +1,38 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇺🇸 01 [S级] 15.4MB/s 331ms",
+      "server": "45.138.100.248",
+      "server_port": 10443,
+      "uuid": "ae908ff5-f749-402c-af25-e6e9aef4d6bb"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇺🇸 01 [S级] 15.4MB/s 331ms"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇺🇸 01 [S级] 15.4MB/s 331ms"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

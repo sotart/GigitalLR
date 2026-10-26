@@ -4,25 +4,29 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 01 [家宽级] 1.8MB/s 1186ms
+- name: 🇹🇼 01 [家宽级] 1.8MB/s 1595ms
+  server: kw119.zxmm.eu.org
+  port: 20031
+  udp: true
+  type: trojan
+  password: 00a72bf349e6479b
+  sni: kw119.zxmm.eu.org
+  skip-cert-verify: true
+- name: 🇰🇷 02 [家宽级] 1.5MB/s 1457ms
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇹🇼 02 [家宽级] 1.7MB/s 1346ms
-  server: hinet1.2yly.com
-  port: 24215
+- name: 🇰🇷 03 [家宽级] 1.5MB/s 1814ms
+  server: p141.panda001.net
+  port: 4652
   udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇺🇸 03 [家宽级] 0.1MB/s 2466ms
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇺🇸 04 [家宽级] 0.2MB/s 1369ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -37,16 +41,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 01 [家宽级] 1.8MB/s 1186ms
-  - 🇹🇼 02 [家宽级] 1.7MB/s 1346ms
-  - 🇺🇸 03 [家宽级] 0.1MB/s 2466ms
+  - 🇹🇼 01 [家宽级] 1.8MB/s 1595ms
+  - 🇰🇷 02 [家宽级] 1.5MB/s 1457ms
+  - 🇰🇷 03 [家宽级] 1.5MB/s 1814ms
+  - 🇺🇸 04 [家宽级] 0.2MB/s 1369ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 01 [家宽级] 1.8MB/s 1186ms
-  - 🇹🇼 02 [家宽级] 1.7MB/s 1346ms
-  - 🇺🇸 03 [家宽级] 0.1MB/s 2466ms
+  - 🇹🇼 01 [家宽级] 1.8MB/s 1595ms
+  - 🇰🇷 02 [家宽级] 1.5MB/s 1457ms
+  - 🇰🇷 03 [家宽级] 1.5MB/s 1814ms
+  - 🇺🇸 04 [家宽级] 0.2MB/s 1369ms
 rules:
 - MATCH,PROXIES

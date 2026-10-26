@@ -4,36 +4,36 @@
   },
   "outbounds": [
     {
+      "type": "trojan",
+      "tag": "🇹🇼 01 [家宽级] 1.8MB/s 1595ms",
+      "server": "kw119.zxmm.eu.org",
+      "server_port": 20031,
+      "password": "00a72bf349e6479b",
+      "tls": {
+        "enabled": true,
+        "server_name": "kw119.zxmm.eu.org",
+        "insecure": true
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 01 [家宽级] 1.8MB/s 1186ms",
+      "tag": "🇰🇷 02 [家宽级] 1.5MB/s 1457ms",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
       "password": "1234!@#$"
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 1.7MB/s 1346ms",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 03 [家宽级] 1.5MB/s 1814ms",
+      "server": "p141.panda001.net",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 03 [家宽级] 0.1MB/s 2466ms",
+      "tag": "🇺🇸 04 [家宽级] 0.2MB/s 1369ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -52,18 +52,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 01 [家宽级] 1.8MB/s 1186ms",
-        "🇹🇼 02 [家宽级] 1.7MB/s 1346ms",
-        "🇺🇸 03 [家宽级] 0.1MB/s 2466ms"
+        "🇹🇼 01 [家宽级] 1.8MB/s 1595ms",
+        "🇰🇷 02 [家宽级] 1.5MB/s 1457ms",
+        "🇰🇷 03 [家宽级] 1.5MB/s 1814ms",
+        "🇺🇸 04 [家宽级] 0.2MB/s 1369ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 01 [家宽级] 1.8MB/s 1186ms",
-        "🇹🇼 02 [家宽级] 1.7MB/s 1346ms",
-        "🇺🇸 03 [家宽级] 0.1MB/s 2466ms"
+        "🇹🇼 01 [家宽级] 1.8MB/s 1595ms",
+        "🇰🇷 02 [家宽级] 1.5MB/s 1457ms",
+        "🇰🇷 03 [家宽级] 1.5MB/s 1814ms",
+        "🇺🇸 04 [家宽级] 0.2MB/s 1369ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

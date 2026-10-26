@@ -4,23 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 1.7MB/s 1346ms",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "type": "trojan",
+      "tag": "🇹🇼 01 [家宽级] 1.8MB/s 1595ms",
+      "server": "kw119.zxmm.eu.org",
+      "server_port": 20031,
+      "password": "00a72bf349e6479b",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
+        "server_name": "kw119.zxmm.eu.org",
+        "insecure": true
       }
     },
     {
@@ -28,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 1.7MB/s 1346ms"
+        "🇹🇼 01 [家宽级] 1.8MB/s 1595ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 1.7MB/s 1346ms"
+        "🇹🇼 01 [家宽级] 1.8MB/s 1595ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
