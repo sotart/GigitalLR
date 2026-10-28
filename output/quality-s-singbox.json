@@ -4,80 +4,40 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 01 [S级] 19.8MB/s 200ms",
+      "server": "95.215.201.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 02 [S级] 28.1MB/s 266ms",
+      "server": "129.146.77.248",
+      "server_port": 39495,
+      "uuid": "f836c736-87fc-4fde-aabc-00857ecdff3e",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇺🇸 01 [S级] 24.1MB/s 328ms",
-      "server": "129.213.91.185",
-      "server_port": 35013,
-      "password": "4291c983-c520-46ac-82cc-48f14bef573f",
+      "tag": "🇺🇸 03 [S级] 23.6MB/s 327ms",
+      "server": "129.153.97.46",
+      "server_port": 443,
+      "password": "JDGu0PjxlEWSFJN",
       "tls": {
         "enabled": true,
-        "server_name": "129.213.91.185",
+        "server_name": "www.microsoft.com",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 02 [S级] 25.0MB/s 361ms",
-      "server": "195.211.98.43",
-      "server_port": 443,
-      "uuid": "1b4b11d5-4c2d-4533-9a55-636757cdee94",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA",
-          "short_id": "9c56fddf237e8eaf"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 03 [S级] 31.7MB/s 285ms",
-      "server": "45.138.100.248",
-      "server_port": 10443,
-      "uuid": "ae908ff5-f749-402c-af25-e6e9aef4d6bb"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 04 [S级] 14.9MB/s 315ms",
-      "server": "45.138.100.248",
-      "server_port": 14430,
-      "uuid": "ae908ff5-f749-402c-af25-e6e9aef4d6bb",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 05 [S级] 34.2MB/s 369ms",
-      "server": "185.95.231.156",
-      "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇺🇸 06 [S级] 13.1MB/s 315ms",
+      "tag": "🇺🇸 04 [S级] 15.2MB/s 180ms",
       "server": "66.23.203.21",
       "server_port": 59689,
       "password": "ae7eb4dwyaz25pxwgq59",
@@ -88,28 +48,45 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 05 [S级] 21.8MB/s 349ms",
+      "server": "38.107.236.166",
+      "server_port": 8443,
+      "uuid": "48572af1-d091-457b-a86e-4a457e99927f",
+      "tls": {
+        "enabled": true,
+        "server_name": "3h-unitedstates3.09vpn.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "3h-unitedstates3.09vpn.com"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [S级] 24.1MB/s 328ms",
-        "🇺🇸 02 [S级] 25.0MB/s 361ms",
-        "🇺🇸 03 [S级] 31.7MB/s 285ms",
-        "🇺🇸 04 [S级] 14.9MB/s 315ms",
-        "🇮🇱 05 [S级] 34.2MB/s 369ms",
-        "🇺🇸 06 [S级] 13.1MB/s 315ms"
+        "🇺🇸 01 [S级] 19.8MB/s 200ms",
+        "🇺🇸 02 [S级] 28.1MB/s 266ms",
+        "🇺🇸 03 [S级] 23.6MB/s 327ms",
+        "🇺🇸 04 [S级] 15.2MB/s 180ms",
+        "🇺🇸 05 [S级] 21.8MB/s 349ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [S级] 24.1MB/s 328ms",
-        "🇺🇸 02 [S级] 25.0MB/s 361ms",
-        "🇺🇸 03 [S级] 31.7MB/s 285ms",
-        "🇺🇸 04 [S级] 14.9MB/s 315ms",
-        "🇮🇱 05 [S级] 34.2MB/s 369ms",
-        "🇺🇸 06 [S级] 13.1MB/s 315ms"
+        "🇺🇸 01 [S级] 19.8MB/s 200ms",
+        "🇺🇸 02 [S级] 28.1MB/s 266ms",
+        "🇺🇸 03 [S级] 23.6MB/s 327ms",
+        "🇺🇸 04 [S级] 15.2MB/s 180ms",
+        "🇺🇸 05 [S级] 21.8MB/s 349ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

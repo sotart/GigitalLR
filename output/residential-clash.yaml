@@ -4,28 +4,32 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦 01 [家宽级] 65.5MB/s 4468ms
-  server: sg-transit-3.nebulacloud.win
-  port: 30330
-  udp: true
-  type: vmess
-  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: sg-transit-3.nebulacloud.win
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ca/getData
-- name: 🇰🇷 02 [家宽级] 2.3MB/s 1104ms
+- name: 🇰🇷 01 [家宽级] 3.5MB/s 1034ms
   server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇮🇳 03 [家宽级] 1.6MB/s 1770ms
+- name: 🇹🇼 02 [家宽级] 2.7MB/s 671ms
+  server: 125.227.86.45
+  port: 443
+  udp: true
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
+- name: 🇰🇷 03 [家宽级] 2.1MB/s 823ms
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇮🇳 04 [家宽级] 1.7MB/s 2575ms
   server: 122.176.216.52
   port: 443
   udp: true
@@ -40,21 +44,63 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
+- name: 🇺🇸 05 [家宽级] 0.2MB/s 6499ms
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇨🇦 06 [家宽级] 0.1MB/s 3140ms
+  server: 18.143.188.217
+  port: 30330
+  udp: true
+  type: vmess
+  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: sg-transit-3.nebulacloud.win
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ca/getData
+    headers:
+      Host: sg-transit-3.nebulacloud.win
+- name: 🇸🇬 07 [家宽级] 0.1MB/s 1911ms
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇦 01 [家宽级] 65.5MB/s 4468ms
-  - 🇰🇷 02 [家宽级] 2.3MB/s 1104ms
-  - 🇮🇳 03 [家宽级] 1.6MB/s 1770ms
+  - 🇰🇷 01 [家宽级] 3.5MB/s 1034ms
+  - 🇹🇼 02 [家宽级] 2.7MB/s 671ms
+  - 🇰🇷 03 [家宽级] 2.1MB/s 823ms
+  - 🇮🇳 04 [家宽级] 1.7MB/s 2575ms
+  - 🇺🇸 05 [家宽级] 0.2MB/s 6499ms
+  - 🇨🇦 06 [家宽级] 0.1MB/s 3140ms
+  - 🇸🇬 07 [家宽级] 0.1MB/s 1911ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 01 [家宽级] 65.5MB/s 4468ms
-  - 🇰🇷 02 [家宽级] 2.3MB/s 1104ms
-  - 🇮🇳 03 [家宽级] 1.6MB/s 1770ms
+  - 🇰🇷 01 [家宽级] 3.5MB/s 1034ms
+  - 🇹🇼 02 [家宽级] 2.7MB/s 671ms
+  - 🇰🇷 03 [家宽级] 2.1MB/s 823ms
+  - 🇮🇳 04 [家宽级] 1.7MB/s 2575ms
+  - 🇺🇸 05 [家宽级] 0.2MB/s 6499ms
+  - 🇨🇦 06 [家宽级] 0.1MB/s 3140ms
+  - 🇸🇬 07 [家宽级] 0.1MB/s 1911ms
 rules:
 - MATCH,PROXIES

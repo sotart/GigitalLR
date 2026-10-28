@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇨🇦 01 [家宽级] 65.5MB/s 4468ms",
-      "server": "sg-transit-3.nebulacloud.win",
+      "tag": "🇨🇦 01 [家宽级] 0.1MB/s 3140ms",
+      "server": "18.143.188.217",
       "server_port": 30330,
       "uuid": "dfa9f875-3805-49d9-8636-46b6899be24e",
       "security": "auto",
@@ -17,7 +17,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ca/getData"
+        "path": "/ca/getData",
+        "headers": {
+          "Host": "sg-transit-3.nebulacloud.win"
+        }
       }
     },
     {
@@ -25,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 01 [家宽级] 65.5MB/s 4468ms"
+        "🇨🇦 01 [家宽级] 0.1MB/s 3140ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 01 [家宽级] 65.5MB/s 4468ms"
+        "🇨🇦 01 [家宽级] 0.1MB/s 3140ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
