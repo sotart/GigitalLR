@@ -1,0 +1,87 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 01 [S级] 24.1MB/s 328ms
+  server: 129.213.91.185
+  port: 35013
+  udp: true
+  type: hysteria2
+  password: 4291c983-c520-46ac-82cc-48f14bef573f
+  sni: 129.213.91.185
+  skip-cert-verify: true
+- name: 🇺🇸 02 [S级] 25.0MB/s 361ms
+  server: 195.211.98.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
+    short-id: 9c56fddf237e8eaf
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇺🇸 03 [S级] 31.7MB/s 285ms
+  server: 45.138.100.248
+  port: 10443
+  udp: true
+  type: vless
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+- name: 🇺🇸 04 [S级] 14.9MB/s 315ms
+  server: 45.138.100.248
+  port: 14430
+  udp: true
+  type: vless
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇮🇱 05 [S级] 34.2MB/s 369ms
+  server: 185.95.231.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇺🇸 06 [S级] 13.1MB/s 315ms
+  server: 66.23.203.21
+  port: 59689
+  udp: true
+  type: trojan
+  password: ae7eb4dwyaz25pxwgq59
+  sni: 66.23.203.21
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇸 01 [S级] 24.1MB/s 328ms
+  - 🇺🇸 02 [S级] 25.0MB/s 361ms
+  - 🇺🇸 03 [S级] 31.7MB/s 285ms
+  - 🇺🇸 04 [S级] 14.9MB/s 315ms
+  - 🇮🇱 05 [S级] 34.2MB/s 369ms
+  - 🇺🇸 06 [S级] 13.1MB/s 315ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 01 [S级] 24.1MB/s 328ms
+  - 🇺🇸 02 [S级] 25.0MB/s 361ms
+  - 🇺🇸 03 [S级] 31.7MB/s 285ms
+  - 🇺🇸 04 [S级] 14.9MB/s 315ms
+  - 🇮🇱 05 [S级] 34.2MB/s 369ms
+  - 🇺🇸 06 [S级] 13.1MB/s 315ms
+rules:
+- MATCH,PROXIES
