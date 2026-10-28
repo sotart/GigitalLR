@@ -4,47 +4,71 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 1.7MB/s 1838ms",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16113,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 02 [家宽级] 1.6MB/s 1123ms",
+      "tag": "🇰🇷 01 [家宽级] 1.3MB/s 1373ms",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
       "password": "1234!@#$"
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 03 [家宽级] 1.6MB/s 1593ms",
-      "server": "zfd-hkv1.kunlun01dns.com",
-      "server_port": 16114,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 04 [家宽级] 1.4MB/s 1243ms",
-      "server": "218.237.185.234",
+      "tag": "🇰🇷 02 [家宽级] 1.0MB/s 1691ms",
+      "server": "p141.panda001.net",
       "server_port": 4652,
       "method": "aes-256-cfb",
       "password": "qwerREWQ@@"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 05 [家宽级] 0.1MB/s 2547ms",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
+      "type": "vless",
+      "tag": "🇺🇸 03 [家宽级] 0.6MB/s 1221ms",
+      "server": "xstack.mahanfixe.workers.dev",
+      "server_port": 443,
+      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
       "tls": {
         "enabled": true,
-        "server_name": "s3.huhiuh.space",
+        "server_name": "xstack.mahanfixe.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/xiron",
+        "headers": {
+          "Host": "xstack.mahanfixe.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 04 [家宽级] 0.5MB/s 3216ms",
+      "server": "155.117.19.17",
+      "server_port": 443,
+      "password": "5fa748137b6d822308eea4611f474ad5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 05 [家宽级] 0.4MB/s 3978ms",
+      "server": "sg-transit-3.nebulacloud.win",
+      "server_port": 30330,
+      "uuid": "dfa9f875-3805-49d9-8636-46b6899be24e",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg-transit-3.nebulacloud.win",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ca/getData"
       }
     },
     {
@@ -52,22 +76,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 1.7MB/s 1838ms",
-        "🇰🇷 02 [家宽级] 1.6MB/s 1123ms",
-        "🇭🇰 03 [家宽级] 1.6MB/s 1593ms",
-        "🇰🇷 04 [家宽级] 1.4MB/s 1243ms",
-        "🇸🇬 05 [家宽级] 0.1MB/s 2547ms"
+        "🇰🇷 01 [家宽级] 1.3MB/s 1373ms",
+        "🇰🇷 02 [家宽级] 1.0MB/s 1691ms",
+        "🇺🇸 03 [家宽级] 0.6MB/s 1221ms",
+        "🇺🇸 04 [家宽级] 0.5MB/s 3216ms",
+        "🇨🇦 05 [家宽级] 0.4MB/s 3978ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 1.7MB/s 1838ms",
-        "🇰🇷 02 [家宽级] 1.6MB/s 1123ms",
-        "🇭🇰 03 [家宽级] 1.6MB/s 1593ms",
-        "🇰🇷 04 [家宽级] 1.4MB/s 1243ms",
-        "🇸🇬 05 [家宽级] 0.1MB/s 2547ms"
+        "🇰🇷 01 [家宽级] 1.3MB/s 1373ms",
+        "🇰🇷 02 [家宽级] 1.0MB/s 1691ms",
+        "🇺🇸 03 [家宽级] 0.6MB/s 1221ms",
+        "🇺🇸 04 [家宽级] 0.5MB/s 3216ms",
+        "🇨🇦 05 [家宽级] 0.4MB/s 3978ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
