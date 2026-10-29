@@ -4,21 +4,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 01 [家宽级] 3.0MB/s 1668ms
+- name: 🇰🇷 01 [家宽级] 2.5MB/s 1432ms
   server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇰🇷 02 [家宽级] 2.5MB/s 1301ms
+- name: 🇰🇷 02 [家宽级] 1.7MB/s 1450ms
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇮🇳 03 [家宽级] 1.2MB/s 2176ms
+- name: 🇮🇳 03 [家宽级] 1.6MB/s 2169ms
   server: 122.176.216.52
   port: 443
   udp: true
@@ -33,23 +33,20 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇨🇦 04 [家宽级] 0.2MB/s 3463ms
-  server: sg-transit-3.nebulacloud.win
-  port: 30330
+- name: 🇹🇼 04 [家宽级] 0.9MB/s 1768ms
+  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
+  port: 443
   udp: true
-  type: vmess
-  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
+  flow: xtls-rprx-vision
   tls: true
-  servername: sg-transit-3.nebulacloud.win
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ca/getData
-    headers:
-      Host: sg-transit-3.nebulacloud.win
-- name: 🇺🇸 05 [家宽级] 0.1MB/s 3871ms
+  reality-opts:
+    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
+    short-id: d369dbc2
+  servername: www.douyin.com
+  client-fingerprint: ios
+- name: 🇺🇸 05 [家宽级] 0.4MB/s 2783ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -59,25 +56,35 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇸🇬 06 [家宽级] 0.2MB/s 2675ms
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 01 [家宽级] 3.0MB/s 1668ms
-  - 🇰🇷 02 [家宽级] 2.5MB/s 1301ms
-  - 🇮🇳 03 [家宽级] 1.2MB/s 2176ms
-  - 🇨🇦 04 [家宽级] 0.2MB/s 3463ms
-  - 🇺🇸 05 [家宽级] 0.1MB/s 3871ms
+  - 🇰🇷 01 [家宽级] 2.5MB/s 1432ms
+  - 🇰🇷 02 [家宽级] 1.7MB/s 1450ms
+  - 🇮🇳 03 [家宽级] 1.6MB/s 2169ms
+  - 🇹🇼 04 [家宽级] 0.9MB/s 1768ms
+  - 🇺🇸 05 [家宽级] 0.4MB/s 2783ms
+  - 🇸🇬 06 [家宽级] 0.2MB/s 2675ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 01 [家宽级] 3.0MB/s 1668ms
-  - 🇰🇷 02 [家宽级] 2.5MB/s 1301ms
-  - 🇮🇳 03 [家宽级] 1.2MB/s 2176ms
-  - 🇨🇦 04 [家宽级] 0.2MB/s 3463ms
-  - 🇺🇸 05 [家宽级] 0.1MB/s 3871ms
+  - 🇰🇷 01 [家宽级] 2.5MB/s 1432ms
+  - 🇰🇷 02 [家宽级] 1.7MB/s 1450ms
+  - 🇮🇳 03 [家宽级] 1.6MB/s 2169ms
+  - 🇹🇼 04 [家宽级] 0.9MB/s 1768ms
+  - 🇺🇸 05 [家宽级] 0.4MB/s 2783ms
+  - 🇸🇬 06 [家宽级] 0.2MB/s 2675ms
 rules:
 - MATCH,PROXIES

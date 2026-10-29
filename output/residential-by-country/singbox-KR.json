@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 01 [家宽级] 3.0MB/s 1668ms",
+      "tag": "🇰🇷 01 [家宽级] 2.5MB/s 1432ms",
       "server": "218.237.185.234",
       "server_port": 4652,
       "method": "aes-256-cfb",
@@ -13,7 +13,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 02 [家宽级] 2.5MB/s 1301ms",
+      "tag": "🇰🇷 02 [家宽级] 1.7MB/s 1450ms",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
@@ -24,16 +24,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 01 [家宽级] 3.0MB/s 1668ms",
-        "🇰🇷 02 [家宽级] 2.5MB/s 1301ms"
+        "🇰🇷 01 [家宽级] 2.5MB/s 1432ms",
+        "🇰🇷 02 [家宽级] 1.7MB/s 1450ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 01 [家宽级] 3.0MB/s 1668ms",
-        "🇰🇷 02 [家宽级] 2.5MB/s 1301ms"
+        "🇰🇷 01 [家宽级] 2.5MB/s 1432ms",
+        "🇰🇷 02 [家宽级] 1.7MB/s 1450ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
