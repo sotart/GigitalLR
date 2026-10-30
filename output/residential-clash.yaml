@@ -4,49 +4,49 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 01 [家宽级] 2.5MB/s 1432ms
-  server: 218.237.185.234
-  port: 4652
+- name: 🇺🇸 01 [家宽级] 8.5MB/s 1193ms
+  server: ld.235231.xyz
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 02 [家宽级] 1.7MB/s 1450ms
+  type: vless
+  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
+  tls: true
+  servername: ld.235231.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇰🇷 02 [家宽级] 2.3MB/s 1663ms
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇮🇳 03 [家宽级] 1.6MB/s 2169ms
-  server: 122.176.216.52
+- name: 🇸🇬 03 [家宽级] 1.0MB/s 2097ms
+  server: 144.24.140.37
   port: 443
   udp: true
   type: vless
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   tls: true
-  servername: app-6ada5023.deploy.meerasolution.com
+  servername: wzs.echo.net.eu.org
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
     headers:
-      Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇹🇼 04 [家宽级] 0.9MB/s 1768ms
-  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
-  port: 443
+      Host: wzs.echo.net.eu.org
+- name: 🇰🇷 04 [家宽级] 0.5MB/s 1132ms
+  server: 218.237.185.234
+  port: 4652
   udp: true
-  type: vless
-  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
-    short-id: d369dbc2
-  servername: www.douyin.com
-  client-fingerprint: ios
-- name: 🇺🇸 05 [家宽级] 0.4MB/s 2783ms
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇺🇸 05 [家宽级] 0.5MB/s 1552ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -56,35 +56,25 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇸🇬 06 [家宽级] 0.2MB/s 2675ms
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 01 [家宽级] 2.5MB/s 1432ms
-  - 🇰🇷 02 [家宽级] 1.7MB/s 1450ms
-  - 🇮🇳 03 [家宽级] 1.6MB/s 2169ms
-  - 🇹🇼 04 [家宽级] 0.9MB/s 1768ms
-  - 🇺🇸 05 [家宽级] 0.4MB/s 2783ms
-  - 🇸🇬 06 [家宽级] 0.2MB/s 2675ms
+  - 🇺🇸 01 [家宽级] 8.5MB/s 1193ms
+  - 🇰🇷 02 [家宽级] 2.3MB/s 1663ms
+  - 🇸🇬 03 [家宽级] 1.0MB/s 2097ms
+  - 🇰🇷 04 [家宽级] 0.5MB/s 1132ms
+  - 🇺🇸 05 [家宽级] 0.5MB/s 1552ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 01 [家宽级] 2.5MB/s 1432ms
-  - 🇰🇷 02 [家宽级] 1.7MB/s 1450ms
-  - 🇮🇳 03 [家宽级] 1.6MB/s 2169ms
-  - 🇹🇼 04 [家宽级] 0.9MB/s 1768ms
-  - 🇺🇸 05 [家宽级] 0.4MB/s 2783ms
-  - 🇸🇬 06 [家宽级] 0.2MB/s 2675ms
+  - 🇺🇸 01 [家宽级] 8.5MB/s 1193ms
+  - 🇰🇷 02 [家宽级] 2.3MB/s 1663ms
+  - 🇸🇬 03 [家宽级] 1.0MB/s 2097ms
+  - 🇰🇷 04 [家宽级] 0.5MB/s 1132ms
+  - 🇺🇸 05 [家宽级] 0.5MB/s 1552ms
 rules:
 - MATCH,PROXIES
