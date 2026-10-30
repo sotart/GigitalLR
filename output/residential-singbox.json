@@ -4,47 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 3.4MB/s 1084ms",
-      "server": "zfd-hkv1.kunlun01dns.com",
-      "server_port": 16114,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 02 [家宽级] 2.3MB/s 1035ms",
-      "server": "49.254.204.133",
-      "server_port": 1774,
+      "tag": "🇰🇷 01 [家宽级] 2.8MB/s 1119ms",
+      "server": "218.237.185.234",
+      "server_port": 4652,
       "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 03 [家宽级] 1.4MB/s 4660ms",
-      "server": "122.176.216.52",
-      "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
-      "tls": {
-        "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
-        "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
-        }
-      }
+      "password": "qwerREWQ@@"
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 04 [家宽级] 0.2MB/s 2422ms",
+      "tag": "🇺🇸 02 [家宽级] 0.2MB/s 962ms",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -59,34 +28,29 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 05 [家宽级] 0.1MB/s 1004ms",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "type": "vless",
+      "tag": "🇰🇷 03 [家宽级] 0.1MB/s 1465ms",
+      "server": "112.169.175.199",
+      "server_port": 31157,
+      "uuid": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 3.4MB/s 1084ms",
-        "🇰🇷 02 [家宽级] 2.3MB/s 1035ms",
-        "🇮🇳 03 [家宽级] 1.4MB/s 4660ms",
-        "🇺🇸 04 [家宽级] 0.2MB/s 2422ms",
-        "🇰🇷 05 [家宽级] 0.1MB/s 1004ms"
+        "🇰🇷 01 [家宽级] 2.8MB/s 1119ms",
+        "🇺🇸 02 [家宽级] 0.2MB/s 962ms",
+        "🇰🇷 03 [家宽级] 0.1MB/s 1465ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 3.4MB/s 1084ms",
-        "🇰🇷 02 [家宽级] 2.3MB/s 1035ms",
-        "🇮🇳 03 [家宽级] 1.4MB/s 4660ms",
-        "🇺🇸 04 [家宽级] 0.2MB/s 2422ms",
-        "🇰🇷 05 [家宽级] 0.1MB/s 1004ms"
+        "🇰🇷 01 [家宽级] 2.8MB/s 1119ms",
+        "🇺🇸 02 [家宽级] 0.2MB/s 962ms",
+        "🇰🇷 03 [家宽级] 0.1MB/s 1465ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
