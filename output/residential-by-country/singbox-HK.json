@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 01 [家宽级] 2.7MB/s 899ms",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16113,
+      "tag": "🇭🇰 01 [家宽级] 3.4MB/s 1084ms",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16114,
       "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
       "security": "auto"
     },
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 2.7MB/s 899ms"
+        "🇭🇰 01 [家宽级] 3.4MB/s 1084ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 2.7MB/s 899ms"
+        "🇭🇰 01 [家宽级] 3.4MB/s 1084ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
