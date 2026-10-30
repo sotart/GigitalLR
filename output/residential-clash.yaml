@@ -4,77 +4,34 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 8.5MB/s 1193ms
-  server: ld.235231.xyz
-  port: 443
-  udp: true
-  type: vless
-  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
-  tls: true
-  servername: ld.235231.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇰🇷 02 [家宽级] 2.3MB/s 1663ms
+- name: 🇰🇷 01 [家宽级] 2.6MB/s 648ms
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇸🇬 03 [家宽级] 1.0MB/s 2097ms
-  server: 144.24.140.37
-  port: 443
+- name: 🇭🇰 02 [家宽级] 2.7MB/s 899ms
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16113
   udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇰🇷 04 [家宽级] 0.5MB/s 1132ms
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇺🇸 05 [家宽级] 0.5MB/s 1552ms
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 8.5MB/s 1193ms
-  - 🇰🇷 02 [家宽级] 2.3MB/s 1663ms
-  - 🇸🇬 03 [家宽级] 1.0MB/s 2097ms
-  - 🇰🇷 04 [家宽级] 0.5MB/s 1132ms
-  - 🇺🇸 05 [家宽级] 0.5MB/s 1552ms
+  - 🇰🇷 01 [家宽级] 2.6MB/s 648ms
+  - 🇭🇰 02 [家宽级] 2.7MB/s 899ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 8.5MB/s 1193ms
-  - 🇰🇷 02 [家宽级] 2.3MB/s 1663ms
-  - 🇸🇬 03 [家宽级] 1.0MB/s 2097ms
-  - 🇰🇷 04 [家宽级] 0.5MB/s 1132ms
-  - 🇺🇸 05 [家宽级] 0.5MB/s 1552ms
+  - 🇰🇷 01 [家宽级] 2.6MB/s 648ms
+  - 🇭🇰 02 [家宽级] 2.7MB/s 899ms
 rules:
 - MATCH,PROXIES
