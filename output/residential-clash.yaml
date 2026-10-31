@@ -4,28 +4,40 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 01 [家宽级] 1.7MB/s 1568ms
-  server: 122.176.216.52
+- name: 🇹🇼 01 [家宽级] 3.6MB/s 807ms
+  server: 125.227.86.45
   port: 443
   udp: true
-  type: vless
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-  tls: true
-  servername: app-6ada5023.deploy.meerasolution.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-    headers:
-      Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇰🇷 02 [家宽级] 0.5MB/s 600ms
-  server: 112.169.175.199
-  port: 31157
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
+- name: 🇭🇰 02 [家宽级] 3.2MB/s 1694ms
+  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
-- name: 🇺🇸 03 [家宽级] 0.2MB/s 1793ms
+  type: hysteria2
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇰🇷 03 [家宽级] 2.5MB/s 1049ms
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 04 [家宽级] 0.1MB/s 1375ms
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇺🇸 05 [家宽级] 0.1MB/s 7345ms
   server: 155.117.19.17
   port: 443
   udp: true
@@ -35,21 +47,33 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇰🇷 06 [家宽级] 0.1MB/s 1935ms
+  server: 112.169.175.199
+  port: 31157
+  udp: true
+  type: vless
+  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 01 [家宽级] 1.7MB/s 1568ms
-  - 🇰🇷 02 [家宽级] 0.5MB/s 600ms
-  - 🇺🇸 03 [家宽级] 0.2MB/s 1793ms
+  - 🇹🇼 01 [家宽级] 3.6MB/s 807ms
+  - 🇭🇰 02 [家宽级] 3.2MB/s 1694ms
+  - 🇰🇷 03 [家宽级] 2.5MB/s 1049ms
+  - 🇰🇷 04 [家宽级] 0.1MB/s 1375ms
+  - 🇺🇸 05 [家宽级] 0.1MB/s 7345ms
+  - 🇰🇷 06 [家宽级] 0.1MB/s 1935ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 01 [家宽级] 1.7MB/s 1568ms
-  - 🇰🇷 02 [家宽级] 0.5MB/s 600ms
-  - 🇺🇸 03 [家宽级] 0.2MB/s 1793ms
+  - 🇹🇼 01 [家宽级] 3.6MB/s 807ms
+  - 🇭🇰 02 [家宽级] 3.2MB/s 1694ms
+  - 🇰🇷 03 [家宽级] 2.5MB/s 1049ms
+  - 🇰🇷 04 [家宽级] 0.1MB/s 1375ms
+  - 🇺🇸 05 [家宽级] 0.1MB/s 7345ms
+  - 🇰🇷 06 [家宽级] 0.1MB/s 1935ms
 rules:
 - MATCH,PROXIES
