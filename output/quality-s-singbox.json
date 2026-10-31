@@ -5,25 +5,135 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇺🇸 01 [S级] 22.4MB/s 182ms",
-      "server": "95.215.201.18",
+      "tag": "🇨🇦 01 [S级] 13.0MB/s 231ms",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 02 [S级] 7.8MB/s 275ms",
+      "server": "104.17.147.222",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 03 [S级] 13.2MB/s 310ms",
+      "server": "185.215.132.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 04 [S级] 9.9MB/s 325ms",
+      "server": "216.9.225.189",
+      "server_port": 443,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4+Jbsk=:zT1SecPttPY/XPW6NwjK5Wql+/6zbcGSDJK21Jk8uLo="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 05 [S级] 8.0MB/s 315ms",
+      "server": "hy2.123266.xyz",
+      "server_port": 33333,
+      "password": "bce6c821-200d-421f-bf3d-7159e5246ea0",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.123266.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 06 [S级] 15.3MB/s 352ms",
+      "server": "185.230.230.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 07 [S级] 11.6MB/s 388ms",
+      "server": "67.209.184.133",
+      "server_port": 443,
+      "uuid": "96ebc166-565c-474f-9712-7990b55c368a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Tp015Ga5LodBwKs4z7Wz4hTvqeh8-4q1EQPZqvZfWR0",
+          "short_id": "ad09494d431b2b92"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 08 [S级] 9.1MB/s 329ms",
+      "server": "45.138.100.248",
+      "server_port": 14430,
+      "uuid": "ae908ff5-f749-402c-af25-e6e9aef4d6bb",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.138.100.248"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 09 [S级] 18.4MB/s 385ms",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [S级] 22.4MB/s 182ms"
+        "🇨🇦 01 [S级] 13.0MB/s 231ms",
+        "🇺🇸 02 [S级] 7.8MB/s 275ms",
+        "🇺🇸 03 [S级] 13.2MB/s 310ms",
+        "🇺🇸 04 [S级] 9.9MB/s 325ms",
+        "🇺🇸 05 [S级] 8.0MB/s 315ms",
+        "🇺🇸 06 [S级] 15.3MB/s 352ms",
+        "🇺🇸 07 [S级] 11.6MB/s 388ms",
+        "🇺🇸 08 [S级] 9.1MB/s 329ms",
+        "🇨🇦 09 [S级] 18.4MB/s 385ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [S级] 22.4MB/s 182ms"
+        "🇨🇦 01 [S级] 13.0MB/s 231ms",
+        "🇺🇸 02 [S级] 7.8MB/s 275ms",
+        "🇺🇸 03 [S级] 13.2MB/s 310ms",
+        "🇺🇸 04 [S级] 9.9MB/s 325ms",
+        "🇺🇸 05 [S级] 8.0MB/s 315ms",
+        "🇺🇸 06 [S级] 15.3MB/s 352ms",
+        "🇺🇸 07 [S级] 11.6MB/s 388ms",
+        "🇺🇸 08 [S级] 9.1MB/s 329ms",
+        "🇨🇦 09 [S级] 18.4MB/s 385ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

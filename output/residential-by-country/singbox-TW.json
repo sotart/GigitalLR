@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇹🇼 01 [家宽级] 3.6MB/s 807ms",
+      "tag": "🇹🇼 01 [家宽级] 3.1MB/s 747ms",
       "server": "125.227.86.45",
       "server_port": 443,
       "password": "0a9f1f5a397bd427",
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 3.6MB/s 807ms"
+        "🇹🇼 01 [家宽级] 3.1MB/s 747ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 3.6MB/s 807ms"
+        "🇹🇼 01 [家宽级] 3.1MB/s 747ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
