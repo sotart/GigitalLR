@@ -5,21 +5,14 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇹🇼 01 [家宽级] 3.1MB/s 747ms",
-      "server": "125.227.86.45",
-      "server_port": 443,
-      "password": "0a9f1f5a397bd427",
+      "tag": "🇹🇼 01 [家宽级] 2.0MB/s 1655ms",
+      "server": "ench-snet-app.w-ctrip.cn",
+      "server_port": 45502,
+      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
       "tls": {
         "enabled": true,
-        "server_name": "TG.freecodes",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ]
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "db"
+        "server_name": "cm.g.doubleclick.net",
+        "insecure": true
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 3.1MB/s 747ms"
+        "🇹🇼 01 [家宽级] 2.0MB/s 1655ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 3.1MB/s 747ms"
+        "🇹🇼 01 [家宽级] 2.0MB/s 1655ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
