@@ -5,14 +5,18 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇺🇸 01 [家宽级] 10.9MB/s 615ms",
+      "tag": "🇺🇸 01 [家宽级] 7.3MB/s 592ms",
       "server": "us001.zestapp778.com",
       "server_port": 57277,
       "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "us001.zestapp778.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -20,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 10.9MB/s 615ms"
+        "🇺🇸 01 [家宽级] 7.3MB/s 592ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 10.9MB/s 615ms"
+        "🇺🇸 01 [家宽级] 7.3MB/s 592ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

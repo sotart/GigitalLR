@@ -4,45 +4,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 3.0MB/s 1374ms
-  server: 0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com
+- name: 🇭🇰 01 [家宽级] 3.0MB/s 851ms
+  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
-  sni: 0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 02 [家宽级] 2.4MB/s 1986ms
-  server: ench-snet-app.w-ctrip.cn
-  port: 53004
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: cm.g.doubleclick.net
-  skip-cert-verify: true
-- name: 🇭🇰 03 [家宽级] 2.0MB/s 1247ms
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 3.0MB/s 1374ms
-  - 🇭🇰 02 [家宽级] 2.4MB/s 1986ms
-  - 🇭🇰 03 [家宽级] 2.0MB/s 1247ms
+  - 🇭🇰 01 [家宽级] 3.0MB/s 851ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 3.0MB/s 1374ms
-  - 🇭🇰 02 [家宽级] 2.4MB/s 1986ms
-  - 🇭🇰 03 [家宽级] 2.0MB/s 1247ms
+  - 🇭🇰 01 [家宽级] 3.0MB/s 851ms
 rules:
 - MATCH,PROXIES

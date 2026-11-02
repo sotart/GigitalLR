@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 10.9MB/s 615ms
+- name: 🇺🇸 01 [家宽级] 7.3MB/s 592ms
   server: us001.zestapp778.com
   port: 57277
   udp: true
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 10.9MB/s 615ms
+  - 🇺🇸 01 [家宽级] 7.3MB/s 592ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 10.9MB/s 615ms
+  - 🇺🇸 01 [家宽级] 7.3MB/s 592ms
 rules:
 - MATCH,PROXIES

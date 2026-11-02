@@ -5,37 +5,13 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 01 [家宽级] 3.0MB/s 1374ms",
-      "server": "0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com",
+      "tag": "🇭🇰 01 [家宽级] 3.0MB/s 851ms",
+      "server": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "91df5a86-fcdd-11ef-94aa-f23c913c8d2b",
+      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 02 [家宽级] 2.4MB/s 1986ms",
-      "server": "ench-snet-app.w-ctrip.cn",
-      "server_port": 53004,
-      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "cm.g.doubleclick.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 03 [家宽级] 2.0MB/s 1247ms",
-      "server": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
+        "server_name": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
         "insecure": true
       }
     },
@@ -44,18 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 3.0MB/s 1374ms",
-        "🇭🇰 02 [家宽级] 2.4MB/s 1986ms",
-        "🇭🇰 03 [家宽级] 2.0MB/s 1247ms"
+        "🇭🇰 01 [家宽级] 3.0MB/s 851ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 3.0MB/s 1374ms",
-        "🇭🇰 02 [家宽级] 2.4MB/s 1986ms",
-        "🇭🇰 03 [家宽级] 2.0MB/s 1247ms"
+        "🇭🇰 01 [家宽级] 3.0MB/s 851ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

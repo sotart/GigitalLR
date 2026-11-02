@@ -5,19 +5,43 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇺🇸 01 [家宽级] 10.9MB/s 615ms",
+      "tag": "🇺🇸 01 [家宽级] 7.3MB/s 592ms",
       "server": "us001.zestapp778.com",
       "server_port": 57277,
       "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "us001.zestapp778.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 02 [家宽级] 3.0MB/s 851ms",
+      "server": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 03 [家宽级] 2.4MB/s 764ms",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 56.1MB/s 6176ms",
+      "tag": "🇹🇼 04 [家宽级] 0.6MB/s 6080ms",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -35,144 +59,24 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 03 [家宽级] 3.0MB/s 1374ms",
-      "server": "0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "91df5a86-fcdd-11ef-94aa-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇼 04 [家宽级] 2.9MB/s 1171ms",
-      "server": "125.227.86.45",
-      "server_port": 443,
-      "password": "0a9f1f5a397bd427",
-      "tls": {
-        "enabled": true,
-        "server_name": "TG.freecodes",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ]
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "db"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇼 05 [家宽级] 2.5MB/s 1848ms",
-      "server": "ench-snet-app.w-ctrip.cn",
-      "server_port": 45502,
-      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "cm.g.doubleclick.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 06 [家宽级] 2.5MB/s 1700ms",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 07 [家宽级] 2.4MB/s 1986ms",
-      "server": "ench-snet-app.w-ctrip.cn",
-      "server_port": 53004,
-      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "cm.g.doubleclick.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 08 [家宽级] 2.0MB/s 1247ms",
-      "server": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 09 [家宽级] 1.7MB/s 1845ms",
-      "server": "tr2.h1cloud.net",
-      "server_port": 25021,
-      "uuid": "2446e2e2-1ce3-4502-9050-1dd32bacc68c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg",
-          "short_id": "17fa3af0924c88b3"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇼 10 [家宽级] 1.2MB/s 1659ms",
-      "server": "ench-snet-app.w-ctrip.cn",
-      "server_port": 45503,
-      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "cm.g.doubleclick.net",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 10.9MB/s 615ms",
-        "🇹🇼 02 [家宽级] 56.1MB/s 6176ms",
-        "🇭🇰 03 [家宽级] 3.0MB/s 1374ms",
-        "🇹🇼 04 [家宽级] 2.9MB/s 1171ms",
-        "🇹🇼 05 [家宽级] 2.5MB/s 1848ms",
-        "🇰🇷 06 [家宽级] 2.5MB/s 1700ms",
-        "🇭🇰 07 [家宽级] 2.4MB/s 1986ms",
-        "🇭🇰 08 [家宽级] 2.0MB/s 1247ms",
-        "🇹🇷 09 [家宽级] 1.7MB/s 1845ms",
-        "🇹🇼 10 [家宽级] 1.2MB/s 1659ms"
+        "🇺🇸 01 [家宽级] 7.3MB/s 592ms",
+        "🇭🇰 02 [家宽级] 3.0MB/s 851ms",
+        "🇰🇷 03 [家宽级] 2.4MB/s 764ms",
+        "🇹🇼 04 [家宽级] 0.6MB/s 6080ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 10.9MB/s 615ms",
-        "🇹🇼 02 [家宽级] 56.1MB/s 6176ms",
-        "🇭🇰 03 [家宽级] 3.0MB/s 1374ms",
-        "🇹🇼 04 [家宽级] 2.9MB/s 1171ms",
-        "🇹🇼 05 [家宽级] 2.5MB/s 1848ms",
-        "🇰🇷 06 [家宽级] 2.5MB/s 1700ms",
-        "🇭🇰 07 [家宽级] 2.4MB/s 1986ms",
-        "🇭🇰 08 [家宽级] 2.0MB/s 1247ms",
-        "🇹🇷 09 [家宽级] 1.7MB/s 1845ms",
-        "🇹🇼 10 [家宽级] 1.2MB/s 1659ms"
+        "🇺🇸 01 [家宽级] 7.3MB/s 592ms",
+        "🇭🇰 02 [家宽级] 3.0MB/s 851ms",
+        "🇰🇷 03 [家宽级] 2.4MB/s 764ms",
+        "🇹🇼 04 [家宽级] 0.6MB/s 6080ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
