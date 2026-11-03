@@ -4,15 +4,23 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 5.2MB/s 1355ms
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+- name: 🇭🇰 01 [家宽级] 8.0MB/s 1357ms
+  server: 8a10b982-tmm5c0-truoje-1uni.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 02 [家宽级] 3.8MB/s 1474ms
+  password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
+  sni: 8a10b982-tmm5c0-truoje-1uni.nw4.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 02 [家宽级] 5.8MB/s 1235ms
+  server: 9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+  sni: 9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇹🇼 03 [家宽级] 3.6MB/s 843ms
   server: 125.227.86.45
   port: 443
   udp: true
@@ -23,28 +31,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: db
-- name: 🇹🇷 03 [家宽级] 1.8MB/s 1656ms
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-tr
-- name: 🇹🇼 04 [家宽级] 1.3MB/s 3166ms
-  server: 684616s4.df6h451rh.xin
+- name: 🇭🇰 04 [家宽级] 0.8MB/s 1586ms
+  server: 56481.df6h451rh.xin
   port: 443
   udp: true
   type: anytls
   password: 0324fbc29561
-  sni: px.ads.linkedin.com
+  sni: images.ctfassets.net
   skip-cert-verify: true
-- name: 🇹🇼 05 [家宽级] 0.7MB/s 1957ms
+- name: 🇹🇼 05 [家宽级] 0.5MB/s 1937ms
   server: er8u54dh.df6h451rh.xin
   port: 443
   udp: true
@@ -52,7 +47,15 @@ proxies:
   password: 0324fbc29561
   sni: px.ads.linkedin.com
   skip-cert-verify: true
-- name: 🇹🇼 06 [家宽级] 0.2MB/s 2401ms
+- name: 🇹🇼 06 [家宽级] 0.4MB/s 1989ms
+  server: 684616s4.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+- name: 🇹🇼 07 [家宽级] 0.2MB/s 3258ms
   server: 60.248.219.78
   port: 443
   udp: true
@@ -66,37 +69,29 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇭🇰 07 [家宽级] 0.2MB/s 1557ms
-  server: dog-hk.kunlun01dns.com
-  port: 21019
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 5.2MB/s 1355ms
-  - 🇹🇼 02 [家宽级] 3.8MB/s 1474ms
-  - 🇹🇷 03 [家宽级] 1.8MB/s 1656ms
-  - 🇹🇼 04 [家宽级] 1.3MB/s 3166ms
-  - 🇹🇼 05 [家宽级] 0.7MB/s 1957ms
-  - 🇹🇼 06 [家宽级] 0.2MB/s 2401ms
-  - 🇭🇰 07 [家宽级] 0.2MB/s 1557ms
+  - 🇭🇰 01 [家宽级] 8.0MB/s 1357ms
+  - 🇭🇰 02 [家宽级] 5.8MB/s 1235ms
+  - 🇹🇼 03 [家宽级] 3.6MB/s 843ms
+  - 🇭🇰 04 [家宽级] 0.8MB/s 1586ms
+  - 🇹🇼 05 [家宽级] 0.5MB/s 1937ms
+  - 🇹🇼 06 [家宽级] 0.4MB/s 1989ms
+  - 🇹🇼 07 [家宽级] 0.2MB/s 3258ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 5.2MB/s 1355ms
-  - 🇹🇼 02 [家宽级] 3.8MB/s 1474ms
-  - 🇹🇷 03 [家宽级] 1.8MB/s 1656ms
-  - 🇹🇼 04 [家宽级] 1.3MB/s 3166ms
-  - 🇹🇼 05 [家宽级] 0.7MB/s 1957ms
-  - 🇹🇼 06 [家宽级] 0.2MB/s 2401ms
-  - 🇭🇰 07 [家宽级] 0.2MB/s 1557ms
+  - 🇭🇰 01 [家宽级] 8.0MB/s 1357ms
+  - 🇭🇰 02 [家宽级] 5.8MB/s 1235ms
+  - 🇹🇼 03 [家宽级] 3.6MB/s 843ms
+  - 🇭🇰 04 [家宽级] 0.8MB/s 1586ms
+  - 🇹🇼 05 [家宽级] 0.5MB/s 1937ms
+  - 🇹🇼 06 [家宽级] 0.4MB/s 1989ms
+  - 🇹🇼 07 [家宽级] 0.2MB/s 3258ms
 rules:
 - MATCH,PROXIES
