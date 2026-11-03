@@ -4,19 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇺🇸 01 [家宽级] 7.3MB/s 592ms",
-      "server": "us001.zestapp778.com",
-      "server_port": 57277,
-      "password": "5t6i121em5lkmsmk",
+      "type": "vless",
+      "tag": "🇹🇷 01 [家宽级] 1.8MB/s 1656ms",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
       "tls": {
         "enabled": true,
-        "server_name": "us001.zestapp778.com",
-        "insecure": true,
+        "server_name": "tgmansion.site",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-tr"
       }
     },
     {
@@ -24,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 7.3MB/s 592ms"
+        "🇹🇷 01 [家宽级] 1.8MB/s 1656ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 7.3MB/s 592ms"
+        "🇹🇷 01 [家宽级] 1.8MB/s 1656ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

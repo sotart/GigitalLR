@@ -4,30 +4,55 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 7.3MB/s 592ms
-  server: us001.zestapp778.com
-  port: 57277
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us001.zestapp778.com
-  skip-cert-verify: true
-- name: 🇭🇰 02 [家宽级] 3.0MB/s 851ms
-  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
+- name: 🇭🇰 01 [家宽级] 5.2MB/s 1355ms
+  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇰🇷 03 [家宽级] 2.4MB/s 764ms
-  server: 49.254.204.133
-  port: 1774
+- name: 🇹🇼 02 [家宽级] 3.8MB/s 1474ms
+  server: 125.227.86.45
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇹🇼 04 [家宽级] 0.6MB/s 6080ms
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
+- name: 🇹🇷 03 [家宽级] 1.8MB/s 1656ms
+  server: 177.3.208.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-tr
+- name: 🇹🇼 04 [家宽级] 1.3MB/s 3166ms
+  server: 684616s4.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+- name: 🇹🇼 05 [家宽级] 0.7MB/s 1957ms
+  server: er8u54dh.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+- name: 🇹🇼 06 [家宽级] 0.2MB/s 2401ms
   server: 60.248.219.78
   port: 443
   udp: true
@@ -41,23 +66,37 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇭🇰 07 [家宽级] 0.2MB/s 1557ms
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 7.3MB/s 592ms
-  - 🇭🇰 02 [家宽级] 3.0MB/s 851ms
-  - 🇰🇷 03 [家宽级] 2.4MB/s 764ms
-  - 🇹🇼 04 [家宽级] 0.6MB/s 6080ms
+  - 🇭🇰 01 [家宽级] 5.2MB/s 1355ms
+  - 🇹🇼 02 [家宽级] 3.8MB/s 1474ms
+  - 🇹🇷 03 [家宽级] 1.8MB/s 1656ms
+  - 🇹🇼 04 [家宽级] 1.3MB/s 3166ms
+  - 🇹🇼 05 [家宽级] 0.7MB/s 1957ms
+  - 🇹🇼 06 [家宽级] 0.2MB/s 2401ms
+  - 🇭🇰 07 [家宽级] 0.2MB/s 1557ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 7.3MB/s 592ms
-  - 🇭🇰 02 [家宽级] 3.0MB/s 851ms
-  - 🇰🇷 03 [家宽级] 2.4MB/s 764ms
-  - 🇹🇼 04 [家宽级] 0.6MB/s 6080ms
+  - 🇭🇰 01 [家宽级] 5.2MB/s 1355ms
+  - 🇹🇼 02 [家宽级] 3.8MB/s 1474ms
+  - 🇹🇷 03 [家宽级] 1.8MB/s 1656ms
+  - 🇹🇼 04 [家宽级] 1.3MB/s 3166ms
+  - 🇹🇼 05 [家宽级] 0.7MB/s 1957ms
+  - 🇹🇼 06 [家宽级] 0.2MB/s 2401ms
+  - 🇭🇰 07 [家宽级] 0.2MB/s 1557ms
 rules:
 - MATCH,PROXIES

@@ -4,8 +4,51 @@
   },
   "outbounds": [
     {
+      "type": "trojan",
+      "tag": "🇹🇼 01 [家宽级] 3.8MB/s 1474ms",
+      "server": "125.227.86.45",
+      "server_port": 443,
+      "password": "0a9f1f5a397bd427",
+      "tls": {
+        "enabled": true,
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 02 [家宽级] 1.3MB/s 3166ms",
+      "server": "684616s4.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 03 [家宽级] 0.7MB/s 1957ms",
+      "server": "er8u54dh.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 0.6MB/s 6080ms",
+      "tag": "🇹🇼 04 [家宽级] 0.2MB/s 2401ms",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -27,14 +70,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 0.6MB/s 6080ms"
+        "🇹🇼 01 [家宽级] 3.8MB/s 1474ms",
+        "🇹🇼 02 [家宽级] 1.3MB/s 3166ms",
+        "🇹🇼 03 [家宽级] 0.7MB/s 1957ms",
+        "🇹🇼 04 [家宽级] 0.2MB/s 2401ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 0.6MB/s 6080ms"
+        "🇹🇼 01 [家宽级] 3.8MB/s 1474ms",
+        "🇹🇼 02 [家宽级] 1.3MB/s 3166ms",
+        "🇹🇼 03 [家宽级] 0.7MB/s 1957ms",
+        "🇹🇼 04 [家宽级] 0.2MB/s 2401ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
