@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
+      "type": "anytls",
+      "tag": "🇹🇼 01 [家宽级] 0.8MB/s 2692ms",
+      "server": "er8u54dh.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 01 [家宽级] 0.3MB/s 3745ms",
+      "tag": "🇹🇼 02 [家宽级] 0.3MB/s 2244ms",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -27,14 +39,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 0.3MB/s 3745ms"
+        "🇹🇼 01 [家宽级] 0.8MB/s 2692ms",
+        "🇹🇼 02 [家宽级] 0.3MB/s 2244ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 0.3MB/s 3745ms"
+        "🇹🇼 01 [家宽级] 0.8MB/s 2692ms",
+        "🇹🇼 02 [家宽级] 0.3MB/s 2244ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
