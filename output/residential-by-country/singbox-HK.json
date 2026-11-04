@@ -5,37 +5,25 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 01 [家宽级] 3.8MB/s 1104ms",
-      "server": "8175bce5-tmm5c0-tzzpok-1sllg.nw4.hyhuawei.com",
+      "tag": "🇭🇰 01 [家宽级] 6.7MB/s 1392ms",
+      "server": "e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "d6e1207c-f41a-11ef-9495-f23c91cfbbc9",
+      "password": "f7d95364-607b-11ee-93af-f23c91369f2d",
       "tls": {
         "enabled": true,
-        "server_name": "8175bce5-tmm5c0-tzzpok-1sllg.nw4.hyhuawei.com",
+        "server_name": "e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com",
         "insecure": false
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇭🇰 02 [家宽级] 2.7MB/s 3325ms",
-      "server": "56481.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 03 [家宽级] 2.3MB/s 930ms",
-      "server": "633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com",
+      "tag": "🇭🇰 02 [家宽级] 4.2MB/s 1645ms",
+      "server": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
       "server_port": 443,
-      "password": "1cce7df2-251c-11ee-9409-f23c9164ca5d",
+      "password": "3bd247a8-993e-11ec-a8bf-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com",
+        "server_name": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
         "insecure": false
       }
     },
@@ -44,18 +32,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 3.8MB/s 1104ms",
-        "🇭🇰 02 [家宽级] 2.7MB/s 3325ms",
-        "🇭🇰 03 [家宽级] 2.3MB/s 930ms"
+        "🇭🇰 01 [家宽级] 6.7MB/s 1392ms",
+        "🇭🇰 02 [家宽级] 4.2MB/s 1645ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 3.8MB/s 1104ms",
-        "🇭🇰 02 [家宽级] 2.7MB/s 3325ms",
-        "🇭🇰 03 [家宽级] 2.3MB/s 930ms"
+        "🇭🇰 01 [家宽级] 6.7MB/s 1392ms",
+        "🇭🇰 02 [家宽级] 4.2MB/s 1645ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
