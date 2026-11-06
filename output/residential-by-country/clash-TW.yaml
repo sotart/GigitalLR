@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 3.7MB/s 1155ms
+- name: 🇹🇼 01 [家宽级] 3.0MB/s 759ms
   server: 125.227.86.46
   port: 443
   udp: true
@@ -15,15 +15,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: db
-- name: 🇹🇼 02 [家宽级] 0.6MB/s 2295ms
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
-- name: 🇹🇼 03 [家宽级] 0.5MB/s 1462ms
+- name: 🇹🇼 02 [家宽级] 0.4MB/s 1211ms
   server: 60.248.219.78
   port: 443
   udp: true
@@ -42,16 +34,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 3.7MB/s 1155ms
-  - 🇹🇼 02 [家宽级] 0.6MB/s 2295ms
-  - 🇹🇼 03 [家宽级] 0.5MB/s 1462ms
+  - 🇹🇼 01 [家宽级] 3.0MB/s 759ms
+  - 🇹🇼 02 [家宽级] 0.4MB/s 1211ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 3.7MB/s 1155ms
-  - 🇹🇼 02 [家宽级] 0.6MB/s 2295ms
-  - 🇹🇼 03 [家宽级] 0.5MB/s 1462ms
+  - 🇹🇼 01 [家宽级] 3.0MB/s 759ms
+  - 🇹🇼 02 [家宽级] 0.4MB/s 1211ms
 rules:
 - MATCH,PROXIES
