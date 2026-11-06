@@ -1,0 +1,82 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 01 [S级] 35.2MB/s 264ms
+  server: 129.146.77.248
+  port: 39495
+  udp: true
+  type: vmess
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: 🇺🇸 02 [S级] 41.6MB/s 272ms
+  server: 195.123.240.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
+    short-id: 19296c9f1bf9c7b1
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇺🇸 03 [S级] 32.0MB/s 277ms
+  server: 136.0.197.99
+  port: 49520
+  udp: true
+  type: vless
+  uuid: ca4cb252-3fcb-4937-9d08-c39683e46e42
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: c4S7RKiXGJElV2F5_cPCUc_NDZzjpcPHTEs-OwO6A2c
+  servername: www.ebay.com
+  client-fingerprint: firefox
+- name: 🇺🇸 04 [S级] 19.9MB/s 323ms
+  server: 6b9f9b99-tmm5c0-tsdg75-tlhh.los.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
+  sni: 6b9f9b99-tmm5c0-tsdg75-tlhh.los.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇺🇸 05 [S级] 35.3MB/s 371ms
+  server: b8c1a181-tmm5c0-twuk0i-1hzyr.los.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+  sni: b8c1a181-tmm5c0-twuk0i-1hzyr.los.hyhuawei.com
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇸 01 [S级] 35.2MB/s 264ms
+  - 🇺🇸 02 [S级] 41.6MB/s 272ms
+  - 🇺🇸 03 [S级] 32.0MB/s 277ms
+  - 🇺🇸 04 [S级] 19.9MB/s 323ms
+  - 🇺🇸 05 [S级] 35.3MB/s 371ms
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 01 [S级] 35.2MB/s 264ms
+  - 🇺🇸 02 [S级] 41.6MB/s 272ms
+  - 🇺🇸 03 [S级] 32.0MB/s 277ms
+  - 🇺🇸 04 [S级] 19.9MB/s 323ms
+  - 🇺🇸 05 [S级] 35.3MB/s 371ms
+rules:
+- MATCH,PROXIES

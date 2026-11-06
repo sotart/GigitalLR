@@ -4,15 +4,41 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 6.8MB/s 1410ms
-  server: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
+- name: 🇭🇰 01 [家宽级] 8.7MB/s 1528ms
+  server: e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 40639730-e027-11ea-87ad-f23c913c8d2b
-  sni: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
+  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
+  sni: e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com
   skip-cert-verify: false
-- name: 🇹🇼 02 [家宽级] 58.2MB/s 2413ms
+- name: 🇭🇰 02 [家宽级] 8.2MB/s 1801ms
+  server: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f7d95364-607b-11ee-93af-f23c91369f2d
+  sni: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇹🇼 03 [家宽级] 3.9MB/s 809ms
+  server: 125.227.86.45
+  port: 443
+  udp: true
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
+- name: 🇰🇷 04 [家宽级] 2.2MB/s 876ms
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇹🇼 05 [家宽级] 0.5MB/s 1601ms
   server: 60.248.219.78
   port: 443
   udp: true
@@ -26,51 +52,25 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇭🇰 03 [家宽级] 3.9MB/s 1695ms
-  server: 112.120.123.140
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
-  sni: fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇹🇼 04 [家宽级] 3.5MB/s 3812ms
-  server: 125.227.86.45
-  port: 443
-  udp: true
-  type: trojan
-  password: 0a9f1f5a397bd427
-  sni: TG.freecodes
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: db
-- name: 🇰🇷 05 [家宽级] 2.9MB/s 1212ms
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 6.8MB/s 1410ms
-  - 🇹🇼 02 [家宽级] 58.2MB/s 2413ms
-  - 🇭🇰 03 [家宽级] 3.9MB/s 1695ms
-  - 🇹🇼 04 [家宽级] 3.5MB/s 3812ms
-  - 🇰🇷 05 [家宽级] 2.9MB/s 1212ms
+  - 🇭🇰 01 [家宽级] 8.7MB/s 1528ms
+  - 🇭🇰 02 [家宽级] 8.2MB/s 1801ms
+  - 🇹🇼 03 [家宽级] 3.9MB/s 809ms
+  - 🇰🇷 04 [家宽级] 2.2MB/s 876ms
+  - 🇹🇼 05 [家宽级] 0.5MB/s 1601ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 6.8MB/s 1410ms
-  - 🇹🇼 02 [家宽级] 58.2MB/s 2413ms
-  - 🇭🇰 03 [家宽级] 3.9MB/s 1695ms
-  - 🇹🇼 04 [家宽级] 3.5MB/s 3812ms
-  - 🇰🇷 05 [家宽级] 2.9MB/s 1212ms
+  - 🇭🇰 01 [家宽级] 8.7MB/s 1528ms
+  - 🇭🇰 02 [家宽级] 8.2MB/s 1801ms
+  - 🇹🇼 03 [家宽级] 3.9MB/s 809ms
+  - 🇰🇷 04 [家宽级] 2.2MB/s 876ms
+  - 🇹🇼 05 [家宽级] 0.5MB/s 1601ms
 rules:
 - MATCH,PROXIES
