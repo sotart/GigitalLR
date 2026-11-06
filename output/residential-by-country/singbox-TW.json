@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇹🇼 01 [家宽级] 3.0MB/s 759ms",
-      "server": "125.227.86.46",
-      "server_port": 443,
-      "password": "0a9f1f5a397bd427",
-      "tls": {
-        "enabled": true,
-        "server_name": "TG.freecodes",
-        "insecure": true
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "db"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 0.4MB/s 1211ms",
+      "tag": "🇹🇼 01 [家宽级] 58.2MB/s 2413ms",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -39,20 +23,39 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇹🇼 02 [家宽级] 3.5MB/s 3812ms",
+      "server": "125.227.86.45",
+      "server_port": 443,
+      "password": "0a9f1f5a397bd427",
+      "tls": {
+        "enabled": true,
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 3.0MB/s 759ms",
-        "🇹🇼 02 [家宽级] 0.4MB/s 1211ms"
+        "🇹🇼 01 [家宽级] 58.2MB/s 2413ms",
+        "🇹🇼 02 [家宽级] 3.5MB/s 3812ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 3.0MB/s 759ms",
-        "🇹🇼 02 [家宽级] 0.4MB/s 1211ms"
+        "🇹🇼 01 [家宽级] 58.2MB/s 2413ms",
+        "🇹🇼 02 [家宽级] 3.5MB/s 3812ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
