@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇹🇼 01 [家宽级] 3.9MB/s 809ms",
+      "tag": "🇹🇼 01 [家宽级] 2.5MB/s 1025ms",
       "server": "125.227.86.45",
       "server_port": 443,
       "password": "0a9f1f5a397bd427",
@@ -24,7 +24,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 0.5MB/s 1601ms",
+      "tag": "🇹🇼 02 [家宽级] 2.0MB/s 1567ms",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -46,16 +46,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 3.9MB/s 809ms",
-        "🇹🇼 02 [家宽级] 0.5MB/s 1601ms"
+        "🇹🇼 01 [家宽级] 2.5MB/s 1025ms",
+        "🇹🇼 02 [家宽级] 2.0MB/s 1567ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 3.9MB/s 809ms",
-        "🇹🇼 02 [家宽级] 0.5MB/s 1601ms"
+        "🇹🇼 01 [家宽级] 2.5MB/s 1025ms",
+        "🇹🇼 02 [家宽级] 2.0MB/s 1567ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

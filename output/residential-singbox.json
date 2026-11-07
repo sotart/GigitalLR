@@ -4,32 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 01 [家宽级] 8.7MB/s 1528ms",
-      "server": "e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "a4c9b7cc-a816-11ed-9f65-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 02 [家宽级] 8.2MB/s 1801ms",
-      "server": "e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "f7d95364-607b-11ee-93af-f23c91369f2d",
-      "tls": {
-        "enabled": true,
-        "server_name": "e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇹🇼 03 [家宽级] 3.9MB/s 809ms",
+      "tag": "🇹🇼 01 [家宽级] 2.5MB/s 1025ms",
       "server": "125.227.86.45",
       "server_port": 443,
       "password": "0a9f1f5a397bd427",
@@ -47,16 +23,32 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 04 [家宽级] 2.2MB/s 876ms",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
+      "type": "hysteria2",
+      "tag": "🇭🇰 02 [家宽级] 2.5MB/s 1727ms",
+      "server": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "3bd247a8-993e-11ec-a8bf-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 03 [家宽级] 2.3MB/s 1664ms",
+      "server": "78bc7982-tmm5c0-u0aht1-1rz5s.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "40e084d6-0316-11f0-90e2-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "78bc7982-tmm5c0-u0aht1-1rz5s.hk3.hyhuawei.com",
+        "insecure": false
+      }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 05 [家宽级] 0.5MB/s 1601ms",
+      "tag": "🇹🇼 04 [家宽级] 2.0MB/s 1567ms",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -74,26 +66,34 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 05 [家宽级] 0.2MB/s 1503ms",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21019,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 8.7MB/s 1528ms",
-        "🇭🇰 02 [家宽级] 8.2MB/s 1801ms",
-        "🇹🇼 03 [家宽级] 3.9MB/s 809ms",
-        "🇰🇷 04 [家宽级] 2.2MB/s 876ms",
-        "🇹🇼 05 [家宽级] 0.5MB/s 1601ms"
+        "🇹🇼 01 [家宽级] 2.5MB/s 1025ms",
+        "🇭🇰 02 [家宽级] 2.5MB/s 1727ms",
+        "🇭🇰 03 [家宽级] 2.3MB/s 1664ms",
+        "🇹🇼 04 [家宽级] 2.0MB/s 1567ms",
+        "🇭🇰 05 [家宽级] 0.2MB/s 1503ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 8.7MB/s 1528ms",
-        "🇭🇰 02 [家宽级] 8.2MB/s 1801ms",
-        "🇹🇼 03 [家宽级] 3.9MB/s 809ms",
-        "🇰🇷 04 [家宽级] 2.2MB/s 876ms",
-        "🇹🇼 05 [家宽级] 0.5MB/s 1601ms"
+        "🇹🇼 01 [家宽级] 2.5MB/s 1025ms",
+        "🇭🇰 02 [家宽级] 2.5MB/s 1727ms",
+        "🇭🇰 03 [家宽级] 2.3MB/s 1664ms",
+        "🇹🇼 04 [家宽级] 2.0MB/s 1567ms",
+        "🇭🇰 05 [家宽级] 0.2MB/s 1503ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
