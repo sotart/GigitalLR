@@ -4,7 +4,15 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 50.1MB/s 5059ms
+- name: 🇭🇰 01 [家宽级] 8.5MB/s 825ms
+  server: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
+  sni: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇹🇼 02 [家宽级] 0.2MB/s 1059ms
   server: 60.248.219.78
   port: 443
   udp: true
@@ -18,46 +26,19 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇭🇰 02 [家宽级] 4.1MB/s 871ms
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 03 [家宽级] 4.1MB/s 863ms
-  server: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 40639730-e027-11ea-87ad-f23c913c8d2b
-  sni: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇰🇷 04 [家宽级] 2.4MB/s 3982ms
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 50.1MB/s 5059ms
-  - 🇭🇰 02 [家宽级] 4.1MB/s 871ms
-  - 🇭🇰 03 [家宽级] 4.1MB/s 863ms
-  - 🇰🇷 04 [家宽级] 2.4MB/s 3982ms
+  - 🇭🇰 01 [家宽级] 8.5MB/s 825ms
+  - 🇹🇼 02 [家宽级] 0.2MB/s 1059ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 50.1MB/s 5059ms
-  - 🇭🇰 02 [家宽级] 4.1MB/s 871ms
-  - 🇭🇰 03 [家宽级] 4.1MB/s 863ms
-  - 🇰🇷 04 [家宽级] 2.4MB/s 3982ms
+  - 🇭🇰 01 [家宽级] 8.5MB/s 825ms
+  - 🇹🇼 02 [家宽级] 0.2MB/s 1059ms
 rules:
 - MATCH,PROXIES
