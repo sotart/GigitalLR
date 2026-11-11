@@ -4,7 +4,59 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 65.5MB/s 3579ms
+- name: 🇺🇸 01 [家宽级] 7.3MB/s 625ms
+  server: us001.zestapp778.com
+  port: 57277
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇺🇸 02 [家宽级] 6.9MB/s 938ms
+  server: 130.94.19.95
+  port: 57277
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
+  skip-cert-verify: false
+- name: 🇰🇷 03 [家宽级] 3.1MB/s 1569ms
+  server: 23.95.72.244
+  port: 50135
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ugirklnmY9hUeY9BQ9rdeVbu29iGblEM8N2_HHA8Rk4
+    short-id: 8cd0eddfb0
+  servername: api.adidas.com
+  client-fingerprint: chrome
+- name: 🇹🇼 04 [家宽级] 2.9MB/s 1567ms
+  server: 161.114.15.215
+  port: 30502
+  udp: true
+  type: trojan
+  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇰🇷 05 [家宽级] 2.3MB/s 687ms
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇭🇰 06 [家宽级] 2.5MB/s 759ms
+  server: 4e3e8635-tmm5c0-tvh2gy-1qzi1.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 8f99107c-f091-11ee-9935-f23c9164ca5d
+  sni: 4e3e8635-tmm5c0-tvh2gy-1qzi1.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 07 [家宽级] 0.4MB/s 1445ms
   server: 60.248.219.78
   port: 443
   udp: true
@@ -18,46 +70,29 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇸🇬 02 [家宽级] 3.0MB/s 623ms
-  server: 195.133.135.238
-  port: 10086
-  udp: true
-  type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 03 [家宽级] 2.4MB/s 537ms
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇭🇰 04 [家宽级] 2.7MB/s 860ms
-  server: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
-  sni: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 65.5MB/s 3579ms
-  - 🇸🇬 02 [家宽级] 3.0MB/s 623ms
-  - 🇰🇷 03 [家宽级] 2.4MB/s 537ms
-  - 🇭🇰 04 [家宽级] 2.7MB/s 860ms
+  - 🇺🇸 01 [家宽级] 7.3MB/s 625ms
+  - 🇺🇸 02 [家宽级] 6.9MB/s 938ms
+  - 🇰🇷 03 [家宽级] 3.1MB/s 1569ms
+  - 🇹🇼 04 [家宽级] 2.9MB/s 1567ms
+  - 🇰🇷 05 [家宽级] 2.3MB/s 687ms
+  - 🇭🇰 06 [家宽级] 2.5MB/s 759ms
+  - 🇹🇼 07 [家宽级] 0.4MB/s 1445ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 65.5MB/s 3579ms
-  - 🇸🇬 02 [家宽级] 3.0MB/s 623ms
-  - 🇰🇷 03 [家宽级] 2.4MB/s 537ms
-  - 🇭🇰 04 [家宽级] 2.7MB/s 860ms
+  - 🇺🇸 01 [家宽级] 7.3MB/s 625ms
+  - 🇺🇸 02 [家宽级] 6.9MB/s 938ms
+  - 🇰🇷 03 [家宽级] 3.1MB/s 1569ms
+  - 🇹🇼 04 [家宽级] 2.9MB/s 1567ms
+  - 🇰🇷 05 [家宽级] 2.3MB/s 687ms
+  - 🇭🇰 06 [家宽级] 2.5MB/s 759ms
+  - 🇹🇼 07 [家宽级] 0.4MB/s 1445ms
 rules:
 - MATCH,PROXIES
