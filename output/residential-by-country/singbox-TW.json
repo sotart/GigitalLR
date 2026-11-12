@@ -4,20 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇹🇼 01 [家宽级] 2.9MB/s 1567ms",
-      "server": "161.114.15.215",
-      "server_port": 30502,
-      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
+      "type": "vless",
+      "tag": "🇹🇼 01 [家宽级] 0.4MB/s 1462ms",
+      "server": "23.95.72.244",
+      "server_port": 5462,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true
+        "server_name": "api.adidas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "biUjzfAfxrbE_4GNfOCbSG-YW5tDUlqZTeyhJb6OG30",
+          "short_id": "4b7a508fcd3ef1a1"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 02 [家宽级] 0.4MB/s 1445ms",
+      "tag": "🇹🇼 02 [家宽级] 0.3MB/s 5886ms",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -35,20 +44,43 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 03 [家宽级] 0.2MB/s 2765ms",
+      "server": "23.95.72.244",
+      "server_port": 5463,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.adidas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw",
+          "short_id": "be33ecc1975c"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 2.9MB/s 1567ms",
-        "🇹🇼 02 [家宽级] 0.4MB/s 1445ms"
+        "🇹🇼 01 [家宽级] 0.4MB/s 1462ms",
+        "🇹🇼 02 [家宽级] 0.3MB/s 5886ms",
+        "🇹🇼 03 [家宽级] 0.2MB/s 2765ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 2.9MB/s 1567ms",
-        "🇹🇼 02 [家宽级] 0.4MB/s 1445ms"
+        "🇹🇼 01 [家宽级] 0.4MB/s 1462ms",
+        "🇹🇼 02 [家宽级] 0.3MB/s 5886ms",
+        "🇹🇼 03 [家宽级] 0.2MB/s 2765ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

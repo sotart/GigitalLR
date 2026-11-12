@@ -5,14 +5,35 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 01 [家宽级] 2.5MB/s 759ms",
-      "server": "4e3e8635-tmm5c0-tvh2gy-1qzi1.hk3.hyhuawei.com",
+      "tag": "🇭🇰 01 [家宽级] 2.4MB/s 1326ms",
+      "server": "9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com",
       "server_port": 443,
-      "password": "8f99107c-f091-11ee-9935-f23c9164ca5d",
+      "password": "5f091cbe-fb34-11ea-9777-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "4e3e8635-tmm5c0-tvh2gy-1qzi1.hk3.hyhuawei.com",
-        "insecure": true
+        "server_name": "9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 02 [家宽级] 0.3MB/s 2060ms",
+      "server": "23.95.72.244",
+      "server_port": 10000,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sellercentral.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw",
+          "short_id": "99aa2eb4f2c77af5"
+        }
       }
     },
     {
@@ -20,14 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 2.5MB/s 759ms"
+        "🇭🇰 01 [家宽级] 2.4MB/s 1326ms",
+        "🇭🇰 02 [家宽级] 0.3MB/s 2060ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 2.5MB/s 759ms"
+        "🇭🇰 01 [家宽级] 2.4MB/s 1326ms",
+        "🇭🇰 02 [家宽级] 0.3MB/s 2060ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
