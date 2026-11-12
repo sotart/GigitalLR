@@ -4,51 +4,29 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 24.3MB/s 199ms
-  server: 156.229.167.109
+- name: 🇺🇸 01 [S级] 29.3MB/s 149ms
+  server: 38.107.236.166
   port: 8443
   udp: true
   type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  uuid: 48572af1-d091-457b-a86e-4a457e99927f
   tls: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
-  client-fingerprint: chrome
-- name: 🇺🇸 02 [S级] 59.3MB/s 219ms
-  server: 198.2.251.107
-  port: 45197
+  servername: 3h-unitedstates3.09vpn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 3h-unitedstates3.09vpn.com
+- name: 🇺🇸 02 [S级] 10.2MB/s 234ms
+  server: 155.248.209.237
+  port: 33333
   udp: true
-  type: vless
-  uuid: 9d979dd1-1760-4c76-8881-b05a09b4d795
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: LqXTJ-JXo1CgjUQT8trI3OEhY2qOr1YAin2YLuLZFx0
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇺🇸 03 [S级] 7.6MB/s 230ms
-  server: 95.169.9.188
-  port: 42127
-  udp: true
-  type: vless
-  uuid: ab223342-2da1-447b-8c38-6f58f12b92b0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PrT425XRELfK8LyAggHgC0JvyO7Aow7ccx9safXkjnY
-    short-id: 13d2fb17c035fa9d
-  servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇺🇸 04 [S级] 13.1MB/s 253ms
-  server: 216.105.168.18
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hCCWOcIsK5wrFz4OX70rWf
-- name: 🇺🇸 05 [S级] 7.6MB/s 271ms
+  type: hysteria2
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: 155.248.209.237
+  skip-cert-verify: true
+- name: 🇺🇸 03 [S级] 7.6MB/s 323ms
   server: 212.103.62.233
   port: 443
   udp: true
@@ -61,43 +39,14 @@ proxies:
     short-id: 35d45334668b3ac5
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇺🇸 06 [S级] 10.1MB/s 248ms
-  server: hy2.123266.xyz
-  port: 33333
+- name: 🇺🇸 04 [S级] 16.7MB/s 325ms
+  server: 95.215.201.18
+  port: 19999
   udp: true
-  type: hysteria2
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  sni: hy2.123266.xyz
-  skip-cert-verify: true
-- name: 🇺🇸 07 [S级] 18.3MB/s 217ms
-  server: 136.0.197.99
-  port: 49520
-  udp: true
-  type: vless
-  uuid: ca4cb252-3fcb-4937-9d08-c39683e46e42
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: c4S7RKiXGJElV2F5_cPCUc_NDZzjpcPHTEs-OwO6A2c
-  servername: www.ebay.com
-  client-fingerprint: chrome
-- name: 🇺🇸 08 [S级] 7.6MB/s 305ms
-  server: 216.106.186.66
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: false
-- name: 🇺🇸 09 [S级] 19.6MB/s 224ms
-  server: 47.89.232.46
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 4afd4e1b1b0edd429b10d800a1cf64a7
-  sni: hysteria2.local
-  skip-cert-verify: true
-- name: 🇺🇸 10 [S级] 8.8MB/s 372ms
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 05 [S级] 10.2MB/s 325ms
   server: 129.146.77.248
   port: 39495
   udp: true
@@ -108,106 +57,96 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: 🇺🇸 11 [S级] 13.0MB/s 376ms
-  server: 129.146.5.35
-  port: 20000
-  udp: true
-  type: vless
-  uuid: e668c236-dead-4ea2-8a99-812a738afd13
-  tls: true
-  reality-opts:
-    public-key: aCKxBnWGJSFRLP1TC7cvV6lwNBsEdrW3fIqRnVD131w
-    short-id: 144d7588628c0387
-  servername: tesla.com
-  client-fingerprint: firefox
-- name: 🇺🇸 12 [S级] 28.5MB/s 301ms
-  server: 143.246.62.191
-  port: 8443
-  udp: true
-  type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  tls: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
-  client-fingerprint: chrome
-- name: 🇺🇸 13 [S级] 7.7MB/s 381ms
-  server: 45.138.100.248
-  port: 10443
-  udp: true
-  type: vless
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-- name: 🇨🇦 14 [S级] 5.3MB/s 375ms
-  server: 134.195.196.211
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇲🇽 15 [S级] 9.2MB/s 352ms
-  server: 64.177.90.30
-  port: 8388
+- name: 🇨🇦 06 [S级] 11.6MB/s 393ms
+  server: 99.79.32.21
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
-- name: 🇺🇸 16 [S级] 3.3MB/s 325ms
-  server: 147.224.54.25
-  port: 2053
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 07 [S级] 16.9MB/s 399ms
+  server: 18.117.92.138
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 08 [S级] 15.4MB/s 286ms
+  server: 143.246.60.254
+  port: 443
   udp: true
   type: vless
-  uuid: cdb7fa1d-6e7a-467c-da9c-da363c7bf779
+  uuid: fa895069-bfe5-42c9-9f30-f918e1e442c1
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk
-    short-id: '68'
+    public-key: ccJ6xUaUhUxN6GEj6a1vqsQDNDTJJX1KYSURY5pJpBE
+    short-id: eb68848e2575a1f4
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇺🇸 09 [S级] 17.6MB/s 372ms
+  server: 38.107.232.36
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇺🇸 10 [S级] 13.9MB/s 371ms
+  server: 47.89.232.46
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 4afd4e1b1b0edd429b10d800a1cf64a7
+  sni: hysteria2.local
+  skip-cert-verify: true
+- name: 🇺🇸 11 [S级] 6.2MB/s 365ms
+  server: 216.227.161.95
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  tls: true
+  reality-opts:
+    public-key: uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM
+    short-id: 48d5cf47
+  servername: media3.abvphelp.cc
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 24.3MB/s 199ms
-  - 🇺🇸 02 [S级] 59.3MB/s 219ms
-  - 🇺🇸 03 [S级] 7.6MB/s 230ms
-  - 🇺🇸 04 [S级] 13.1MB/s 253ms
-  - 🇺🇸 05 [S级] 7.6MB/s 271ms
-  - 🇺🇸 06 [S级] 10.1MB/s 248ms
-  - 🇺🇸 07 [S级] 18.3MB/s 217ms
-  - 🇺🇸 08 [S级] 7.6MB/s 305ms
-  - 🇺🇸 09 [S级] 19.6MB/s 224ms
-  - 🇺🇸 10 [S级] 8.8MB/s 372ms
-  - 🇺🇸 11 [S级] 13.0MB/s 376ms
-  - 🇺🇸 12 [S级] 28.5MB/s 301ms
-  - 🇺🇸 13 [S级] 7.7MB/s 381ms
-  - 🇨🇦 14 [S级] 5.3MB/s 375ms
-  - 🇲🇽 15 [S级] 9.2MB/s 352ms
-  - 🇺🇸 16 [S级] 3.3MB/s 325ms
+  - 🇺🇸 01 [S级] 29.3MB/s 149ms
+  - 🇺🇸 02 [S级] 10.2MB/s 234ms
+  - 🇺🇸 03 [S级] 7.6MB/s 323ms
+  - 🇺🇸 04 [S级] 16.7MB/s 325ms
+  - 🇺🇸 05 [S级] 10.2MB/s 325ms
+  - 🇨🇦 06 [S级] 11.6MB/s 393ms
+  - 🇺🇸 07 [S级] 16.9MB/s 399ms
+  - 🇺🇸 08 [S级] 15.4MB/s 286ms
+  - 🇺🇸 09 [S级] 17.6MB/s 372ms
+  - 🇺🇸 10 [S级] 13.9MB/s 371ms
+  - 🇺🇸 11 [S级] 6.2MB/s 365ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 24.3MB/s 199ms
-  - 🇺🇸 02 [S级] 59.3MB/s 219ms
-  - 🇺🇸 03 [S级] 7.6MB/s 230ms
-  - 🇺🇸 04 [S级] 13.1MB/s 253ms
-  - 🇺🇸 05 [S级] 7.6MB/s 271ms
-  - 🇺🇸 06 [S级] 10.1MB/s 248ms
-  - 🇺🇸 07 [S级] 18.3MB/s 217ms
-  - 🇺🇸 08 [S级] 7.6MB/s 305ms
-  - 🇺🇸 09 [S级] 19.6MB/s 224ms
-  - 🇺🇸 10 [S级] 8.8MB/s 372ms
-  - 🇺🇸 11 [S级] 13.0MB/s 376ms
-  - 🇺🇸 12 [S级] 28.5MB/s 301ms
-  - 🇺🇸 13 [S级] 7.7MB/s 381ms
-  - 🇨🇦 14 [S级] 5.3MB/s 375ms
-  - 🇲🇽 15 [S级] 9.2MB/s 352ms
-  - 🇺🇸 16 [S级] 3.3MB/s 325ms
+  - 🇺🇸 01 [S级] 29.3MB/s 149ms
+  - 🇺🇸 02 [S级] 10.2MB/s 234ms
+  - 🇺🇸 03 [S级] 7.6MB/s 323ms
+  - 🇺🇸 04 [S级] 16.7MB/s 325ms
+  - 🇺🇸 05 [S级] 10.2MB/s 325ms
+  - 🇨🇦 06 [S级] 11.6MB/s 393ms
+  - 🇺🇸 07 [S级] 16.9MB/s 399ms
+  - 🇺🇸 08 [S级] 15.4MB/s 286ms
+  - 🇺🇸 09 [S级] 17.6MB/s 372ms
+  - 🇺🇸 10 [S级] 13.9MB/s 371ms
+  - 🇺🇸 11 [S级] 6.2MB/s 365ms
 rules:
 - MATCH,PROXIES

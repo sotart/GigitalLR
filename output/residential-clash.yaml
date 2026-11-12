@@ -4,186 +4,52 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [家宽级] 5.9MB/s 772ms
-  server: 130.94.19.95
-  port: 57277
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇭🇰 02 [家宽级] 2.4MB/s 1326ms
-  server: 9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com
+- name: 🇭🇰 01 [家宽级] 3.8MB/s 861ms
+  server: 20247da3-tmm5c0-u1dz9j-12hj8.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
-  sni: 9a07c316-tmkao0-u1vxv2-v3c2.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇰🇷 03 [家宽级] 0.5MB/s 2063ms
-  server: 23.95.72.244
-  port: 50135
+  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  sni: 20247da3-tmm5c0-u1dz9j-12hj8.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 02 [家宽级] 2.6MB/s 904ms
+  server: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ugirklnmY9hUeY9BQ9rdeVbu29iGblEM8N2_HHA8Rk4
-    short-id: 8cd0eddfb0
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇹🇼 04 [家宽级] 0.4MB/s 1462ms
-  server: 23.95.72.244
-  port: 5462
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: biUjzfAfxrbE_4GNfOCbSG-YW5tDUlqZTeyhJb6OG30
-    short-id: 4b7a508fcd3ef1a1
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇺🇸 05 [家宽级] 0.4MB/s 930ms
-  server: 23.95.72.244
-  port: 5465
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GaZo6ZlyOUxhems08m3fhEc-0j3IYppLUpjNmMqNjlk
-    short-id: 7024258fb07f5eb5
-  servername: api.adidas.com
-  client-fingerprint: edge
-- name: 🇯🇵 06 [家宽级] 0.4MB/s 2290ms
-  server: 23.95.72.244
-  port: 52541
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs
-    short-id: ce5793a7ad9594
-  servername: api.adidas.com
-  client-fingerprint: firefox
-- name: 🇰🇷 07 [家宽级] 0.4MB/s 1611ms
-  server: 23.95.72.244
-  port: 5455
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 57RM7KBz_R-RMNj9BbOXK8yYz0e8Mjv7iA8FvKGbnXU
-    short-id: bb32911d6c
-  servername: api.adidas.com
-  client-fingerprint: firefox
-- name: 🇺🇸 08 [家宽级] 0.4MB/s 1946ms
-  server: 23.95.72.244
-  port: 5467
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wMLrAweVXsOzwV-Uc_7t7OZBycbjVrgPp0ukPjuXA2U
-    short-id: 6e47891d
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇹🇼 09 [家宽级] 0.3MB/s 5886ms
-  server: 60.248.219.78
+  type: hysteria2
+  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  sni: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇮🇳 03 [家宽级] 1.8MB/s 2007ms
+  server: 122.176.216.52
   port: 443
   udp: true
   type: vless
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
   tls: true
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
+  servername: app-6ada5023.deploy.meerasolution.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-- name: 🇭🇰 10 [家宽级] 0.3MB/s 2060ms
-  server: 23.95.72.244
-  port: 10000
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw
-    short-id: 99aa2eb4f2c77af5
-  servername: sellercentral.amazon.com
-  client-fingerprint: safari
-- name: 🇹🇼 11 [家宽级] 0.2MB/s 2765ms
-  server: 23.95.72.244
-  port: 5463
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw
-    short-id: be33ecc1975c
-  servername: api.adidas.com
-  client-fingerprint: firefox
-- name: 🇰🇷 12 [家宽级] 0.2MB/s 2432ms
-  server: 23.95.72.244
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 71OwuN_2X-et_42RLIteY2parqX2cARuv-718eg_VD4
-    short-id: b88b4ed92599c16a
-  servername: api.amazonalexa.com
-  client-fingerprint: ios
+      Host: app-6ada5023.deploy.meerasolution.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [家宽级] 5.9MB/s 772ms
-  - 🇭🇰 02 [家宽级] 2.4MB/s 1326ms
-  - 🇰🇷 03 [家宽级] 0.5MB/s 2063ms
-  - 🇹🇼 04 [家宽级] 0.4MB/s 1462ms
-  - 🇺🇸 05 [家宽级] 0.4MB/s 930ms
-  - 🇯🇵 06 [家宽级] 0.4MB/s 2290ms
-  - 🇰🇷 07 [家宽级] 0.4MB/s 1611ms
-  - 🇺🇸 08 [家宽级] 0.4MB/s 1946ms
-  - 🇹🇼 09 [家宽级] 0.3MB/s 5886ms
-  - 🇭🇰 10 [家宽级] 0.3MB/s 2060ms
-  - 🇹🇼 11 [家宽级] 0.2MB/s 2765ms
-  - 🇰🇷 12 [家宽级] 0.2MB/s 2432ms
+  - 🇭🇰 01 [家宽级] 3.8MB/s 861ms
+  - 🇭🇰 02 [家宽级] 2.6MB/s 904ms
+  - 🇮🇳 03 [家宽级] 1.8MB/s 2007ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [家宽级] 5.9MB/s 772ms
-  - 🇭🇰 02 [家宽级] 2.4MB/s 1326ms
-  - 🇰🇷 03 [家宽级] 0.5MB/s 2063ms
-  - 🇹🇼 04 [家宽级] 0.4MB/s 1462ms
-  - 🇺🇸 05 [家宽级] 0.4MB/s 930ms
-  - 🇯🇵 06 [家宽级] 0.4MB/s 2290ms
-  - 🇰🇷 07 [家宽级] 0.4MB/s 1611ms
-  - 🇺🇸 08 [家宽级] 0.4MB/s 1946ms
-  - 🇹🇼 09 [家宽级] 0.3MB/s 5886ms
-  - 🇭🇰 10 [家宽级] 0.3MB/s 2060ms
-  - 🇹🇼 11 [家宽级] 0.2MB/s 2765ms
-  - 🇰🇷 12 [家宽级] 0.2MB/s 2432ms
+  - 🇭🇰 01 [家宽级] 3.8MB/s 861ms
+  - 🇭🇰 02 [家宽级] 2.6MB/s 904ms
+  - 🇮🇳 03 [家宽级] 1.8MB/s 2007ms
 rules:
 - MATCH,PROXIES
