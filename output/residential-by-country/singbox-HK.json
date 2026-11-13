@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 01 [家宽级] 2.0MB/s 894ms",
-      "server": "112.120.123.140",
-      "server_port": 443,
-      "password": "c11ff50c-f582-11ee-94df-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "11158b9a-tmm5c0-u3xqxa-1q91p.nw4.hyhuawei.com",
-        "insecure": false
-      }
+      "type": "vmess",
+      "tag": "🇭🇰 01 [家宽级] 3.3MB/s 834ms",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21019,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 01 [家宽级] 2.0MB/s 894ms"
+        "🇭🇰 01 [家宽级] 3.3MB/s 834ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 01 [家宽级] 2.0MB/s 894ms"
+        "🇭🇰 01 [家宽级] 3.3MB/s 834ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
