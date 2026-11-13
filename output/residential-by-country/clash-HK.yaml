@@ -4,35 +4,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 01 [家宽级] 3.8MB/s 861ms
-  server: 20247da3-tmm5c0-u1dz9j-12hj8.hk3.hyhuawei.com
+- name: 🇭🇰 01 [家宽级] 2.0MB/s 894ms
+  server: 112.120.123.140
   port: 443
   udp: true
   type: hysteria2
-  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
-  sni: 20247da3-tmm5c0-u1dz9j-12hj8.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 02 [家宽级] 2.6MB/s 904ms
-  server: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
-  sni: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
-  skip-cert-verify: true
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  sni: 11158b9a-tmm5c0-u3xqxa-1q91p.nw4.hyhuawei.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 01 [家宽级] 3.8MB/s 861ms
-  - 🇭🇰 02 [家宽级] 2.6MB/s 904ms
+  - 🇭🇰 01 [家宽级] 2.0MB/s 894ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 01 [家宽级] 3.8MB/s 861ms
-  - 🇭🇰 02 [家宽级] 2.6MB/s 904ms
+  - 🇭🇰 01 [家宽级] 2.0MB/s 894ms
 rules:
 - MATCH,PROXIES
