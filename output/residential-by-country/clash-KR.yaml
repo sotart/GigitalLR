@@ -4,25 +4,24 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 01 [家宽级] 2.9MB/s 766ms
-  server: 195.133.135.238
-  port: 10086
+- name: 🇰🇷 01 [家宽级] 1.5MB/s 640ms
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 01 [家宽级] 2.9MB/s 766ms
+  - 🇰🇷 01 [家宽级] 1.5MB/s 640ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 01 [家宽级] 2.9MB/s 766ms
+  - 🇰🇷 01 [家宽级] 1.5MB/s 640ms
 rules:
 - MATCH,PROXIES
