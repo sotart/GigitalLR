@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇸🇬 01 [家宽级] 2.6MB/s 1427ms",
+      "tag": "🇸🇬 01 [家宽级] 63.0MB/s 5980ms",
       "server": "195.133.135.238",
       "server_port": 10086,
       "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
@@ -13,24 +13,86 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 02 [家宽级] 2.2MB/s 718ms",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
+      "tag": "🇩🇪 02 [家宽级] 3.7MB/s 719ms",
+      "server": "8.220.81.25",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 03 [家宽级] 3.7MB/s 834ms",
+      "server": "172.64.88.98",
+      "server_port": 443,
+      "uuid": "afa524de-2b93-4be9-b846-6bc88d8a2ce1",
+      "tls": {
+        "enabled": true,
+        "server_name": "1v5Vp5jsQ611A5dsm.PAges.dEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/fbo164EXEqNcjQ9WdWcK?ed=2560",
+        "headers": {
+          "Host": "1v5vp5jsq611a5dsm.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 04 [家宽级] 3.1MB/s 1002ms",
+      "server": "fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "3ee091ca-ab9c-11ef-a791-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.windowsupdate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "short_id": ""
+        }
+      }
     },
     {
       "type": "vmess",
-      "tag": "🇲🇾 03 [家宽级] 1.4MB/s 1094ms",
+      "tag": "🇭🇰 05 [家宽级] 2.9MB/s 845ms",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21020,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇲🇾 06 [家宽级] 2.5MB/s 781ms",
       "server": "192.228.145.118",
       "server_port": 10086,
       "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
       "security": "auto"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 07 [家宽级] 2.3MB/s 777ms",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 04 [家宽级] 1.0MB/s 985ms",
-      "server": "59.125.69.23",
+      "tag": "🇹🇼 08 [家宽级] 0.4MB/s 2036ms",
+      "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
@@ -51,20 +113,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 01 [家宽级] 2.6MB/s 1427ms",
-        "🇰🇷 02 [家宽级] 2.2MB/s 718ms",
-        "🇲🇾 03 [家宽级] 1.4MB/s 1094ms",
-        "🇹🇼 04 [家宽级] 1.0MB/s 985ms"
+        "🇸🇬 01 [家宽级] 63.0MB/s 5980ms",
+        "🇩🇪 02 [家宽级] 3.7MB/s 719ms",
+        "🇩🇪 03 [家宽级] 3.7MB/s 834ms",
+        "🇭🇰 04 [家宽级] 3.1MB/s 1002ms",
+        "🇭🇰 05 [家宽级] 2.9MB/s 845ms",
+        "🇲🇾 06 [家宽级] 2.5MB/s 781ms",
+        "🇰🇷 07 [家宽级] 2.3MB/s 777ms",
+        "🇹🇼 08 [家宽级] 0.4MB/s 2036ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 01 [家宽级] 2.6MB/s 1427ms",
-        "🇰🇷 02 [家宽级] 2.2MB/s 718ms",
-        "🇲🇾 03 [家宽级] 1.4MB/s 1094ms",
-        "🇹🇼 04 [家宽级] 1.0MB/s 985ms"
+        "🇸🇬 01 [家宽级] 63.0MB/s 5980ms",
+        "🇩🇪 02 [家宽级] 3.7MB/s 719ms",
+        "🇩🇪 03 [家宽级] 3.7MB/s 834ms",
+        "🇭🇰 04 [家宽级] 3.1MB/s 1002ms",
+        "🇭🇰 05 [家宽级] 2.9MB/s 845ms",
+        "🇲🇾 06 [家宽级] 2.5MB/s 781ms",
+        "🇰🇷 07 [家宽级] 2.3MB/s 777ms",
+        "🇹🇼 08 [家宽级] 0.4MB/s 2036ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 01 [家宽级] 2.6MB/s 1427ms
+- name: 🇸🇬 01 [家宽级] 63.0MB/s 5980ms
   server: 195.133.135.238
   port: 10086
   udp: true
@@ -12,14 +12,48 @@ proxies:
   uuid: b831381d-6324-4d53-ad4f-8cda48b30811
   alterId: 0
   cipher: auto
-- name: 🇰🇷 02 [家宽级] 2.2MB/s 718ms
-  server: 49.254.204.133
-  port: 1774
+- name: 🇩🇪 02 [家宽级] 3.7MB/s 719ms
+  server: 8.220.81.25
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇲🇾 03 [家宽级] 1.4MB/s 1094ms
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇩🇪 03 [家宽级] 3.7MB/s 834ms
+  server: 172.64.88.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
+  tls: true
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
+    headers:
+      Host: 1v5vp5jsq611a5dsm.pages.dev
+- name: 🇭🇰 04 [家宽级] 3.1MB/s 1002ms
+  server: fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  tls: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
+- name: 🇭🇰 05 [家宽级] 2.9MB/s 845ms
+  server: dog-hk.kunlun01dns.com
+  port: 21020
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇲🇾 06 [家宽级] 2.5MB/s 781ms
   server: 192.228.145.118
   port: 10086
   udp: true
@@ -27,8 +61,15 @@ proxies:
   uuid: b831381d-6324-4d53-ad4f-8cda48b30811
   alterId: 0
   cipher: auto
-- name: 🇹🇼 04 [家宽级] 1.0MB/s 985ms
-  server: 59.125.69.23
+- name: 🇰🇷 07 [家宽级] 2.3MB/s 777ms
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇹🇼 08 [家宽级] 0.4MB/s 2036ms
+  server: 60.248.219.78
   port: 443
   udp: true
   type: vless
@@ -46,18 +87,26 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 01 [家宽级] 2.6MB/s 1427ms
-  - 🇰🇷 02 [家宽级] 2.2MB/s 718ms
-  - 🇲🇾 03 [家宽级] 1.4MB/s 1094ms
-  - 🇹🇼 04 [家宽级] 1.0MB/s 985ms
+  - 🇸🇬 01 [家宽级] 63.0MB/s 5980ms
+  - 🇩🇪 02 [家宽级] 3.7MB/s 719ms
+  - 🇩🇪 03 [家宽级] 3.7MB/s 834ms
+  - 🇭🇰 04 [家宽级] 3.1MB/s 1002ms
+  - 🇭🇰 05 [家宽级] 2.9MB/s 845ms
+  - 🇲🇾 06 [家宽级] 2.5MB/s 781ms
+  - 🇰🇷 07 [家宽级] 2.3MB/s 777ms
+  - 🇹🇼 08 [家宽级] 0.4MB/s 2036ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 01 [家宽级] 2.6MB/s 1427ms
-  - 🇰🇷 02 [家宽级] 2.2MB/s 718ms
-  - 🇲🇾 03 [家宽级] 1.4MB/s 1094ms
-  - 🇹🇼 04 [家宽级] 1.0MB/s 985ms
+  - 🇸🇬 01 [家宽级] 63.0MB/s 5980ms
+  - 🇩🇪 02 [家宽级] 3.7MB/s 719ms
+  - 🇩🇪 03 [家宽级] 3.7MB/s 834ms
+  - 🇭🇰 04 [家宽级] 3.1MB/s 1002ms
+  - 🇭🇰 05 [家宽级] 2.9MB/s 845ms
+  - 🇲🇾 06 [家宽级] 2.5MB/s 781ms
+  - 🇰🇷 07 [家宽级] 2.3MB/s 777ms
+  - 🇹🇼 08 [家宽级] 0.4MB/s 2036ms
 rules:
 - MATCH,PROXIES
