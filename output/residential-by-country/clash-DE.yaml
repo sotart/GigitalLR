@@ -4,24 +4,33 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 01 [家宽级] 3.2MB/s 613ms
+- name: 🇩🇪 01 [家宽级] 3.9MB/s 513ms
   server: 8.220.81.25
   port: 443
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇩🇪 02 [家宽级] 3.6MB/s 491ms
+  server: 47.85.162.44
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 01 [家宽级] 3.2MB/s 613ms
+  - 🇩🇪 01 [家宽级] 3.9MB/s 513ms
+  - 🇩🇪 02 [家宽级] 3.6MB/s 491ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 01 [家宽级] 3.2MB/s 613ms
+  - 🇩🇪 01 [家宽级] 3.9MB/s 513ms
+  - 🇩🇪 02 [家宽级] 3.6MB/s 491ms
 rules:
 - MATCH,PROXIES

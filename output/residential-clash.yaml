@@ -4,14 +4,21 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 01 [家宽级] 3.2MB/s 613ms
+- name: 🇩🇪 01 [家宽级] 3.9MB/s 513ms
   server: 8.220.81.25
   port: 443
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇲🇾 02 [家宽级] 3.0MB/s 626ms
+- name: 🇩🇪 02 [家宽级] 3.6MB/s 491ms
+  server: 47.85.162.44
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+- name: 🇲🇾 03 [家宽级] 2.6MB/s 2082ms
   server: 192.228.145.118
   port: 10086
   udp: true
@@ -19,22 +26,14 @@ proxies:
   uuid: b831381d-6324-4d53-ad4f-8cda48b30811
   alterId: 0
   cipher: auto
-- name: 🇭🇰 03 [家宽级] 3.0MB/s 677ms
-  server: dog-hk.kunlun01dns.com
-  port: 21020
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 04 [家宽级] 1.5MB/s 605ms
+- name: 🇰🇷 04 [家宽级] 0.3MB/s 587ms
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇹🇼 05 [家宽级] 0.4MB/s 2193ms
+- name: 🇹🇼 05 [家宽级] 0.2MB/s 2447ms
   server: 60.248.219.78
   port: 443
   udp: true
@@ -53,20 +52,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 01 [家宽级] 3.2MB/s 613ms
-  - 🇲🇾 02 [家宽级] 3.0MB/s 626ms
-  - 🇭🇰 03 [家宽级] 3.0MB/s 677ms
-  - 🇰🇷 04 [家宽级] 1.5MB/s 605ms
-  - 🇹🇼 05 [家宽级] 0.4MB/s 2193ms
+  - 🇩🇪 01 [家宽级] 3.9MB/s 513ms
+  - 🇩🇪 02 [家宽级] 3.6MB/s 491ms
+  - 🇲🇾 03 [家宽级] 2.6MB/s 2082ms
+  - 🇰🇷 04 [家宽级] 0.3MB/s 587ms
+  - 🇹🇼 05 [家宽级] 0.2MB/s 2447ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 01 [家宽级] 3.2MB/s 613ms
-  - 🇲🇾 02 [家宽级] 3.0MB/s 626ms
-  - 🇭🇰 03 [家宽级] 3.0MB/s 677ms
-  - 🇰🇷 04 [家宽级] 1.5MB/s 605ms
-  - 🇹🇼 05 [家宽级] 0.4MB/s 2193ms
+  - 🇩🇪 01 [家宽级] 3.9MB/s 513ms
+  - 🇩🇪 02 [家宽级] 3.6MB/s 491ms
+  - 🇲🇾 03 [家宽级] 2.6MB/s 2082ms
+  - 🇰🇷 04 [家宽级] 0.3MB/s 587ms
+  - 🇹🇼 05 [家宽级] 0.2MB/s 2447ms
 rules:
 - MATCH,PROXIES

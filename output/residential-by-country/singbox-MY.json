@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇲🇾 01 [家宽级] 3.0MB/s 626ms",
+      "tag": "🇲🇾 01 [家宽级] 2.6MB/s 2082ms",
       "server": "192.228.145.118",
       "server_port": 10086,
       "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 01 [家宽级] 3.0MB/s 626ms"
+        "🇲🇾 01 [家宽级] 2.6MB/s 2082ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 01 [家宽级] 3.0MB/s 626ms"
+        "🇲🇾 01 [家宽级] 2.6MB/s 2082ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

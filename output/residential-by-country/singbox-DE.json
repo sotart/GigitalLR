@@ -5,25 +5,35 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 01 [家宽级] 3.2MB/s 613ms",
+      "tag": "🇩🇪 01 [家宽级] 3.9MB/s 513ms",
       "server": "8.220.81.25",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 02 [家宽级] 3.6MB/s 491ms",
+      "server": "47.85.162.44",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA="
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 01 [家宽级] 3.2MB/s 613ms"
+        "🇩🇪 01 [家宽级] 3.9MB/s 513ms",
+        "🇩🇪 02 [家宽级] 3.6MB/s 491ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 01 [家宽级] 3.2MB/s 613ms"
+        "🇩🇪 01 [家宽级] 3.9MB/s 513ms",
+        "🇩🇪 02 [家宽级] 3.6MB/s 491ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

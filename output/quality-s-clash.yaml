@@ -4,36 +4,14 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 9.9MB/s 200ms
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇺🇸 02 [S级] 13.2MB/s 222ms
-  server: 95.215.201.18
-  port: 19999
+- name: 🇺🇸 01 [S级] 20.6MB/s 134ms
+  server: 129.146.61.90
+  port: 50356
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 03 [S级] 12.6MB/s 216ms
-  server: 147.224.54.25
-  port: 2053
-  udp: true
-  type: vless
-  uuid: cdb7fa1d-6e7a-467c-da9c-da363c7bf779
-  tls: true
-  reality-opts:
-    public-key: DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk
-    short-id: '68'
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇺🇸 04 [S级] 10.4MB/s 259ms
+  cipher: 2022-blake3-chacha20-poly1305
+  password: qG5HzrJO2OAzMFY6WDz991qHHonSP2ix6l6jKlHwokY=
+- name: 🇺🇸 02 [S级] 23.0MB/s 201ms
   server: 195.123.240.65
   port: 443
   udp: true
@@ -46,88 +24,14 @@ proxies:
     short-id: 19296c9f1bf9c7b1
   servername: www.cloudflare.com
   client-fingerprint: ios
-- name: 🇺🇸 05 [S级] 8.1MB/s 284ms
-  server: 45.138.100.248
-  port: 10443
-  udp: true
-  type: vless
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-- name: 🇺🇸 06 [S级] 11.8MB/s 289ms
-  server: 129.146.61.90
-  port: 50356
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: qG5HzrJO2OAzMFY6WDz991qHHonSP2ix6l6jKlHwokY=
-- name: 🇨🇦 07 [S级] 6.1MB/s 308ms
-  server: 137.184.174.93
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 08 [S级] 21.0MB/s 183ms
-  server: 38.107.236.166
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 48572af1-d091-457b-a86e-4a457e99927f
-  tls: true
-  servername: 3h-unitedstates3.09vpn.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 3h-unitedstates3.09vpn.com
-- name: 🇺🇸 09 [S级] 8.9MB/s 327ms
-  server: 84.32.54.237
-  port: 443
-  udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  servername: rly-gw-cfg.galioncc.com
-  client-fingerprint: ''
-- name: 🇨🇦 10 [S级] 7.3MB/s 328ms
-  server: 184.107.106.78
-  port: 8388
+- name: 🇺🇸 03 [S级] 32.7MB/s 238ms
+  server: 95.215.201.18
+  port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇨🇦 11 [S级] 6.6MB/s 331ms
-  server: 184.107.106.77
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇺🇸 12 [S级] 10.6MB/s 339ms
-  server: 195.211.98.43
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
-    short-id: 9c56fddf237e8eaf
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 13 [S级] 33.8MB/s 219ms
-  server: 96.44.133.37
-  port: 2087
-  udp: true
-  type: trojan
-  password: 2e7sEZERnvGOlt35hf6rNg
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 14 [S级] 4.8MB/s 371ms
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 04 [S级] 25.1MB/s 251ms
   server: 198.247.127.131
   port: 443
   udp: true
@@ -139,232 +43,66 @@ proxies:
     public-key: vmHHRwA9ER6c8dfgtL-gh2HBMCvjySy1xLimqYpLiCI
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇮🇱 15 [S级] 7.7MB/s 345ms
-  server: 185.95.231.156
+- name: 🇺🇸 05 [S级] 7.1MB/s 295ms
+  server: 37.19.198.244
   port: 443
   udp: true
-  type: vless
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇺🇸 16 [S级] 16.8MB/s 219ms
-  server: 172.233.129.179
-  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 06 [S级] 5.1MB/s 321ms
+  server: 40.160.86.43
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇺🇸 07 [S级] 18.7MB/s 216ms
+  server: 38.107.232.36
+  port: 80
   udp: true
   type: vless
-  uuid: 8d602a84-d258-4953-8ef7-d64afff2e879
-  tls: true
-  reality-opts:
-    public-key: 5UVOUoMBYxyWuF-FCbXoEt8LHFkj7iZqZOABlvyvXV8
-    short-id: 955c702b
-  servername: itunes.apple.com
-  client-fingerprint: chrome
+  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
   network: ws
   ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 17 [S级] 12.9MB/s 221ms
-  server: 172.233.140.139
+    path: /vless/
+- name: 🇨🇦 08 [S级] 6.5MB/s 344ms
+  server: 184.107.106.77
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇺🇸 09 [S级] 48.6MB/s 142ms
+  server: 173.244.56.9
   port: 443
   udp: true
-  type: vless
-  uuid: 82b258c9-f4ae-46f6-8c1a-322b316a2e0d
-  tls: true
-  reality-opts:
-    public-key: l1Tts2VQAnD1We9lPKqw9GqnMAHiIlYhsaw5ASVrTGM
-    short-id: 5c298270
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 18 [S级] 13.0MB/s 232ms
-  server: 172.233.157.18
-  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 10 [S级] 9.0MB/s 358ms
+  server: 45.138.100.248
+  port: 10443
   udp: true
   type: vless
-  uuid: 9a10a216-c8db-48d5-bb91-cf1ef245bd1d
-  tls: true
-  reality-opts:
-    public-key: 4DL3ZveBq9TIQbtIp2ZtIPI6zRFHGdcVAW-poC0UqDA
-    short-id: 30aa62c5
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 19 [S级] 13.4MB/s 238ms
-  server: 172.233.139.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: 62b5a30a-89de-4da7-b1c0-08abfad0cd1d
-  tls: true
-  reality-opts:
-    public-key: ZtWVf2gAix3etGziWVZ9apsWfWb5UOepCWQqVyIGxHI
-    short-id: 4d3f31a1
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 20 [S级] 11.3MB/s 244ms
-  server: 172.235.36.11
-  port: 443
-  udp: true
-  type: vless
-  uuid: a15c47e7-0d24-4e82-a759-891d0e951a01
-  tls: true
-  reality-opts:
-    public-key: lhkyTN5zj2bK7HhMVfer5RoDz0K67YK8VyiiK8TvkEE
-    short-id: afc7874d
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 21 [S级] 9.1MB/s 247ms
-  server: 172.235.51.71
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c17ead6-201a-4fba-8246-6327b911a1be
-  tls: true
-  reality-opts:
-    public-key: rzeXNEmuocvPVMnmettRsJbHQGjQGaZoH7jNw_3GUD8
-    short-id: 4bf84b30
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 22 [S级] 11.3MB/s 245ms
-  server: 172.235.36.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5b01153c-1cde-4efb-ae09-d97dbc4da44b
-  tls: true
-  reality-opts:
-    public-key: 0RcPjVCZ7X7qXylKu6eGttBaRCh1YmAqpXL6IRXu6Cc
-    short-id: 7e759265
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 23 [S级] 11.6MB/s 262ms
-  server: 172.236.233.130
-  port: 443
-  udp: true
-  type: vless
-  uuid: a663dc28-28dc-4f97-9665-6ac215c8e567
-  tls: true
-  reality-opts:
-    public-key: 4wXbhUoSy9s9bGy9PaK18XVTTw3wXkBDjEusiMHaMB4
-    short-id: '53908445'
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 24 [S级] 11.9MB/s 267ms
-  server: 172.236.227.60
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c8a110d-f04d-4f0e-9579-fd00631b8830
-  tls: true
-  reality-opts:
-    public-key: BHBzo_I0M-sChoOqTyOczYBP8l1L_dkmB6u3ijAOaGo
-    short-id: 664c1530
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 25 [S级] 13.7MB/s 266ms
-  server: 172.233.129.187
-  port: 443
-  udp: true
-  type: vless
-  uuid: ac28b793-b9cb-4795-8a49-311595469328
-  tls: true
-  reality-opts:
-    public-key: iNGO54Z98Rf8PR858MMTGjqGaEEOpcqEFSrZJbeGtlY
-    short-id: 4a979563
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 26 [S级] 13.8MB/s 278ms
-  server: 172.235.40.143
-  port: 443
-  udp: true
-  type: vless
-  uuid: 44fd6b93-9cc5-4ca1-9c2d-77a6497eaf7c
-  tls: true
-  reality-opts:
-    public-key: JbbnGIAzXawujJHGI4QWdKMGDi01uSjyasC3VhpMMQU
-    short-id: f0d46c7f
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 27 [S级] 13.9MB/s 279ms
-  server: 172.233.129.172
-  port: 443
-  udp: true
-  type: vless
-  uuid: 40a4b915-5e6f-4316-9bb1-e899f30608e3
-  tls: true
-  reality-opts:
-    public-key: LWfC_chpo4uDtzJ9VVnuTcf6zTzWKx-LCJAE2Ltl7h4
-    short-id: 5818adc3
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 28 [S级] 7.8MB/s 287ms
-  server: 69.164.240.85
-  port: 50875
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+- name: 🇺🇸 11 [S级] 42.9MB/s 204ms
+  server: 96.44.133.37
+  port: 2087
   udp: true
   type: trojan
-  password: nwilryafgkyvuxauc8pz
-  sni: 69.164.240.85
+  password: 2e7sEZERnvGOlt35hf6rNg
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇺🇸 29 [S级] 12.9MB/s 288ms
+- name: 🇺🇸 12 [S级] 6.9MB/s 380ms
+  server: 216.152.155.131
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: ekb.eg#🚩72@oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇺🇸 13 [S级] 42.8MB/s 162ms
   server: 172.235.37.168
   port: 443
   udp: true
@@ -381,16 +119,16 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇺🇸 30 [S级] 11.7MB/s 291ms
-  server: 172.235.32.253
+- name: 🇺🇸 14 [S级] 34.1MB/s 163ms
+  server: 172.235.36.11
   port: 443
   udp: true
   type: vless
-  uuid: 62fe4c8e-2620-478c-9c39-3d4e12848ff4
+  uuid: a15c47e7-0d24-4e82-a759-891d0e951a01
   tls: true
   reality-opts:
-    public-key: r__vI0YVD9j6Fttsb4aZ0TwvUggV493v6GILKXWIZwA
-    short-id: ac184496
+    public-key: lhkyTN5zj2bK7HhMVfer5RoDz0K67YK8VyiiK8TvkEE
+    short-id: afc7874d
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -398,7 +136,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇺🇸 31 [S级] 16.5MB/s 321ms
+- name: 🇺🇸 15 [S级] 25.0MB/s 168ms
   server: 172.233.142.149
   port: 443
   udp: true
@@ -415,16 +153,16 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇺🇸 32 [S级] 9.8MB/s 322ms
-  server: 172.236.241.130
+- name: 🇺🇸 16 [S级] 41.2MB/s 173ms
+  server: 172.233.129.187
   port: 443
   udp: true
   type: vless
-  uuid: 21117a67-21c2-4e2a-ba8f-bc49e23b0ae8
+  uuid: ac28b793-b9cb-4795-8a49-311595469328
   tls: true
   reality-opts:
-    public-key: ibi0jOH5SfYhh7ycxdBrqq5oN4ajN3-dNiHKWC2VYWs
-    short-id: 51ecfe9e
+    public-key: iNGO54Z98Rf8PR858MMTGjqGaEEOpcqEFSrZJbeGtlY
+    short-id: 4a979563
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -432,92 +170,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇺🇸 33 [S级] 12.0MB/s 336ms
-  server: 172.235.49.52
-  port: 443
-  udp: true
-  type: vless
-  uuid: ff5fc681-8548-4621-87d1-6b123db48f64
-  tls: true
-  reality-opts:
-    public-key: Md-qJgtcKVbuLuwCX8r-VZnfKq3z_3CtyPt3CRcqdQE
-    short-id: 270d474c
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 34 [S级] 14.1MB/s 336ms
-  server: 172.233.139.212
-  port: 443
-  udp: true
-  type: vless
-  uuid: b21a60ef-9042-42c8-bb13-160528ea19c6
-  tls: true
-  reality-opts:
-    public-key: bRB-Z_UOQ_sk8UFczAjrpkgKIg6cVdTNGnsyC7vAoyg
-    short-id: 7a87386b
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 35 [S级] 13.3MB/s 339ms
-  server: 172.233.129.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9d91b606-9117-4f8f-8df7-dda7facf3a57
-  tls: true
-  reality-opts:
-    public-key: Z-RbKKLYcL0Rs6FgAjrrIyN6pAuZjP0JmaP9kLKoER0
-    short-id: 08d9f55d
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 36 [S级] 13.4MB/s 379ms
-  server: 172.235.63.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: d95f222c-3a63-47f8-8e61-af83e1f143f5
-  tls: true
-  reality-opts:
-    public-key: oxf_WPNwjjrO2uknpE9vbM9uwiQ4vbasL-Bgy3lwCHg
-    short-id: dd78b5c3
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 37 [S级] 14.6MB/s 377ms
-  server: 172.239.67.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: b0d814b5-7232-4fe9-9ce9-e552c9abbae8
-  tls: true
-  reality-opts:
-    public-key: Knpni0SBmL6d1nGWtqmHRDsOQvQxcD2Wd0eOf2KZtgs
-    short-id: ba356a45
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 38 [S级] 15.9MB/s 380ms
+- name: 🇺🇸 17 [S级] 40.6MB/s 181ms
   server: 172.233.146.140
   port: 443
   udp: true
@@ -534,7 +187,121 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇺🇸 39 [S级] 7.8MB/s 380ms
+- name: 🇺🇸 18 [S级] 44.8MB/s 183ms
+  server: 172.235.53.103
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38ae2bc6-577c-4e0a-b49c-81c44a0b4383
+  tls: true
+  reality-opts:
+    public-key: YS1T3hKkZSWZBej5I1O2s3QQ-jf5JOAY24EZbp9faX8
+    short-id: 60e39a7e
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇺🇸 19 [S级] 34.5MB/s 186ms
+  server: 172.233.140.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: 82b258c9-f4ae-46f6-8c1a-322b316a2e0d
+  tls: true
+  reality-opts:
+    public-key: l1Tts2VQAnD1We9lPKqw9GqnMAHiIlYhsaw5ASVrTGM
+    short-id: 5c298270
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 20 [S级] 32.2MB/s 188ms
+  server: 172.236.227.60
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c8a110d-f04d-4f0e-9579-fd00631b8830
+  tls: true
+  reality-opts:
+    public-key: BHBzo_I0M-sChoOqTyOczYBP8l1L_dkmB6u3ijAOaGo
+    short-id: 664c1530
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 21 [S级] 26.0MB/s 305ms
+  server: 38.107.236.166
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 48572af1-d091-457b-a86e-4a457e99927f
+  tls: true
+  servername: 3h-unitedstates3.09vpn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 3h-unitedstates3.09vpn.com
+- name: 🇺🇸 22 [S级] 28.2MB/s 191ms
+  server: 172.233.139.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 62b5a30a-89de-4da7-b1c0-08abfad0cd1d
+  tls: true
+  reality-opts:
+    public-key: ZtWVf2gAix3etGziWVZ9apsWfWb5UOepCWQqVyIGxHI
+    short-id: 4d3f31a1
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 23 [S级] 36.4MB/s 196ms
+  server: 172.235.36.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5b01153c-1cde-4efb-ae09-d97dbc4da44b
+  tls: true
+  reality-opts:
+    public-key: 0RcPjVCZ7X7qXylKu6eGttBaRCh1YmAqpXL6IRXu6Cc
+    short-id: 7e759265
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 24 [S级] 60.0MB/s 202ms
+  server: 172.236.241.130
+  port: 443
+  udp: true
+  type: vless
+  uuid: 21117a67-21c2-4e2a-ba8f-bc49e23b0ae8
+  tls: true
+  reality-opts:
+    public-key: ibi0jOH5SfYhh7ycxdBrqq5oN4ajN3-dNiHKWC2VYWs
+    short-id: 51ecfe9e
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 25 [S级] 24.5MB/s 200ms
   server: 172.233.129.46
   port: 443
   udp: true
@@ -551,102 +318,453 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇺🇸 40 [S级] 3.2MB/s 238ms
+- name: 🇮🇱 26 [S级] 8.6MB/s 357ms
+  server: 185.95.231.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇺🇸 27 [S级] 27.5MB/s 206ms
+  server: 172.239.67.142
+  port: 443
+  udp: true
+  type: vless
+  uuid: b0d814b5-7232-4fe9-9ce9-e552c9abbae8
+  tls: true
+  reality-opts:
+    public-key: Knpni0SBmL6d1nGWtqmHRDsOQvQxcD2Wd0eOf2KZtgs
+    short-id: ba356a45
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 28 [S级] 24.8MB/s 221ms
+  server: 172.235.63.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: d95f222c-3a63-47f8-8e61-af83e1f143f5
+  tls: true
+  reality-opts:
+    public-key: oxf_WPNwjjrO2uknpE9vbM9uwiQ4vbasL-Bgy3lwCHg
+    short-id: dd78b5c3
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 29 [S级] 30.2MB/s 222ms
+  server: 172.235.48.245
+  port: 443
+  udp: true
+  type: vless
+  uuid: c923b26b-a941-456d-8ccc-834f3b4080e0
+  tls: true
+  reality-opts:
+    public-key: WoN4MfFQoLTmHhsa6cgsjjDtditjn2VfDbp9jd3hbSs
+    short-id: 7378fab7
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 30 [S级] 23.7MB/s 223ms
+  server: 172.233.129.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9d91b606-9117-4f8f-8df7-dda7facf3a57
+  tls: true
+  reality-opts:
+    public-key: Z-RbKKLYcL0Rs6FgAjrrIyN6pAuZjP0JmaP9kLKoER0
+    short-id: 08d9f55d
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 31 [S级] 19.6MB/s 227ms
+  server: 172.233.129.179
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8d602a84-d258-4953-8ef7-d64afff2e879
+  tls: true
+  reality-opts:
+    public-key: 5UVOUoMBYxyWuF-FCbXoEt8LHFkj7iZqZOABlvyvXV8
+    short-id: 955c702b
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 32 [S级] 28.8MB/s 231ms
+  server: 172.235.49.52
+  port: 443
+  udp: true
+  type: vless
+  uuid: ff5fc681-8548-4621-87d1-6b123db48f64
+  tls: true
+  reality-opts:
+    public-key: Md-qJgtcKVbuLuwCX8r-VZnfKq3z_3CtyPt3CRcqdQE
+    short-id: 270d474c
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 33 [S级] 28.4MB/s 237ms
+  server: 172.233.156.229
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bc6f6c-09b7-43ce-b9c7-312d37f1a312
+  tls: true
+  reality-opts:
+    public-key: jTnoGvXzAIa2lsfioHHRJ1lAj1xqjowhcCwGcfme8QY
+    short-id: 826efd30
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 34 [S级] 38.1MB/s 236ms
+  server: 172.233.139.212
+  port: 443
+  udp: true
+  type: vless
+  uuid: b21a60ef-9042-42c8-bb13-160528ea19c6
+  tls: true
+  reality-opts:
+    public-key: bRB-Z_UOQ_sk8UFczAjrpkgKIg6cVdTNGnsyC7vAoyg
+    short-id: 7a87386b
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 35 [S级] 15.0MB/s 241ms
+  server: 172.235.51.71
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c17ead6-201a-4fba-8246-6327b911a1be
+  tls: true
+  reality-opts:
+    public-key: rzeXNEmuocvPVMnmettRsJbHQGjQGaZoH7jNw_3GUD8
+    short-id: 4bf84b30
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 36 [S级] 27.6MB/s 246ms
+  server: 172.235.32.253
+  port: 443
+  udp: true
+  type: vless
+  uuid: 62fe4c8e-2620-478c-9c39-3d4e12848ff4
+  tls: true
+  reality-opts:
+    public-key: r__vI0YVD9j6Fttsb4aZ0TwvUggV493v6GILKXWIZwA
+    short-id: ac184496
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 37 [S级] 27.8MB/s 254ms
+  server: 172.236.233.130
+  port: 443
+  udp: true
+  type: vless
+  uuid: a663dc28-28dc-4f97-9665-6ac215c8e567
+  tls: true
+  reality-opts:
+    public-key: 4wXbhUoSy9s9bGy9PaK18XVTTw3wXkBDjEusiMHaMB4
+    short-id: '53908445'
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 38 [S级] 33.0MB/s 253ms
+  server: 172.236.231.45
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4c4f7955-3b05-4795-b3b7-6c83b7f82b0f
+  tls: true
+  reality-opts:
+    public-key: M6kLOIYA9IagUu0eiplnPZFObYVzTc4GfPyEqKQnZWQ
+    short-id: 8353867a
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 39 [S级] 4.3MB/s 286ms
   server: 156.146.38.168
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
+- name: 🇺🇸 40 [S级] 23.6MB/s 279ms
+  server: 172.235.40.143
+  port: 443
+  udp: true
+  type: vless
+  uuid: 44fd6b93-9cc5-4ca1-9c2d-77a6497eaf7c
+  tls: true
+  reality-opts:
+    public-key: JbbnGIAzXawujJHGI4QWdKMGDi01uSjyasC3VhpMMQU
+    short-id: f0d46c7f
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 41 [S级] 21.3MB/s 281ms
+  server: 172.233.157.18
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9a10a216-c8db-48d5-bb91-cf1ef245bd1d
+  tls: true
+  reality-opts:
+    public-key: 4DL3ZveBq9TIQbtIp2ZtIPI6zRFHGdcVAW-poC0UqDA
+    short-id: 30aa62c5
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 42 [S级] 6.1MB/s 391ms
+  server: 136.148.77.250
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇺🇸 43 [S级] 22.1MB/s 308ms
+  server: 172.233.129.172
+  port: 443
+  udp: true
+  type: vless
+  uuid: 40a4b915-5e6f-4316-9bb1-e899f30608e3
+  tls: true
+  reality-opts:
+    public-key: LWfC_chpo4uDtzJ9VVnuTcf6zTzWKx-LCJAE2Ltl7h4
+    short-id: 5818adc3
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 44 [S级] 32.7MB/s 318ms
+  server: 172.64.145.93
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: 🇺🇸 45 [S级] 9.0MB/s 390ms
+  server: 216.227.161.95
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  tls: true
+  reality-opts:
+    public-key: uNqGvaJEIFTFQvAxsTDhetPxkIWzJuBtxXsK0yFMYzM
+    short-id: 48d5cf47
+  servername: media3.abvphelp.cc
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇺🇸 46 [S级] 8.6MB/s 347ms
+  server: 69.164.240.85
+  port: 50875
+  udp: true
+  type: trojan
+  password: nwilryafgkyvuxauc8pz
+  sni: 69.164.240.85
+  skip-cert-verify: true
+- name: 🇺🇸 47 [S级] 3.4MB/s 276ms
+  server: 49.51.179.155
+  port: 42022
+  udp: true
+  type: vmess
+  uuid: 8ce7802c-019c-4568-f6ac-89f13c6d545d
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 48 [S级] 3.5MB/s 332ms
+  server: 172.233.197.235
+  port: 63815
+  udp: true
+  type: vless
+  uuid: c5b78fba-bfe0-438b-99b1-71a1f271c32f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU
+    short-id: 1f2519bb96e5589c
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 9.9MB/s 200ms
-  - 🇺🇸 02 [S级] 13.2MB/s 222ms
-  - 🇺🇸 03 [S级] 12.6MB/s 216ms
-  - 🇺🇸 04 [S级] 10.4MB/s 259ms
-  - 🇺🇸 05 [S级] 8.1MB/s 284ms
-  - 🇺🇸 06 [S级] 11.8MB/s 289ms
-  - 🇨🇦 07 [S级] 6.1MB/s 308ms
-  - 🇺🇸 08 [S级] 21.0MB/s 183ms
-  - 🇺🇸 09 [S级] 8.9MB/s 327ms
-  - 🇨🇦 10 [S级] 7.3MB/s 328ms
-  - 🇨🇦 11 [S级] 6.6MB/s 331ms
-  - 🇺🇸 12 [S级] 10.6MB/s 339ms
-  - 🇺🇸 13 [S级] 33.8MB/s 219ms
-  - 🇺🇸 14 [S级] 4.8MB/s 371ms
-  - 🇮🇱 15 [S级] 7.7MB/s 345ms
-  - 🇺🇸 16 [S级] 16.8MB/s 219ms
-  - 🇺🇸 17 [S级] 12.9MB/s 221ms
-  - 🇺🇸 18 [S级] 13.0MB/s 232ms
-  - 🇺🇸 19 [S级] 13.4MB/s 238ms
-  - 🇺🇸 20 [S级] 11.3MB/s 244ms
-  - 🇺🇸 21 [S级] 9.1MB/s 247ms
-  - 🇺🇸 22 [S级] 11.3MB/s 245ms
-  - 🇺🇸 23 [S级] 11.6MB/s 262ms
-  - 🇺🇸 24 [S级] 11.9MB/s 267ms
-  - 🇺🇸 25 [S级] 13.7MB/s 266ms
-  - 🇺🇸 26 [S级] 13.8MB/s 278ms
-  - 🇺🇸 27 [S级] 13.9MB/s 279ms
-  - 🇺🇸 28 [S级] 7.8MB/s 287ms
-  - 🇺🇸 29 [S级] 12.9MB/s 288ms
-  - 🇺🇸 30 [S级] 11.7MB/s 291ms
-  - 🇺🇸 31 [S级] 16.5MB/s 321ms
-  - 🇺🇸 32 [S级] 9.8MB/s 322ms
-  - 🇺🇸 33 [S级] 12.0MB/s 336ms
-  - 🇺🇸 34 [S级] 14.1MB/s 336ms
-  - 🇺🇸 35 [S级] 13.3MB/s 339ms
-  - 🇺🇸 36 [S级] 13.4MB/s 379ms
-  - 🇺🇸 37 [S级] 14.6MB/s 377ms
-  - 🇺🇸 38 [S级] 15.9MB/s 380ms
-  - 🇺🇸 39 [S级] 7.8MB/s 380ms
-  - 🇺🇸 40 [S级] 3.2MB/s 238ms
+  - 🇺🇸 01 [S级] 20.6MB/s 134ms
+  - 🇺🇸 02 [S级] 23.0MB/s 201ms
+  - 🇺🇸 03 [S级] 32.7MB/s 238ms
+  - 🇺🇸 04 [S级] 25.1MB/s 251ms
+  - 🇺🇸 05 [S级] 7.1MB/s 295ms
+  - 🇺🇸 06 [S级] 5.1MB/s 321ms
+  - 🇺🇸 07 [S级] 18.7MB/s 216ms
+  - 🇨🇦 08 [S级] 6.5MB/s 344ms
+  - 🇺🇸 09 [S级] 48.6MB/s 142ms
+  - 🇺🇸 10 [S级] 9.0MB/s 358ms
+  - 🇺🇸 11 [S级] 42.9MB/s 204ms
+  - 🇺🇸 12 [S级] 6.9MB/s 380ms
+  - 🇺🇸 13 [S级] 42.8MB/s 162ms
+  - 🇺🇸 14 [S级] 34.1MB/s 163ms
+  - 🇺🇸 15 [S级] 25.0MB/s 168ms
+  - 🇺🇸 16 [S级] 41.2MB/s 173ms
+  - 🇺🇸 17 [S级] 40.6MB/s 181ms
+  - 🇺🇸 18 [S级] 44.8MB/s 183ms
+  - 🇺🇸 19 [S级] 34.5MB/s 186ms
+  - 🇺🇸 20 [S级] 32.2MB/s 188ms
+  - 🇺🇸 21 [S级] 26.0MB/s 305ms
+  - 🇺🇸 22 [S级] 28.2MB/s 191ms
+  - 🇺🇸 23 [S级] 36.4MB/s 196ms
+  - 🇺🇸 24 [S级] 60.0MB/s 202ms
+  - 🇺🇸 25 [S级] 24.5MB/s 200ms
+  - 🇮🇱 26 [S级] 8.6MB/s 357ms
+  - 🇺🇸 27 [S级] 27.5MB/s 206ms
+  - 🇺🇸 28 [S级] 24.8MB/s 221ms
+  - 🇺🇸 29 [S级] 30.2MB/s 222ms
+  - 🇺🇸 30 [S级] 23.7MB/s 223ms
+  - 🇺🇸 31 [S级] 19.6MB/s 227ms
+  - 🇺🇸 32 [S级] 28.8MB/s 231ms
+  - 🇺🇸 33 [S级] 28.4MB/s 237ms
+  - 🇺🇸 34 [S级] 38.1MB/s 236ms
+  - 🇺🇸 35 [S级] 15.0MB/s 241ms
+  - 🇺🇸 36 [S级] 27.6MB/s 246ms
+  - 🇺🇸 37 [S级] 27.8MB/s 254ms
+  - 🇺🇸 38 [S级] 33.0MB/s 253ms
+  - 🇺🇸 39 [S级] 4.3MB/s 286ms
+  - 🇺🇸 40 [S级] 23.6MB/s 279ms
+  - 🇺🇸 41 [S级] 21.3MB/s 281ms
+  - 🇺🇸 42 [S级] 6.1MB/s 391ms
+  - 🇺🇸 43 [S级] 22.1MB/s 308ms
+  - 🇺🇸 44 [S级] 32.7MB/s 318ms
+  - 🇺🇸 45 [S级] 9.0MB/s 390ms
+  - 🇺🇸 46 [S级] 8.6MB/s 347ms
+  - 🇺🇸 47 [S级] 3.4MB/s 276ms
+  - 🇺🇸 48 [S级] 3.5MB/s 332ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 9.9MB/s 200ms
-  - 🇺🇸 02 [S级] 13.2MB/s 222ms
-  - 🇺🇸 03 [S级] 12.6MB/s 216ms
-  - 🇺🇸 04 [S级] 10.4MB/s 259ms
-  - 🇺🇸 05 [S级] 8.1MB/s 284ms
-  - 🇺🇸 06 [S级] 11.8MB/s 289ms
-  - 🇨🇦 07 [S级] 6.1MB/s 308ms
-  - 🇺🇸 08 [S级] 21.0MB/s 183ms
-  - 🇺🇸 09 [S级] 8.9MB/s 327ms
-  - 🇨🇦 10 [S级] 7.3MB/s 328ms
-  - 🇨🇦 11 [S级] 6.6MB/s 331ms
-  - 🇺🇸 12 [S级] 10.6MB/s 339ms
-  - 🇺🇸 13 [S级] 33.8MB/s 219ms
-  - 🇺🇸 14 [S级] 4.8MB/s 371ms
-  - 🇮🇱 15 [S级] 7.7MB/s 345ms
-  - 🇺🇸 16 [S级] 16.8MB/s 219ms
-  - 🇺🇸 17 [S级] 12.9MB/s 221ms
-  - 🇺🇸 18 [S级] 13.0MB/s 232ms
-  - 🇺🇸 19 [S级] 13.4MB/s 238ms
-  - 🇺🇸 20 [S级] 11.3MB/s 244ms
-  - 🇺🇸 21 [S级] 9.1MB/s 247ms
-  - 🇺🇸 22 [S级] 11.3MB/s 245ms
-  - 🇺🇸 23 [S级] 11.6MB/s 262ms
-  - 🇺🇸 24 [S级] 11.9MB/s 267ms
-  - 🇺🇸 25 [S级] 13.7MB/s 266ms
-  - 🇺🇸 26 [S级] 13.8MB/s 278ms
-  - 🇺🇸 27 [S级] 13.9MB/s 279ms
-  - 🇺🇸 28 [S级] 7.8MB/s 287ms
-  - 🇺🇸 29 [S级] 12.9MB/s 288ms
-  - 🇺🇸 30 [S级] 11.7MB/s 291ms
-  - 🇺🇸 31 [S级] 16.5MB/s 321ms
-  - 🇺🇸 32 [S级] 9.8MB/s 322ms
-  - 🇺🇸 33 [S级] 12.0MB/s 336ms
-  - 🇺🇸 34 [S级] 14.1MB/s 336ms
-  - 🇺🇸 35 [S级] 13.3MB/s 339ms
-  - 🇺🇸 36 [S级] 13.4MB/s 379ms
-  - 🇺🇸 37 [S级] 14.6MB/s 377ms
-  - 🇺🇸 38 [S级] 15.9MB/s 380ms
-  - 🇺🇸 39 [S级] 7.8MB/s 380ms
-  - 🇺🇸 40 [S级] 3.2MB/s 238ms
+  - 🇺🇸 01 [S级] 20.6MB/s 134ms
+  - 🇺🇸 02 [S级] 23.0MB/s 201ms
+  - 🇺🇸 03 [S级] 32.7MB/s 238ms
+  - 🇺🇸 04 [S级] 25.1MB/s 251ms
+  - 🇺🇸 05 [S级] 7.1MB/s 295ms
+  - 🇺🇸 06 [S级] 5.1MB/s 321ms
+  - 🇺🇸 07 [S级] 18.7MB/s 216ms
+  - 🇨🇦 08 [S级] 6.5MB/s 344ms
+  - 🇺🇸 09 [S级] 48.6MB/s 142ms
+  - 🇺🇸 10 [S级] 9.0MB/s 358ms
+  - 🇺🇸 11 [S级] 42.9MB/s 204ms
+  - 🇺🇸 12 [S级] 6.9MB/s 380ms
+  - 🇺🇸 13 [S级] 42.8MB/s 162ms
+  - 🇺🇸 14 [S级] 34.1MB/s 163ms
+  - 🇺🇸 15 [S级] 25.0MB/s 168ms
+  - 🇺🇸 16 [S级] 41.2MB/s 173ms
+  - 🇺🇸 17 [S级] 40.6MB/s 181ms
+  - 🇺🇸 18 [S级] 44.8MB/s 183ms
+  - 🇺🇸 19 [S级] 34.5MB/s 186ms
+  - 🇺🇸 20 [S级] 32.2MB/s 188ms
+  - 🇺🇸 21 [S级] 26.0MB/s 305ms
+  - 🇺🇸 22 [S级] 28.2MB/s 191ms
+  - 🇺🇸 23 [S级] 36.4MB/s 196ms
+  - 🇺🇸 24 [S级] 60.0MB/s 202ms
+  - 🇺🇸 25 [S级] 24.5MB/s 200ms
+  - 🇮🇱 26 [S级] 8.6MB/s 357ms
+  - 🇺🇸 27 [S级] 27.5MB/s 206ms
+  - 🇺🇸 28 [S级] 24.8MB/s 221ms
+  - 🇺🇸 29 [S级] 30.2MB/s 222ms
+  - 🇺🇸 30 [S级] 23.7MB/s 223ms
+  - 🇺🇸 31 [S级] 19.6MB/s 227ms
+  - 🇺🇸 32 [S级] 28.8MB/s 231ms
+  - 🇺🇸 33 [S级] 28.4MB/s 237ms
+  - 🇺🇸 34 [S级] 38.1MB/s 236ms
+  - 🇺🇸 35 [S级] 15.0MB/s 241ms
+  - 🇺🇸 36 [S级] 27.6MB/s 246ms
+  - 🇺🇸 37 [S级] 27.8MB/s 254ms
+  - 🇺🇸 38 [S级] 33.0MB/s 253ms
+  - 🇺🇸 39 [S级] 4.3MB/s 286ms
+  - 🇺🇸 40 [S级] 23.6MB/s 279ms
+  - 🇺🇸 41 [S级] 21.3MB/s 281ms
+  - 🇺🇸 42 [S级] 6.1MB/s 391ms
+  - 🇺🇸 43 [S级] 22.1MB/s 308ms
+  - 🇺🇸 44 [S级] 32.7MB/s 318ms
+  - 🇺🇸 45 [S级] 9.0MB/s 390ms
+  - 🇺🇸 46 [S级] 8.6MB/s 347ms
+  - 🇺🇸 47 [S级] 3.4MB/s 276ms
+  - 🇺🇸 48 [S级] 3.5MB/s 332ms
 rules:
 - MATCH,PROXIES
