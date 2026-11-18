@@ -4,32 +4,44 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 01 [家宽级] 4.2MB/s 472ms
+- name: 🇩🇪 01 [家宽级] 6.0MB/s 542ms
   server: 8.220.81.25
   port: 443
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇭🇰 02 [家宽级] 2.8MB/s 778ms
-  server: fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com
+- name: 🇩🇪 02 [家宽级] 5.2MB/s 795ms
+  server: 172.64.88.98
   port: 443
   udp: true
   type: vless
-  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
   tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇰🇷 03 [家宽级] 1.1MB/s 729ms
+  network: ws
+  ws-opts:
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
+    headers:
+      Host: 1v5vp5jsq611a5dsm.pages.dev
+- name: 🇸🇬 03 [家宽级] 62.9MB/s 3573ms
+  server: 195.133.135.238
+  port: 10086
+  udp: true
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 04 [家宽级] 1.3MB/s 947ms
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇹🇼 04 [家宽级] 0.5MB/s 1230ms
+- name: 🇹🇼 05 [家宽级] 0.4MB/s 2353ms
   server: 60.248.219.78
   port: 443
   udp: true
@@ -48,18 +60,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 01 [家宽级] 4.2MB/s 472ms
-  - 🇭🇰 02 [家宽级] 2.8MB/s 778ms
-  - 🇰🇷 03 [家宽级] 1.1MB/s 729ms
-  - 🇹🇼 04 [家宽级] 0.5MB/s 1230ms
+  - 🇩🇪 01 [家宽级] 6.0MB/s 542ms
+  - 🇩🇪 02 [家宽级] 5.2MB/s 795ms
+  - 🇸🇬 03 [家宽级] 62.9MB/s 3573ms
+  - 🇰🇷 04 [家宽级] 1.3MB/s 947ms
+  - 🇹🇼 05 [家宽级] 0.4MB/s 2353ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 01 [家宽级] 4.2MB/s 472ms
-  - 🇭🇰 02 [家宽级] 2.8MB/s 778ms
-  - 🇰🇷 03 [家宽级] 1.1MB/s 729ms
-  - 🇹🇼 04 [家宽级] 0.5MB/s 1230ms
+  - 🇩🇪 01 [家宽级] 6.0MB/s 542ms
+  - 🇩🇪 02 [家宽级] 5.2MB/s 795ms
+  - 🇸🇬 03 [家宽级] 62.9MB/s 3573ms
+  - 🇰🇷 04 [家宽级] 1.3MB/s 947ms
+  - 🇹🇼 05 [家宽级] 0.4MB/s 2353ms
 rules:
 - MATCH,PROXIES
