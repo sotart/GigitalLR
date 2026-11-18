@@ -5,10 +5,10 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇸🇬 01 [家宽级] 62.9MB/s 3573ms",
-      "server": "195.133.135.238",
-      "server_port": 10086,
-      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "tag": "🇭🇰 01 [家宽级] 3.0MB/s 677ms",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21020,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
     },
     {
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 01 [家宽级] 62.9MB/s 3573ms"
+        "🇭🇰 01 [家宽级] 3.0MB/s 677ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 01 [家宽级] 62.9MB/s 3573ms"
+        "🇭🇰 01 [家宽级] 3.0MB/s 677ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
