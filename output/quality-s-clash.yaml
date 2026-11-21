@@ -4,103 +4,106 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 01 [S级] 15.1MB/s 90ms
-  server: 200.102.179.179
+- name: 🇨🇦 01 [S级] 27.4MB/s 217ms
+  server: 184.107.106.77
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇺🇸 02 [S级] 28.7MB/s 126ms
-  server: 37.19.198.244
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 03 [S级] 12.9MB/s 150ms
+- name: 🇺🇸 02 [S级] 16.4MB/s 242ms
   server: 156.146.38.168
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇺🇸 04 [S级] 36.9MB/s 152ms
-  server: 40.160.86.43
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇺🇸 05 [S级] 15.6MB/s 154ms
-  server: 45.138.100.248
-  port: 14430
-  udp: true
-  type: vless
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.138.100.248
-- name: 🇨🇦 06 [S级] 13.0MB/s 184ms
-  server: 137.184.174.93
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 07 [S级] 22.6MB/s 197ms
-  server: 167.17.69.171
+- name: 🇺🇸 03 [S级] 13.5MB/s 276ms
+  server: 170.101.101.131
   port: 443
   udp: true
-  type: vless
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
-    short-id: 0990d22f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 08 [S级] 32.2MB/s 202ms
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.explorecreativejobsandenhanceyourcareerportfolio.com
+  skip-cert-verify: true
+- name: 🇺🇸 04 [S级] 14.9MB/s 277ms
   server: 45.138.100.248
   port: 10443
   udp: true
   type: vless
   uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-- name: 🇨🇦 09 [S级] 15.7MB/s 217ms
+- name: 🇺🇸 05 [S级] 10.2MB/s 278ms
+  server: 200.102.179.179
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇨🇦 06 [S级] 20.4MB/s 320ms
   server: 184.107.106.78
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇺🇸 10 [S级] 38.5MB/s 290ms
-  server: 45.138.100.248
-  port: 10444
+- name: 🇺🇸 07 [S级] 9.8MB/s 328ms
+  server: 95.215.201.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 08 [S级] 11.4MB/s 328ms
+  server: 37.19.198.244
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 09 [S级] 14.9MB/s 331ms
+  server: 169.40.42.168
+  port: 443
   udp: true
   type: vless
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇺🇸 11 [S级] 6.9MB/s 292ms
-  server: 129.146.77.248
-  port: 39495
+- name: 🇺🇸 10 [S级] 12.6MB/s 332ms
+  server: 40.160.86.43
+  port: 8388
   udp: true
-  type: vmess
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇺🇸 11 [S级] 37.1MB/s 238ms
+  server: 38.107.232.36
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
-- name: 🇮🇱 12 [S级] 38.5MB/s 226ms
+    path: /vless/
+- name: 🇨🇦 12 [S级] 15.3MB/s 369ms
+  server: 137.184.174.93
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 13 [S级] 7.2MB/s 374ms
+  server: 129.146.116.143
+  port: 50356
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: tFlI+GCNnBcKUE0GuoHOahvh6g0HzdU8YJNyRDgGWTU=
+- name: 🇮🇱 14 [S级] 16.2MB/s 375ms
   server: 185.95.231.156
   port: 443
   udp: true
@@ -113,59 +116,7 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇩🇪 13 [S级] 5.4MB/s 323ms
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇺🇸 14 [S级] 7.7MB/s 323ms
-  server: 95.215.201.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 15 [S级] 8.2MB/s 319ms
-  server: panel.apexkey.store
-  port: 2053
-  udp: true
-  type: vless
-  uuid: cdb7fa1d-6e7a-467c-da9c-da363c7bf779
-  tls: true
-  reality-opts:
-    public-key: DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk
-    short-id: '68'
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 16 [S级] 9.0MB/s 328ms
-  server: 137.131.48.233
-  port: 50356
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: a3PPcJa65qkdjt0mH9YBf5j1uAwMP21kNWRPTlI4nFc=
-- name: 🇩🇪 17 [S级] 5.4MB/s 335ms
-  server: 62.113.237.3
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: o3-9Eg79umh4CaY8sWC7b3
-- name: 🇺🇸 18 [S级] 7.8MB/s 359ms
-  server: 198.247.127.131
-  port: 443
-  udp: true
-  type: vless
-  uuid: 59548d2d-5d7c-4328-aa81-0d5614da0c1b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vmHHRwA9ER6c8dfgtL-gh2HBMCvjySy1xLimqYpLiCI
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇺🇸 19 [S级] 41.0MB/s 122ms
+- name: 🇺🇸 15 [S级] 11.5MB/s 378ms
   server: 69.164.240.85
   port: 50875
   udp: true
@@ -173,106 +124,16 @@ proxies:
   password: nwilryafgkyvuxauc8pz
   sni: 69.164.240.85
   skip-cert-verify: true
-- name: 🇳🇱 20 [S级] 4.8MB/s 337ms
-  server: 82.38.31.192
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 21 [S级] 5.6MB/s 382ms
-  server: 51.158.206.25
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 22 [S级] 5.7MB/s 380ms
-  server: 51.158.206.93
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 23 [S级] 37.5MB/s 268ms
-  server: 38.107.232.36
-  port: 80
-  udp: true
-  type: vless
-  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇺🇸 24 [S级] 8.4MB/s 399ms
-  server: 156.229.167.109
-  port: 8443
-  udp: true
-  type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  tls: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
-  client-fingerprint: chrome
-- name: 🇪🇸 25 [S级] 6.1MB/s 309ms
-  server: 5.188.181.201
-  port: 9027
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: EXN3S3eQpjE7EJu8
-- name: 🇺🇸 26 [S级] 7.2MB/s 342ms
-  server: 47.89.232.46
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 4afd4e1b1b0edd429b10d800a1cf64a7
-  sni: hysteria2.local
-  skip-cert-verify: true
-- name: 🇪🇸 27 [S级] 5.2MB/s 329ms
-  server: 5.188.181.201
-  port: 9042
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-- name: 🇪🇸 28 [S级] 5.4MB/s 353ms
-  server: 5.188.181.201
-  port: 9041
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
-- name: 🇪🇸 29 [S级] 4.9MB/s 398ms
-  server: 5.188.181.201
-  port: 9005
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: ZET59LF6DvCC8KVt
-- name: 🇺🇸 30 [S级] 7.1MB/s 333ms
-  server: 172.236.227.60
+- name: 🇺🇸 16 [S级] 10.4MB/s 388ms
+  server: 172.233.142.149
   port: 443
   udp: true
   type: vless
-  uuid: 3c8a110d-f04d-4f0e-9579-fd00631b8830
+  uuid: 61e3954d-0d66-4b69-b6cd-9b4fc2352303
   tls: true
   reality-opts:
-    public-key: BHBzo_I0M-sChoOqTyOczYBP8l1L_dkmB6u3ijAOaGo
-    short-id: 664c1530
+    public-key: f9D1ZzG6vP1HgjCaCIutbykWkab8VEDuitwuwaeuBgY
+    short-id: 4206512a
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -280,245 +141,47 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇺🇸 31 [S级] 6.0MB/s 345ms
-  server: 172.233.129.172
-  port: 443
-  udp: true
-  type: vless
-  uuid: 40a4b915-5e6f-4316-9bb1-e899f30608e3
-  tls: true
-  reality-opts:
-    public-key: LWfC_chpo4uDtzJ9VVnuTcf6zTzWKx-LCJAE2Ltl7h4
-    short-id: 5818adc3
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 32 [S级] 7.0MB/s 356ms
-  server: 172.236.233.130
-  port: 443
-  udp: true
-  type: vless
-  uuid: a663dc28-28dc-4f97-9665-6ac215c8e567
-  tls: true
-  reality-opts:
-    public-key: 4wXbhUoSy9s9bGy9PaK18XVTTw3wXkBDjEusiMHaMB4
-    short-id: '53908445'
-  servername: itunes.apple.com
-  client-fingerprint: ''
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 33 [S级] 8.9MB/s 366ms
-  server: 172.235.37.168
-  port: 443
-  udp: true
-  type: vless
-  uuid: dbac71f3-ab05-4194-985b-f07088bf1a4a
-  tls: true
-  reality-opts:
-    public-key: 1iwAzh_XzSCYWZEVZ0lfczKFd--jXx3coCt5le58gEM
-    short-id: c52e85fe
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇳🇱 34 [S级] 3.9MB/s 307ms
-  server: 158.173.20.208
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 35 [S级] 8.5MB/s 377ms
-  server: 172.236.241.130
-  port: 443
-  udp: true
-  type: vless
-  uuid: 21117a67-21c2-4e2a-ba8f-bc49e23b0ae8
-  tls: true
-  reality-opts:
-    public-key: ibi0jOH5SfYhh7ycxdBrqq5oN4ajN3-dNiHKWC2VYWs
-    short-id: 51ecfe9e
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 36 [S级] 6.5MB/s 383ms
-  server: 172.235.48.213
-  port: 443
-  udp: true
-  type: vless
-  uuid: 25999cd3-10ed-4429-8329-dc651f1adafc
-  tls: true
-  reality-opts:
-    public-key: Sf-7bsdlDkigFJRVwZ99MmSTqKCIh26ZP_x8RzPLJhg
-    short-id: e1ac70b6
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 37 [S级] 7.0MB/s 396ms
-  server: 172.235.63.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: d95f222c-3a63-47f8-8e61-af83e1f143f5
-  tls: true
-  reality-opts:
-    public-key: oxf_WPNwjjrO2uknpE9vbM9uwiQ4vbasL-Bgy3lwCHg
-    short-id: dd78b5c3
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇺🇸 38 [S级] 7.1MB/s 399ms
-  server: 172.235.48.245
-  port: 443
-  udp: true
-  type: vless
-  uuid: c923b26b-a941-456d-8ccc-834f3b4080e0
-  tls: true
-  reality-opts:
-    public-key: WoN4MfFQoLTmHhsa6cgsjjDtditjn2VfDbp9jd3hbSs
-    short-id: 7378fab7
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇩🇪 39 [S级] 4.0MB/s 382ms
-  server: 213.202.208.199
-  port: 5000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇩🇪 40 [S级] 3.6MB/s 395ms
-  server: 3.69.232.199
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇩🇪 41 [S级] 3.0MB/s 355ms
-  server: 185.176.204.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 01 [S级] 15.1MB/s 90ms
-  - 🇺🇸 02 [S级] 28.7MB/s 126ms
-  - 🇺🇸 03 [S级] 12.9MB/s 150ms
-  - 🇺🇸 04 [S级] 36.9MB/s 152ms
-  - 🇺🇸 05 [S级] 15.6MB/s 154ms
-  - 🇨🇦 06 [S级] 13.0MB/s 184ms
-  - 🇺🇸 07 [S级] 22.6MB/s 197ms
-  - 🇺🇸 08 [S级] 32.2MB/s 202ms
-  - 🇨🇦 09 [S级] 15.7MB/s 217ms
-  - 🇺🇸 10 [S级] 38.5MB/s 290ms
-  - 🇺🇸 11 [S级] 6.9MB/s 292ms
-  - 🇮🇱 12 [S级] 38.5MB/s 226ms
-  - 🇩🇪 13 [S级] 5.4MB/s 323ms
-  - 🇺🇸 14 [S级] 7.7MB/s 323ms
-  - 🇺🇸 15 [S级] 8.2MB/s 319ms
-  - 🇺🇸 16 [S级] 9.0MB/s 328ms
-  - 🇩🇪 17 [S级] 5.4MB/s 335ms
-  - 🇺🇸 18 [S级] 7.8MB/s 359ms
-  - 🇺🇸 19 [S级] 41.0MB/s 122ms
-  - 🇳🇱 20 [S级] 4.8MB/s 337ms
-  - 🇳🇱 21 [S级] 5.6MB/s 382ms
-  - 🇳🇱 22 [S级] 5.7MB/s 380ms
-  - 🇺🇸 23 [S级] 37.5MB/s 268ms
-  - 🇺🇸 24 [S级] 8.4MB/s 399ms
-  - 🇪🇸 25 [S级] 6.1MB/s 309ms
-  - 🇺🇸 26 [S级] 7.2MB/s 342ms
-  - 🇪🇸 27 [S级] 5.2MB/s 329ms
-  - 🇪🇸 28 [S级] 5.4MB/s 353ms
-  - 🇪🇸 29 [S级] 4.9MB/s 398ms
-  - 🇺🇸 30 [S级] 7.1MB/s 333ms
-  - 🇺🇸 31 [S级] 6.0MB/s 345ms
-  - 🇺🇸 32 [S级] 7.0MB/s 356ms
-  - 🇺🇸 33 [S级] 8.9MB/s 366ms
-  - 🇳🇱 34 [S级] 3.9MB/s 307ms
-  - 🇺🇸 35 [S级] 8.5MB/s 377ms
-  - 🇺🇸 36 [S级] 6.5MB/s 383ms
-  - 🇺🇸 37 [S级] 7.0MB/s 396ms
-  - 🇺🇸 38 [S级] 7.1MB/s 399ms
-  - 🇩🇪 39 [S级] 4.0MB/s 382ms
-  - 🇩🇪 40 [S级] 3.6MB/s 395ms
-  - 🇩🇪 41 [S级] 3.0MB/s 355ms
+  - 🇨🇦 01 [S级] 27.4MB/s 217ms
+  - 🇺🇸 02 [S级] 16.4MB/s 242ms
+  - 🇺🇸 03 [S级] 13.5MB/s 276ms
+  - 🇺🇸 04 [S级] 14.9MB/s 277ms
+  - 🇺🇸 05 [S级] 10.2MB/s 278ms
+  - 🇨🇦 06 [S级] 20.4MB/s 320ms
+  - 🇺🇸 07 [S级] 9.8MB/s 328ms
+  - 🇺🇸 08 [S级] 11.4MB/s 328ms
+  - 🇺🇸 09 [S级] 14.9MB/s 331ms
+  - 🇺🇸 10 [S级] 12.6MB/s 332ms
+  - 🇺🇸 11 [S级] 37.1MB/s 238ms
+  - 🇨🇦 12 [S级] 15.3MB/s 369ms
+  - 🇺🇸 13 [S级] 7.2MB/s 374ms
+  - 🇮🇱 14 [S级] 16.2MB/s 375ms
+  - 🇺🇸 15 [S级] 11.5MB/s 378ms
+  - 🇺🇸 16 [S级] 10.4MB/s 388ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 01 [S级] 15.1MB/s 90ms
-  - 🇺🇸 02 [S级] 28.7MB/s 126ms
-  - 🇺🇸 03 [S级] 12.9MB/s 150ms
-  - 🇺🇸 04 [S级] 36.9MB/s 152ms
-  - 🇺🇸 05 [S级] 15.6MB/s 154ms
-  - 🇨🇦 06 [S级] 13.0MB/s 184ms
-  - 🇺🇸 07 [S级] 22.6MB/s 197ms
-  - 🇺🇸 08 [S级] 32.2MB/s 202ms
-  - 🇨🇦 09 [S级] 15.7MB/s 217ms
-  - 🇺🇸 10 [S级] 38.5MB/s 290ms
-  - 🇺🇸 11 [S级] 6.9MB/s 292ms
-  - 🇮🇱 12 [S级] 38.5MB/s 226ms
-  - 🇩🇪 13 [S级] 5.4MB/s 323ms
-  - 🇺🇸 14 [S级] 7.7MB/s 323ms
-  - 🇺🇸 15 [S级] 8.2MB/s 319ms
-  - 🇺🇸 16 [S级] 9.0MB/s 328ms
-  - 🇩🇪 17 [S级] 5.4MB/s 335ms
-  - 🇺🇸 18 [S级] 7.8MB/s 359ms
-  - 🇺🇸 19 [S级] 41.0MB/s 122ms
-  - 🇳🇱 20 [S级] 4.8MB/s 337ms
-  - 🇳🇱 21 [S级] 5.6MB/s 382ms
-  - 🇳🇱 22 [S级] 5.7MB/s 380ms
-  - 🇺🇸 23 [S级] 37.5MB/s 268ms
-  - 🇺🇸 24 [S级] 8.4MB/s 399ms
-  - 🇪🇸 25 [S级] 6.1MB/s 309ms
-  - 🇺🇸 26 [S级] 7.2MB/s 342ms
-  - 🇪🇸 27 [S级] 5.2MB/s 329ms
-  - 🇪🇸 28 [S级] 5.4MB/s 353ms
-  - 🇪🇸 29 [S级] 4.9MB/s 398ms
-  - 🇺🇸 30 [S级] 7.1MB/s 333ms
-  - 🇺🇸 31 [S级] 6.0MB/s 345ms
-  - 🇺🇸 32 [S级] 7.0MB/s 356ms
-  - 🇺🇸 33 [S级] 8.9MB/s 366ms
-  - 🇳🇱 34 [S级] 3.9MB/s 307ms
-  - 🇺🇸 35 [S级] 8.5MB/s 377ms
-  - 🇺🇸 36 [S级] 6.5MB/s 383ms
-  - 🇺🇸 37 [S级] 7.0MB/s 396ms
-  - 🇺🇸 38 [S级] 7.1MB/s 399ms
-  - 🇩🇪 39 [S级] 4.0MB/s 382ms
-  - 🇩🇪 40 [S级] 3.6MB/s 395ms
-  - 🇩🇪 41 [S级] 3.0MB/s 355ms
+  - 🇨🇦 01 [S级] 27.4MB/s 217ms
+  - 🇺🇸 02 [S级] 16.4MB/s 242ms
+  - 🇺🇸 03 [S级] 13.5MB/s 276ms
+  - 🇺🇸 04 [S级] 14.9MB/s 277ms
+  - 🇺🇸 05 [S级] 10.2MB/s 278ms
+  - 🇨🇦 06 [S级] 20.4MB/s 320ms
+  - 🇺🇸 07 [S级] 9.8MB/s 328ms
+  - 🇺🇸 08 [S级] 11.4MB/s 328ms
+  - 🇺🇸 09 [S级] 14.9MB/s 331ms
+  - 🇺🇸 10 [S级] 12.6MB/s 332ms
+  - 🇺🇸 11 [S级] 37.1MB/s 238ms
+  - 🇨🇦 12 [S级] 15.3MB/s 369ms
+  - 🇺🇸 13 [S级] 7.2MB/s 374ms
+  - 🇮🇱 14 [S级] 16.2MB/s 375ms
+  - 🇺🇸 15 [S级] 11.5MB/s 378ms
+  - 🇺🇸 16 [S级] 10.4MB/s 388ms
 rules:
 - MATCH,PROXIES

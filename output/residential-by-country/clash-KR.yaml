@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 01 [家宽级] 2.5MB/s 760ms
+- name: 🇰🇷 01 [家宽级] 0.6MB/s 761ms
   server: 49.254.204.133
   port: 1774
   udp: true
@@ -16,12 +16,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 01 [家宽级] 2.5MB/s 760ms
+  - 🇰🇷 01 [家宽级] 0.6MB/s 761ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 01 [家宽级] 2.5MB/s 760ms
+  - 🇰🇷 01 [家宽级] 0.6MB/s 761ms
 rules:
 - MATCH,PROXIES
