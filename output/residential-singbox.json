@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 01 [家宽级] 4.6MB/s 556ms",
+      "tag": "🇩🇪 01 [家宽级] 5.1MB/s 492ms",
       "server": "47.254.175.2",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
@@ -13,23 +13,36 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 02 [家宽级] 12.1MB/s 12868ms",
-      "server": "8.211.57.86",
+      "tag": "🇩🇪 02 [家宽级] 5.3MB/s 5188ms",
+      "server": "47.254.167.157",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
       "type": "vmess",
-      "tag": "🇸🇬 03 [家宽级] 2.3MB/s 3848ms",
-      "server": "195.133.135.238",
-      "server_port": 10086,
-      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
-      "security": "auto"
+      "tag": "🇭🇰 03 [家宽级] 2.5MB/s 993ms",
+      "server": "hkgb707.ifastcdncache.com",
+      "server_port": 60852,
+      "uuid": "f8eca8df-a1a5-4918-a194-d34112a3673f",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 04 [家宽级] 2.4MB/s 785ms",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 04 [家宽级] 0.6MB/s 1326ms",
+      "tag": "🇹🇼 05 [家宽级] 1.7MB/s 1160ms",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -47,8 +60,20 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇹🇼 06 [家宽级] 0.9MB/s 1160ms",
+      "server": "161.114.15.215",
+      "server_port": 30502,
+      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇬🇧 05 [家宽级] 0.2MB/s 2262ms",
+      "tag": "🇬🇧 07 [家宽级] 0.2MB/s 1234ms",
       "server": "dg3yg.mateflora.com",
       "server_port": 443,
       "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
@@ -70,22 +95,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 01 [家宽级] 4.6MB/s 556ms",
-        "🇩🇪 02 [家宽级] 12.1MB/s 12868ms",
-        "🇸🇬 03 [家宽级] 2.3MB/s 3848ms",
-        "🇹🇼 04 [家宽级] 0.6MB/s 1326ms",
-        "🇬🇧 05 [家宽级] 0.2MB/s 2262ms"
+        "🇩🇪 01 [家宽级] 5.1MB/s 492ms",
+        "🇩🇪 02 [家宽级] 5.3MB/s 5188ms",
+        "🇭🇰 03 [家宽级] 2.5MB/s 993ms",
+        "🇰🇷 04 [家宽级] 2.4MB/s 785ms",
+        "🇹🇼 05 [家宽级] 1.7MB/s 1160ms",
+        "🇹🇼 06 [家宽级] 0.9MB/s 1160ms",
+        "🇬🇧 07 [家宽级] 0.2MB/s 1234ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 01 [家宽级] 4.6MB/s 556ms",
-        "🇩🇪 02 [家宽级] 12.1MB/s 12868ms",
-        "🇸🇬 03 [家宽级] 2.3MB/s 3848ms",
-        "🇹🇼 04 [家宽级] 0.6MB/s 1326ms",
-        "🇬🇧 05 [家宽级] 0.2MB/s 2262ms"
+        "🇩🇪 01 [家宽级] 5.1MB/s 492ms",
+        "🇩🇪 02 [家宽级] 5.3MB/s 5188ms",
+        "🇭🇰 03 [家宽级] 2.5MB/s 993ms",
+        "🇰🇷 04 [家宽级] 2.4MB/s 785ms",
+        "🇹🇼 05 [家宽级] 1.7MB/s 1160ms",
+        "🇹🇼 06 [家宽级] 0.9MB/s 1160ms",
+        "🇬🇧 07 [家宽级] 0.2MB/s 1234ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
