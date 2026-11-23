@@ -5,15 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 01 [家宽级] 5.3MB/s 479ms",
-      "server": "3.66.166.72",
-      "server_port": 443,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 02 [家宽级] 5.6MB/s 502ms",
+      "tag": "🇩🇪 01 [家宽级] 3.8MB/s 435ms",
       "server": "47.254.175.2",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
@@ -24,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 01 [家宽级] 5.3MB/s 479ms",
-        "🇩🇪 02 [家宽级] 5.6MB/s 502ms"
+        "🇩🇪 01 [家宽级] 3.8MB/s 435ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 01 [家宽级] 5.3MB/s 479ms",
-        "🇩🇪 02 [家宽级] 5.6MB/s 502ms"
+        "🇩🇪 01 [家宽级] 3.8MB/s 435ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
