@@ -4,21 +4,36 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 01 [家宽级] 3.8MB/s 435ms
+- name: 🇩🇪 01 [家宽级] 18.7MB/s 394ms
+  server: 172.64.88.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
+  tls: true
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
+    headers:
+      Host: 1v5Vp5jsQ611A5dsm.PAges.dEV
+- name: 🇩🇪 02 [家宽级] 5.6MB/s 410ms
   server: 47.254.175.2
   port: 443
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇰🇷 02 [家宽级] 2.4MB/s 778ms
-  server: 49.254.204.133
-  port: 1774
+- name: 🇩🇪 03 [家宽级] 5.4MB/s 579ms
+  server: 8.209.73.203
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇸🇬 03 [家宽级] 0.9MB/s 6663ms
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇸🇬 04 [家宽级] 61.0MB/s 4463ms
   server: 195.133.135.238
   port: 10086
   udp: true
@@ -26,7 +41,15 @@ proxies:
   uuid: b831381d-6324-4d53-ad4f-8cda48b30811
   alterId: 0
   cipher: auto
-- name: 🇹🇼 04 [家宽级] 0.4MB/s 961ms
+- name: 🇭🇰 05 [家宽级] 2.6MB/s 1601ms
+  server: ibsdsf.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 2902c46c8493
+  sni: docs.microsoft.com
+  skip-cert-verify: true
+- name: 🇹🇼 06 [家宽级] 2.4MB/s 1238ms
   server: 60.248.219.78
   port: 443
   udp: true
@@ -40,23 +63,51 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 07 [家宽级] 2.4MB/s 1386ms
+  server: rtifgjdr.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 2902c46c8493
+  sni: docs.microsoft.com
+  skip-cert-verify: true
+- name: 🇭🇰 08 [家宽级] 1.6MB/s 2316ms
+  server: 42.200.230.232
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
+  tls: true
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  servername: navi.bankrate.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 01 [家宽级] 3.8MB/s 435ms
-  - 🇰🇷 02 [家宽级] 2.4MB/s 778ms
-  - 🇸🇬 03 [家宽级] 0.9MB/s 6663ms
-  - 🇹🇼 04 [家宽级] 0.4MB/s 961ms
+  - 🇩🇪 01 [家宽级] 18.7MB/s 394ms
+  - 🇩🇪 02 [家宽级] 5.6MB/s 410ms
+  - 🇩🇪 03 [家宽级] 5.4MB/s 579ms
+  - 🇸🇬 04 [家宽级] 61.0MB/s 4463ms
+  - 🇭🇰 05 [家宽级] 2.6MB/s 1601ms
+  - 🇹🇼 06 [家宽级] 2.4MB/s 1238ms
+  - 🇹🇼 07 [家宽级] 2.4MB/s 1386ms
+  - 🇭🇰 08 [家宽级] 1.6MB/s 2316ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 01 [家宽级] 3.8MB/s 435ms
-  - 🇰🇷 02 [家宽级] 2.4MB/s 778ms
-  - 🇸🇬 03 [家宽级] 0.9MB/s 6663ms
-  - 🇹🇼 04 [家宽级] 0.4MB/s 961ms
+  - 🇩🇪 01 [家宽级] 18.7MB/s 394ms
+  - 🇩🇪 02 [家宽级] 5.6MB/s 410ms
+  - 🇩🇪 03 [家宽级] 5.4MB/s 579ms
+  - 🇸🇬 04 [家宽级] 61.0MB/s 4463ms
+  - 🇭🇰 05 [家宽级] 2.6MB/s 1601ms
+  - 🇹🇼 06 [家宽级] 2.4MB/s 1238ms
+  - 🇹🇼 07 [家宽级] 2.4MB/s 1386ms
+  - 🇭🇰 08 [家宽级] 1.6MB/s 2316ms
 rules:
 - MATCH,PROXIES

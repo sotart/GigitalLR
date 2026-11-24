@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 0.4MB/s 961ms
+- name: 🇹🇼 01 [家宽级] 2.4MB/s 1238ms
   server: 60.248.219.78
   port: 443
   udp: true
@@ -18,17 +18,27 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 02 [家宽级] 2.4MB/s 1386ms
+  server: rtifgjdr.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 2902c46c8493
+  sni: docs.microsoft.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 0.4MB/s 961ms
+  - 🇹🇼 01 [家宽级] 2.4MB/s 1238ms
+  - 🇹🇼 02 [家宽级] 2.4MB/s 1386ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 0.4MB/s 961ms
+  - 🇹🇼 01 [家宽级] 2.4MB/s 1238ms
+  - 🇹🇼 02 [家宽级] 2.4MB/s 1386ms
 rules:
 - MATCH,PROXIES
