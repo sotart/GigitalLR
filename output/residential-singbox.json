@@ -4,62 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 01 [家宽级] 7.6MB/s 133ms",
-      "server": "172.66.47.45",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "wk1.f1w.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "wk1.f1w.de5.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 02 [家宽级] 5.2MB/s 268ms",
-      "server": "172.64.88.98",
-      "server_port": 443,
-      "uuid": "afa524de-2b93-4be9-b846-6bc88d8a2ce1",
-      "tls": {
-        "enabled": true,
-        "server_name": "1v5Vp5jsQ611A5dsm.PAges.dEV",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/fbo164EXEqNcjQ9WdWcK?ed=2560",
-        "headers": {
-          "Host": "1v5Vp5jsQ611A5dsm.PAges.dEV"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇩🇪 03 [家宽级] 4.6MB/s 332ms",
+      "tag": "🇩🇪 01 [家宽级] 11.9MB/s 1720ms",
       "server": "8.209.73.203",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
+      "type": "vmess",
+      "tag": "🇸🇬 02 [家宽级] 0.5MB/s 5637ms",
+      "server": "195.133.135.238",
+      "server_port": 10086,
+      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "security": "auto"
+    },
+    {
       "type": "anytls",
-      "tag": "🇹🇼 04 [家宽级] 2.0MB/s 1568ms",
+      "tag": "🇹🇼 03 [家宽级] 0.5MB/s 2319ms",
       "server": "a54ge.df6h451rh.xin",
       "server_port": 443,
       "password": "0324fbc29561",
@@ -70,55 +32,22 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 05 [家宽级] 1.1MB/s 1153ms",
-      "server": "60.248.219.78",
-      "server_port": 443,
-      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ty986gfazs.cainiaohub.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
-        "headers": {
-          "Host": "ty986gfazs.cainiaohub.xyz"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 06 [家宽级] 0.2MB/s 726ms",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21020,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [家宽级] 7.6MB/s 133ms",
-        "🇩🇪 02 [家宽级] 5.2MB/s 268ms",
-        "🇩🇪 03 [家宽级] 4.6MB/s 332ms",
-        "🇹🇼 04 [家宽级] 2.0MB/s 1568ms",
-        "🇹🇼 05 [家宽级] 1.1MB/s 1153ms",
-        "🇭🇰 06 [家宽级] 0.2MB/s 726ms"
+        "🇩🇪 01 [家宽级] 11.9MB/s 1720ms",
+        "🇸🇬 02 [家宽级] 0.5MB/s 5637ms",
+        "🇹🇼 03 [家宽级] 0.5MB/s 2319ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [家宽级] 7.6MB/s 133ms",
-        "🇩🇪 02 [家宽级] 5.2MB/s 268ms",
-        "🇩🇪 03 [家宽级] 4.6MB/s 332ms",
-        "🇹🇼 04 [家宽级] 2.0MB/s 1568ms",
-        "🇹🇼 05 [家宽级] 1.1MB/s 1153ms",
-        "🇭🇰 06 [家宽级] 0.2MB/s 726ms"
+        "🇩🇪 01 [家宽级] 11.9MB/s 1720ms",
+        "🇸🇬 02 [家宽级] 0.5MB/s 5637ms",
+        "🇹🇼 03 [家宽级] 0.5MB/s 2319ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
