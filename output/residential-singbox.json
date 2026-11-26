@@ -5,15 +5,38 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 01 [家宽级] 11.9MB/s 1720ms",
-      "server": "8.209.73.203",
+      "tag": "🇩🇪 01 [家宽级] 5.2MB/s 549ms",
+      "server": "47.254.167.157",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
+      "type": "vless",
+      "tag": "🇩🇪 02 [家宽级] 4.8MB/s 742ms",
+      "server": "172.64.88.98",
+      "server_port": 443,
+      "uuid": "afa524de-2b93-4be9-b846-6bc88d8a2ce1",
+      "tls": {
+        "enabled": true,
+        "server_name": "1v5Vp5jsQ611A5dsm.PAges.dEV",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/fbo164EXEqNcjQ9WdWcK?ed=2560",
+        "headers": {
+          "Host": "1v5Vp5jsQ611A5dsm.PAges.dEV"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇸🇬 02 [家宽级] 0.5MB/s 5637ms",
+      "tag": "🇸🇬 03 [家宽级] 65.5MB/s 7192ms",
       "server": "195.133.135.238",
       "server_port": 10086,
       "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
@@ -21,13 +44,13 @@
     },
     {
       "type": "anytls",
-      "tag": "🇹🇼 03 [家宽级] 0.5MB/s 2319ms",
-      "server": "a54ge.df6h451rh.xin",
+      "tag": "🇭🇰 04 [家宽级] 2.6MB/s 1618ms",
+      "server": "5641sdds.df6h451rh.xin",
       "server_port": 443,
       "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "docs.microsoft.com",
+        "server_name": "images.ctfassets.net",
         "insecure": true
       }
     },
@@ -36,18 +59,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 01 [家宽级] 11.9MB/s 1720ms",
-        "🇸🇬 02 [家宽级] 0.5MB/s 5637ms",
-        "🇹🇼 03 [家宽级] 0.5MB/s 2319ms"
+        "🇩🇪 01 [家宽级] 5.2MB/s 549ms",
+        "🇩🇪 02 [家宽级] 4.8MB/s 742ms",
+        "🇸🇬 03 [家宽级] 65.5MB/s 7192ms",
+        "🇭🇰 04 [家宽级] 2.6MB/s 1618ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 01 [家宽级] 11.9MB/s 1720ms",
-        "🇸🇬 02 [家宽级] 0.5MB/s 5637ms",
-        "🇹🇼 03 [家宽级] 0.5MB/s 2319ms"
+        "🇩🇪 01 [家宽级] 5.2MB/s 549ms",
+        "🇩🇪 02 [家宽级] 4.8MB/s 742ms",
+        "🇸🇬 03 [家宽级] 65.5MB/s 7192ms",
+        "🇭🇰 04 [家宽级] 2.6MB/s 1618ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

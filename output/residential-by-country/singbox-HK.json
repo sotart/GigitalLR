@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "anytls",
-      "tag": "🇹🇼 01 [家宽级] 0.5MB/s 2319ms",
-      "server": "a54ge.df6h451rh.xin",
+      "tag": "🇭🇰 01 [家宽级] 2.6MB/s 1618ms",
+      "server": "5641sdds.df6h451rh.xin",
       "server_port": 443,
       "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "docs.microsoft.com",
+        "server_name": "images.ctfassets.net",
         "insecure": true
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 0.5MB/s 2319ms"
+        "🇭🇰 01 [家宽级] 2.6MB/s 1618ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 0.5MB/s 2319ms"
+        "🇭🇰 01 [家宽级] 2.6MB/s 1618ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

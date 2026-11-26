@@ -5,60 +5,15 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇺🇸 01 [S级] 51.1MB/s 62ms",
-      "server": "40.160.86.43",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 02 [S级] 38.2MB/s 108ms",
-      "server": "37.19.198.244",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 03 [S级] 5.6MB/s 117ms",
+      "tag": "🇨🇦 01 [S级] 24.8MB/s 226ms",
       "server": "184.107.106.78",
       "server_port": 8388,
       "method": "aes-256-gcm",
       "password": "itzvpn@321"
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 04 [S级] 46.3MB/s 131ms",
-      "server": "195.123.235.183",
-      "server_port": 443,
-      "uuid": "c14ec728-3eca-4750-87fc-fd1e6aeb81d5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "H3R3BUAl7thrIZsznTbb-eRREIjQOH2f3WO0oTN7OGY",
-          "short_id": "a0e2a6074c6456b0"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇨🇦 05 [S级] 25.2MB/s 140ms",
-      "server": "184.107.106.77",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 06 [S级] 9.6MB/s 140ms",
+      "tag": "🇺🇸 02 [S级] 12.9MB/s 232ms",
       "server": "156.146.38.168",
       "server_port": 443,
       "method": "aes-128-gcm",
@@ -66,7 +21,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇺🇸 07 [S级] 26.7MB/s 145ms",
+      "tag": "🇺🇸 03 [S级] 5.3MB/s 231ms",
+      "server": "37.19.198.244",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 04 [S级] 39.4MB/s 249ms",
       "server": "200.102.179.179",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -74,35 +37,51 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 08 [S级] 54.2MB/s 88ms",
-      "server": "45.138.100.248",
-      "server_port": 10443,
-      "uuid": "ae908ff5-f749-402c-af25-e6e9aef4d6bb"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 09 [S级] 67.5MB/s 90ms",
-      "server": "185.95.231.156",
+      "tag": "🇺🇸 05 [S级] 36.9MB/s 283ms",
+      "server": "45.144.112.55",
       "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 10 [S级] 60.5MB/s 94ms",
+      "tag": "🇺🇸 06 [S级] 42.6MB/s 179ms",
+      "server": "45.138.100.248",
+      "server_port": 10443,
+      "uuid": "ae908ff5-f749-402c-af25-e6e9aef4d6bb"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 07 [S级] 22.5MB/s 295ms",
+      "server": "216.152.155.59",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.findconnectwithemployersandbuildprofessionalnetwork.com#🍪99@oneclickvpnkeystrojan://8deb189a-3aed-4865-843b-b72dae954c46@ctcc.cloudflare.seeck.cn:443?host=api.85s.me",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 08 [S级] 22.6MB/s 214ms",
       "server": "45.138.100.248",
       "server_port": 14430,
       "uuid": "ae908ff5-f749-402c-af25-e6e9aef4d6bb",
@@ -115,73 +94,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 11 [S级] 74.7MB/s 214ms",
-      "server": "169.40.42.168",
-      "server_port": 443,
-      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-          "short_id": "c39cc7310a"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇺🇸 12 [S级] 7.2MB/s 132ms",
-      "server": "136.148.77.250",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 13 [S级] 18.0MB/s 298ms",
+      "tag": "🇨🇦 09 [S级] 7.2MB/s 319ms",
       "server": "137.184.174.93",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 14 [S级] 6.5MB/s 297ms",
-      "server": "129.146.77.248",
-      "server_port": 39495,
-      "uuid": "f836c736-87fc-4fde-aabc-00857ecdff3e",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 15 [S级] 4.9MB/s 299ms",
-      "server": "82.38.31.66",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 16 [S级] 4.9MB/s 340ms",
-      "server": "82.38.31.61",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 17 [S级] 7.4MB/s 362ms",
+      "tag": "🇺🇸 10 [S级] 7.8MB/s 359ms",
       "server": "156.229.167.109",
       "server_port": 8443,
       "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
@@ -200,29 +122,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 18 [S级] 152.2MB/s 261ms",
-      "server": "45.138.100.248",
-      "server_port": 10444,
-      "uuid": "ae908ff5-f749-402c-af25-e6e9aef4d6bb",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-          "short_id": "8debcf36f1cc69ff"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇺🇸 19 [S级] 32.2MB/s 148ms",
+      "tag": "🇺🇸 11 [S级] 8.4MB/s 224ms",
       "server": "69.164.240.85",
       "server_port": 50875,
       "password": "nwilryafgkyvuxauc8pz",
@@ -237,527 +138,78 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 20 [S级] 5.8MB/s 394ms",
-      "server": "51.158.206.93",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 21 [S级] 5.4MB/s 398ms",
-      "server": "51.158.206.8",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 22 [S级] 5.5MB/s 397ms",
-      "server": "217.60.94.115",
-      "server_port": 443,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de13-r.bankai.party",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇳🇱 23 [S级] 4.7MB/s 343ms",
-      "server": "82.38.31.191",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 24 [S级] 4.8MB/s 363ms",
-      "server": "202.50.253.36",
-      "server_port": 19999,
+      "tag": "🇺🇸 12 [S级] 26.1MB/s 381ms",
+      "server": "136.148.77.250",
+      "server_port": 8388,
       "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 25 [S级] 6.2MB/s 360ms",
-      "server": "47.89.232.46",
-      "server_port": 8443,
-      "password": "4afd4e1b1b0edd429b10d800a1cf64a7",
-      "tls": {
-        "enabled": true,
-        "server_name": "hysteria2.local",
-        "insecure": true
-      }
+      "password": "itzvpn@321"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 26 [S级] 5.9MB/s 289ms",
+      "tag": "🇪🇸 13 [S级] 5.9MB/s 391ms",
       "server": "5.188.181.201",
-      "server_port": 9029,
+      "server_port": 9011,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 27 [S级] 4.8MB/s 393ms",
-      "server": "217.30.10.44",
-      "server_port": 9042,
+      "tag": "🇵🇱 14 [S级] 4.5MB/s 352ms",
+      "server": "217.30.10.70",
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 28 [S级] 4.8MB/s 384ms",
-      "server": "217.30.10.44",
-      "server_port": 9099,
-      "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 29 [S级] 8.9MB/s 252ms",
-      "server": "173.244.56.9",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 30 [S级] 6.4MB/s 325ms",
-      "server": "5.188.181.201",
-      "server_port": 9027,
-      "method": "aes-256-cfb",
-      "password": "EXN3S3eQpjE7EJu8"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 31 [S级] 5.4MB/s 375ms",
-      "server": "51.158.206.20",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 32 [S级] 4.7MB/s 273ms",
-      "server": "5.188.181.201",
-      "server_port": 9003,
-      "method": "aes-256-cfb",
-      "password": "JdmRK9gMEqFgs8nP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 33 [S级] 6.0MB/s 366ms",
-      "server": "5.188.181.201",
-      "server_port": 9020,
-      "method": "aes-256-cfb",
-      "password": "BNmAXXxAHYpTRdzu"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 34 [S级] 5.9MB/s 385ms",
-      "server": "5.188.181.201",
-      "server_port": 9041,
-      "method": "aes-256-cfb",
-      "password": "U6qnYRhfyDmn8sgn"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 35 [S级] 4.8MB/s 349ms",
-      "server": "5.188.181.201",
-      "server_port": 9001,
-      "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 36 [S级] 43.3MB/s 391ms",
-      "server": "167.88.63.37",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 37 [S级] 6.0MB/s 393ms",
-      "server": "51.158.206.86",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 38 [S级] 5.0MB/s 359ms",
-      "server": "51.158.206.96",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 39 [S级] 4.9MB/s 393ms",
-      "server": "5.188.181.201",
-      "server_port": 9031,
-      "method": "aes-256-cfb",
-      "password": "BwcAUZk8hUFAkDGN"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 40 [S级] 4.3MB/s 383ms",
-      "server": "217.30.10.44",
-      "server_port": 9063,
-      "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 41 [S级] 5.9MB/s 355ms",
-      "server": "172.236.241.130",
-      "server_port": 443,
-      "uuid": "21117a67-21c2-4e2a-ba8f-bc49e23b0ae8",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ibi0jOH5SfYhh7ycxdBrqq5oN4ajN3-dNiHKWC2VYWs",
-          "short_id": "51ecfe9e"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 42 [S级] 6.4MB/s 357ms",
-      "server": "172.236.239.126",
-      "server_port": 443,
-      "uuid": "6b4861de-7316-4a5a-bc45-0cbd8bf97eab",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SJAHlQal4h4gy7BFInw13ute3ZM49kXMWCkJj3F4tW0",
-          "short_id": "357a37e1"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 43 [S级] 8.2MB/s 378ms",
-      "server": "172.236.233.130",
-      "server_port": 443,
-      "uuid": "a663dc28-28dc-4f97-9665-6ac215c8e567",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4wXbhUoSy9s9bGy9PaK18XVTTw3wXkBDjEusiMHaMB4",
-          "short_id": "53908445"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 44 [S级] 5.1MB/s 381ms",
-      "server": "172.236.227.60",
-      "server_port": 443,
-      "uuid": "3c8a110d-f04d-4f0e-9579-fd00631b8830",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BHBzo_I0M-sChoOqTyOczYBP8l1L_dkmB6u3ijAOaGo",
-          "short_id": "664c1530"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 45 [S级] 6.9MB/s 395ms",
-      "server": "172.233.142.149",
-      "server_port": 443,
-      "uuid": "61e3954d-0d66-4b69-b6cd-9b4fc2352303",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "f9D1ZzG6vP1HgjCaCIutbykWkab8VEDuitwuwaeuBgY",
-          "short_id": "4206512a"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 46 [S级] 4.7MB/s 383ms",
-      "server": "202.50.253.27",
-      "server_port": 19999,
+      "tag": "🇺🇸 15 [S级] 3.2MB/s 269ms",
+      "server": "15.204.247.206",
+      "server_port": 4444,
       "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 47 [S级] 3.7MB/s 374ms",
-      "server": "13.36.234.11",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-fr-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 48 [S级] 3.8MB/s 322ms",
-      "server": "5.188.181.201",
-      "server_port": 9030,
-      "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
+      "password": "pKEW8JPByTVTLtM"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 01 [S级] 51.1MB/s 62ms",
-        "🇺🇸 02 [S级] 38.2MB/s 108ms",
-        "🇨🇦 03 [S级] 5.6MB/s 117ms",
-        "🇺🇸 04 [S级] 46.3MB/s 131ms",
-        "🇨🇦 05 [S级] 25.2MB/s 140ms",
-        "🇺🇸 06 [S级] 9.6MB/s 140ms",
-        "🇺🇸 07 [S级] 26.7MB/s 145ms",
-        "🇺🇸 08 [S级] 54.2MB/s 88ms",
-        "🇮🇱 09 [S级] 67.5MB/s 90ms",
-        "🇺🇸 10 [S级] 60.5MB/s 94ms",
-        "🇺🇸 11 [S级] 74.7MB/s 214ms",
-        "🇺🇸 12 [S级] 7.2MB/s 132ms",
-        "🇨🇦 13 [S级] 18.0MB/s 298ms",
-        "🇺🇸 14 [S级] 6.5MB/s 297ms",
-        "🇳🇱 15 [S级] 4.9MB/s 299ms",
-        "🇳🇱 16 [S级] 4.9MB/s 340ms",
-        "🇺🇸 17 [S级] 7.4MB/s 362ms",
-        "🇺🇸 18 [S级] 152.2MB/s 261ms",
-        "🇺🇸 19 [S级] 32.2MB/s 148ms",
-        "🇳🇱 20 [S级] 5.8MB/s 394ms",
-        "🇳🇱 21 [S级] 5.4MB/s 398ms",
-        "🇩🇪 22 [S级] 5.5MB/s 397ms",
-        "🇳🇱 23 [S级] 4.7MB/s 343ms",
-        "🇮🇹 24 [S级] 4.8MB/s 363ms",
-        "🇺🇸 25 [S级] 6.2MB/s 360ms",
-        "🇪🇸 26 [S级] 5.9MB/s 289ms",
-        "🇵🇱 27 [S级] 4.8MB/s 393ms",
-        "🇵🇱 28 [S级] 4.8MB/s 384ms",
-        "🇺🇸 29 [S级] 8.9MB/s 252ms",
-        "🇪🇸 30 [S级] 6.4MB/s 325ms",
-        "🇳🇱 31 [S级] 5.4MB/s 375ms",
-        "🇪🇸 32 [S级] 4.7MB/s 273ms",
-        "🇪🇸 33 [S级] 6.0MB/s 366ms",
-        "🇪🇸 34 [S级] 5.9MB/s 385ms",
-        "🇪🇸 35 [S级] 4.8MB/s 349ms",
-        "🇺🇸 36 [S级] 43.3MB/s 391ms",
-        "🇳🇱 37 [S级] 6.0MB/s 393ms",
-        "🇳🇱 38 [S级] 5.0MB/s 359ms",
-        "🇪🇸 39 [S级] 4.9MB/s 393ms",
-        "🇵🇱 40 [S级] 4.3MB/s 383ms",
-        "🇺🇸 41 [S级] 5.9MB/s 355ms",
-        "🇺🇸 42 [S级] 6.4MB/s 357ms",
-        "🇺🇸 43 [S级] 8.2MB/s 378ms",
-        "🇺🇸 44 [S级] 5.1MB/s 381ms",
-        "🇺🇸 45 [S级] 6.9MB/s 395ms",
-        "🇮🇹 46 [S级] 4.7MB/s 383ms",
-        "🇫🇷 47 [S级] 3.7MB/s 374ms",
-        "🇪🇸 48 [S级] 3.8MB/s 322ms"
+        "🇨🇦 01 [S级] 24.8MB/s 226ms",
+        "🇺🇸 02 [S级] 12.9MB/s 232ms",
+        "🇺🇸 03 [S级] 5.3MB/s 231ms",
+        "🇺🇸 04 [S级] 39.4MB/s 249ms",
+        "🇺🇸 05 [S级] 36.9MB/s 283ms",
+        "🇺🇸 06 [S级] 42.6MB/s 179ms",
+        "🇺🇸 07 [S级] 22.5MB/s 295ms",
+        "🇺🇸 08 [S级] 22.6MB/s 214ms",
+        "🇨🇦 09 [S级] 7.2MB/s 319ms",
+        "🇺🇸 10 [S级] 7.8MB/s 359ms",
+        "🇺🇸 11 [S级] 8.4MB/s 224ms",
+        "🇺🇸 12 [S级] 26.1MB/s 381ms",
+        "🇪🇸 13 [S级] 5.9MB/s 391ms",
+        "🇵🇱 14 [S级] 4.5MB/s 352ms",
+        "🇺🇸 15 [S级] 3.2MB/s 269ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 01 [S级] 51.1MB/s 62ms",
-        "🇺🇸 02 [S级] 38.2MB/s 108ms",
-        "🇨🇦 03 [S级] 5.6MB/s 117ms",
-        "🇺🇸 04 [S级] 46.3MB/s 131ms",
-        "🇨🇦 05 [S级] 25.2MB/s 140ms",
-        "🇺🇸 06 [S级] 9.6MB/s 140ms",
-        "🇺🇸 07 [S级] 26.7MB/s 145ms",
-        "🇺🇸 08 [S级] 54.2MB/s 88ms",
-        "🇮🇱 09 [S级] 67.5MB/s 90ms",
-        "🇺🇸 10 [S级] 60.5MB/s 94ms",
-        "🇺🇸 11 [S级] 74.7MB/s 214ms",
-        "🇺🇸 12 [S级] 7.2MB/s 132ms",
-        "🇨🇦 13 [S级] 18.0MB/s 298ms",
-        "🇺🇸 14 [S级] 6.5MB/s 297ms",
-        "🇳🇱 15 [S级] 4.9MB/s 299ms",
-        "🇳🇱 16 [S级] 4.9MB/s 340ms",
-        "🇺🇸 17 [S级] 7.4MB/s 362ms",
-        "🇺🇸 18 [S级] 152.2MB/s 261ms",
-        "🇺🇸 19 [S级] 32.2MB/s 148ms",
-        "🇳🇱 20 [S级] 5.8MB/s 394ms",
-        "🇳🇱 21 [S级] 5.4MB/s 398ms",
-        "🇩🇪 22 [S级] 5.5MB/s 397ms",
-        "🇳🇱 23 [S级] 4.7MB/s 343ms",
-        "🇮🇹 24 [S级] 4.8MB/s 363ms",
-        "🇺🇸 25 [S级] 6.2MB/s 360ms",
-        "🇪🇸 26 [S级] 5.9MB/s 289ms",
-        "🇵🇱 27 [S级] 4.8MB/s 393ms",
-        "🇵🇱 28 [S级] 4.8MB/s 384ms",
-        "🇺🇸 29 [S级] 8.9MB/s 252ms",
-        "🇪🇸 30 [S级] 6.4MB/s 325ms",
-        "🇳🇱 31 [S级] 5.4MB/s 375ms",
-        "🇪🇸 32 [S级] 4.7MB/s 273ms",
-        "🇪🇸 33 [S级] 6.0MB/s 366ms",
-        "🇪🇸 34 [S级] 5.9MB/s 385ms",
-        "🇪🇸 35 [S级] 4.8MB/s 349ms",
-        "🇺🇸 36 [S级] 43.3MB/s 391ms",
-        "🇳🇱 37 [S级] 6.0MB/s 393ms",
-        "🇳🇱 38 [S级] 5.0MB/s 359ms",
-        "🇪🇸 39 [S级] 4.9MB/s 393ms",
-        "🇵🇱 40 [S级] 4.3MB/s 383ms",
-        "🇺🇸 41 [S级] 5.9MB/s 355ms",
-        "🇺🇸 42 [S级] 6.4MB/s 357ms",
-        "🇺🇸 43 [S级] 8.2MB/s 378ms",
-        "🇺🇸 44 [S级] 5.1MB/s 381ms",
-        "🇺🇸 45 [S级] 6.9MB/s 395ms",
-        "🇮🇹 46 [S级] 4.7MB/s 383ms",
-        "🇫🇷 47 [S级] 3.7MB/s 374ms",
-        "🇪🇸 48 [S级] 3.8MB/s 322ms"
+        "🇨🇦 01 [S级] 24.8MB/s 226ms",
+        "🇺🇸 02 [S级] 12.9MB/s 232ms",
+        "🇺🇸 03 [S级] 5.3MB/s 231ms",
+        "🇺🇸 04 [S级] 39.4MB/s 249ms",
+        "🇺🇸 05 [S级] 36.9MB/s 283ms",
+        "🇺🇸 06 [S级] 42.6MB/s 179ms",
+        "🇺🇸 07 [S级] 22.5MB/s 295ms",
+        "🇺🇸 08 [S级] 22.6MB/s 214ms",
+        "🇨🇦 09 [S级] 7.2MB/s 319ms",
+        "🇺🇸 10 [S级] 7.8MB/s 359ms",
+        "🇺🇸 11 [S级] 8.4MB/s 224ms",
+        "🇺🇸 12 [S级] 26.1MB/s 381ms",
+        "🇪🇸 13 [S级] 5.9MB/s 391ms",
+        "🇵🇱 14 [S级] 4.5MB/s 352ms",
+        "🇺🇸 15 [S级] 3.2MB/s 269ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
