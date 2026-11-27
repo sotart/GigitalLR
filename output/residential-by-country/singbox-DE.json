@@ -4,9 +4,39 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇩🇪 01 [家宽级] 4.6MB/s 316ms",
+      "server": "172.64.88.98",
+      "server_port": 443,
+      "uuid": "afa524de-2b93-4be9-b846-6bc88d8a2ce1",
+      "tls": {
+        "enabled": true,
+        "server_name": "1v5Vp5jsQ611A5dsm.PAges.dEV",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/fbo164EXEqNcjQ9WdWcK?ed=2560fp=chrome",
+        "headers": {
+          "Host": "1v5Vp5jsQ611A5dsm.PAges.dEV"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇩🇪 01 [家宽级] 9.5MB/s 1486ms",
+      "tag": "🇩🇪 02 [家宽级] 5.5MB/s 448ms",
       "server": "8.209.73.203",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 03 [家宽级] 5.1MB/s 1048ms",
+      "server": "47.254.128.109",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
@@ -16,14 +46,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 01 [家宽级] 9.5MB/s 1486ms"
+        "🇩🇪 01 [家宽级] 4.6MB/s 316ms",
+        "🇩🇪 02 [家宽级] 5.5MB/s 448ms",
+        "🇩🇪 03 [家宽级] 5.1MB/s 1048ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 01 [家宽级] 9.5MB/s 1486ms"
+        "🇩🇪 01 [家宽级] 4.6MB/s 316ms",
+        "🇩🇪 02 [家宽级] 5.5MB/s 448ms",
+        "🇩🇪 03 [家宽级] 5.1MB/s 1048ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

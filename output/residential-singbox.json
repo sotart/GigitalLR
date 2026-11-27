@@ -4,8 +4,30 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇩🇪 01 [家宽级] 4.6MB/s 316ms",
+      "server": "172.64.88.98",
+      "server_port": 443,
+      "uuid": "afa524de-2b93-4be9-b846-6bc88d8a2ce1",
+      "tls": {
+        "enabled": true,
+        "server_name": "1v5Vp5jsQ611A5dsm.PAges.dEV",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/fbo164EXEqNcjQ9WdWcK?ed=2560fp=chrome",
+        "headers": {
+          "Host": "1v5Vp5jsQ611A5dsm.PAges.dEV"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇩🇪 01 [家宽级] 9.5MB/s 1486ms",
+      "tag": "🇩🇪 02 [家宽级] 5.5MB/s 448ms",
       "server": "8.209.73.203",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
@@ -13,49 +35,39 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 02 [家宽级] 65.5MB/s 7740ms",
-      "server": "211.233.33.228",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "qpowi_vip_tunnel_2026_secure"
+      "tag": "🇩🇪 03 [家宽级] 5.1MB/s 1048ms",
+      "server": "47.254.128.109",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 03 [家宽级] 1.8MB/s 680ms",
-      "server": "209.9.200.147",
-      "server_port": 443,
-      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
-      "tls": {
-        "enabled": true,
-        "server_name": "navi.bankrate.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
-          "short_id": "2da72ce6"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇸🇬 04 [家宽级] 2.2MB/s 1779ms",
+      "server": "195.133.135.238",
+      "server_port": 10086,
+      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 01 [家宽级] 9.5MB/s 1486ms",
-        "🇰🇷 02 [家宽级] 65.5MB/s 7740ms",
-        "🇭🇰 03 [家宽级] 1.8MB/s 680ms"
+        "🇩🇪 01 [家宽级] 4.6MB/s 316ms",
+        "🇩🇪 02 [家宽级] 5.5MB/s 448ms",
+        "🇩🇪 03 [家宽级] 5.1MB/s 1048ms",
+        "🇸🇬 04 [家宽级] 2.2MB/s 1779ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 01 [家宽级] 9.5MB/s 1486ms",
-        "🇰🇷 02 [家宽级] 65.5MB/s 7740ms",
-        "🇭🇰 03 [家宽级] 1.8MB/s 680ms"
+        "🇩🇪 01 [家宽级] 4.6MB/s 316ms",
+        "🇩🇪 02 [家宽级] 5.5MB/s 448ms",
+        "🇩🇪 03 [家宽级] 5.1MB/s 1048ms",
+        "🇸🇬 04 [家宽级] 2.2MB/s 1779ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
