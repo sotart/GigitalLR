@@ -5,117 +5,85 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 01 [家宽级] 59.1MB/s 2275ms",
-      "server": "211.233.33.228",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "qpowi_vip_tunnel_2026_secure"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 02 [家宽级] 3.5MB/s 689ms",
+      "tag": "🇩🇪 01 [家宽级] 12.3MB/s 13890ms",
       "server": "8.209.117.187",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 03 [家宽级] 3.5MB/s 728ms",
-      "server": "47.254.128.109",
+      "type": "vless",
+      "tag": "🇹🇭 02 [家宽级] 2.3MB/s 1059ms",
+      "server": "130.94.25.12",
       "server_port": 443,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
+      "tls": {
+        "enabled": true,
+        "server_name": "navi.bankrate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+          "short_id": "2da72ce6"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 03 [家宽级] 0.9MB/s 636ms",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "anytls",
-      "tag": "🇹🇼 04 [家宽级] 3.1MB/s 1492ms",
-      "server": "mfjh645drfj1dr6j5.df6h451rh.xin",
+      "tag": "🇹🇼 04 [家宽级] 1.0MB/s 2631ms",
+      "server": "a54ge.df6h451rh.xin",
       "server_port": 443,
       "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "px.ads.linkedin.com",
+        "server_name": "docs.microsoft.com",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 05 [家宽级] 2.8MB/s 763ms",
-      "server": "172.64.88.98",
+      "type": "anytls",
+      "tag": "🇭🇰 05 [家宽级] 0.4MB/s 2300ms",
+      "server": "5641sdds.df6h451rh.xin",
       "server_port": 443,
-      "uuid": "afa524de-2b93-4be9-b846-6bc88d8a2ce1",
+      "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "1v5Vp5jsQ611A5dsm.PAges.dEV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/fbo164EXEqNcjQ9WdWcK?ed=2560",
-        "headers": {
-          "Host": "1v5vp5jsq611a5dsm.pages.dev"
-        }
+        "server_name": "images.ctfassets.net",
+        "insecure": true
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇬 06 [家宽级] 1.2MB/s 3559ms",
-      "server": "195.133.135.238",
-      "server_port": 10086,
-      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇳 07 [家宽级] 0.2MB/s 768ms",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇳 08 [家宽级] 0.1MB/s 1526ms",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21021,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 01 [家宽级] 59.1MB/s 2275ms",
-        "🇩🇪 02 [家宽级] 3.5MB/s 689ms",
-        "🇩🇪 03 [家宽级] 3.5MB/s 728ms",
-        "🇹🇼 04 [家宽级] 3.1MB/s 1492ms",
-        "🇩🇪 05 [家宽级] 2.8MB/s 763ms",
-        "🇸🇬 06 [家宽级] 1.2MB/s 3559ms",
-        "🇨🇳 07 [家宽级] 0.2MB/s 768ms",
-        "🇨🇳 08 [家宽级] 0.1MB/s 1526ms"
+        "🇩🇪 01 [家宽级] 12.3MB/s 13890ms",
+        "🇹🇭 02 [家宽级] 2.3MB/s 1059ms",
+        "🇰🇷 03 [家宽级] 0.9MB/s 636ms",
+        "🇹🇼 04 [家宽级] 1.0MB/s 2631ms",
+        "🇭🇰 05 [家宽级] 0.4MB/s 2300ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 01 [家宽级] 59.1MB/s 2275ms",
-        "🇩🇪 02 [家宽级] 3.5MB/s 689ms",
-        "🇩🇪 03 [家宽级] 3.5MB/s 728ms",
-        "🇹🇼 04 [家宽级] 3.1MB/s 1492ms",
-        "🇩🇪 05 [家宽级] 2.8MB/s 763ms",
-        "🇸🇬 06 [家宽级] 1.2MB/s 3559ms",
-        "🇨🇳 07 [家宽级] 0.2MB/s 768ms",
-        "🇨🇳 08 [家宽级] 0.1MB/s 1526ms"
+        "🇩🇪 01 [家宽级] 12.3MB/s 13890ms",
+        "🇹🇭 02 [家宽级] 2.3MB/s 1059ms",
+        "🇰🇷 03 [家宽级] 0.9MB/s 636ms",
+        "🇹🇼 04 [家宽级] 1.0MB/s 2631ms",
+        "🇭🇰 05 [家宽级] 0.4MB/s 2300ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

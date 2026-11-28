@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "anytls",
-      "tag": "🇹🇼 01 [家宽级] 3.1MB/s 1492ms",
-      "server": "mfjh645drfj1dr6j5.df6h451rh.xin",
+      "tag": "🇹🇼 01 [家宽级] 1.0MB/s 2631ms",
+      "server": "a54ge.df6h451rh.xin",
       "server_port": 443,
       "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "px.ads.linkedin.com",
+        "server_name": "docs.microsoft.com",
         "insecure": true
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 01 [家宽级] 3.1MB/s 1492ms"
+        "🇹🇼 01 [家宽级] 1.0MB/s 2631ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 01 [家宽级] 3.1MB/s 1492ms"
+        "🇹🇼 01 [家宽级] 1.0MB/s 2631ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

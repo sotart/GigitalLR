@@ -4,25 +4,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 01 [家宽级] 3.1MB/s 1492ms
-  server: mfjh645drfj1dr6j5.df6h451rh.xin
+- name: 🇹🇼 01 [家宽级] 1.0MB/s 2631ms
+  server: a54ge.df6h451rh.xin
   port: 443
   udp: true
   type: anytls
   password: 0324fbc29561
-  sni: px.ads.linkedin.com
+  sni: docs.microsoft.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 01 [家宽级] 3.1MB/s 1492ms
+  - 🇹🇼 01 [家宽级] 1.0MB/s 2631ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 01 [家宽级] 3.1MB/s 1492ms
+  - 🇹🇼 01 [家宽级] 1.0MB/s 2631ms
 rules:
 - MATCH,PROXIES

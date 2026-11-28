@@ -4,25 +4,25 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 01 [家宽级] 1.2MB/s 3559ms
-  server: 195.133.135.238
-  port: 10086
+- name: 🇭🇰 01 [家宽级] 0.4MB/s 2300ms
+  server: 5641sdds.df6h451rh.xin
+  port: 443
   udp: true
-  type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
+  type: anytls
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 01 [家宽级] 1.2MB/s 3559ms
+  - 🇭🇰 01 [家宽级] 0.4MB/s 2300ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 01 [家宽级] 1.2MB/s 3559ms
+  - 🇭🇰 01 [家宽级] 0.4MB/s 2300ms
 rules:
 - MATCH,PROXIES
