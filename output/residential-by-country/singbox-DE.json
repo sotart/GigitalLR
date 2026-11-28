@@ -5,25 +5,63 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 01 [家宽级] 11.8MB/s 17474ms",
+      "tag": "🇩🇪 01 [家宽级] 3.5MB/s 689ms",
+      "server": "8.209.117.187",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 02 [家宽级] 3.5MB/s 728ms",
       "server": "47.254.128.109",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
+      "type": "vless",
+      "tag": "🇩🇪 03 [家宽级] 2.8MB/s 763ms",
+      "server": "172.64.88.98",
+      "server_port": 443,
+      "uuid": "afa524de-2b93-4be9-b846-6bc88d8a2ce1",
+      "tls": {
+        "enabled": true,
+        "server_name": "1v5Vp5jsQ611A5dsm.PAges.dEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/fbo164EXEqNcjQ9WdWcK?ed=2560",
+        "headers": {
+          "Host": "1v5vp5jsq611a5dsm.pages.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 01 [家宽级] 11.8MB/s 17474ms"
+        "🇩🇪 01 [家宽级] 3.5MB/s 689ms",
+        "🇩🇪 02 [家宽级] 3.5MB/s 728ms",
+        "🇩🇪 03 [家宽级] 2.8MB/s 763ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 01 [家宽级] 11.8MB/s 17474ms"
+        "🇩🇪 01 [家宽级] 3.5MB/s 689ms",
+        "🇩🇪 02 [家宽级] 3.5MB/s 728ms",
+        "🇩🇪 03 [家宽级] 2.8MB/s 763ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

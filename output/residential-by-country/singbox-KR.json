@@ -4,38 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇰🇷 01 [家宽级] 2.8MB/s 1104ms",
-      "server": "130.94.30.242",
-      "server_port": 443,
-      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
-      "tls": {
-        "enabled": true,
-        "server_name": "navi.bankrate.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
-          "short_id": "2da72ce6"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 01 [家宽级] 59.1MB/s 2275ms",
+      "server": "211.233.33.228",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "qpowi_vip_tunnel_2026_secure"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 01 [家宽级] 2.8MB/s 1104ms"
+        "🇰🇷 01 [家宽级] 59.1MB/s 2275ms"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 01 [家宽级] 2.8MB/s 1104ms"
+        "🇰🇷 01 [家宽级] 59.1MB/s 2275ms"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

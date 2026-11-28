@@ -4,38 +4,99 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 01 [家宽级] 11.8MB/s 17474ms
+- name: 🇰🇷 01 [家宽级] 59.1MB/s 2275ms
+  server: 211.233.33.228
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: qpowi_vip_tunnel_2026_secure
+- name: 🇩🇪 02 [家宽级] 3.5MB/s 689ms
+  server: 8.209.117.187
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇩🇪 03 [家宽级] 3.5MB/s 728ms
   server: 47.254.128.109
   port: 443
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇰🇷 02 [家宽级] 2.8MB/s 1104ms
-  server: 130.94.30.242
+- name: 🇹🇼 04 [家宽级] 3.1MB/s 1492ms
+  server: mfjh645drfj1dr6j5.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+- name: 🇩🇪 05 [家宽级] 2.8MB/s 763ms
+  server: 172.64.88.98
   port: 443
   udp: true
   type: vless
-  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
   tls: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
+    headers:
+      Host: 1v5vp5jsq611a5dsm.pages.dev
+- name: 🇸🇬 06 [家宽级] 1.2MB/s 3559ms
+  server: 195.133.135.238
+  port: 10086
+  udp: true
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+- name: 🇨🇳 07 [家宽级] 0.2MB/s 768ms
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇨🇳 08 [家宽级] 0.1MB/s 1526ms
+  server: dog-hk.kunlun01dns.com
+  port: 21021
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 01 [家宽级] 11.8MB/s 17474ms
-  - 🇰🇷 02 [家宽级] 2.8MB/s 1104ms
+  - 🇰🇷 01 [家宽级] 59.1MB/s 2275ms
+  - 🇩🇪 02 [家宽级] 3.5MB/s 689ms
+  - 🇩🇪 03 [家宽级] 3.5MB/s 728ms
+  - 🇹🇼 04 [家宽级] 3.1MB/s 1492ms
+  - 🇩🇪 05 [家宽级] 2.8MB/s 763ms
+  - 🇸🇬 06 [家宽级] 1.2MB/s 3559ms
+  - 🇨🇳 07 [家宽级] 0.2MB/s 768ms
+  - 🇨🇳 08 [家宽级] 0.1MB/s 1526ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 01 [家宽级] 11.8MB/s 17474ms
-  - 🇰🇷 02 [家宽级] 2.8MB/s 1104ms
+  - 🇰🇷 01 [家宽级] 59.1MB/s 2275ms
+  - 🇩🇪 02 [家宽级] 3.5MB/s 689ms
+  - 🇩🇪 03 [家宽级] 3.5MB/s 728ms
+  - 🇹🇼 04 [家宽级] 3.1MB/s 1492ms
+  - 🇩🇪 05 [家宽级] 2.8MB/s 763ms
+  - 🇸🇬 06 [家宽级] 1.2MB/s 3559ms
+  - 🇨🇳 07 [家宽级] 0.2MB/s 768ms
+  - 🇨🇳 08 [家宽级] 0.1MB/s 1526ms
 rules:
 - MATCH,PROXIES
